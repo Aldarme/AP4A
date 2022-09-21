@@ -1,0 +1,28 @@
+Clément BRICHET
+AP4A, TP, groupe A (Mercredi 14 Septembre 2022)
+
+Explications de commandes git :
+
+“git config” :
+Cette commande est utilisée pour configurer git sur la machine sur laquelle il est installé. On peut ainsi définir l’utilisateur (notamment utile pour mettre un nom sur la personne qui fait les commits), mais aussi des alias sur des commandes git.
+
+“git init” :
+On utilise cette commande afin de créer un nouveau repository ; on peut soit créer un repository vide, ou en créer un en partant d’un projet existant.
+
+“git status” :
+Cette commande permet d’afficher l’état d’un repository : regarder ce qui a ou n’a pas changé, regarder quels fichiers ne sont pas sur le serveur distant, etc.
+
+“git add” :
+Lorsqu’on add un fichier, on le prépare à être envoyé, comme si on les mettait de côté pour pouvoir les traiter juste après. On peut add plusieurs fichiers à la suite, puis les envoyer avec dans un seul commit et push. 
+
+“git push” :
+Une fois que nous avons nos fichiers prêts (add et commit), cette commande permet d’envoyer nos fichiers sur le serveur distant. Les changements faits sur le serveur local ne sont pas effectués sur le serveur distant si le push n’est pas fait.
+
+“git merge” :
+Cette commande nous permet d’intégrer le code présent dans une branche dans une autre branche, et ainsi de “mélanger” deux codes dans un commit commun, qui se retrouve avec deux commits parents, contrairement à “git rebase” qui reprends des commits pour les mettre à la suite, donc avec un seul parent et sans lien avec d’autres branches.
+
+“git diff” :
+Cette commande est utilisée afin de comparer l’état du code entre deux branches différentes. On peut aussi s’en servir pour comparer l’état du code entre le serveur local et le serveur distant.
+
+“git blame” :
+Avec cette commande, nous pouvons avoir accès à des informations non pas sur un commit en lui-même, mais sur les données qui l’entourent. On peut ainsi recueillir des données sur l’utilisateur qui a effectué le commit, l’historique d’un code, etc.
