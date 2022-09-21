@@ -1,0 +1,24 @@
+git config : on utilise cette commande lorsqu'on veut configurer le git bash. 
+On le configure avec git config --global user.name "leNom"
+		     git config --global user.email "aresse mail"
+cela permet alors de tracer les commits.
+
+git init : permet de créer un nouveau projet 
+
+git status : cette commande montre a l'utilisateur l'arbre git qui a été crée jusque la
+(montre l'arborescence du projet)
+
+git add : permet d'ajouter un fichier pour pouvoir le commit ensuite. 
+les fichiers qui ne sont pas ajoutés ne peuvent pas etre commit.
+
+git push : permet d'envoyer sur le dépot distant le contenu du dépot local, et ainsi
+envoyer les modifications apportés au projet.
+
+git merge : permet de fusionner 2 branches séparées pour n'en avoir plus qu'une seule.
+
+git diff : permet d'observer les modifications apportées a un fichier lors d'un commit,
+merge, cherry-pick etc. On peut voir ce qui a été rajoutés et/ou enlevé et/ou modifié.
+
+git blame : permet d'examiner qui a effectué des modifications, quand ont elle été faites
+mais aussi de savoir ce qui a éé modifié.
+
