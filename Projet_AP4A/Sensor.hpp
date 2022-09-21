@@ -4,14 +4,26 @@
 #include <iostream>
 #include <string>
 
+enum ESensors {
+    e_temperature,
+    e_humidity,
+    e_light,
+    e_pression
+};
+
 class Sensor{
 private :
-    int valeur;
+    int m_valeur;
+    ESensors m_name;
 public :
     Sensor();
-    Sensor(const int v);
+    Sensor(const ESensors param_name);
     Sensor(const Sensor& s);
     ~Sensor();
+
+    Sensor& operator=(const Sensor& s);
+
+    int aleaGenVal(const ESensors name);
 };
 
 
