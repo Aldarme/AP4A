@@ -64,11 +64,11 @@ void Server::consoleWrite(){
 
 void Server::fileWrite(string const cheminFichier){
 
-    ofstream donnéesCapteurs(cheminFichier);
+    ofstream donnéesCapteurs(cheminFichier, ios::app);
 
     if(donnéesCapteurs){
         cout << "OK" << endl;
-        donnéesCapteurs << "Temperature : " << this->m_temperature << "\n" << "Humidity : " << this->m_humidity << "\n" << "Light : " << this->m_light << "\n" << "Pression : " << this->m_pression << endl;
+        donnéesCapteurs << "Temperature : " << this->m_temperature << "\n" << "Humidity : " << this->m_humidity << "\n" << "Light : " << this->m_light << "\n" << "Pression : " << this->m_pression << "\n" << endl;
     }
     else 
     {

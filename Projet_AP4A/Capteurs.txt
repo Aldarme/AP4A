@@ -1,4 +1,22 @@
 Temperature : 1
-Humidity : 0
-Light : 2
+Humidity : 2
+Light : 3
+Pression : 4
+Temperature : 1
+Humidity : 6
+Light : 7
 Pression : 9
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+Temperature : 5
+Humidity : 6
+Light : 7
+Pression : 8
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+

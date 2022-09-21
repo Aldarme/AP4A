@@ -15,11 +15,15 @@ int main(){
 
     Server sp;
 
+    Server p(1,2,3,4);
+
     s.consoleWrite();
 
     sp.consoleWrite();
 
     s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.txt");
+
+    p.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.txt");
 
     return 0;
 }

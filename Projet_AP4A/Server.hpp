@@ -54,7 +54,7 @@ public:
     ~Server();
 
     //operator
-    Server& operator=(const Server&);
+    Server& operator=(const Server& s);
 
 
     /**
