@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Server.cpp"
+#include "Sensor.cpp"
+#include "Scheduler.cpp"
 
 using namespace std;
 

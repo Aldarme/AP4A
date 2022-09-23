@@ -2,7 +2,7 @@
  * @author choulot_hugo
  * @file Server.cpp
  * @date 17/09/2022
- * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stcoker dans les fichiers de logs
+ * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stocker dans les fichiers de logs
  */
 
 #include "Server.hpp"
@@ -14,26 +14,26 @@ using namespace std;
 
 //constructeur par défaut
 Server::Server(){
-    m_temperature = 0;
-    m_humidity = 0;
-    m_light = 0;
-    m_pression = 0;
+    m_temperature_test = 0;
+    m_humidity_test = 0;
+    m_light_test = 0;
+    m_pression_test = 0;
 }
 
 //constructeur par valeurs
 Server::Server(const int t, const int h, const int l, const int p){
-    m_temperature = t;
-    m_humidity =h;
-    m_light = l;
-    m_pression = p;
+    m_temperature_test = t;
+    m_humidity_test =h;
+    m_light_test = l;
+    m_pression_test = p;
 }
 
 //constructeur par recopie
 Server::Server(const Server& s){
-    this->m_temperature = s.m_temperature;
-    this->m_humidity = s.m_humidity;
-    this->m_light = s.m_light;
-    this->m_pression = s.m_pression;
+    this->m_temperature_test = s.m_temperature_test;
+    this->m_humidity_test = s.m_humidity_test;
+    this->m_light_test = s.m_light_test;
+    this->m_pression_test = s.m_pression_test;
 }
 
 //destructeur
@@ -43,10 +43,10 @@ Server::~Server(){
 
 //operator
 Server& Server::operator=(const Server& s){
-    this->m_temperature = s.m_temperature;
-    this->m_humidity = s.m_humidity;
-    this->m_light = s.m_light;
-    this->m_pression = s.m_pression;
+    this->m_temperature_test = s.m_temperature_test;
+    this->m_humidity_test = s.m_humidity_test;
+    this->m_light_test = s.m_light_test;
+    this->m_pression_test = s.m_pression_test;
 
     return *this;
 }
@@ -58,17 +58,22 @@ Server& Server::operator=(const Server& s){
  */
 void Server::consoleWrite(){
 
-    cout << "Temperature : " << this->m_temperature << "\n" << "Humidity : " << this->m_humidity << "\n" << "Light : " << this->m_light << "\n" << "Pression : " << this->m_pression << "\n" << endl;
+    cout << "Temperature : " << this->m_temperature_test << "\n" << "Humidity : " << this->m_humidity_test << "\n" << "Light : " << this->m_light_test << "\n" << "Pression : " << this->m_pression_test << "\n" << endl;
 
 }
 
+/**
+ * @brief Stocker les données des capteurs dans des fichiers de logs
+ * @return void
+ * @param
+ */
 void Server::fileWrite(string const cheminFichier){
 
     ofstream donnéesCapteurs(cheminFichier, ios::app);
 
     if(donnéesCapteurs){
         cout << "OK" << endl;
-        donnéesCapteurs << "Temperature : " << this->m_temperature << "\n" << "Humidity : " << this->m_humidity << "\n" << "Light : " << this->m_light << "\n" << "Pression : " << this->m_pression << "\n" << endl;
+        donnéesCapteurs << "Temperature : " << this->m_temperature_test << "\n" << "Humidity : " << this->m_humidity_test << "\n" << "Light : " << this->m_light_test << "\n" << "Pression : " << this->m_pression_test << "\n" << endl;
     }
     else 
     {

@@ -2,13 +2,13 @@
  * @author choulot_hugo
  * @file Server.hpp
  * @date 17/09/2022
- * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stcoker dans les fichiers de logs
+ * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stocker dans les fichiers de logs
  */
 
 //
 // Define guards
-#ifndef Projet_AP4A_H
-#define Projet_AP4A_H
+#ifndef Projet_AP4A_SERVER_H
+#define Projet_AP4A_SERVER_H
 
 #include <iostream>
 #include <string>
@@ -18,10 +18,10 @@
  * @brief Liste les differents types de capteurs
  */
 enum Capteurs {
-    e_temperature,
-    e_humidity,
-    e_light,
-    e_pression
+    e_temperature_test,
+    e_humidity_test,
+    e_light_test,
+    e_pression_test
 };
 
 /**
@@ -33,10 +33,10 @@ class Server
 private:
 
     //attributs
-    int m_temperature;
-    int m_humidity;
-    int m_light;
-    int m_pression;
+    int m_temperature_test;
+    int m_humidity_test;
+    int m_light_test;
+    int m_pression_test;
 
 public:
     //Definition de la forme canonique
@@ -72,4 +72,4 @@ public:
     void fileWrite(const std::string cheminFichier);
 };
 
-#endif // Projet_AP4A_H
+#endif // Projet_AP4A_SERVER_H

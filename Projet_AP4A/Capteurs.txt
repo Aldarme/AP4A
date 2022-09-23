@@ -1,0 +1,40 @@
+Temperature : 3
+Humidity : 6
+Light : 8
+Pression : 9
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
+Temperature : 3
+Humidity : 4
+Light : 5
+Pression : 6
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
+Temperature : 2
+Humidity : 3
+Light : 4
+Pression : 5
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
+Temperature : 1
+Humidity : 1
+Light : 1
+Pression : 1
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
