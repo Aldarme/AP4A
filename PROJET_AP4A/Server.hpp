@@ -20,9 +20,9 @@ class Server
 {      
 public:
     // Definition de la forme canonique
-    Server();
+    Server(){};
     Server(Server &s);
-    ~Server();
+    ~Server(){};
     // ...
 
     /**

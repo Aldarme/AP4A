@@ -1,6 +1,6 @@
 /**
  * @author RENON Emilien
- * @file MaClasse.hpp
+ * @file Sensor.hpp
  * @date 21/09/2022
  * @brief La classe Sensor permettra de créer les données des capteurs.
  */
@@ -8,12 +8,48 @@
 #include "Sensor.hpp"
 using namespace std;
 
-int Sensor::aleaValue(ESensor param_name){
-    switch(param_name){
+Temperature::Temperature(){
+    this->m_name="Temperature";
+    this->m_sensor=e_temperature;
+}
+Humidity::Humidity(){
+    this->m_name="Humidity";
+    this->m_sensor=e_humidity;
+}
+Light::Light(){
+    this->m_name="Light";
+    this->m_sensor=e_light;
+}
+Pression::Pression(){
+    this->m_name="Pression";
+    this->m_sensor=e_pression;
+}
+
+void Sensor::aleaValue(){
+    switch(this->m_sensor){
         case e_temperature : 
         {
-           int i; 
+            this->m_value = rand()% 30 + 10; 
+        }
+        break;
+        case e_humidity : 
+        {
+            this->m_value = rand()%20 + 10;
+        }
+        break;
+        case e_light : 
+        {
+            this->m_value = rand()%2;
+        }
+        break;
+        case e_pression : 
+        { 
+            this->m_value = rand()%2;
         }
         break;
     }
 }
+
+int Sensor::getValue(){
+        return this->m_value;
+    }
