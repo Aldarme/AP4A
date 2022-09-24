@@ -1,24 +1,33 @@
 #include "Server.h"
 
-class Server{
-public :
-    Server(){
+Server::Server() {
+    Scheduler s;
+    this->consoleWrite(s);
+}
 
-    }
-    ~Server(){
+Server::Server(const Server& s) {
 
-    }
-    Server(const Server& s){
+}
 
-    }
-    Server& operator=(const Server& s){
-        return Server(s);
-    }
-    void consoleWrite(){
+Server::~Server() {
 
-    }
-    void fileWrite(){
+}
 
-    }
+void Server::operator=(const Server& s) {
+ 
+}
 
-};
+void Server::consoleWrite(Scheduler& s) {
+   
+}
+
+void Server::fileWrite(int Type) {
+
+}
+
+void Server::operator>>(int Type) {
+
+}
+void Server::dataRcv(int Type) {
+
+}

@@ -1,5 +1,9 @@
 #pragma once
 
-class Humidity {
+#include "Sensor.h"
 
+
+class Humidity : public Sensor {
+public:
+    Humidity();
 };

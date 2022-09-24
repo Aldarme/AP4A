@@ -1,10 +1,20 @@
+#include <iostream>
+
+#include "Sensor.h"
+#include "Scheduler.h"
+
+using namespace std;
 
 class Server {
-public :
+
+public:
     Server();
     ~Server();
     Server(const Server& s);
-    Server& operator=(const Server& s);
-    void consoleWrite();
-    void fileWrite();
+    void operator=(const Server& s);
+    void operator>>(int Type);
+    void dataRcv(int Type);
+private:
+    void consoleWrite(Scheduler& s);
+    void fileWrite(int Type);
 };

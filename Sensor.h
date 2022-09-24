@@ -1,10 +1,24 @@
 #pragma once
+
+class Light;
+class Humidity;
+class Pression;
+class Temperature;
+
 class Sensor {
-public :
+public:
 	Sensor();
-	~Sensor();
+	virtual ~Sensor() {
 
-private :
+	}
+	Sensor(int type);
+	Sensor(const Sensor& sensor);
+	int getData();
+	void setData(int data);
+protected:
+	int aleaGenVal();
 
+private:
+	int data;
 };
 
