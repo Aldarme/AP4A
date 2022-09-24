@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "Sensor.h"
-#include "Scheduler.h"
+#include "Scheduler.cpp"
 
 using namespace std;
 

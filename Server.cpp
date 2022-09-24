@@ -1,5 +1,6 @@
 #include "Server.h"
 
+
 Server::Server() {
     Scheduler s;
     this->consoleWrite(s);

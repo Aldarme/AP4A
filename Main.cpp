@@ -1,4 +1,4 @@
-#include "Server.h"
+#include "Server.cpp"
 
 int main() {
     cout << "Test" << endl;

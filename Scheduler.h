@@ -1,11 +1,11 @@
 #pragma once
 
-#include "Sensor.h"
+#include "Sensor.cpp"
 
-#include "Temperature.h"
-#include "Light.h"
-#include "Humidity.h"
-#include "Pression.h"
+#include "Temperature.cpp"
+#include "Light.cpp"
+#include "Humidity.cpp"
+#include "Pression.cpp"
 
 class Scheduler {
 private :
