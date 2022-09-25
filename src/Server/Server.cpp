@@ -22,47 +22,68 @@ Server::Server(const Server& server)
 }
 
 Server::~Server() = default;
-
 Server& Server::operator=(const Server& server) = default;
+
 
 void Server::consoleWrite(float measures[4], long time)
 {
 	std::cout << time <<	" | Temperature: " << measures[0] << "\370C" <<
-												" | Humidity: " << measures[1] << "%" <<
-												" | Light: " << measures[2] <<
-												" | Pressure: " << measures[3] << " bar," << std::endl;
+						" | Humidity: " << measures[1] << "%" <<
+						" | Light: " << measures[2] <<
+						" | Pressure: " << measures[3] << " mbar," << std::endl;
 }
+
+template<typename T>
+void Server::consoleWrite(std::string sensor, T measure, long time)
+{
+	std::cout << time << "s | " << sensor << " : " << measure << std::endl;
+}
+
 
 void Server::fileWrite(float measures[4], long time)
 {
 	std::ofstream logFile("logs/mainLog.txt", std::fstream::app);
 	logFile << time << "s | Temperature: " << measures[0] << "\370C" <<
-										" | Humidity: " << measures[1] << "%" <<
-										" | Light: " << measures[2] <<
-										" | Pressure: " << measures[3] << " bar," << std::endl;
+					" | Humidity: " << measures[1] << "%" <<
+					" | Light: " << measures[2] <<
+					" | Pressure: " << measures[3] << " mbar," << std::endl;
 	logFile.close();
 }
 
-void Server::fileWrite(char sensorType, float value, std::string logFileName, long time)
+template<typename T>
+void Server::fileWrite(std::string sensor, T value, long time)
 {
-	std::ofstream logFile("logs/" + logFileName + ".txt", std::fstream::app);
+	std::ofstream logFile("logs/" + sensor + "Log.txt", std::fstream::app);
 	logFile << time << "s | Value: " << value << "," << std::endl;
 	logFile.close();
 }
 
-void Server::fileWrite(bool value, long time)
+
+void Server::DataReceive(float measures[4], long time)
 {
-	std::ofstream logFile("logs/lightLog.txt", std::fstream::app);
-	logFile << time << "s | Value: " << value << "," << std::endl;
-	logFile.close();
+	if (m_consoleActivation)
+	{
+		consoleWrite(measures, time);
+	}
+	if (m_logActivation)
+	{
+		fileWrite(measures, time);
+	}
 }
 
-void Server::fileWrite(int value, long time)
+template<typename T>
+void Server::DataReceive(std::string sensor, T measure, long time)
 {
-	std::ofstream logFile("logs/pressureLog.txt", std::fstream::app);
-	logFile << time << "s | Value: " << value << "," << std::endl;
-	logFile.close();
+	if (m_consoleActivation)
+	{
+		consoleWrite(sensor, measure, time);
+	}
+	if (m_logActivation)
+	{
+		fileWrite(sensor, measure, time);
+	}
 }
+
 
 void Server::toggleConsoleLog() {
 	this->m_consoleActivation = not this->m_consoleActivation;

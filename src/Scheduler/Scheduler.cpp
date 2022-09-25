@@ -31,8 +31,8 @@ void Scheduler::LaunchScheduler(long time)
 		{
 			this->m_lastMeasure = this->m_clock.getTime();
 			RetrieveAllData();
-			m_server.fileWrite(m_measures, this->m_clock.getTime());
-			m_server.consoleWrite(m_measures, this->m_clock.getTime());
+			// sends all the data to the server
+			m_server.DataReceive(m_measures, this->m_clock.getTime());
 		}
 	}
 }

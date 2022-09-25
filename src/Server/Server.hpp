@@ -16,6 +16,36 @@ private:
 	bool m_consoleActivation;
 	bool m_logActivation;
 
+	/**
+	 * @brief Writes all the sensors values in the console
+	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param time time of the measures
+	 */
+	void consoleWrite(float measures[4], long time);
+	/**
+	 * @brief Writes a sensor value in the console
+	 * @param sensor character indicating the sensor used
+	 * @param measures measured value
+	 * @param time time of the measure
+	 */
+	template<typename T>
+	void consoleWrite(std::string sensor, T measure, long time);
+	/**
+	 * @brief Writes all the sensors values in the main log file
+	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param time time of the measures
+	 */
+
+	void fileWrite(float measures[4], long time);
+	/**
+	 * @brief Writes the value of one sensor in the corresponding log file
+	 * @param sensor type of sensor (temperature, humidity, light, pressure)
+	 * @param measure measure of the sensor
+	 * @param time time of the measure
+	 */
+	template<typename T>
+	void fileWrite(std::string sensor, T value, long time);
+
 public:
 	// CONSTRUCTORS
 	/**
@@ -42,45 +72,28 @@ public:
 
 	// METHODS
 	/**
-	 * @brief Writes all the sensors values in the console
-	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param time
+	 * Receives data from the sensors
+	 * @param measures measures of the sensors
+	 * @param time time of the measures
 	 */
-	void consoleWrite(float measures[4], long time);
+	void DataReceive(float measures[4], long time);
 	/**
-	 * @brief Writes all the sensors values in the main log file
-	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param time
-	 */
-	void fileWrite(float measures[4], long time);
-	/**
-	 * @brief Writes the value of one sensor in the corresponding log file
-	 * @param sensorType first character of the name of the sensor, t : temperature, h : humidity, l : light, p : pressure
-	 * @param value value of the sensor
+	 * Receives data from a sensor
+	 * @param sensor type of sensor (temperature, humidity, light, pressure)
+	 * @param measure measure of the sensor
 	 * @param time time of the measure
 	 */
-	void fileWrite(char sensorType, float value, std::string logFileName, long time);
-	/**
-	 * @brief Writes the value of the light sensor in the lightLog file
-	 * @param value value of the light sensor
-	 * @param time time of the measure
-	 */
-	void fileWrite(bool value, long time);
-	/**
-	 * @brief Writes the value of the pressure sensor in the pressureLog file
-	 * @param value value of the pressure sensor
-	 * @param time time of the measure
-	 */
-	void fileWrite(int value, long time);
+	template<typename T>
+	void DataReceive(std::string sensor, T measure, long time);
 	/**
 	 * Toggles the console log to true or false
 	 */
+
 	void toggleConsoleLog();
 	/**
 	 * Toggles the files log to true or false
 	 */
 	void toggleFileLog();
-
 };
 
 #endif //AP4A_SERVER_HPP
