@@ -8,4 +8,11 @@
 #ifndef AP4A_HUMIDITY_HPP
 #define AP4A_HUMIDITY_HPP
 
+#include "Sensor.hpp"
+
+class Humidity : Sensor
+{
+
+};
+
 #endif //AP4A_HUMIDITY_HPP

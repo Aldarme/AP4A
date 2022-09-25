@@ -5,16 +5,11 @@
  * @brief main file
  */
 
-#include "Server.hpp"
+#include "iostream"
+#include "ctime"
 
 int main()
 {
-	Server server;
-	float t, h, l, p;
-	t = 0;
-	h = 0;
-	l = 0;
-	p = 0;
-	server.consoleWrite(t, h, l, p);
+	srand(time(nullptr)); // randomizing the seed
   return 0;
 }

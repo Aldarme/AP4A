@@ -8,4 +8,11 @@
 #ifndef AP4A_TEMPERATURE_HPP
 #define AP4A_TEMPERATURE_HPP
 
+#include "Sensor.hpp"
+
+class Temperature : Sensor
+{
+
+};
+
 #endif //AP4A_TEMPERATURE_HPP

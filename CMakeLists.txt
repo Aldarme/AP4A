@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.23)
 project(AP4A)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 
 add_executable(AP4A
         src/Server.cpp src/Server.hpp
-        src/Scheduler.cpp src/Scheduler.hpp
-        src/Sensor.cpp src/Sensor.hpp
-        src/Temperature.cpp src/Temperature.hpp
-        src/Humidity.cpp src/Humidity.hpp
-        src/Light.cpp src/Light.hpp
-        src/Pressure.cpp src/Pressure.hpp
-        src/main.cpp)
+        src/Scheduler/Scheduler.cpp src/Scheduler/Scheduler.hpp
+        src/Sensors/Sensor.cpp src/Sensors/Sensor.hpp
+        src/Sensors/Temperature.cpp src/Sensors/Temperature.hpp
+        src/Sensors/Humidity.cpp src/Sensors/Humidity.hpp
+        src/Sensors/Light.cpp src/Sensors/Light.hpp
+        src/Sensors/Pressure.cpp src/Sensors/Pressure.hpp
+        src/main.cpp src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp)

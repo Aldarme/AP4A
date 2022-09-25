@@ -23,26 +23,30 @@ Server::Server(const Server& server)
 	this->m_logActivation = server.m_logActivation;
 }
 
-void Server::consoleWrite(float temperature, float humidity, float light, float pressure)
+Server::~Server() = default;
+
+Server& Server::operator=(const Server& server) = default;
+
+void Server::consoleWrite(float temperature, float humidity, float light, float pressure, long time)
 {
-	cout << "Temperature: " << temperature << "\370C" <<
-					" | Humidity: " << humidity <<
-					" | Light: " << light <<
-					" | Pressure: " << pressure << " bar," << endl;
+	cout << time <<	" | Temperature: " << temperature << "\370C" <<
+									" | Humidity: " << humidity <<
+									" | Light: " << light <<
+									" | Pressure: " << pressure << " bar," << endl;
 }
 
-void Server::fileWrite(float temperature, float humidity, float light, float pressure)
+void Server::fileWrite(float temperature, float humidity, float light, float pressure, long time)
 {
 	ofstream logFile;
 	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/mainLog.txt", fstream::app);
-	logFile << "Temperature: " << temperature << "\370C" <<
-					" | Humidity: " << humidity <<
-					" | Light: " << light <<
-					" | Pressure: " << pressure << " bar," << endl;
+	logFile << time << " | Temperature: " << temperature << "\370C" <<
+										" | Humidity: " << humidity <<
+										" | Light: " << light <<
+										" | Pressure: " << pressure << " bar," << endl;
 	logFile.close();
 }
 
-void Server::fileWrite(char sensorType, float value)
+void Server::fileWrite(char sensorType, float value, long time)
 {
 	ofstream logFile;
 	string logFileName = "unknown";
@@ -64,10 +68,30 @@ void Server::fileWrite(char sensorType, float value)
 			break;
 	}
 	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/" + logFileName + ".txt", fstream::app);
-	logFile << "Value: " << value << "," << endl;
+	logFile << time << " | Value: " << value << "," << endl;
 	logFile.close();
 }
 
-Server::~Server() = default;
+void Server::fileWrite(bool value, long time)
+{
+	ofstream logFile;
+	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/lightLog.txt", fstream::app);
+	logFile << time << " | Value: " << value << "," << endl;
+	logFile.close();
+}
 
-Server& Server::operator=(const Server& server) = default;
+void Server::fileWrite(int value, long time)
+{
+	ofstream logFile;
+	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/pressureLog.txt", fstream::app);
+	logFile << time << " | Value: " << value << "," << endl;
+	logFile.close();
+}
+
+void Server::toggleConsoleLog() {
+	this->m_consoleActivation = not this->m_consoleActivation;
+}
+
+void Server::toggleFileLog() {
+	this->m_logActivation = not this->m_logActivation;
+}

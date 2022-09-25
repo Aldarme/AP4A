@@ -8,4 +8,11 @@
 #ifndef AP4A_LIGHT_HPP
 #define AP4A_LIGHT_HPP
 
+#include "Sensor.hpp"
+
+class Light : Sensor
+{
+
+};
+
 #endif //AP4A_LIGHT_HPP
