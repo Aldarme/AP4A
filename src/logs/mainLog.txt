@@ -1,0 +1,1 @@
+Temperature: 0øC | Humidity: 0 | Light: 0 | Pressure: 0 bar,
