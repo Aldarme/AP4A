@@ -10,9 +10,10 @@
 
 #include "Sensor.hpp"
 
-class Light : Sensor
+class Light : public Sensor
 {
-
+public:
+	Light();
 };
 
 #endif //AP4A_LIGHT_HPP

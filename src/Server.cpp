@@ -9,12 +9,10 @@
 #include "fstream"
 #include "Server.hpp"
 
-using namespace std;
-
 Server::Server()
 {
-	this->m_consoleActivation = false;
-	this->m_logActivation = false;
+	this->m_consoleActivation = true;
+	this->m_logActivation = true;
 }
 
 Server::Server(const Server& server)
@@ -27,64 +25,42 @@ Server::~Server() = default;
 
 Server& Server::operator=(const Server& server) = default;
 
-void Server::consoleWrite(float temperature, float humidity, float light, float pressure, long time)
+void Server::consoleWrite(float measures[4], long time)
 {
-	cout << time <<	" | Temperature: " << temperature << "\370C" <<
-									" | Humidity: " << humidity <<
-									" | Light: " << light <<
-									" | Pressure: " << pressure << " bar," << endl;
+	std::cout << time <<	" | Temperature: " << measures[0] << "\370C" <<
+												" | Humidity: " << measures[1] << "%" <<
+												" | Light: " << measures[2] <<
+												" | Pressure: " << measures[3] << " bar," << std::endl;
 }
 
-void Server::fileWrite(float temperature, float humidity, float light, float pressure, long time)
+void Server::fileWrite(float measures[4], long time)
 {
-	ofstream logFile;
-	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/mainLog.txt", fstream::app);
-	logFile << time << " | Temperature: " << temperature << "\370C" <<
-										" | Humidity: " << humidity <<
-										" | Light: " << light <<
-										" | Pressure: " << pressure << " bar," << endl;
+	std::ofstream logFile("logs/mainLog.txt", std::fstream::app);
+	logFile << time << "s | Temperature: " << measures[0] << "\370C" <<
+										" | Humidity: " << measures[1] << "%" <<
+										" | Light: " << measures[2] <<
+										" | Pressure: " << measures[3] << " bar," << std::endl;
 	logFile.close();
 }
 
-void Server::fileWrite(char sensorType, float value, long time)
+void Server::fileWrite(char sensorType, float value, std::string logFileName, long time)
 {
-	ofstream logFile;
-	string logFileName = "unknown";
-	switch(sensorType)
-	{
-		case 't':
-			logFileName = "temperatureLog";
-			break;
-		case 'h':
-			logFileName = "humidityLog";
-			break;
-		case 'l':
-			logFileName = "lightLog";
-			break;
-		case 'p':
-			logFileName = "pressureLog";
-			break;
-		default:
-			break;
-	}
-	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/" + logFileName + ".txt", fstream::app);
-	logFile << time << " | Value: " << value << "," << endl;
+	std::ofstream logFile("logs/" + logFileName + ".txt", std::fstream::app);
+	logFile << time << "s | Value: " << value << "," << std::endl;
 	logFile.close();
 }
 
 void Server::fileWrite(bool value, long time)
 {
-	ofstream logFile;
-	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/lightLog.txt", fstream::app);
-	logFile << time << " | Value: " << value << "," << endl;
+	std::ofstream logFile("logs/lightLog.txt", std::fstream::app);
+	logFile << time << "s | Value: " << value << "," << std::endl;
 	logFile.close();
 }
 
 void Server::fileWrite(int value, long time)
 {
-	ofstream logFile;
-	logFile.open("C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/logs/pressureLog.txt", fstream::app);
-	logFile << time << " | Value: " << value << "," << endl;
+	std::ofstream logFile("logs/pressureLog.txt", std::fstream::app);
+	logFile << time << "s | Value: " << value << "," << std::endl;
 	logFile.close();
 }
 

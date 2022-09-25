@@ -7,9 +7,15 @@
 
 #include "iostream"
 #include "ctime"
+#include "Scheduler/Scheduler.hpp"
 
 int main()
 {
 	srand(time(nullptr)); // randomizing the seed
+
+	Scheduler scheduler;
+
+	scheduler.LaunchScheduler();
+
   return 0;
 }

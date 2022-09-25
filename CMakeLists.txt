@@ -3,6 +3,8 @@ project(AP4A)
 
 set(CMAKE_CXX_STANDARD 11)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "../src")
+
 add_executable(AP4A
         src/Server.cpp src/Server.hpp
         src/Scheduler/Scheduler.cpp src/Scheduler/Scheduler.hpp
@@ -11,4 +13,5 @@ add_executable(AP4A
         src/Sensors/Humidity.cpp src/Sensors/Humidity.hpp
         src/Sensors/Light.cpp src/Sensors/Light.hpp
         src/Sensors/Pressure.cpp src/Sensors/Pressure.hpp
-        src/main.cpp src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp)
+        src/main.cpp src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp
+        logs/)

@@ -15,10 +15,23 @@ private:
 	std::clock_t m_clock;
 
 public:
+	/**
+	 * @brief Default constructor, sets the clock to 0 seconds
+	 */
 	Clock();
+	/**
+	 * @brief Default copy constructor
+	 */
 	Clock(const Clock& clock);
+	/**
+	 * @brief Default destructor
+	 */
 	~Clock();
 
+	/**
+	 * @brief gives the time since the instantiation of a Clock object
+	 * @return the time
+	 */
 	long getTime() const;
 };
 

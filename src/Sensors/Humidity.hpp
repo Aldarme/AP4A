@@ -10,9 +10,13 @@
 
 #include "Sensor.hpp"
 
-class Humidity : Sensor
+class Humidity : public Sensor
 {
-
+public:
+	/**
+	 * @brief Default constructor
+	 */
+	Humidity();
 };
 
 #endif //AP4A_HUMIDITY_HPP

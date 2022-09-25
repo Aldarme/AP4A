@@ -109,15 +109,15 @@ build CMakeFiles/AP4A.dir/src/Scheduler/Clock.cpp.obj: CXX_COMPILER__AP4A_Debug 
 
 
 #############################################
-# Link the executable AP4A.exe
+# Link the executable ..\src\AP4A.exe
 
-build AP4A.exe: CXX_EXECUTABLE_LINKER__AP4A_Debug CMakeFiles/AP4A.dir/src/Server.cpp.obj CMakeFiles/AP4A.dir/src/Scheduler/Scheduler.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Sensor.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Temperature.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Humidity.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Light.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Pressure.cpp.obj CMakeFiles/AP4A.dir/src/main.cpp.obj CMakeFiles/AP4A.dir/src/Scheduler/Clock.cpp.obj
+build ../src/AP4A.exe: CXX_EXECUTABLE_LINKER__AP4A_Debug CMakeFiles/AP4A.dir/src/Server.cpp.obj CMakeFiles/AP4A.dir/src/Scheduler/Scheduler.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Sensor.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Temperature.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Humidity.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Light.cpp.obj CMakeFiles/AP4A.dir/src/Sensors/Pressure.cpp.obj CMakeFiles/AP4A.dir/src/main.cpp.obj CMakeFiles/AP4A.dir/src/Scheduler/Clock.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AP4A.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = AP4A.exe
+  TARGET_FILE = ..\src\AP4A.exe
   TARGET_IMPLIB = libAP4A.dll.a
   TARGET_PDB = AP4A.exe.dbg
 
@@ -147,7 +147,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build AP4A: phony AP4A.exe
+build AP4A: phony ../src/AP4A.exe
+
+build AP4A.exe: phony ../src/AP4A.exe
 
 # =============================================================================
 # Folder targets.
@@ -157,7 +159,7 @@ build AP4A: phony AP4A.exe
 #############################################
 # Folder: C:/Users/Timothe/Desktop/AP4A/TP/AP4A/cmake-build-debug
 
-build all: phony AP4A.exe
+build all: phony ../src/AP4A.exe
 
 # =============================================================================
 # Built-in targets

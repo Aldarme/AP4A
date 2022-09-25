@@ -8,6 +8,8 @@
 #ifndef AP4A_SERVER_HPP
 #define AP4A_SERVER_HPP
 
+#include "iostream"
+
 class Server
 {
 private:
@@ -41,29 +43,23 @@ public:
 	// METHODS
 	/**
 	 * @brief Writes all the sensors values in the console
-	 * @param temperature value from temperature sensor
-	 * @param humidity value from humidity sensor
-	 * @param light value from light sensor
-	 * @param pressure value from pressure sensor
-	 * @param time time of the measure
+	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param time
 	 */
-	void consoleWrite(float temperature, float humidity, float light, float pressure, long time);
+	void consoleWrite(float measures[4], long time);
 	/**
 	 * @brief Writes all the sensors values in the main log file
-	 * @param temperature value from temperature sensor
-	 * @param humidity value from humidity sensor
-	 * @param light value from light sensor
-	 * @param pressure value from pressure sensor
-	 * @param time time of the measure
+	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param time
 	 */
-	void fileWrite(float temperature, float humidity, float light, float pressure, long time);
+	void fileWrite(float measures[4], long time);
 	/**
 	 * @brief Writes the value of one sensor in the corresponding log file
 	 * @param sensorType first character of the name of the sensor, t : temperature, h : humidity, l : light, p : pressure
 	 * @param value value of the sensor
 	 * @param time time of the measure
 	 */
-	void fileWrite(char sensorType, float value, long time);
+	void fileWrite(char sensorType, float value, std::string logFileName, long time);
 	/**
 	 * @brief Writes the value of the light sensor in the lightLog file
 	 * @param value value of the light sensor

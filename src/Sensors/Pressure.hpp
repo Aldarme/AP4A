@@ -10,9 +10,10 @@
 
 #include "Sensor.hpp"
 
-class Pressure : Sensor
+class Pressure : public Sensor
 {
-
+public:
+	Pressure();
 };
 
 #endif //AP4A_PRESSURE_HPP

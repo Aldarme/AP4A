@@ -1,1 +1,0 @@
-Temperature: 1øC | Humidity: 2 | Light: 3 | Pressure: 4 bar,

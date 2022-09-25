@@ -10,9 +10,10 @@
 
 #include "Sensor.hpp"
 
-class Temperature : Sensor
+class Temperature : public Sensor
 {
-
+public:
+	Temperature();
 };
 
 #endif //AP4A_TEMPERATURE_HPP

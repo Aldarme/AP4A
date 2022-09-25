@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "AP4A.exe"
+			"path" : "C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/AP4A.exe"
 		},
 		{
-			"path" : "AP4A.pdb"
+			"path" : "C:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/AP4A.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -123,6 +123,13 @@
 				11,
 				13,
 				16
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				17
 			]
 		}
 	],
@@ -221,6 +228,11 @@
 			"backtrace" : 1,
 			"path" : "src/Scheduler/Clock.hpp",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : ".",
+			"sourceGroupIndex" : 2
 		}
 	],
 	"type" : "EXECUTABLE"

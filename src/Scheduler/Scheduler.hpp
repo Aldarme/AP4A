@@ -26,12 +26,26 @@ private:
 	Humidity m_humiditySensor;
 	Light m_lightSensor;
 	Pressure m_pressureSensor;
+	float m_measures[4] = {0, 0, 0, 0};
+	long m_lastMeasure;
 
 public:
+	/**
+	 * Default constructor
+	 */
 	Scheduler();
+	/**
+	 * Default destructor
+	 */
 	~Scheduler();
-
+	/**
+	 * @brief Starts the schedule, therefore the simulation
+	 */
 	void LaunchScheduler();
+	/**
+	 * @brief Retrieves all data of the sensors into the m_measures attribute
+	 */
+	void RetrieveAllData();
 };
 
 #endif //AP4A_SCHEDULER_HPP

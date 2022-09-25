@@ -8,10 +8,13 @@
 #ifndef AP4A_SENSOR_HPP
 #define AP4A_SENSOR_HPP
 
+#include "iostream"
+
 class Sensor
 {
 private:
 protected:
+	std::string m_logFileName;
 	/**
 	 * @brief Generates random value to simulate the sensor
 	 * @return a random float

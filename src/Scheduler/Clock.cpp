@@ -18,5 +18,5 @@ Clock::Clock(const Clock& clock)
 Clock::~Clock() = default;
 
 long Clock::getTime() const {
-	return clock();
+	return clock() / 1000;
 }
