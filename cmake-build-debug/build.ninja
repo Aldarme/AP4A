@@ -55,6 +55,54 @@ build CMakeFiles/AP4A.dir/TP1/hello_world.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/
   OBJECT_DIR = CMakeFiles\AP4A.dir
   OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\TP1
 
+build CMakeFiles/AP4A.dir/src/Server.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Server.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Server.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Scheduler.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Scheduler.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Scheduler.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Sensor.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Sensor.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Sensor.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Temperature.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Temperature.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Temperature.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Humidity.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Humidity.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Humidity.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Light.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Light.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Light.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/Pressure.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/Pressure.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\Pressure.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
+build CMakeFiles/AP4A.dir/src/main.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/Users/Timothe/Desktop/AP4A/TP/AP4A/src/main.cpp || cmake_object_order_depends_target_AP4A
+  DEP_FILE = CMakeFiles\AP4A.dir\src\main.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\AP4A.dir
+  OBJECT_FILE_DIR = CMakeFiles\AP4A.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AP4A
@@ -63,7 +111,7 @@ build CMakeFiles/AP4A.dir/TP1/hello_world.cpp.obj: CXX_COMPILER__AP4A_Debug C$:/
 #############################################
 # Link the executable AP4A.exe
 
-build AP4A.exe: CXX_EXECUTABLE_LINKER__AP4A_Debug CMakeFiles/AP4A.dir/TP1/hello_world.cpp.obj
+build AP4A.exe: CXX_EXECUTABLE_LINKER__AP4A_Debug CMakeFiles/AP4A.dir/TP1/hello_world.cpp.obj CMakeFiles/AP4A.dir/src/Server.cpp.obj CMakeFiles/AP4A.dir/src/Scheduler.cpp.obj CMakeFiles/AP4A.dir/src/Sensor.cpp.obj CMakeFiles/AP4A.dir/src/Temperature.cpp.obj CMakeFiles/AP4A.dir/src/Humidity.cpp.obj CMakeFiles/AP4A.dir/src/Light.cpp.obj CMakeFiles/AP4A.dir/src/Pressure.cpp.obj CMakeFiles/AP4A.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AP4A.dir
