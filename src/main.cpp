@@ -11,7 +11,7 @@ int main()
 {
 	Plane plane;
 
-	plane.LaunchSimulation(5);
+	plane.LaunchSimulation(10);
 
   return 0;
 }

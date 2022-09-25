@@ -14,12 +14,13 @@ class Sensor
 {
 private:
 protected:
+	float m_minValue, m_maxValue;
 	std::string m_logFileName;
 	/**
 	 * @brief Generates random value to simulate the sensor
 	 * @return a random float
 	 */
-	float generateRandomValue();
+	float generateRandomValue(float min, float max);
 public:
 	/**
 	 * @brief Default constructor

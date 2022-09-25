@@ -30,8 +30,8 @@ public:
 	~Plane();
 
 	/**
-	 * Launches the simulation for a definite time
-	 * @param time time to run the simulation in seconds
+	 * Launches the simulation for a definite time, or indefinite if the time is not specified
+	 * @param time time to run the simulation in seconds, optional
 	 */
 	void LaunchSimulation(long time = 2147483647);
 };
