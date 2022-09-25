@@ -1,6 +1,0 @@
-0s | Temperature: 54.25øC | Humidity: 2.42% | Light: 11.57 | Pressure: 85.35 bar,
-1s | Temperature: 3.52øC | Humidity: 24.6% | Light: 26.9 | Pressure: 93.26 bar,
-2s | Temperature: 90.1øC | Humidity: 2.69% | Light: 23.61 | Pressure: 76.8 bar,
-3s | Temperature: 67.94øC | Humidity: 61.41% | Light: 53.11 | Pressure: 13.41 bar,
-4s | Temperature: 69.01øC | Humidity: 71.26% | Light: 30.13 | Pressure: 20.82 bar,
-5s | Temperature: 24.45øC | Humidity: 66.64% | Light: 70.22 | Pressure: 87.78 bar,

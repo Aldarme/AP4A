@@ -18,12 +18,13 @@ Scheduler::Scheduler() {
 	this->m_lastMeasure = -1;
 }
 
+Scheduler::Scheduler(const Scheduler& scheduler) = default;
 Scheduler::~Scheduler() = default;
 
-void Scheduler::LaunchScheduler()
+void Scheduler::LaunchScheduler(long time)
 {
 	// The simulation keeps going until the user stops the program
-	while(true)
+	while(this->m_clock.getTime() <= time)
 	{
 		// At each new second, logs the values using the server
 		if(this->m_lastMeasure != this->m_clock.getTime())

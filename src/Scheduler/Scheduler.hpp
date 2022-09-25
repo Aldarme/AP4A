@@ -11,7 +11,7 @@
 
 #include "ctime"
 #include "Clock.hpp"
-#include "../Server.hpp"
+#include "../Server/Server.hpp"
 #include "../Sensors/Temperature.hpp"
 #include "../Sensors/Humidity.hpp"
 #include "../Sensors/Light.hpp"
@@ -35,13 +35,19 @@ public:
 	 */
 	Scheduler();
 	/**
+	 * Default copy constructor
+	 * @param scheduler scheduler to copy
+	 */
+	Scheduler(const Scheduler& scheduler);
+	/**
 	 * Default destructor
 	 */
 	~Scheduler();
 	/**
 	 * @brief Starts the schedule, therefore the simulation
+	 * @param time time to run the simulation in seconds
 	 */
-	void LaunchScheduler();
+	void LaunchScheduler(long time);
 	/**
 	 * @brief Retrieves all data of the sensors into the m_measures attribute
 	 */

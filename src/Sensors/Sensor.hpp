@@ -27,8 +27,9 @@ public:
 	Sensor();
 	/**
 	 * @brief Default copy constructor
+	 * @param sensor sensor to copy
 	 */
-	Sensor(Sensor& sensor);
+	Sensor(const Sensor& sensor);
 	/**
 	 * @brief Default destructor
 	 */

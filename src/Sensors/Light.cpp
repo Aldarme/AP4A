@@ -6,10 +6,12 @@
  */
 
 #include "Light.hpp"
+#include "ctime"
 
 
 Light::Light()
 {
+	srand(time(nullptr)); // randomizing the seed
 	this->m_logFileName = "lightLog";
 }
 

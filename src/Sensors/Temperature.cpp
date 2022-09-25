@@ -5,9 +5,11 @@
  * @brief Temperature sensor
  */
 #include "Temperature.hpp"
+#include "ctime"
 
 Temperature::Temperature()
 {
+	srand(time(nullptr)); // randomizing the seed
 	this->m_logFileName = "temperatureLog";
 }
 

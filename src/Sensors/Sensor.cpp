@@ -14,7 +14,7 @@ float Sensor::generateRandomValue()
 }
 
 Sensor::Sensor() = default;
-Sensor::Sensor(Sensor& sensor) = default;
+Sensor::Sensor(const Sensor& sensor) = default;
 Sensor::~Sensor() = default;
 
 float Sensor::getData() {

@@ -5,17 +5,13 @@
  * @brief main file
  */
 
-#include "iostream"
-#include "ctime"
-#include "Scheduler/Scheduler.hpp"
+#include "Plane.hpp"
 
 int main()
 {
-	srand(time(nullptr)); // randomizing the seed
+	Plane plane;
 
-	Scheduler scheduler;
-
-	scheduler.LaunchScheduler();
+	plane.LaunchSimulation(5);
 
   return 0;
 }
