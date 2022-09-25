@@ -4,4 +4,4 @@ project(AP4A)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(AP4A
-        hello_world.cpp)
+        TP1/hello_world.cpp)
