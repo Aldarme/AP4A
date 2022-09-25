@@ -1,0 +1,5 @@
+# ninja log v5
+7	965	6854785630668903	CMakeFiles/AP4A.dir/main.cpp.obj	26f74c5202fd82db
+470	823	6857981099471693	AP4A.exe	de11f50c86359b6c
+21	628	6858066387528836	build.ninja	14ab8b68031fced1
+0	469	6857981096092728	CMakeFiles/AP4A.dir/hello_world.cpp.obj	1906e4b5605b1fbe
