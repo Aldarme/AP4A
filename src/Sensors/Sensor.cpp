@@ -6,11 +6,12 @@
  */
 
 #include "iostream"
+#include "cmath"
 #include "Sensor.hpp"
 
-float Sensor::generateRandomValue()
+float Sensor::generateRandomValue(float min, float max)
 {
-	return static_cast <float> (std::rand() % 10000) / 100;
+	return static_cast <float> (std::rand() % static_cast <int>(floor(max - min + 1) * 10)) / 10 + min;
 }
 
 Sensor::Sensor() = default;
@@ -18,5 +19,5 @@ Sensor::Sensor(const Sensor& sensor) = default;
 Sensor::~Sensor() = default;
 
 float Sensor::getData() {
-	return this->generateRandomValue();
+	return this->generateRandomValue(this->m_minValue, this->m_maxValue);
 }

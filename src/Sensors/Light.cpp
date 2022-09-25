@@ -12,6 +12,8 @@
 Light::Light()
 {
 	srand(time(nullptr)); // randomizing the seed
+	this->m_minValue = 0;
+	this->m_maxValue = 1;
 	this->m_logFileName = "lightLog";
 }
 

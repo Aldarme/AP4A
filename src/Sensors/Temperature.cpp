@@ -10,6 +10,8 @@
 Temperature::Temperature()
 {
 	srand(time(nullptr)); // randomizing the seed
+	this->m_minValue = -15;
+	this->m_maxValue = 0;
 	this->m_logFileName = "temperatureLog";
 }
 
