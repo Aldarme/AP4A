@@ -7,7 +7,7 @@ Server::Server() {
 }
 
 Server::Server(const Server& s) {
-
+    
 }
 
 Server::~Server() {
