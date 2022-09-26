@@ -10,7 +10,6 @@
 Plane::Plane() = default;
 Plane::Plane(const Plane& plane) = default;
 Plane::~Plane() = default;
-Plane& Plane::operator=(const Plane &plane) = default;
 
 void Plane::LaunchSimulation(long time)
 {

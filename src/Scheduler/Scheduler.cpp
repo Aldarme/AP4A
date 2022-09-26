@@ -20,7 +20,6 @@ Scheduler::Scheduler() {
 
 Scheduler::Scheduler(const Scheduler& scheduler) = default;
 Scheduler::~Scheduler() = default;
-Scheduler& Scheduler::operator=(const Scheduler &scheduler) = default;
 
 void Scheduler::LaunchScheduler(long time)
 {

@@ -47,14 +47,30 @@ private:
 	void fileWrite(std::string sensor, T value, long time);
 
 public:
+	// CONSTRUCTORS
 	/**
-	 * @brief Orthodox canonical form constructors, destructor and affectation
+	 * @brief Default constructor
 	 */
 	Server();
+	/**
+	 * @brief Copy constructor
+	 * @param server : Server object to copy into the new one
+	 */
 	Server(const Server& server);
+	/**
+	 * @brief Destructor
+	 */
 	~Server();
+
+	/**
+	 * @brief Equal operator, copies the server object to the caller
+	 * @param server : server to copy
+	 * @return a reference to the copied object
+	 */
 	Server& operator=(const Server& server);
 
+
+	// METHODS
 	/**
 	 * Receives data from the sensors
 	 * @param measures measures of the sensors
