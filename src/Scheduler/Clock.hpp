@@ -12,7 +12,8 @@
 
 class Clock {
 private:
-	long m_startTime;
+	std::clock_t m_clock;
+
 public:
 	/**
 	 * @brief Orthodox canonical form constructors, destructor and affectation
@@ -23,12 +24,8 @@ public:
 	Clock& operator=(const Clock& clock);
 
 	/**
-	 * @brief Sets the starting time of the simulation
-	 */
-	void setStartTime();
-	/**
-	 * @brief Gives the time since the instantiation of the Clock object
-	 * @return The time since the beginning of the simulation
+	 * @brief gives the time since the instantiation of the Clock object
+	 * @return the time
 	 */
 	long getTime() const;
 };

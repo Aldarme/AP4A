@@ -13,6 +13,5 @@ add_executable(AP4A
         src/Sensors/Humidity.cpp src/Sensors/Humidity.hpp
         src/Sensors/Light.cpp src/Sensors/Light.hpp
         src/Sensors/Pressure.cpp src/Sensors/Pressure.hpp
-        src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp
-        src/Plane.cpp src/Plane.hpp
-        src/main.cpp)
+        src/main.cpp src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp
+        logs/ src/Plane.cpp src/Plane.hpp)

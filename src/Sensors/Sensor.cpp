@@ -11,13 +11,14 @@
 
 float Sensor::generateRandomValue(float min, float max)
 {
-	return static_cast <float> (std::rand() % static_cast <int>(floor(max - min) * 10)) / 10 + min;
+	return static_cast <float> (std::rand() % static_cast <int>(floor(max - min + 1) * 10)) / 10 + min;
 }
 
 Sensor::Sensor()
 {
 	this->m_minValue = 0;
 	this->m_maxValue = 1;
+	this->m_logFileName = "unknown";
 }
 Sensor::Sensor(const Sensor& sensor) = default;
 Sensor::~Sensor() = default;

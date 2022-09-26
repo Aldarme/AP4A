@@ -6,16 +6,13 @@
  */
 
 #include "Plane.hpp"
-#include "iostream"
 
 Plane::Plane() = default;
 Plane::Plane(const Plane& plane) = default;
 Plane::~Plane() = default;
 Plane& Plane::operator=(const Plane &plane) = default;
 
-void Plane::LaunchSimulation()
+void Plane::LaunchSimulation(long time)
 {
-	std::cout << "__ PLANE SENSORS SIMULATION - IOT ECOSYSTEM __" << std::endl << std::endl;
-
-	this->m_scheduler.LaunchScheduler();
+	this->scheduler.LaunchScheduler(time);
 }

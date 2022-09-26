@@ -13,8 +13,8 @@
 class Server
 {
 private:
-	bool m_consoleActivation; // indicates if the server will display the sensor values in the console
-	bool m_logActivation; // indicates if the server will log the sensor values in the log files
+	bool m_consoleActivation;
+	bool m_logActivation;
 
 	/**
 	 * @brief Writes all the sensors values in the console
@@ -30,12 +30,12 @@ private:
 	 */
 	template<typename T>
 	void consoleWrite(std::string sensor, T measure, long time);
-
 	/**
 	 * @brief Writes all the sensors values in the main log file
 	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
 	 * @param time time of the measures
 	 */
+
 	void fileWrite(float measures[4], long time);
 	/**
 	 * @brief Writes the value of one sensor in the corresponding log file
@@ -62,17 +62,17 @@ public:
 	 */
 	void DataReceive(float measures[4], long time);
 	/**
-	 * Receives data from a single sensor
+	 * Receives data from a sensor
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
 	 * @param measure measure of the sensor
 	 * @param time time of the measure
 	 */
 	template<typename T>
 	void DataReceive(std::string sensor, T measure, long time);
-
 	/**
 	 * Toggles the console log to true or false
 	 */
+
 	void toggleConsoleLog();
 	/**
 	 * Toggles the files log to true or false

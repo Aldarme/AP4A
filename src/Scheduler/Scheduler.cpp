@@ -22,18 +22,10 @@ Scheduler::Scheduler(const Scheduler& scheduler) = default;
 Scheduler::~Scheduler() = default;
 Scheduler& Scheduler::operator=(const Scheduler &scheduler) = default;
 
-void Scheduler::LaunchScheduler()
+void Scheduler::LaunchScheduler(long time)
 {
-	askUserForOutput();
-
-	long simDuration = askUserForSimulationTime();
-
-	std::cout << "Starting the simulation ..." << std::endl;
-
-	m_clock.setStartTime();
-
-	// The simulation keeps going until the end of the time inputted previously
-	while(this->m_clock.getTime() <= simDuration)
+	// The simulation keeps going until the user stops the program
+	while(this->m_clock.getTime() <= time)
 	{
 		// At each new second, logs the values using the server
 		if(this->m_lastMeasure != this->m_clock.getTime())
@@ -44,34 +36,6 @@ void Scheduler::LaunchScheduler()
 			m_server.DataReceive(m_measures, this->m_clock.getTime());
 		}
 	}
-}
-
-void Scheduler::askUserForOutput() {
-	char consoleActivation;
-	char logsActivation;
-	std::cout << "Do you want to activate the console write ? [Y/N] :" << std::endl;
-	std::cin >> consoleActivation;
-	std::cout << "Do you want to activate the log write ? [Y/N] :" << std::endl;
-	std::cin >> logsActivation;
-
-	if (consoleActivation != 'Y' and consoleActivation != 'y') // if the user says no
-	{
-		m_server.toggleConsoleLog(); // toggles to false, console log is set to true by default
-	}
-	if (logsActivation != 'Y' and logsActivation != 'y') // if the user says no
-	{
-		m_server.toggleFileLog(); // toggles to false, file log is set to true by default
-	}
-}
-
-long Scheduler::askUserForSimulationTime() {
-	long simDuration = 0;
-	std::cout << "How much time (in seconds) do you want the simulation to last ? (type a negative value for an indefinite time) :" << std::endl;
-	std::cin >> simDuration;
-	if (simDuration < 0) {
-		simDuration = 2147483647;
-	}
-	return simDuration;
 }
 
 void Scheduler::RetrieveAllData()
