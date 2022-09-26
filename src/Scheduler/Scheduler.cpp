@@ -68,8 +68,7 @@ long Scheduler::askUserForSimulationTime() {
 	long simDuration = 0;
 	std::cout << "How much time (in seconds) do you want the simulation to last ? (type a negative value for an indefinite time) :" << std::endl;
 	std::cin >> simDuration;
-	if (simDuration < 0)
-	{
+	if (simDuration < 0) {
 		simDuration = 2147483647;
 	}
 	return simDuration;
