@@ -7,14 +7,14 @@
 
 #include "Clock.hpp"
 
-Clock::Clock()
-{
-	this->m_clock = clock();
-}
+Clock::Clock() : m_startTime() {};
 Clock::Clock(const Clock& clock) = default;
 Clock::~Clock() = default;
 Clock& Clock::operator=(const Clock &clock) = default;
 
+void Clock::setStartTime() {
+	this->m_startTime = clock();
+}
 long Clock::getTime() const {
-	return clock() / 1000;
+	return (clock() - m_startTime) / 1000;
 }
