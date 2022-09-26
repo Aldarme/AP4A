@@ -1,5 +1,8 @@
 #include "Sensor.h"
 #include <cstdlib>
+#include <iostream>
+
+using namespace std;
 
 
 Sensor::Sensor() {
@@ -14,7 +17,12 @@ Sensor::Sensor(const Sensor& sensor) {
     this->data = sensor.data;
 }
 
+void Sensor::write(){
+    cout << this->getData() << endl;
+}
+
 int Sensor::getData() {
+    this->setData(aleaGenVal());
     return data;
 }
 

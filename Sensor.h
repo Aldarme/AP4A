@@ -15,6 +15,7 @@ public:
 	Sensor(const Sensor& sensor);
 	int getData();
 	void setData(int data);
+	void write();
 protected:
 	int aleaGenVal();
 

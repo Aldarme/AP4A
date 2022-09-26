@@ -12,9 +12,6 @@ private :
     Sensor s1, s2, s3, s4;
 public:
     Scheduler();
-    
-private:
     void delta();
-    void write(Sensor& s);
 };
 

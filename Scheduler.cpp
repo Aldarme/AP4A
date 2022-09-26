@@ -10,7 +10,6 @@ Scheduler::Scheduler() {
     s2 = Light();
     s3 = Pression();
     s4 = Temperature();
-    delta();
 }
 
 void Scheduler::delta() {
@@ -19,21 +18,17 @@ void Scheduler::delta() {
     double ticks = 1;
     int count = 0;
 
-    while(count  < 10){
+    while(count  < 7){
        time_t now = time(NULL);
         delta += (now - lastTime);
         lastTime = now;
        if(delta >= 1) {
-            write(s1);
-            write(s2);
-            write(s3);
-            write(s4);
+            s1.write();
+            s2.write();
+            s3.write();
+            s4.write();
             delta = 0;
             count++;
        }
     }
-}
-
-void Scheduler::write(Sensor& s) {
-    cout << s.getData() << endl;
 }
