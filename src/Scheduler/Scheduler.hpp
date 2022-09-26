@@ -20,34 +20,37 @@
 class Scheduler
 {
 private:
-	Clock m_clock;
-	Server m_server;
-	Temperature m_temperatureSensor;
-	Humidity m_humiditySensor;
-	Light m_lightSensor;
-	Pressure m_pressureSensor;
-	float m_measures[4] = {0, 0, 0, 0};
-	long m_lastMeasure;
+	Clock m_clock; // Clock object to time the measures
+	Server m_server; // Server to store and display the measures
+	Temperature m_temperatureSensor; // Temperature sensor
+	Humidity m_humiditySensor; // Humidity sensor
+	Light m_lightSensor; // Light sensor
+	Pressure m_pressureSensor; // Pressure sensor
+	float m_measures[4] = {0, 0, 0, 0}; // Measures of the sensors
+	long m_lastMeasure; // time of the least measure
 
 public:
 	/**
-	 * Default constructor
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
 	Scheduler();
-	/**
-	 * Default copy constructor
-	 * @param scheduler scheduler to copy
-	 */
 	Scheduler(const Scheduler& scheduler);
-	/**
-	 * Default destructor
-	 */
 	~Scheduler();
+	Scheduler& operator=(const Scheduler& scheduler);
+
 	/**
 	 * @brief Starts the schedule, therefore the simulation
-	 * @param time time to run the simulation in seconds
 	 */
-	void LaunchScheduler(long time);
+	void LaunchScheduler();
+	/**
+	 * @brief Asks the user if he wants to enable or disable the file and console log of the sensors
+	 */
+	void askUserForOutput();
+	/**
+	 * @brief Asks the user for the simulation duration
+	 * @return The time that the simulation lasts in seconds
+	 */
+	long askUserForSimulationTime();
 	/**
 	 * @brief Retrieves all data of the sensors into the m_measures attribute
 	 */

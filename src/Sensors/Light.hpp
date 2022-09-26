@@ -13,6 +13,9 @@
 class Light : public Sensor
 {
 public:
+	/**
+	 * @brief Default constructor
+	 */
 	Light();
 };
 

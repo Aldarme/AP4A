@@ -12,5 +12,4 @@ Humidity::Humidity()
 	srand(time(nullptr)); // randomizing the seed
 	this->m_minValue = 10;
 	this->m_maxValue = 20;
-	this->m_logFileName = "humidityLog";
 }

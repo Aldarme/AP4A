@@ -12,28 +12,22 @@
 
 class Plane {
 private:
-	Scheduler scheduler;
+	Scheduler m_scheduler; // Scheduler of the simulation
 
 public:
 	/**
-	 * Default constructor
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
 	Plane();
-	/**
-	 * Default copy constructor
-	 * @param plane object to copy
-	 */
 	Plane(const Plane& plane);
-	/**
-	 * Default destructor
-	 */
 	~Plane();
+	Plane& operator=(const Plane& plane);
 
 	/**
 	 * Launches the simulation for a definite time, or indefinite if the time is not specified
 	 * @param time time to run the simulation in seconds, optional
 	 */
-	void LaunchSimulation(long time = 2147483647);
+	void LaunchSimulation();
 };
 
 
