@@ -10,6 +10,8 @@
 Pressure::Pressure()
 {
 	srand(time(nullptr)); // randomizing the seed
+	this->m_unit = "mbar";
+	this->m_measuresPeriod = 2;
 	this->m_minValue = 540;
 	this->m_maxValue = 650;
 }

@@ -33,12 +33,6 @@ void Server::consoleWrite(float measures[4], long time)
 						" | Pressure: " << measures[3] << " mbar," << std::endl;
 }
 
-template<typename T>
-void Server::consoleWrite(std::string sensor, T measure, long time)
-{
-	std::cout << time << "s | " << sensor << " : " << measure << std::endl;
-}
-
 
 void Server::fileWrite(float measures[4], long time)
 {
@@ -47,14 +41,6 @@ void Server::fileWrite(float measures[4], long time)
 					" | Humidity: " << measures[1] << "%" <<
 					" | Light: " << measures[2] <<
 					" | Pressure: " << measures[3] << " mbar," << std::endl;
-	logFile.close();
-}
-
-template<typename T>
-void Server::fileWrite(std::string sensor, T value, long time)
-{
-	std::ofstream logFile("logs/" + sensor + "Log.txt", std::fstream::app);
-	logFile << time << "s | Value: " << value << "," << std::endl;
 	logFile.close();
 }
 
@@ -68,19 +54,6 @@ void Server::DataReceive(float measures[4], long time)
 	if (m_logActivation)
 	{
 		fileWrite(measures, time);
-	}
-}
-
-template<typename T>
-void Server::DataReceive(std::string sensor, T measure, long time)
-{
-	if (m_consoleActivation)
-	{
-		consoleWrite(sensor, measure, time);
-	}
-	if (m_logActivation)
-	{
-		fileWrite(sensor, measure, time);
 	}
 }
 

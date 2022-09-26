@@ -55,6 +55,13 @@ public:
 	 * @brief Retrieves all data of the sensors into the m_measures attribute
 	 */
 	void RetrieveAllData();
+	/**
+	 * Checks for a sensor if data should be transmitted at this time
+	 * @param sensor sensor from which we transmit the data
+	 * @param sensorName name of the sensor
+	 * @param currentTime current time of the simulation
+	 */
+	void checkForMeasureTransmission(Sensor sensor, std::string sensorName, long currentTime);
 };
 
 #endif //AP4A_SCHEDULER_HPP

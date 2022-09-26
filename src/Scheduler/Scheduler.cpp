@@ -7,6 +7,7 @@
  */
 
 #include "Scheduler.hpp"
+#include "thread"
 
 Scheduler::Scheduler() {
 	this->m_clock = *new Clock();
@@ -39,9 +40,27 @@ void Scheduler::LaunchScheduler()
 		if(this->m_lastMeasure != this->m_clock.getTime())
 		{
 			this->m_lastMeasure = this->m_clock.getTime();
-			RetrieveAllData();
-			// Sends all the data to the server
-			m_server.DataReceive(m_measures, this->m_clock.getTime());
+			// TO USE IF YOU WANT ALL THE DATA TO BE STORED IN THE MAIN LOG FILE
+			// RetrieveAllData();
+			// m_server.DataReceive(m_measures, this->m_clock.getTime());
+
+			// For each sensor, checks if a measure period has been reached, if so transmits the data to the server
+			if (this->m_lastMeasure % m_temperatureSensor.getMeasurePeriod() == 0)
+			{
+				m_server.DataReceive("temperature", m_temperatureSensor.getUnit(), m_temperatureSensor.getData(), this->m_lastMeasure);
+			}
+			if (this->m_lastMeasure % m_humiditySensor.getMeasurePeriod() == 0)
+			{
+				m_server.DataReceive("humidity", m_humiditySensor.getUnit(), m_humiditySensor.getData(), this->m_lastMeasure);
+			}
+			if (this->m_lastMeasure % m_lightSensor.getMeasurePeriod() == 0)
+			{
+				m_server.DataReceive("light", m_lightSensor.getUnit(), m_lightSensor.getData(), this->m_lastMeasure);
+			}
+			if (this->m_lastMeasure % m_pressureSensor.getMeasurePeriod() == 0)
+			{
+				m_server.DataReceive("pressure", m_pressureSensor.getUnit(), m_pressureSensor.getData(), this->m_lastMeasure);
+			}
 		}
 	}
 }

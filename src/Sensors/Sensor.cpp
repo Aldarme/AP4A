@@ -16,6 +16,8 @@ float Sensor::generateRandomValue(float min, float max)
 
 Sensor::Sensor()
 {
+	this->m_unit = "";
+	this->m_measuresPeriod = 1;
 	this->m_minValue = 0;
 	this->m_maxValue = 1;
 }
@@ -23,6 +25,17 @@ Sensor::Sensor(const Sensor& sensor) = default;
 Sensor::~Sensor() = default;
 Sensor& Sensor::operator=(const Sensor &sensor) = default;
 
-float Sensor::getData() {
+float Sensor::getData()
+{
 	return this->generateRandomValue(this->m_minValue, this->m_maxValue);
+}
+
+int Sensor::getMeasurePeriod()
+{
+	return this->m_measuresPeriod;
+}
+
+std::string Sensor::getUnit()
+{
+	return this->m_unit;
 }
