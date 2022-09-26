@@ -13,6 +13,9 @@
 class Pressure : public Sensor
 {
 public:
+	/**
+	 * @brief Default constructor
+	 */
 	Pressure();
 };
 

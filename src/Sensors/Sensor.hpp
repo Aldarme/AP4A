@@ -14,27 +14,23 @@ class Sensor
 {
 private:
 protected:
-	float m_minValue, m_maxValue;
+	float m_minValue{}, m_maxValue{};
 	std::string m_logFileName;
 	/**
 	 * @brief Generates random value to simulate the sensor
-	 * @return a random float
+	 * @param min minimum value
+	 * @param max maximum value
+	 * @return a random float between min and max
 	 */
 	float generateRandomValue(float min, float max);
 public:
 	/**
-	 * @brief Default constructor
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
 	Sensor();
-	/**
-	 * @brief Default copy constructor
-	 * @param sensor sensor to copy
-	 */
 	Sensor(const Sensor& sensor);
-	/**
-	 * @brief Default destructor
-	 */
 	~Sensor();
+	Sensor& operator=(const Sensor& sensor);
 
 	/**
 	 * Retrieves data from the sensor

@@ -11,11 +11,9 @@ Clock::Clock()
 {
 	this->m_clock = clock();
 }
-Clock::Clock(const Clock& clock)
-{
-	this->m_clock = clock.m_clock;
-}
+Clock::Clock(const Clock& clock) = default;
 Clock::~Clock() = default;
+Clock& Clock::operator=(const Clock &clock) = default;
 
 long Clock::getTime() const {
 	return clock() / 1000;
