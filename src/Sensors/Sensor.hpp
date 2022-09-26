@@ -32,7 +32,7 @@ public:
 	Sensor& operator=(const Sensor& sensor);
 
 	/**
-	 * Retrieves data from the sensor
+	 * @brief Retrieves data from the sensor
 	 * @return the value of the sensor
 	 */
 	float getData();

@@ -16,3 +16,13 @@ Light::Light()
 	this->m_maxValue = 1;
 }
 
+bool Light::generateRandomValue()
+{
+	return rand() % 2;
+}
+
+bool Light::getData()
+{
+	return this->generateRandomValue();
+}
+

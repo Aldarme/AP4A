@@ -40,7 +40,7 @@ void Scheduler::LaunchScheduler()
 		{
 			this->m_lastMeasure = this->m_clock.getTime();
 			RetrieveAllData();
-			// sends all the data to the server
+			// Sends all the data to the server
 			m_server.DataReceive(m_measures, this->m_clock.getTime());
 		}
 	}
