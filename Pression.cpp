@@ -1,5 +1,5 @@
 #include "Pression.h"
 
 Pression::Pression() {
-	this->setData(10);
+	this->setData(this->aleaGenVal());
 }

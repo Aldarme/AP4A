@@ -1,5 +1,5 @@
 #include "Humidity.h"
 
 Humidity::Humidity() {
-	this->setData(1);
+	this->setData(this->aleaGenVal());
 }

@@ -1,5 +1,5 @@
 #include "Temperature.h"
 
 Temperature::Temperature() {
-	this->setData(3);
+	this->setData(this->aleaGenVal());
 }

@@ -4,5 +4,5 @@
 using namespace std;
 
 Light::Light() {
-	this->setData(4);
+	this->setData(this->aleaGenVal());
 }
