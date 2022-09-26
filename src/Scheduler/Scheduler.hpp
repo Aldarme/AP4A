@@ -31,18 +31,13 @@ private:
 
 public:
 	/**
-	 * Default constructor
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
 	Scheduler();
-	/**
-	 * Default copy constructor
-	 * @param scheduler scheduler to copy
-	 */
 	Scheduler(const Scheduler& scheduler);
-	/**
-	 * Default destructor
-	 */
 	~Scheduler();
+	Scheduler& operator=(const Scheduler& scheduler);
+
 	/**
 	 * @brief Starts the schedule, therefore the simulation
 	 * @param time time to run the simulation in seconds

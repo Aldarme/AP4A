@@ -13,6 +13,9 @@
 class Temperature : public Sensor
 {
 public:
+	/**
+	 * @brief Default constructor
+	 */
 	Temperature();
 };
 

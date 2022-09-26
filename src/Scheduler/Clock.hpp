@@ -16,20 +16,15 @@ private:
 
 public:
 	/**
-	 * @brief Default constructor, sets the clock to 0 seconds
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
-	Clock();
-	/**
-	 * @brief Default copy constructor
-	 */
+	Clock(); // clock is set to t=0 by default
 	Clock(const Clock& clock);
-	/**
-	 * @brief Default destructor
-	 */
 	~Clock();
+	Clock& operator=(const Clock& clock);
 
 	/**
-	 * @brief gives the time since the instantiation of a Clock object
+	 * @brief gives the time since the instantiation of the Clock object
 	 * @return the time
 	 */
 	long getTime() const;

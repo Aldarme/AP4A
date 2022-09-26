@@ -16,18 +16,12 @@ private:
 
 public:
 	/**
-	 * Default constructor
+	 * @brief Orthodox canonical form constructors, destructor and affectation
 	 */
 	Plane();
-	/**
-	 * Default copy constructor
-	 * @param plane object to copy
-	 */
 	Plane(const Plane& plane);
-	/**
-	 * Default destructor
-	 */
 	~Plane();
+	Plane& operator=(const Plane& plane);
 
 	/**
 	 * Launches the simulation for a definite time, or indefinite if the time is not specified
