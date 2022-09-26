@@ -1,7 +1,0 @@
-0s | Temperature: -7.2øC | Humidity: 20.5% | Light: 0.7 | Pressure: 644.1 mbar,
-1s | Temperature: -9.2øC | Humidity: 10.5% | Light: 0.4 | Pressure: 600.1 mbar,
-2s | Temperature: -12.7øC | Humidity: 18.7% | Light: 0.9 | Pressure: 645.9 mbar,
-3s | Temperature: -12.2øC | Humidity: 11.2% | Light: 0.1 | Pressure: 591.9 mbar,
-4s | Temperature: 0.8øC | Humidity: 20.9% | Light: 0.6 | Pressure: 632.8 mbar,
-5s | Temperature: -0.5øC | Humidity: 16% | Light: 1.7 | Pressure: 592 mbar,
-6s | Temperature: -13.4øC | Humidity: 12.5% | Light: 0.3 | Pressure: 581.1 mbar,
