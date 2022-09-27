@@ -5,7 +5,6 @@
  * @brief Humidity sensor
  */
 #include "Humidity.hpp"
-#include "ctime"
 
 Humidity::Humidity()
 {

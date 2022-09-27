@@ -9,17 +9,8 @@
 #include "chrono"
 #include "thread"
 #include "Scheduler.hpp"
-#include <functional>
 
-Scheduler::Scheduler() {
-	this->m_clock = *new Clock();
-	this->m_server = *new Server();
-	this->m_temperatureSensor = *new Temperature();
-	this->m_humiditySensor = *new Humidity();
-	this->m_lightSensor = *new Light();
-	this->m_pressureSensor = *new Pressure();
-}
-
+Scheduler::Scheduler() = default;
 Scheduler::Scheduler(const Scheduler& scheduler) = default;
 Scheduler::~Scheduler() = default;
 Scheduler& Scheduler::operator=(const Scheduler &scheduler) = default;
@@ -34,13 +25,14 @@ void Scheduler::LaunchScheduler()
 
 	m_clock.setStartTime();
 
+	// The program uses a thread per sensor, therefore it just has to put to sleep one thread between each measure for each sensor
 	std::thread threads[4];
 	threads[0] = std::thread(&Scheduler::logSensor<float>, this, m_temperatureSensor, simDuration);
-	sleepForMs(50);	// Adding delay between threads, otherwise the console prints intertwine
+	sleepForMs(100);	// Adding delay between threads, otherwise the console prints intertwine
 	threads[1] = std::thread(&Scheduler::logSensor<float>, this, m_humiditySensor, simDuration);
-	sleepForMs(50);
+	sleepForMs(100);
 	threads[2] = std::thread(&Scheduler::logSensor<bool>, this, m_lightSensor, simDuration);
-	sleepForMs(50);
+	sleepForMs(100);
 	threads[3] = std::thread(&Scheduler::logSensor<int>, this, m_pressureSensor, simDuration);
 
 	for (int i = 0; i < 4; ++i) {
@@ -48,9 +40,13 @@ void Scheduler::LaunchScheduler()
 	}
 }
 
-void Scheduler::sleepForMs(long t) const { std::this_thread::sleep_for(std::chrono::milliseconds(t)); }
+void Scheduler::sleepForMs(long t) const
+{
+	std::this_thread::sleep_for(std::chrono::milliseconds(t));
+}
 
-void Scheduler::askUserForOutput() {
+void Scheduler::askUserForOutput()
+{
 	char consoleActivation;
 	char logsActivation;
 	std::cout << "Do you want to activate the console write ? [Y/N] :" << std::endl;

@@ -29,6 +29,7 @@ private:
 	Light m_lightSensor; // Light sensor
 	Pressure m_pressureSensor; // Pressure sensor
 	float m_measures[4] = {0, 0, 0, 0}; // Measures of the sensors
+	std::string m_units[4] = {m_temperatureSensor.getUnit(), m_humiditySensor.getUnit(), m_lightSensor.getUnit(), m_pressureSensor.getUnit()}; // units of the sensors
 
 public:
 	/**

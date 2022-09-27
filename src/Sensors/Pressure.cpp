@@ -5,7 +5,6 @@
  * @brief Pressure sensor
  */
 #include "Pressure.hpp"
-#include "ctime"
 
 Pressure::Pressure()
 {

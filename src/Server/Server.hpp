@@ -20,30 +20,33 @@ private:
 	/**
 	 * @brief Writes all the sensors values in the console
 	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void consoleWrite(float measures[4], long time);
+	void consoleWrite(float measures[4], std::string units[4], long time);
 	/**
-	 * @brief Writes a sensor value in the console
-	 * @param sensor character indicating the sensor used
+	 * @brief Writes all the sensors measures in the main log file
+	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param units units of the measures values
+	 * @param time time of the measures
+	 */
+	void fileWrite(float measures[4], std::string units[4], long time);
+	/**
+	 * @brief Writes a measure from one sensor in the console
+	 * @tparam T type of return of the sensor
+	 * @param sensor type of sensor (temperature, humidity, light, pressure)
 	 * @param unit unit of the measure
 	 * @param measures measured value
 	 * @param time time of the measure
 	 */
 	template<typename T>
 	void consoleWrite(std::string sensor, std::string unit, T measure, long time);
-
 	/**
-	 * @brief Writes all the sensors values in the main log file
-	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param time time of the measures
-	 */
-	void fileWrite(float measures[4], long time);
-	/**
-	 * @brief Writes the value of one sensor in the corresponding log file
+	 * @brief Writes the measure of one sensor in the corresponding log file
+	 * @tparam T type of return of the sensor
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
 	 * @param unit unit of the measure
-	 * @param measure measure of the sensor
+	 * @param measure measured value
 	 * @param time time of the measure
 	 */
 	template<typename T>
@@ -59,13 +62,15 @@ public:
 	Server& operator=(const Server& server);
 
 	/**
-	 * Receives data from the sensors
+	 * @brief Receives data from the sensors
 	 * @param measures measures of the sensors
+	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void DataReceive(float measures[4], long time);
+	void DataReceive(float measures[4], std::string units[4], long time);
 	/**
-	 * Receives data from a single sensor
+	 * @brief Receives data from a single sensor
+	 * @tparam T type of return of the sensor
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
 	 * @param measure measure of the sensor
 	 * @param unit unit of the measure
@@ -75,11 +80,11 @@ public:
 	void DataReceive(std::string sensor, std::string unit, T measure, long time);
 
 	/**
-	 * Toggles the console log to true or false
+	 * @brief Toggles the console log to true or false
 	 */
 	void toggleConsoleLog();
 	/**
-	 * Toggles the files log to true or false
+	 * @brief Toggles the files log to true or false
 	 */
 	void toggleFileLog();
 };
@@ -95,8 +100,8 @@ void Server::consoleWrite(std::string sensor, std::string unit, T measure, long 
 template<typename T>
 void Server::fileWrite(std::string sensor, std::string unit, T value, long time)
 {
-	std::ofstream logFile("logs/" + sensor + "Log.txt", std::fstream::app);
-	logFile << time << "s | Value: " << value << unit << "," << std::endl;
+	std::ofstream logFile("logs/" + sensor + "Log.txt", std::fstream::app); // opens the corresponding log file
+	logFile << time << "s | Value: " << value << unit << "," << std::endl; // writes in the file
 	logFile.close();
 }
 

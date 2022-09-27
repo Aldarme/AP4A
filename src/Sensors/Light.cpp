@@ -6,8 +6,6 @@
  */
 
 #include "Light.hpp"
-#include "ctime"
-
 
 Light::Light()
 {

@@ -15,45 +15,40 @@ Server::Server()
 	this->m_logActivation = true;
 }
 
-Server::Server(const Server& server)
-{
-	this->m_consoleActivation = server.m_consoleActivation;
-	this->m_logActivation = server.m_logActivation;
-}
-
+Server::Server(const Server& server) = default;
 Server::~Server() = default;
 Server& Server::operator=(const Server& server) = default;
 
 
-void Server::consoleWrite(float measures[4], long time)
+void Server::consoleWrite(float measures[4], std::string units[4], long time)
 {
-	std::cout << time <<	" | Temperature: " << measures[0] << "\370C" <<
-						" | Humidity: " << measures[1] << "%" <<
-						" | Light: " << measures[2] <<
-						" | Pressure: " << measures[3] << " mbar," << std::endl;
+	std::cout << time << "s | Temperature: " << measures[0] << units[0] <<
+												" | Humidity: " << measures[1] << units[1] <<
+												" | Light: " << measures[2] << units[2] <<
+												" | Pressure: " << measures[3] << units[3] << "," << std::endl;
 }
 
 
-void Server::fileWrite(float measures[4], long time)
+void Server::fileWrite(float measures[4], std::string units[4], long time)
 {
 	std::ofstream logFile("logs/mainLog.txt", std::fstream::app);
-	logFile << time << "s | Temperature: " << measures[0] << "\370C" <<
-					" | Humidity: " << measures[1] << "%" <<
-					" | Light: " << measures[2] <<
-					" | Pressure: " << measures[3] << " mbar," << std::endl;
+	logFile << time << "s | Temperature: " << measures[0] << units[0] <<
+											" | Humidity: " << measures[1] << units[1] <<
+											" | Light: " << measures[2] << units[2] <<
+											" | Pressure: " << measures[3] << units[3] << "," << std::endl;
 	logFile.close();
 }
 
 
-void Server::DataReceive(float measures[4], long time)
+void Server::DataReceive(float measures[4], std::string units[4], long time)
 {
 	if (m_consoleActivation)
 	{
-		consoleWrite(measures, time);
+		consoleWrite(measures, units, time);
 	}
 	if (m_logActivation)
 	{
-		fileWrite(measures, time);
+		fileWrite(measures, units, time);
 	}
 }
 

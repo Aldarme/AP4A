@@ -5,7 +5,6 @@
  * @brief Temperature sensor
  */
 #include "Temperature.hpp"
-#include "ctime"
 
 Temperature::Temperature()
 {
