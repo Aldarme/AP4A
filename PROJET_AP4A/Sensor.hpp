@@ -52,8 +52,9 @@ public:
      */ 
     int getValue();
 
+    friend std::ostream & operator<<(std::ostream &param_os, const Sensor &param_sensor);
 
-//private:
+protected:
     std::string m_name; /// Nom du capteur
     int m_value; /// Valeur du capteur
     ESensor m_sensor;
@@ -118,7 +119,6 @@ public:
     // ...
       
 };
-
 
 
 

@@ -51,5 +51,10 @@ void Sensor::aleaValue(){
 }
 
 int Sensor::getValue(){
-        return this->m_value;
-    }
+    return this->m_value;
+}
+
+ostream &operator<<(ostream &param_os, const Sensor &param_sensor){
+    param_os << param_sensor.m_name <<" : "<<param_sensor.m_value<<endl;
+    return param_os;
+}

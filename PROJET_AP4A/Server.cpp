@@ -7,15 +7,18 @@
 
 #include "Server.hpp"
 using namespace std;
-void Server::consoleWrite(int i){
-    cout<<i<<endl;
+
+
+
+void Server::consoleWrite(Sensor &param_sensor){
+    cout<<param_sensor;
 }
 
-void Server::fileWrite(int i){
-    ofstream myFile("data.txt", ios::out | ios::trunc); //Déclaration du flux et ouverture du fichier
+void Server::fileWrite(Sensor &param_sensor){
+    ofstream myFile("C:/Users/renon/.vscode/LABAP4A/PROJET_AP4A/data.txt", ios::app); //Déclaration du flux et ouverture du fichier
     if(myFile)
     {
-        myFile <<i<<endl;
+        myFile <<param_sensor<<endl;
         myFile.close();
     }else
     {

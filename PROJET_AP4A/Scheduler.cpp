@@ -23,10 +23,14 @@ void Scheduler::setValue(){
     m_humidity.aleaValue();
     m_light.aleaValue();
     m_pression.aleaValue();
-    m_server.consoleWrite(m_temperature.getValue());
-    m_server.consoleWrite(m_humidity.getValue());
-    m_server.consoleWrite(m_pression.getValue());
-    m_server.consoleWrite(m_light.getValue());
-    this_thread::sleep_for(chrono::milliseconds(this->m_time*1000));
-    
+    m_server.consoleWrite(this->m_temperature);
+    m_server.consoleWrite(this->m_humidity);
+    m_server.consoleWrite(this->m_light);
+    m_server.consoleWrite(this->m_pression);
+    m_server.fileWrite(this->m_temperature);
+    m_server.fileWrite(this->m_humidity);
+    m_server.fileWrite(this->m_light);
+    m_server.fileWrite(this->m_pression);
+    this_thread::sleep_for(chrono::milliseconds(2*1000));
+    cout<<endl<<endl<<"====================="<<endl<<endl;
 }

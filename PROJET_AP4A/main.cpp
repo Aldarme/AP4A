@@ -9,6 +9,8 @@ int main(){
     Server Ser;
     Scheduler Sch(Ser,T,H,L,P);
     
-    Sch.setValue();
+    for(int i=0;i<9;i++){
+        Sch.setValue();
+    }
     return 0;
 }

@@ -11,7 +11,7 @@
 #define SERVER_H
 #include <iostream>
 #include <fstream>
-
+#include "Sensor.hpp"
 /**
  * @class Server
  * @brief La classe Server permettra de recevoir les données envoyées par le Scheduler et aussi d'écrire dans la console ou dans un fichier ces données.
@@ -30,14 +30,21 @@ public:
      * @return void
      * @param Demande un int 
      */ 
-    void consoleWrite(int i);
+    void consoleWrite(Sensor &param_sensor);
 
     /**
      * @brief Ecrire les données reçues dans un fichier
      * @return void
      * @param Demande un int 
      */
-    void fileWrite(int i);
+    void fileWrite(Sensor &param_sensor);
+    
+    /**
+     * @brief Création d'un opérateur << pour la sortie des paramètres d'un capteur
+     * @return ostream&
+     * @param Demande ostream&, const Sensor&
+     */
+    friend class Sensor;
 };
 
 

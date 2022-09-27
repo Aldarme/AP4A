@@ -36,6 +36,9 @@ public:
      */ 
     void setValue();
 
+    friend class Server;
+    friend class Sensor;
+    
 private:
     int m_time; ///Interval de temps choisi par l'utilisateur
     Temperature m_temperature;
@@ -44,5 +47,6 @@ private:
     Pression m_pression;
     Server m_server;
 };
+
 
 #endif // SCHEDULER_H
