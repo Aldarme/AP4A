@@ -65,10 +65,10 @@ public:
 	 */
 	template<typename T>
 	void logSensor(Sensor<T> sensor, long simDuration);
-  /**
-   * @brief Puts the main thread to sleep for t milliseconds
-   * @param t time to sleep in milliseconds
-   */
+	/**
+	 * @brief Puts the main thread to sleep for t milliseconds
+	 * @param t time to sleep in milliseconds
+	 */
 	void sleepForMs(long t) const;
 };
 
