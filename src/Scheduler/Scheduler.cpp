@@ -6,8 +6,9 @@
  * in order to store and display them.
  */
 
-#include "Scheduler.hpp"
+#include "chrono"
 #include "thread"
+#include "Scheduler.hpp"
 
 Scheduler::Scheduler() {
 	this->m_clock = *new Clock();
@@ -16,7 +17,6 @@ Scheduler::Scheduler() {
 	this->m_humiditySensor = *new Humidity();
 	this->m_lightSensor = *new Light();
 	this->m_pressureSensor = *new Pressure();
-	this->m_lastMeasure = -1;
 }
 
 Scheduler::Scheduler(const Scheduler& scheduler) = default;
@@ -33,36 +33,14 @@ void Scheduler::LaunchScheduler()
 
 	m_clock.setStartTime();
 
-	// The simulation keeps going until the end of the time inputted previously
-	while(this->m_clock.getTime() <= simDuration)
-	{
-		// At each new second, logs the values using the server
-		if(this->m_lastMeasure != this->m_clock.getTime())
-		{
-			this->m_lastMeasure = this->m_clock.getTime();
-			// TO USE IF YOU WANT ALL THE DATA TO BE STORED IN THE MAIN LOG FILE
-			// RetrieveAllData();
-			// m_server.DataReceive(m_measures, this->m_clock.getTime());
-
-			// For each sensor, checks if a measure period has been reached, if so transmits the data to the server
-			if (this->m_lastMeasure % m_temperatureSensor.getMeasurePeriod() == 0)
-			{
-				m_server.DataReceive("temperature", m_temperatureSensor.getUnit(), m_temperatureSensor.getData(), this->m_lastMeasure);
-			}
-			if (this->m_lastMeasure % m_humiditySensor.getMeasurePeriod() == 0)
-			{
-				m_server.DataReceive("humidity", m_humiditySensor.getUnit(), m_humiditySensor.getData(), this->m_lastMeasure);
-			}
-			if (this->m_lastMeasure % m_lightSensor.getMeasurePeriod() == 0)
-			{
-				m_server.DataReceive("light", m_lightSensor.getUnit(), m_lightSensor.getData(), this->m_lastMeasure);
-			}
-			if (this->m_lastMeasure % m_pressureSensor.getMeasurePeriod() == 0)
-			{
-				m_server.DataReceive("pressure", m_pressureSensor.getUnit(), m_pressureSensor.getData(), this->m_lastMeasure);
-			}
-		}
-	}
+	std::thread temperatureThread(&Scheduler::logTemperature, this, simDuration);
+	std::thread humidityThread(&Scheduler::logHumidity, this, simDuration);
+	std::thread lightThread(&Scheduler::logLight, this, simDuration);
+	std::thread pressureThread(&Scheduler::logPressure, this, simDuration);
+	temperatureThread.join();
+	humidityThread.join();
+	lightThread.join();
+	pressureThread.join();
 }
 
 void Scheduler::askUserForOutput() {
@@ -83,7 +61,8 @@ void Scheduler::askUserForOutput() {
 	}
 }
 
-long Scheduler::askUserForSimulationTime() {
+long Scheduler::askUserForSimulationTime()
+{
 	long simDuration = 0;
 	std::cout << "How much time (in seconds) do you want the simulation to last ? (type a negative value for an indefinite time) :" << std::endl;
 	std::cin >> simDuration;
@@ -92,6 +71,45 @@ long Scheduler::askUserForSimulationTime() {
 		simDuration = 2147483647;
 	}
 	return simDuration;
+}
+
+void Scheduler::logTemperature(long simDuration)
+{
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		m_server.DataReceive("temperature", m_temperatureSensor.getUnit(), m_temperatureSensor.getData(), m_clock.getTime()); // sends the data to the server
+		std::this_thread::sleep_for(std::chrono::seconds(m_temperatureSensor.getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
+}
+
+void Scheduler::logHumidity(long simDuration)
+{
+	std::this_thread::sleep_for(std::chrono::milliseconds(20)); // setting some lag in each thread otherwise the console prints can be intertwined when called at the same time
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		m_server.DataReceive("humidity", m_humiditySensor.getUnit(), m_humiditySensor.getData(), m_clock.getTime()); // sends the data to the server
+		std::this_thread::sleep_for(std::chrono::seconds(m_humiditySensor.getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
+}
+
+void Scheduler::logLight(long simDuration)
+{
+	std::this_thread::sleep_for(std::chrono::milliseconds(40)); // setting some lag in each thread otherwise the console prints can be intertwined when called at the same time
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		m_server.DataReceive("light", m_lightSensor.getUnit(), m_lightSensor.getData(), m_clock.getTime()); // sends the data to the server
+		std::this_thread::sleep_for(std::chrono::seconds(m_lightSensor.getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
+}
+
+void Scheduler::logPressure(long simDuration)
+{
+	std::this_thread::sleep_for(std::chrono::milliseconds(60)); // setting some lag in each thread otherwise the console prints can be intertwined when called at the same time
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		m_server.DataReceive("light", m_pressureSensor.getUnit(), m_pressureSensor.getData(), m_clock.getTime()); // sends the data to the server
+		std::this_thread::sleep_for(std::chrono::seconds(m_pressureSensor.getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
 }
 
 void Scheduler::RetrieveAllData()

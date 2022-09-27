@@ -27,7 +27,6 @@ private:
 	Light m_lightSensor; // Light sensor
 	Pressure m_pressureSensor; // Pressure sensor
 	float m_measures[4] = {0, 0, 0, 0}; // Measures of the sensors
-	long m_lastMeasure; // time of the least measure
 
 public:
 	/**
@@ -52,16 +51,18 @@ public:
 	 */
 	long askUserForSimulationTime();
 	/**
-	 * @brief Retrieves all data of the sensors into the m_measures attribute
+	 * @brief Retrieves all data of the sensors into the m_measures attribute, used if all the data is of the same type (even though float can contain booleans and int)
 	 */
 	void RetrieveAllData();
 	/**
-	 * Checks for a sensor if data should be transmitted at this time
-	 * @param sensor sensor from which we transmit the data
-	 * @param sensorName name of the sensor
-	 * @param currentTime current time of the simulation
+	 * @brief The 4 next methods send data of their respective sensor to the server at a regular intervals which depend on the sensor.
+	 * They could've been assembled in a single method with a sensor as parameter however there was issues with the return types of the getData() methods of the sensors
+	 * @param simDuration duration of the simulation
 	 */
-	void checkForMeasureTransmission(Sensor sensor, std::string sensorName, long currentTime);
+	void logTemperature(long simDuration);
+	void logHumidity(long simDuration);
+	void logLight(long simDuration);
+	void logPressure(long simDuration);
 };
 
 #endif //AP4A_SCHEDULER_HPP
