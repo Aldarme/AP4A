@@ -14,4 +14,5 @@ Temperature::Temperature()
 	this->m_measuresPeriod = 1;
 	this->m_minValue = 20; // airplanes temperature is maintained around 22°C
 	this->m_maxValue = 25;
+	this->m_name = "temperature";
 }

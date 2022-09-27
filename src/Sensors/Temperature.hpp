@@ -9,8 +9,9 @@
 #define AP4A_TEMPERATURE_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Temperature : public Sensor
+class Temperature : public Sensor<float>
 {
 public:
 	/**

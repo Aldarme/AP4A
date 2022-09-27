@@ -9,8 +9,9 @@
 #define AP4A_PRESSURE_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Pressure : public Sensor
+class Pressure : public Sensor<int>
 {
 private:
 	/**

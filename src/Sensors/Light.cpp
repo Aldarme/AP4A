@@ -16,6 +16,7 @@ Light::Light()
 	this->m_measuresPeriod = 2;
 	this->m_minValue = 0;
 	this->m_maxValue = 1;
+	this->m_name = "light";
 }
 
 bool Light::generateRandomValue()

@@ -10,6 +10,8 @@
 #define AP4A_SCHEDULER_HPP
 
 #include "ctime"
+#include "chrono"
+#include "thread"
 #include "Clock.hpp"
 #include "../Server/Server.hpp"
 #include "../Sensors/Temperature.hpp"
@@ -55,14 +57,28 @@ public:
 	 */
 	void RetrieveAllData();
 	/**
-	 * @brief The 4 next methods send data of their respective sensor to the server at a regular intervals which depend on the sensor.
-	 * They could've been assembled in a single method with a sensor as parameter however there was issues with the return types of the getData() methods of the sensors
+	 * @brief Sends the data of a sensor to the server periodically until the end of the simulation. There is a thread per sensor.
+	 * @tparam T type of return of the sensor
+	 * @param sensor sensor from which we log the data
 	 * @param simDuration duration of the simulation
 	 */
-	void logTemperature(long simDuration);
-	void logHumidity(long simDuration);
-	void logLight(long simDuration);
-	void logPressure(long simDuration);
+	template<typename T>
+	void logSensor(Sensor<T> sensor, long simDuration);
+  /**
+   * @brief Puts the main thread to sleep for t milliseconds
+   * @param t time to sleep in milliseconds
+   */
+	void sleepForMs(long t) const;
 };
+
+template<typename T>
+void Scheduler::logSensor(Sensor<T> sensor, long simDuration)
+{
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		m_server.DataReceive(sensor.getName(), sensor.getUnit(), sensor.getData(), m_clock.getTime()); // sends the data to the server
+		std::this_thread::sleep_for(std::chrono::seconds(sensor.getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
+}
 
 #endif //AP4A_SCHEDULER_HPP

@@ -9,8 +9,9 @@
 #define AP4A_LIGHT_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Light : public Sensor
+class Light : public Sensor<bool>
 {
 private:
 	/**

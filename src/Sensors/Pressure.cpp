@@ -14,6 +14,7 @@ Pressure::Pressure()
 	this->m_measuresPeriod = 2;
 	this->m_minValue = 75; // average pressure in a plane is 54kPa-65kPa
 	this->m_maxValue = 83;
+	this->m_name = "pressure";
 }
 
 int Pressure::generateRandomValue(int min, int max)

@@ -9,8 +9,9 @@
 #define AP4A_HUMIDITY_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Humidity : public Sensor
+class Humidity : public Sensor<float>
 {
 public:
 	/**
