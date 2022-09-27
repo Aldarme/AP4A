@@ -7,25 +7,36 @@ using namespace std;
 
 int main(){
 
-    cout << "\nPremier Test\n" << endl;
+    //cout << "\nPremier Test\n" << endl;
 
-    int a, b, c, d;
+    //int a, b, c, d;
 
-    cin >> a >> b >> c >> d;
+    //cin >> a >> b >> c >> d;
 
-    Server s(a, b, c, d);
+    //Server s(a, b, c, d);
 
-    Server sp;
+    //Server sp;
 
-    Server p(1,2,3,4);
+    //Server p(1,2,3,4);
 
-    s.consoleWrite();
+    //s.consoleWrite();
 
-    sp.consoleWrite();
+    //sp.consoleWrite();
 
-    s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.txt");
+    //s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.csv");
 
-    p.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.txt");
+    //p.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.csv");
+
+    Temperature t;
+    Humidity h;
+    Light l;
+    Pression p;
+
+    Scheduler boss;
+
+    Server s;
+    
+    boss.sendData(t, h, l, p, s);
 
     return 0;
 }

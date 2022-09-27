@@ -5,10 +5,13 @@
  * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stocker dans les fichiers de logs
  */
 
-#include "Server.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
+
+#include "Scheduler.hpp"
+#include "Sensor.hpp"
+#include "Server.hpp"
 
 using namespace std;
 
@@ -73,10 +76,27 @@ void Server::fileWrite(string const cheminFichier){
 
     if(donnéesCapteurs){
         cout << "OK" << endl;
-        donnéesCapteurs << "Temperature : " << this->m_temperature_test << "\n" << "Humidity : " << this->m_humidity_test << "\n" << "Light : " << this->m_light_test << "\n" << "Pression : " << this->m_pression_test << "\n" << endl;
+        donnéesCapteurs << "Temperature" << ";" << this->m_temperature_test << ";" << "Humidity" << ";" <<this->m_humidity_test << ";" << "Light" << ";" <<this->m_light_test << ";" << "Pression" << ";" <<this->m_pression_test << ";" << endl;
     }
     else 
     {
         cout << "Erreur" << endl;
     }
+}
+
+
+void Server::setDataTemp(const int& i){
+    this->m_temperature_test = i;
+}
+
+void Server::setDataHumi(const int& i){
+    this->m_humidity_test = i;
+}
+
+void Server::setDataLigh(const int& i){
+    this->m_light_test = i;
+}
+
+void Server::setDataPres(const int& i){
+    this->m_pression_test = i;
 }

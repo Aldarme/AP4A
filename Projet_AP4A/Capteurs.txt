@@ -38,3 +38,33 @@ Humidity : 2
 Light : 3
 Pression : 4
 
+Temperature : 1
+Humidity : 1
+Light : 1
+Pression : 1
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
+Temperature : 0
+Humidity : 0
+Light : 0
+Pression : 0
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+
+Temperature : 7
+Humidity : 7
+Light : 7
+Pression : 7
+
+Temperature : 1
+Humidity : 2
+Light : 3
+Pression : 4
+

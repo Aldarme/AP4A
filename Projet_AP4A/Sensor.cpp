@@ -5,23 +5,27 @@
  * @brief Classe mère des différents capteurs
  */
 
-#include "Sensor.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <cstdlib>
 
+#include "Scheduler.hpp"
+#include "Sensor.hpp"
+#include "Server.hpp"
+
 using namespace std;
 
 //constructeur par défaut
 Sensor::Sensor(){
-    m_valeur = aleaGenVal(ESensors::e_temperature);
+    m_name = e_temperature;
+    m_valeur = aleaGenVal();
 }
 
 //constructeur par valeur
 Sensor::Sensor(const ESensors param_name){
     m_name = param_name;
-    m_valeur = aleaGenVal(param_name);
+    m_valeur = aleaGenVal();
 }
 
 //constructeur par recopie
@@ -48,9 +52,12 @@ Sensor& Sensor::operator=(const Sensor& s){
  * @return int
  * @param const ESensors name
  */
-int Sensor::aleaGenVal(const ESensors param_name){
+int& Sensor::aleaGenVal(){
 
-    int m_valeur;
+    srand (time(NULL));
+
+    ESensors param_name = getName();
+    int& m_valeur = 0;
 
     switch (param_name){
         case e_temperature : m_valeur = rand() %50;
@@ -63,13 +70,18 @@ int Sensor::aleaGenVal(const ESensors param_name){
         break;
     }
 
-    return m_valeur;
+    return *m_valeur;
+
+}
+
+ESensors Sensor::getName(){
+    return this->m_name;
 }
 
 //constructeur par défaut
 Temperature::Temperature(){
     m_name = ESensors::e_temperature;
-    m_valeur = aleaGenVal(ESensors::e_temperature);
+    m_valeur = aleaGenVal();
 }
 
 //constrcuteur par recopie
@@ -78,10 +90,18 @@ Temperature::Temperature(const Temperature& t){
     this->m_valeur = t.m_valeur;
 }
 
+int Temperature::getDataT(){
+    return this->m_valeur;
+}
+
+void Temperature::setDataT(const int& i){
+    this->m_valeur = i;
+}
+
 //constructeur par défaut
 Humidity::Humidity(){
     m_name = ESensors::e_humidity;
-    m_valeur = aleaGenVal(ESensors::e_humidity);
+    m_valeur = aleaGenVal();
 }
 
 //constructeur par recopie
@@ -90,10 +110,18 @@ Humidity::Humidity(const Humidity& h){
     this->m_valeur = h.m_valeur;
 }
 
+int Humidity::getDataH(){
+    return this->m_valeur;
+}
+
+void Humidity::setDataH(const int& i){
+    this->m_valeur = i;
+}
+
 //constructeur par défaut
 Light::Light(){
     m_name = ESensors::e_light;
-    m_valeur = aleaGenVal(ESensors::e_light);
+    m_valeur = aleaGenVal();
 }
 
 //constructeur par recopie
@@ -102,14 +130,30 @@ Light::Light(const Light& l){
     this->m_valeur = l.m_valeur;
 }
 
+int Light::getDataL(){
+    return this->m_valeur;
+}
+
+void Light::setDataL(const int& i){
+    this->m_valeur = i;
+}
+
 //constructeur par défaut
 Pression::Pression(){
     m_name = ESensors::e_pression;
-    m_valeur = aleaGenVal(ESensors::e_pression);
+    m_valeur = aleaGenVal();
 }
 
 //constructeur par recopie
 Pression::Pression(const Pression& p){
     this->m_name = p.m_name;
     this->m_valeur = p.m_valeur;
+}
+
+int Pression::getDataP(){
+    return this->m_valeur;
+}
+
+void Pression::setDataP(const int& i){
+    this->m_valeur = i;
 }

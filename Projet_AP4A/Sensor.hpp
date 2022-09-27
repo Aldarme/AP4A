@@ -12,6 +12,8 @@
 
 #include <iostream>
 #include <string>
+#include "Scheduler.hpp"
+#include "Server.hpp"
 
 /**
  * @enum ESensors
@@ -37,6 +39,12 @@ protected :
     int m_valeur;
     ESensors m_name;
 
+        /**
+     * @brief permet de générer des valeurs aléatoires de int pour les différents capteurs
+     * @return int
+     * @param const ESensors name
+     */
+
 public :
 
     //Definition de la forme canonique
@@ -56,12 +64,9 @@ public :
     //operator
     Sensor& operator=(const Sensor& s);
 
-    /**
-     * @brief permet de générer des valeurs aléatoires de int pour les différents capteurs
-     * @return int
-     * @param const ESensors name
-     */
-    int aleaGenVal(const ESensors name);
+    int& aleaGenVal();
+
+    ESensors getName();
 
 };
 
@@ -81,6 +86,15 @@ class Temperature : public Sensor {
     //constructeur par recopie
     Temperature(const Temperature& t);
 
+    /**
+     * @brief permet de récupérer les données des capteurs
+     * @return int
+     * @param
+     */
+    int getDataT();
+
+    void setDataT(const int& i);
+
 };
 
 /**
@@ -99,6 +113,14 @@ class Humidity : public Sensor {
     //constructeur par recopie
     Humidity(const Humidity& h);
 
+    /**
+     * @brief permet de récupérer les données des capteurs
+     * @return int
+     * @param
+     */
+    int getDataH();
+
+    void setDataH(const int& i);
 };
 
 /**
@@ -117,6 +139,14 @@ class Light : public Sensor {
     //constructeur par recopie
     Light(const Light& l);
 
+    /**
+     * @brief permet de récupérer les données des capteurs
+     * @return int
+     * @param
+     */
+    int getDataL();
+
+    void setDataL(const int& i);
 };
 
 /**
@@ -135,6 +165,14 @@ class Pression : public Sensor {
     //constructeur par recopie
     Pression(const Pression& p);
 
+    /**
+     * @brief permet de récupérer les données des capteurs
+     * @return int
+     * @param
+     */
+    int getDataP();
+
+    void setDataP(const int& i);
 };
 
 #endif // Projet_AP4A_SENSOR_H

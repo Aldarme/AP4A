@@ -12,17 +12,8 @@
 
 #include <iostream>
 #include <string>
-
-/**
- * @enum Capteurs
- * @brief Liste les differents types de capteurs
- */
-enum Capteurs {
-    e_temperature_test,
-    e_humidity_test,
-    e_light_test,
-    e_pression_test
-};
+#include "Scheduler.hpp"
+#include "Sensor.hpp"
 
 /**
  * @class Server
@@ -70,6 +61,16 @@ public:
      * @param
      */
     void fileWrite(const std::string cheminFichier);
+
+    void setDataTemp(const int& i);
+
+    void setDataHumi(const int& i);
+
+    void setDataLigh(const int& i);
+
+    void setDataPres(const int& i);
+
+    friend class Scheduler;
 };
 
 #endif // Projet_AP4A_SERVER_H
