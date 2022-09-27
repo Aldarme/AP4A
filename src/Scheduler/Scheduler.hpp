@@ -64,7 +64,7 @@ public:
 	 * @param simDuration duration of the simulation
 	 */
 	template<typename T>
-	void logSensor(Sensor<T> sensor, long simDuration);
+	void startSensorTransmission(Sensor<T> sensor, long simDuration);
 	/**
 	 * @brief Puts the main thread to sleep for t milliseconds
 	 * @param t time to sleep in milliseconds
@@ -73,7 +73,7 @@ public:
 };
 
 template<typename T>
-void Scheduler::logSensor(Sensor<T> sensor, long simDuration)
+void Scheduler::startSensorTransmission(Sensor<T> sensor, long simDuration)
 {
 	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
 	{
