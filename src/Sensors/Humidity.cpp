@@ -12,6 +12,6 @@ Humidity::Humidity()
 	srand(time(nullptr)); // randomizing the seed
 	this->m_unit = "%";
 	this->m_measuresPeriod = 3;
-	this->m_minValue = 10;
+	this->m_minValue = 10; // average humidity in a plane is 10%-20%
 	this->m_maxValue = 20;
 }
