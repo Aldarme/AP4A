@@ -89,7 +89,7 @@ public:
 	void toggleFileLog();
 };
 
-// Template function have to be declared in the header of the class
+// Template functions have to be declared in the header of the class
 
 template<typename T>
 void Server::consoleWrite(std::string sensor, std::string unit, T measure, long time)
