@@ -66,7 +66,7 @@ public:
 	template<typename T>
 	void startSensorTransmission(Sensor<T> sensor, long simDuration);
 	/**
-	 * @brief Puts the main thread to sleep for t milliseconds
+	 * @brief Puts the thread to sleep for t milliseconds
 	 * @param t time to sleep in milliseconds
 	 */
 	void sleepForMs(long t) const;
