@@ -19,13 +19,13 @@ using namespace std;
 //constructeur par défaut
 Sensor::Sensor(){
     m_name = e_temperature;
-    m_valeur = aleaGenVal();
+    m_valeur = 0;
 }
 
 //constructeur par valeur
 Sensor::Sensor(const ESensors param_name){
     m_name = param_name;
-    m_valeur = aleaGenVal();
+    m_valeur = 0;
 }
 
 //constructeur par recopie
@@ -54,26 +54,66 @@ Sensor& Sensor::operator=(const Sensor& s){
  */
 int Sensor::aleaGenVal(){
 
-    //srand (time(NULL));
-
-    ESensors param_name = getName();
     int m_valeur;
 
-    switch (param_name){
-        case e_temperature : m_valeur = rand() %50;
+    switch (this->m_name){
+        case e_temperature : m_valeur = rand() % 30 + 15;
         break;
-        case e_humidity : m_valeur = rand() %100;
+        case e_humidity : m_valeur = rand() % 101;
         break;
-        case e_light : m_valeur = rand() %12000;
+        case e_light : m_valeur = rand() % 12001;
         break;
-        case e_pression : m_valeur = rand() %200;
+        case e_pression : m_valeur = rand() % 100 + 700;
         break;
     }
 
     return m_valeur;
-
 }
 
-ESensors Sensor::getName(){
-    return this->m_name;
+//constructeur par défaut
+Temperature::Temperature(){
+    m_name = ESensors::e_temperature;
+    m_valeur = 0;
+}
+
+//constrcuteur par recopie
+Temperature::Temperature(const Temperature& t){
+    this->m_name = t.m_name;
+    this->m_valeur = t.m_valeur;
+}
+
+//constructeur par défaut
+Humidity::Humidity(){
+    m_name = ESensors::e_humidity;
+    m_valeur = 0;
+}
+
+//constructeur par recopie
+Humidity::Humidity(const Humidity& h){
+    this->m_name = h.m_name;
+    this->m_valeur = h.m_valeur;
+}
+
+//constructeur par défaut
+Light::Light(){
+    m_name = ESensors::e_light;
+    m_valeur = 0;
+}
+
+//constructeur par recopie
+Light::Light(const Light& l){
+    this->m_name = l.m_name;
+    this->m_valeur = l.m_valeur;
+}
+
+//constructeur par défaut
+Pression::Pression(){
+    m_name = ESensors::e_pression;
+    m_valeur = 0;
+}
+
+//constructeur par recopie
+Pression::Pression(const Pression& p){
+    this->m_name = p.m_name;
+    this->m_valeur = p.m_valeur;
 }

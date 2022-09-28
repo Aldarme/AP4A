@@ -61,7 +61,7 @@ Server& Server::operator=(const Server& s){
  */
 void Server::consoleWrite(){
 
-    cout << "Temperature : " << this->m_temperature_test << "\n" << "Humidity : " << this->m_humidity_test << "\n" << "Light : " << this->m_light_test << "\n" << "Pression : " << this->m_pression_test << "\n" << endl;
+    cout << "Temperature : " << this->m_temperature_test << " °C" << "\n" << "Humidity : " << this->m_humidity_test << " %" <<"\n" << "Light : " << this->m_light_test << " lx" <<"\n" << "Pression : " << this->m_pression_test << " hPa" <<"\n" << endl;
 
 }
 
@@ -75,8 +75,8 @@ void Server::fileWrite(string const cheminFichier){
     ofstream donnéesCapteurs(cheminFichier, ios::app);
 
     if(donnéesCapteurs){
-        cout << "OK" << endl;
-        donnéesCapteurs << "Temperature" << ";" << this->m_temperature_test << ";" << "Humidity" << ";" <<this->m_humidity_test << ";" << "Light" << ";" <<this->m_light_test << ";" << "Pression" << ";" <<this->m_pression_test << ";" << endl;
+        cout << "Ecriture\n" << endl;
+        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_test << ";" << "Humidity (%)" << ";" <<this->m_humidity_test << ";" << "Light (lx)" << ";" <<this->m_light_test << ";" << "Pression (hPa)" << ";" <<this->m_pression_test << ";" << endl;
     }
     else 
     {

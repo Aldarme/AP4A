@@ -32,7 +32,6 @@ enum ESensors {
  */
 class Sensor
 {
-
 protected :
 
     //attributs
@@ -77,6 +76,12 @@ public :
  * @brief Permet de générer des objets capteurs de température
  */
 class Temperature : public Sensor {
+    private :
+    public:
+    //constructeur par défaut
+    Temperature();
+    //constructeur par recopie
+    Temperature(const Temperature& t);
 };
 
 /**
@@ -84,6 +89,13 @@ class Temperature : public Sensor {
  * @brief Permet de générer des objets capteurs d'humidité
  */
 class Humidity : public Sensor {
+    private :
+    public:
+    //constructeur par défaut
+    Humidity();
+    //constructeur par recopie
+    Humidity(const Humidity& h);
+
 };
 
 /**
@@ -91,6 +103,13 @@ class Humidity : public Sensor {
  * @brief Permet de générer des objets capteurs de lumière
  */
 class Light : public Sensor {
+    private :
+    public :
+    //constructeur par défaut
+    Light();
+    //constructeur par recopie
+    Light(const Light& l);
+
 };
 
 /**
@@ -98,6 +117,14 @@ class Light : public Sensor {
  * @brief Permet de générer des objets capteurs de pression
  */
 class Pression : public Sensor {
+    private :
+    public :
+    //constructeur par défaut
+    Pression();
+    //constructeur par recopie
+    Pression(const Pression& p);
+
 };
+
 
 #endif // Projet_AP4A_SENSOR_H
