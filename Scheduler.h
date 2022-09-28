@@ -16,6 +16,6 @@ private :
 
 public:
     Scheduler();
-    void wait(int time);
+    void wait(float time);
 };
 

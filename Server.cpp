@@ -29,7 +29,7 @@ void Server::consoleWrite(int s) {
 }
 
 void Server::fileWrite(int data) {
-    string const file("C:/Users/rapha/AP4A/datas.txt");
+    /*string const file("C:/Users/rapha/AP4A/datas.txt");
     ofstream monFlux(file.c_str());
     if(monFlux) {
         string chaine;
@@ -41,7 +41,14 @@ void Server::fileWrite(int data) {
     }
      else{
         cerr << "Cannot open the file" << endl;
-     }
+     }*/
+
+    /*string filename3("output3.txt");
+    FILE *o_file = fopen(filename3.c_str(), "w+");
+    if (o_file){
+        fwrite(text.c_str(), 1, text.size(), o_file);
+        cerr << "Done Writing!" << endl;
+    }*/
 }
 
 string convertInt(int number){

@@ -36,11 +36,11 @@ Scheduler::Scheduler() {
     }
 }*/
 
-void Scheduler::wait(int seconds) {
-    time_t start = time(NULL); 
-    time_t delta;
-    do {
-        time_t lastTime = time(NULL);
-        delta = lastTime - start;
-    } while (delta < seconds);
+void Scheduler::wait(float seconds) {
+    time_t lastTime = time(NULL); 
+    time_t delta = 0;
+    while (delta < seconds) {
+        time_t now = time(NULL);
+        delta = (now - lastTime);
+    }
 }

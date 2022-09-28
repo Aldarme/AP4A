@@ -5,7 +5,8 @@ int main() {
     Scheduler scheduler;
     int count = 0;
     while(count < 7){
-        scheduler.wait(2);
+        scheduler.wait(4.);
+        count++;
     }
     
 }
