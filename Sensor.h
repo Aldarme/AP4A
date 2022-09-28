@@ -9,15 +9,15 @@ class Sensor {
 public:
 	Sensor();
 	virtual ~Sensor() {
-
 	}
+
 	Sensor(int type);
 	Sensor(const Sensor& sensor);
 	int getData();
+
+protected :
 	void setData(int data);
-	void write();
-protected:
-	int aleaGenVal();
+	virtual int aleaGenVal() = 0;
 
 private:
 	int data;

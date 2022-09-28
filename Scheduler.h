@@ -1,17 +1,21 @@
 #pragma once
 
-#include "Sensor.cpp"
+#include "Sensor.h"
 
-#include "Temperature.cpp"
-#include "Light.cpp"
-#include "Humidity.cpp"
-#include "Pression.cpp"
+#include "Temperature.h"
+#include "Light.h"
+#include "Humidity.h"
+#include "Pression.h"
 
 class Scheduler {
 private :
-    Sensor s1, s2, s3, s4;
+	Sensor* sensor1;
+	Sensor* sensor2;
+	Sensor* sensor3;
+	Sensor* sensor4;
+
 public:
     Scheduler();
-    void delta();
+    void wait(int time);
 };
 

@@ -5,5 +5,6 @@
 class Light : public Sensor {
 public :
 	Light();
-
+protected :
+	int aleaGenVal() override;
 };

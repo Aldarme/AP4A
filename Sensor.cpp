@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 Sensor::Sensor() {
     this->data = 0;
 }
@@ -15,10 +14,6 @@ Sensor::Sensor(int type) {
 
 Sensor::Sensor(const Sensor& sensor) {
     this->data = sensor.data;
-}
-
-void Sensor::write(){
-    cout << this->getData() << endl;
 }
 
 int Sensor::getData() {

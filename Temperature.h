@@ -5,4 +5,7 @@
 class Temperature : public Sensor {
 public :
 	Temperature();
+	
+protected :
+	int aleaGenVal() override;
 };

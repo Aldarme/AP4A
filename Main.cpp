@@ -1,5 +1,11 @@
-#include "Server.cpp"
+#include "Scheduler.h"
+#include <iostream>
 
 int main() {
-    Server s;
+    Scheduler scheduler;
+    int count = 0;
+    while(count < 7){
+        scheduler.wait(2);
+    }
+    
 }
