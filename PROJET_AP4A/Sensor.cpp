@@ -58,3 +58,8 @@ ostream &operator<<(ostream &param_os, const Sensor &param_sensor){
     param_os << param_sensor.m_name <<" : "<<param_sensor.m_value<<endl;
     return param_os;
 }
+
+ofstream &operator<<(ofstream &param_of, const Sensor &param_sensor){
+    param_of << param_sensor.m_name <<";"<<param_sensor.m_value<<";";
+    return param_of;
+}

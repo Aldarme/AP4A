@@ -30,14 +30,14 @@ public:
      * @return void
      * @param Demande un int 
      */ 
-    void consoleWrite(Sensor &param_sensor);
+    void consoleWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
 
     /**
      * @brief Ecrire les données reçues dans un fichier
      * @return void
      * @param Demande un int 
      */
-    void fileWrite(Sensor &param_sensor);
+    void fileWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
     
     /**
      * @brief Création d'un opérateur << pour la sortie des paramètres d'un capteur

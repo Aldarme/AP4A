@@ -12,6 +12,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <fstream>
 
 /**
  * @enum ESensor
@@ -53,6 +54,7 @@ public:
     int getValue();
 
     friend std::ostream & operator<<(std::ostream &param_os, const Sensor &param_sensor);
+    friend std::ofstream &operator<<(std::ofstream &param_of, const Sensor &param_sensor);
 
 protected:
     std::string m_name; /// Nom du capteur
