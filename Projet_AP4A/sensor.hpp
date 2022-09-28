@@ -1,8 +1,33 @@
-//
-// Created by Jules Ferlin on 24/09/2022.
-//
+/**
+ * @author Jules Ferlin
+ * @file Sensor.hpp
+ * @date
+ * @brief
+ */
 
-#ifndef PROJET_AP4A_SENSOR_HPP
-#define PROJET_AP4A_SENSOR_HPP
+#ifndef PROJET_AP4A_Sensor_HPP
+#define PROJET_AP4A_Sensor_HPP
 
-#endif //PROJET_AP4A_SENSOR_HPP
+class Sensor
+{
+private:
+    /* data */
+public:
+    Sensor();
+    Sensor(Sensor& t_p);
+    ~Sensor();
+    Sensor(int data_p);
+    int getData();
+    int aleaGenVal();
+};
+
+class Temperature : public Sensor
+{
+private:
+    /* data */
+public:
+    Temperature(/* args */);
+    ~Temperature();
+};
+
+#endif //PROJET_AP4A_Sensor_HPP
