@@ -12,13 +12,15 @@
 
 #include <iostream>
 #include <string>
-#include "Scheduler.hpp"
+
 #include "Sensor.hpp"
+#include "Scheduler.hpp"
 
 /**
  * @class Server
  * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stcoker dans les fichiers de logs
  */
+class Scheduler;
 class Server
 {
 private:
@@ -47,6 +49,7 @@ public:
     //operator
     Server& operator=(const Server& s);
 
+    void dataRCV(Scheduler& sp);
 
     /**
      * @brief Visualiser les données des capteurs

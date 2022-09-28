@@ -13,6 +13,7 @@
 #include "Sensor.hpp"
 #include "Server.hpp"
 
+class Server;
 class Scheduler{
 
     private :
@@ -30,8 +31,11 @@ class Scheduler{
 
     ~Scheduler();
 
+    Scheduler& operator=(const Scheduler& s);
+
     void sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s);
 
+    friend class Server;
 };
 
 #endif // Projet_AP4A_SCHEDULER_H

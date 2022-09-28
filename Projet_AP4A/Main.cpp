@@ -40,6 +40,9 @@ int main(){
 
     for(int i=0;i<5;i++){
         boss.sendData(t, h, l, p, s);
+        s.dataRCV(boss);
+        s.consoleWrite();
+        s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv");
     }
 
     return 0;

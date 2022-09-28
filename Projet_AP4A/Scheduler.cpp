@@ -27,7 +27,17 @@ Scheduler::Scheduler(const Scheduler& s){
 }
 
 Scheduler::~Scheduler(){
+    cout << "Destructeur appelle\n" << endl;
+}
 
+//operator
+Scheduler& Scheduler::operator=(const Scheduler& s){
+    this->m_temperature_scheduler = s.m_temperature_scheduler;
+    this->m_humidity_scheduler = s.m_humidity_scheduler;
+    this->m_light_scheduler = s.m_light_scheduler;
+    this->m_pression_scheduler = s.m_pression_scheduler;
+
+    return *this;
 }
 
 void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s){
@@ -37,11 +47,11 @@ void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Ser
     m_light_scheduler = l.aleaGenVal();
     m_pression_scheduler = p.aleaGenVal();
 
-    s.m_temperature_test = m_temperature_scheduler;
-    s.m_humidity_test = m_humidity_scheduler;
-    s.m_light_test = m_light_scheduler;
-    s.m_pression_test = m_pression_scheduler;
+    //s.m_temperature_test = m_temperature_scheduler;
+    //s.m_humidity_test = m_humidity_scheduler;
+    //s.m_light_test = m_light_scheduler;
+    //s.m_pression_test = m_pression_scheduler;
 
-    s.consoleWrite();
-    s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv");
+    //s.consoleWrite();
+    //s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv");
 }

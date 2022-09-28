@@ -65,7 +65,7 @@ public :
 
     int aleaGenVal();
 
-    ESensors getName();
+    int getData();
     
     friend class Scheduler;
 

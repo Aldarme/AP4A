@@ -83,3 +83,10 @@ void Server::fileWrite(string const cheminFichier){
         cout << "Erreur" << endl;
     }
 }
+
+void Server::dataRCV(Scheduler& sp){
+    this->m_temperature_test = sp.m_temperature_scheduler;
+    this->m_humidity_test = sp.m_humidity_scheduler;
+    this->m_light_test = sp.m_light_scheduler;
+    this->m_pression_test = sp.m_pression_scheduler;
+}

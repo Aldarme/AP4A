@@ -70,6 +70,10 @@ int Sensor::aleaGenVal(){
     return m_valeur;
 }
 
+int Sensor::getData(){
+    return this->m_valeur;
+}
+
 //constructeur par défaut
 Temperature::Temperature(){
     m_name = ESensors::e_temperature;
