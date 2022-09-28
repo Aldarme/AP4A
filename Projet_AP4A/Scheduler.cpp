@@ -13,35 +13,35 @@
 using namespace std;
 
 Scheduler::Scheduler(){
-    Temperature m_temp;
-    Humidity m_humi;
-    Light m_lig;
-    Pression m_pres;
-    Server m_serv;
+    m_temperature_scheduler = 0;
+    m_humidity_scheduler = 0;
+    m_light_scheduler = 0;
+    m_pression_scheduler = 0;
 }
 
 Scheduler::Scheduler(const Scheduler& s){
-    this->m_temp = s.m_temp;
-    this->m_humi = s.m_humi;
-    this->m_lig = s.m_lig;
-    this->m_pres = s.m_pres;
-    this->m_serv = s.m_serv;
+    this->m_temperature_scheduler = s.m_temperature_scheduler;
+    this->m_humidity_scheduler = s.m_humidity_scheduler;
+    this->m_light_scheduler = s.m_light_scheduler;
+    this->m_pression_scheduler = s.m_pression_scheduler;
 }
 
 Scheduler::~Scheduler(){
 
 }
 
-void Scheduler::sendData(){
+void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s){
+    
+    m_temperature_scheduler = t.aleaGenVal();
+    m_humidity_scheduler = h.aleaGenVal();
+    m_light_scheduler = l.aleaGenVal();
+    m_pression_scheduler = p.aleaGenVal();
 
-        m_temp.aleaGenVal();
-        this->m_serv.m_temperature_test = m_temp.m_valeur;
-        m_humi.aleaGenVal();
-        this->m_serv.m_humidity_test = m_humi.m_valeur;
-        m_lig.aleaGenVal();
-        this->m_serv.m_light_test = m_lig.m_valeur;
-        m_pres.aleaGenVal();
-        this->m_serv.m_pression_test = m_pres.m_valeur;
-        m_serv.consoleWrite();
-        m_serv.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.csv");
+    s.m_temperature_test = m_temperature_scheduler;
+    s.m_humidity_test = m_humidity_scheduler;
+    s.m_light_test = m_light_scheduler;
+    s.m_pression_test = m_pression_scheduler;
+
+    s.consoleWrite();
+    s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv");
 }

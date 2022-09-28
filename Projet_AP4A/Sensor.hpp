@@ -64,11 +64,12 @@ public :
     //operator
     Sensor& operator=(const Sensor& s);
 
-    void aleaGenVal();
+    int aleaGenVal();
 
     ESensors getName();
-
+    
     friend class Scheduler;
+
 };
 
 /**
@@ -76,26 +77,6 @@ public :
  * @brief Permet de générer des objets capteurs de température
  */
 class Temperature : public Sensor {
-
-    private :
-
-    public:
-
-    //constructeur par défaut
-    Temperature();
-
-    //constructeur par recopie
-    Temperature(const Temperature& t);
-
-    /**
-     * @brief permet de récupérer les données des capteurs
-     * @return int
-     * @param
-     */
-    int getDataT();
-
-    void setDataT(const int& i);
-
 };
 
 /**
@@ -103,25 +84,6 @@ class Temperature : public Sensor {
  * @brief Permet de générer des objets capteurs d'humidité
  */
 class Humidity : public Sensor {
-
-    private :
-
-    public:
-
-    //constructeur par défaut
-    Humidity();
-
-    //constructeur par recopie
-    Humidity(const Humidity& h);
-
-    /**
-     * @brief permet de récupérer les données des capteurs
-     * @return int
-     * @param
-     */
-    int getDataH();
-
-    void setDataH(const int& i);
 };
 
 /**
@@ -129,25 +91,6 @@ class Humidity : public Sensor {
  * @brief Permet de générer des objets capteurs de lumière
  */
 class Light : public Sensor {
-
-    private :
-
-    public :
-
-    //constructeur par défaut
-    Light();
-
-    //constructeur par recopie
-    Light(const Light& l);
-
-    /**
-     * @brief permet de récupérer les données des capteurs
-     * @return int
-     * @param
-     */
-    int getDataL();
-
-    void setDataL(const int& i);
 };
 
 /**
@@ -155,25 +98,6 @@ class Light : public Sensor {
  * @brief Permet de générer des objets capteurs de pression
  */
 class Pression : public Sensor {
-
-    private :
-
-    public :
-
-    //constructeur par défaut
-    Pression();
-
-    //constructeur par recopie
-    Pression(const Pression& p);
-
-    /**
-     * @brief permet de récupérer les données des capteurs
-     * @return int
-     * @param
-     */
-    int getDataP();
-
-    void setDataP(const int& i);
 };
 
 #endif // Projet_AP4A_SENSOR_H

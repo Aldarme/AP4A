@@ -62,14 +62,6 @@ public:
      */
     void fileWrite(const std::string cheminFichier);
 
-    void setDataTemp(const int& i);
-
-    void setDataHumi(const int& i);
-
-    void setDataLigh(const int& i);
-
-    void setDataPres(const int& i);
-
     friend class Scheduler;
 };
 

@@ -24,7 +24,7 @@ Server::Server(){
 }
 
 //constructeur par valeurs
-Server::Server(int t, int h, int l, int p){
+Server::Server(const int t, const int h, const int l, const int p){
     m_temperature_test = t;
     m_humidity_test =h;
     m_light_test = l;
@@ -75,27 +75,11 @@ void Server::fileWrite(string const cheminFichier){
     ofstream donnéesCapteurs(cheminFichier, ios::app);
 
     if(donnéesCapteurs){
+        cout << "OK" << endl;
         donnéesCapteurs << "Temperature" << ";" << this->m_temperature_test << ";" << "Humidity" << ";" <<this->m_humidity_test << ";" << "Light" << ";" <<this->m_light_test << ";" << "Pression" << ";" <<this->m_pression_test << ";" << endl;
     }
     else 
     {
         cout << "Erreur" << endl;
     }
-}
-
-
-void Server::setDataTemp(const int& i){
-    this->m_temperature_test = i;
-}
-
-void Server::setDataHumi(const int& i){
-    this->m_humidity_test = i;
-}
-
-void Server::setDataLigh(const int& i){
-    this->m_light_test = i;
-}
-
-void Server::setDataPres(const int& i){
-    this->m_pression_test = i;
 }
