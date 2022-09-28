@@ -17,7 +17,7 @@ std::ofstream monFlux(nomFichier.c_str());
 void Server::fileWrite(char nom[], int value){
     if(monFlux)    
     {
-        monFlux <<" Valeur" << nom << ":" << value << std::endl;
+        monFlux << nom << " : " << value << std::endl;
     }
     else
     {
@@ -27,7 +27,7 @@ void Server::fileWrite(char nom[], int value){
 }
 
 void Server::consolWrite(char nom[], int value){
-    std::cout <<" Valeur " << nom << ":" << value << std::endl;
+    std::cout << nom << " : " << value << std::endl;
 }
 
 void Server::fileAndConsoleWrite(char nom[], int value){

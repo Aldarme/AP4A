@@ -1,4 +1,10 @@
+
+#ifndef SENSOR_HPP
+#define SENSOR_HPP
 #include "../hpp/Sensor.hpp"
+
+#endif
+
 #include <cstdlib>
 #include <ctime>
 

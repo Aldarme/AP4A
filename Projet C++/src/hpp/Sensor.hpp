@@ -5,6 +5,7 @@
 @brief  Classe ayant pour objectif de generer à intervalle régulier des données en int
 */
 
+
 class Sensor
 {
 protected:
