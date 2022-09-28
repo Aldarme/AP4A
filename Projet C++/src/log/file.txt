@@ -1,0 +1,5 @@
+ ValeurT:4
+ ValeurT:7
+ ValeurT:8
+ ValeurT:6
+ ValeurT:4
