@@ -30,7 +30,7 @@ int Scheduler::getSensorData()
         clock_t now = clock();
         
         while(clock() - now <delay);
-        server.fileAndConsoleWrite(*"Temperature" , temperature.getData());
+        server.fileAndConsoleWrite("Temperature" , temperature.getData());
         // server.fileAndConsoleWrite(*"Humidity" , humidity.getData());
         // server.fileAndConsoleWrite(*"Light" , light.getData());
         // server.fileAndConsoleWrite(*"Sound" , sound.getData());

@@ -1,5 +1,5 @@
- ValeurT:4
- ValeurT:7
- ValeurT:8
- ValeurT:6
- ValeurT:4
+ ValeurTemperature:4
+ ValeurTemperature:7
+ ValeurTemperature:8
+ ValeurTemperature:6
+ ValeurTemperature:4
