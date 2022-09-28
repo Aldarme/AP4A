@@ -15,5 +15,5 @@ Elle utilise un thread différent pour chaque capteur, le délai entre deux mesu
 L'utilisateur peut choisir au début du programme si les données seront écrites dans les fichiers de log et dans la
 console. Il peut aussi choisir la durée de la simulation.
 
-Commit final : <br/>
-Commit intérmédiaire : https://github.com/Aldarme/AP4A/tree/48d6141ba2cdadfe6410bcc164c9742776daa537
+Rendu final : https://github.com/Aldarme/AP4A/tree/459e316dcca11cc0a9d49c61c15eb624e2595355 <br/>
+Rendu intérmédiaire : https://github.com/Aldarme/AP4A/tree/48d6141ba2cdadfe6410bcc164c9742776daa537
