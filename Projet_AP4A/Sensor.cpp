@@ -19,13 +19,13 @@ using namespace std;
 //constructeur par défaut
 Sensor::Sensor(){
     m_name = e_temperature;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constructeur par valeur
 Sensor::Sensor(const ESensors param_name){
     m_name = param_name;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constructeur par recopie
@@ -52,25 +52,36 @@ Sensor& Sensor::operator=(const Sensor& s){
  * @return int
  * @param const ESensors name
  */
-int& Sensor::aleaGenVal(){
+void Sensor::aleaGenVal(){
 
-    srand (time(NULL));
+    //srand (time(NULL));
 
     ESensors param_name = getName();
-    int& m_valeur = 0;
+
 
     switch (param_name){
-        case e_temperature : m_valeur = rand() %50;
+        case e_temperature :
+        {
+            this->m_valeur = rand() %50 + 10;
+        }
         break;
-        case e_humidity : m_valeur = rand() %100;
+        case e_humidity :
+        {
+            this->m_valeur = rand() %100;
+        }
         break;
-        case e_light : m_valeur = rand() %12000;
+        case e_light :
+        {
+            this->m_valeur = rand() %12000;
+        }
         break;
-        case e_pression : m_valeur = rand() %200;
+        case e_pression :
+        {
+            this->m_valeur = rand() %200;
+        }
         break;
     }
 
-    return *m_valeur;
 
 }
 
@@ -81,7 +92,7 @@ ESensors Sensor::getName(){
 //constructeur par défaut
 Temperature::Temperature(){
     m_name = ESensors::e_temperature;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constrcuteur par recopie
@@ -101,7 +112,7 @@ void Temperature::setDataT(const int& i){
 //constructeur par défaut
 Humidity::Humidity(){
     m_name = ESensors::e_humidity;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constructeur par recopie
@@ -121,7 +132,7 @@ void Humidity::setDataH(const int& i){
 //constructeur par défaut
 Light::Light(){
     m_name = ESensors::e_light;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constructeur par recopie
@@ -141,7 +152,7 @@ void Light::setDataL(const int& i){
 //constructeur par défaut
 Pression::Pression(){
     m_name = ESensors::e_pression;
-    m_valeur = aleaGenVal();
+    //aleaGenVal();
 }
 
 //constructeur par recopie

@@ -17,10 +17,11 @@ class Scheduler{
 
     private :
 
-    int m_temperature_scheduler;
-    int m_humidity_scheduler;
-    int m_light_scheduler;
-    int m_pression_scheduler;
+    Temperature m_temp;
+    Humidity m_humi;
+    Light m_lig;
+    Pression m_pres;
+    Server m_serv;
 
     public :
 
@@ -30,17 +31,8 @@ class Scheduler{
 
     ~Scheduler();
 
-    void sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s);
+    void sendData();
 
-    int getTemperature();
-
-    int getHumidity();
-
-    int getLight();
-
-    int getPression();
-
-    void setData(Temperature& t, Humidity& h, Light& l, Pression& p);
 };
 
 #endif // Projet_AP4A_SCHEDULER_H

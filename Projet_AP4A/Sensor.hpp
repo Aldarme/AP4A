@@ -64,10 +64,11 @@ public :
     //operator
     Sensor& operator=(const Sensor& s);
 
-    int& aleaGenVal();
+    void aleaGenVal();
 
     ESensors getName();
 
+    friend class Scheduler;
 };
 
 /**

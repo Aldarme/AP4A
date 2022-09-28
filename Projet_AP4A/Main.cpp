@@ -27,16 +27,20 @@ int main(){
 
     //p.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A/Capteurs.csv");
 
-    Temperature t;
-    Humidity h;
-    Light l;
-    Pression p;
+    //Temperature t;
+    //Humidity h;
+    //Light l;
+    //Pression p;
 
     Scheduler boss;
 
-    Server s;
+    //Server s;
+
+    srand(time(NULL));
     
-    boss.sendData(t, h, l, p, s);
+    for(int i = 0;i<5;i++){
+        boss.sendData();
+    }
 
     return 0;
 }
