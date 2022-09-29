@@ -6,6 +6,8 @@
  */
 
 #include <iostream>
+#include <thread>
+#include <chrono>
 #include "Scheduler.hpp"
 #include "Sensor.hpp"
 #include "Server.hpp"
@@ -40,12 +42,14 @@ Scheduler& Scheduler::operator=(const Scheduler& s){
     return *this;
 }
 
-void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s){
+void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s, int m_intervalle_temps){
     
     m_temperature_scheduler = t.aleaGenVal();
     m_humidity_scheduler = h.aleaGenVal();
     m_light_scheduler = l.aleaGenVal();
     m_pression_scheduler = p.aleaGenVal();
+
+    this_thread::sleep_for(chrono::milliseconds(m_intervalle_temps*1000));
 
     //s.m_temperature_test = m_temperature_scheduler;
     //s.m_humidity_test = m_humidity_scheduler;

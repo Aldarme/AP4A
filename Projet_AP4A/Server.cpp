@@ -76,7 +76,7 @@ void Server::fileWrite(string const cheminFichier){
 
     if(donnéesCapteurs){
         cout << "Ecriture\n" << endl;
-        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_test << ";" << "Humidity (%)" << ";" <<this->m_humidity_test << ";" << "Light (lx)" << ";" <<this->m_light_test << ";" << "Pression (hPa)" << ";" <<this->m_pression_test << ";" << endl;
+        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_test << ";" << "Humidity (%)" << ";" <<this->m_humidity_test << ";" << "Light (lx)" << ";" <<this->m_light_test << ";" << "Pression (hPa)" << ";" <<this->m_pression_test << endl;
     }
     else 
     {

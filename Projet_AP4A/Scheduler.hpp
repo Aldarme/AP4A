@@ -33,7 +33,7 @@ class Scheduler{
 
     Scheduler& operator=(const Scheduler& s);
 
-    void sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s);
+    void sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s, int m_intervalle_temps);
 
     friend class Server;
 };
