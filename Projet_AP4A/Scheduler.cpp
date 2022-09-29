@@ -8,42 +8,74 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+
 #include "Scheduler.hpp"
 #include "Sensor.hpp"
 #include "Server.hpp"
 
 using namespace std;
 
-Scheduler::Scheduler(){
+//constructeur par défaut
+Scheduler::Scheduler()
+{
+
     m_temperature_scheduler = 0;
     m_humidity_scheduler = 0;
     m_light_scheduler = 0;
     m_pression_scheduler = 0;
+
 }
 
-Scheduler::Scheduler(const Scheduler& s){
-    this->m_temperature_scheduler = s.m_temperature_scheduler;
-    this->m_humidity_scheduler = s.m_humidity_scheduler;
-    this->m_light_scheduler = s.m_light_scheduler;
-    this->m_pression_scheduler = s.m_pression_scheduler;
+//constructeur par valeurs
+Scheduler::Scheduler(int t, int h, int l, int p)
+{
+
+    m_temperature_scheduler = t;
+    m_humidity_scheduler = h;
+    m_light_scheduler = l;
+    m_pression_scheduler = p;
+
 }
 
+//constructeur par recopie
+Scheduler::Scheduler(const Scheduler& sc)
+{
+
+    this->m_temperature_scheduler = sc.m_temperature_scheduler;
+    this->m_humidity_scheduler = sc.m_humidity_scheduler;
+    this->m_light_scheduler = sc.m_light_scheduler;
+    this->m_pression_scheduler = sc.m_pression_scheduler;
+
+}
+
+//destructeur
 Scheduler::~Scheduler(){
+
     cout << "Destructeur appelle\n" << endl;
+
 }
 
 //operator
-Scheduler& Scheduler::operator=(const Scheduler& s){
-    this->m_temperature_scheduler = s.m_temperature_scheduler;
-    this->m_humidity_scheduler = s.m_humidity_scheduler;
-    this->m_light_scheduler = s.m_light_scheduler;
-    this->m_pression_scheduler = s.m_pression_scheduler;
+Scheduler& Scheduler::operator=(const Scheduler& sc)
+{
+
+    this->m_temperature_scheduler = sc.m_temperature_scheduler;
+    this->m_humidity_scheduler = sc.m_humidity_scheduler;
+    this->m_light_scheduler = sc.m_light_scheduler;
+    this->m_pression_scheduler = sc.m_pression_scheduler;
 
     return *this;
+
 }
 
-void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s, int m_intervalle_temps){
-    
+/**
+ * @brief Permet de récupérer les données des capteurs avec une certaine intervalle de temps
+ * @return void
+ * @param Capteurs Temperature, Humidity, Light et Pression + int intervalle de temps
+ */
+void Scheduler::takeData(Temperature& t, Humidity& h, Light& l, Pression& p, int m_intervalle_temps)
+{
+
     m_temperature_scheduler = t.aleaGenVal();
     m_humidity_scheduler = h.aleaGenVal();
     m_light_scheduler = l.aleaGenVal();
@@ -51,11 +83,4 @@ void Scheduler::sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Ser
 
     this_thread::sleep_for(chrono::milliseconds(m_intervalle_temps*1000));
 
-    //s.m_temperature_test = m_temperature_scheduler;
-    //s.m_humidity_test = m_humidity_scheduler;
-    //s.m_light_test = m_light_scheduler;
-    //s.m_pression_test = m_pression_scheduler;
-
-    //s.consoleWrite();
-    //s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv");
 }

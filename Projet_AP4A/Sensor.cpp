@@ -17,107 +17,188 @@
 using namespace std;
 
 //constructeur par défaut
-Sensor::Sensor(){
+Sensor::Sensor()
+{
+
     m_name = e_temperature;
     m_valeur = 0;
+
 }
 
 //constructeur par valeur
-Sensor::Sensor(const ESensors param_name){
+Sensor::Sensor(const ESensors param_name)
+{
+
     m_name = param_name;
     m_valeur = 0;
+
 }
 
 //constructeur par recopie
-Sensor::Sensor(const Sensor& s){
+Sensor::Sensor(const Sensor& s)
+{
+
     this->m_name = s.m_name;
     this->m_valeur = s.m_valeur;
+
 }
 
 //destructeur
-Sensor::~Sensor(){
+Sensor::~Sensor()
+{
+
     cout << "Destructeur appelle\n" << endl;
+
 }
 
 //operator
-Sensor& Sensor::operator=(const Sensor& s){
+Sensor& Sensor::operator=(const Sensor& s)
+{
+
     this->m_name = s.m_name;
     this->m_valeur = s.m_valeur;
 
     return *this;
+
 }
 
 /**
  * @brief permet de générer des valeurs aléatoires de int pour les différents capteurs
  * @return int
- * @param const ESensors name
+ * @param void
  */
-int Sensor::aleaGenVal(){
+int Sensor::aleaGenVal()
+{
 
     int m_valeur;
 
     switch (this->m_name){
-        case e_temperature : m_valeur = rand() % 30 + 15;
+
+        case e_temperature :
+        {
+
+            m_valeur = rand() % 30 + 15;
+
+        }
         break;
-        case e_humidity : m_valeur = rand() % 101;
+
+        case e_humidity :
+        {
+
+            m_valeur = rand() % 101;
+
+        }
         break;
-        case e_light : m_valeur = rand() % 12001;
+
+        case e_light :
+        {
+
+            m_valeur = rand() % 12001;
+
+        }
         break;
-        case e_pression : m_valeur = rand() % 100 + 700;
+        
+        case e_pression :
+        {
+
+            m_valeur = rand() % 100 + 700;
+
+        }
+        break;
+
+        default :
+        {
+
+            return m_valeur = 0;
+            cout << "valeur aléatoire non initialisée" << endl;
+
+        }
         break;
     }
 
     return m_valeur;
 }
 
-int Sensor::getData(){
+/**
+ * @brief permet de récupérer la valeur des capteurs
+ * @return int
+ * @param void
+ */
+int Sensor::getData()
+{
+
     return this->m_valeur;
+
 }
 
-//constructeur par défaut
-Temperature::Temperature(){
+//constructeur par défaut des capteurs Température
+Temperature::Temperature()
+{
+
     m_name = ESensors::e_temperature;
     m_valeur = 0;
+
 }
 
-//constrcuteur par recopie
-Temperature::Temperature(const Temperature& t){
+//constructeur par recopie des capteurs Température
+Temperature::Temperature(const Temperature& t)
+{
+
     this->m_name = t.m_name;
     this->m_valeur = t.m_valeur;
+
 }
 
-//constructeur par défaut
-Humidity::Humidity(){
+//constructeur par défaut des capteurs Humidity
+Humidity::Humidity()
+{
+
     m_name = ESensors::e_humidity;
     m_valeur = 0;
+
 }
 
-//constructeur par recopie
-Humidity::Humidity(const Humidity& h){
+//constructeur par recopie des capteurs Humidity
+Humidity::Humidity(const Humidity& h)
+{
+
     this->m_name = h.m_name;
     this->m_valeur = h.m_valeur;
+
 }
 
-//constructeur par défaut
-Light::Light(){
+//constructeur par défaut des capteurs Light
+Light::Light()
+{
+
     m_name = ESensors::e_light;
     m_valeur = 0;
+
 }
 
-//constructeur par recopie
-Light::Light(const Light& l){
+//constructeur par recopie des capteurs Light
+Light::Light(const Light& l)
+{
+
     this->m_name = l.m_name;
     this->m_valeur = l.m_valeur;
+
 }
 
-//constructeur par défaut
-Pression::Pression(){
+//constructeur par défaut des capteurs Pression
+Pression::Pression()
+{
+
     m_name = ESensors::e_pression;
     m_valeur = 0;
+
 }
 
-//constructeur par recopie
-Pression::Pression(const Pression& p){
+//constructeur par recopie des capteurs Pression
+Pression::Pression(const Pression& p)
+{
+
     this->m_name = p.m_name;
     this->m_valeur = p.m_valeur;
+
 }

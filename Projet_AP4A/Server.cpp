@@ -16,42 +16,57 @@
 using namespace std;
 
 //constructeur par défaut
-Server::Server(){
-    m_temperature_test = 0;
-    m_humidity_test = 0;
-    m_light_test = 0;
-    m_pression_test = 0;
+Server::Server()
+{
+
+    m_temperature_server = 0;
+    m_humidity_server = 0;
+    m_light_server = 0;
+    m_pression_server = 0;
+
 }
 
 //constructeur par valeurs
-Server::Server(const int t, const int h, const int l, const int p){
-    m_temperature_test = t;
-    m_humidity_test =h;
-    m_light_test = l;
-    m_pression_test = p;
+Server::Server(const int t, const int h, const int l, const int p)
+{
+
+    m_temperature_server = t;
+    m_humidity_server =h;
+    m_light_server = l;
+    m_pression_server = p;
+
 }
 
 //constructeur par recopie
-Server::Server(const Server& s){
-    this->m_temperature_test = s.m_temperature_test;
-    this->m_humidity_test = s.m_humidity_test;
-    this->m_light_test = s.m_light_test;
-    this->m_pression_test = s.m_pression_test;
+Server::Server(const Server& s)
+{
+
+    this->m_temperature_server = s.m_temperature_server;
+    this->m_humidity_server = s.m_humidity_server;
+    this->m_light_server = s.m_light_server;
+    this->m_pression_server = s.m_pression_server;
+
 }
 
 //destructeur
-Server::~Server(){
+Server::~Server()
+{
+
     cout << "Destructeur appelle\n" << endl;
+
 }
 
 //operator
-Server& Server::operator=(const Server& s){
-    this->m_temperature_test = s.m_temperature_test;
-    this->m_humidity_test = s.m_humidity_test;
-    this->m_light_test = s.m_light_test;
-    this->m_pression_test = s.m_pression_test;
+Server& Server::operator=(const Server& s)
+{
+
+    this->m_temperature_server = s.m_temperature_server;
+    this->m_humidity_server = s.m_humidity_server;
+    this->m_light_server = s.m_light_server;
+    this->m_pression_server = s.m_pression_server;
 
     return *this;
+
 }
 
  /**
@@ -59,9 +74,12 @@ Server& Server::operator=(const Server& s){
  * @return void
  * @param pas de paramètres
  */
-void Server::consoleWrite(){
+void Server::consoleWrite()
+{
 
-    cout << "Temperature : " << this->m_temperature_test << " °C" << "\n" << "Humidity : " << this->m_humidity_test << " %" <<"\n" << "Light : " << this->m_light_test << " lx" <<"\n" << "Pression : " << this->m_pression_test << " hPa" <<"\n" << endl;
+    cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
+    << this->m_humidity_server << " %" << "\n" << "Light : " << this->m_light_server << " lx" <<
+     "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
 
 }
 
@@ -70,23 +88,40 @@ void Server::consoleWrite(){
  * @return void
  * @param
  */
-void Server::fileWrite(string const cheminFichier){
+void Server::fileWrite(string const cheminFichier)
+{
 
     ofstream donnéesCapteurs(cheminFichier, ios::app);
 
-    if(donnéesCapteurs){
+    if(donnéesCapteurs)
+    {
+
         cout << "Ecriture\n" << endl;
-        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_test << ";" << "Humidity (%)" << ";" <<this->m_humidity_test << ";" << "Light (lx)" << ";" <<this->m_light_test << ";" << "Pression (hPa)" << ";" <<this->m_pression_test << endl;
+        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_server << ";"
+        << "Humidity (%)" << ";" <<this->m_humidity_server << ";" << "Light (lx)" << ";"
+        <<this->m_light_server << ";" << "Pression (hPa)" << ";" <<this->m_pression_server << endl;
+
     }
     else 
     {
+
         cout << "Erreur" << endl;
+
     }
+
 }
 
-void Server::dataRCV(Scheduler& sp){
-    this->m_temperature_test = sp.m_temperature_scheduler;
-    this->m_humidity_test = sp.m_humidity_scheduler;
-    this->m_light_test = sp.m_light_scheduler;
-    this->m_pression_test = sp.m_pression_scheduler;
+/**
+ * @brief Permet de recevoir les données des capteurs récupérer par le Scheduler
+ * @return void
+ * @param Scheduler stockant les données des capteurs
+ */
+void Server::dataRCV(Scheduler& sc)
+{
+
+    this->m_temperature_server = sc.m_temperature_scheduler;
+    this->m_humidity_server = sc.m_humidity_scheduler;
+    this->m_light_server = sc.m_light_scheduler;
+    this->m_pression_server = sc.m_pression_scheduler;
+    
 }

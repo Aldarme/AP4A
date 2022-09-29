@@ -16,23 +16,26 @@
 #include "Sensor.hpp"
 #include "Scheduler.hpp"
 
+class Scheduler; //permet d'utiliser Scheduler dans les méthodes de Server, autrement erreur "Scheduler has not been declared"
+
 /**
  * @class Server
  * @brief Cette classe permet de recevoir les données des capteurs et de les visualiser dans la console et/ou de les stcoker dans les fichiers de logs
  */
-class Scheduler;
 class Server
 {
+
 private:
 
     //attributs
-    int m_temperature_test;
-    int m_humidity_test;
-    int m_light_test;
-    int m_pression_test;
+    int m_temperature_server;
+    int m_humidity_server;
+    int m_light_server;
+    int m_pression_server;
 
 public:
-    //Definition de la forme canonique
+
+    //Définition de la forme canonique
 
     //constructeur par défaut
     Server();
@@ -49,23 +52,27 @@ public:
     //operator
     Server& operator=(const Server& s);
 
-    void dataRCV(Scheduler& sp);
-
     /**
      * @brief Visualiser les données des capteurs
      * @return void
-     * @param pas de paramètres
+     * @param void
      */
     void consoleWrite();
 
     /**
      * @brief Stocker les données des capteurs dans des fichiers de logs
      * @return void
-     * @param
+     * @param chemin du fichier où l'on souhaite stocker les valeurs entre ""
      */
     void fileWrite(const std::string cheminFichier);
 
-    friend class Scheduler;
+    /**
+     * @brief Permet de recevoir les données des capteurs récupérer par le Scheduler
+     * @return void
+     * @param Scheduler stockant les données des capteurs
+     */
+    void dataRCV(Scheduler& sp);
+
 };
 
 #endif // Projet_AP4A_SERVER_H

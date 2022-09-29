@@ -13,11 +13,16 @@
 #include "Sensor.hpp"
 #include "Server.hpp"
 
-class Server;
-class Scheduler{
+/**
+ * @class
+ * @brief
+ */
+class Scheduler
+{
 
     private :
 
+    //attributs
     int m_temperature_scheduler;
     int m_humidity_scheduler;
     int m_light_scheduler;
@@ -25,17 +30,33 @@ class Scheduler{
 
     public :
 
+    //Définition de la forme canonique
+    
+    //constructeur par défaut
     Scheduler();
 
-    Scheduler(const Scheduler& s);
+    //constructeur par valeurs
+    Scheduler(int t, int h, int l, int p);
 
+    //constructeur par recopie
+    Scheduler(const Scheduler& sc);
+
+    //destructeur
     ~Scheduler();
 
-    Scheduler& operator=(const Scheduler& s);
+    //operator
+    Scheduler& operator=(const Scheduler& sc);
 
-    void sendData(Temperature& t, Humidity& h, Light& l, Pression& p, Server& s, int m_intervalle_temps);
+    /**
+     * @brief Permet de récupérer les données des capteurs avec une certaine intervalle de temps
+     * @return void
+     * @param Capteurs Temperature, Humidity, Light et Pression + int intervalle de temps
+     */
+    void takeData(Temperature& t, Humidity& h, Light& l, Pression& p, int m_intervalle_temps);
 
+    //déclaration d'ami avec Server
     friend class Server;
+
 };
 
 #endif // Projet_AP4A_SCHEDULER_H
