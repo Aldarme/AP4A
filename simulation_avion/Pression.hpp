@@ -3,20 +3,25 @@
 
 #include "Sensor.hpp" 
 
+#include <string>
+
 class Pression:public Sensor
 {
 private:
     int value; 
+    std::string type; // = "Pression";
+    std::string unity; // = "hPa";
 
 public:
 
     Pression();
     Pression(const Pression& p); 
     Pression& operator=(const Pression& p); 
-    Pression& operator=(float p);
     ~Pression();
 
-    int aleaGenValue() override; 
+    int aleaGenValue() override;
+    std::string getType() override;
+    std::string getUnity() override; 
 
 };
 

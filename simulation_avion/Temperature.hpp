@@ -3,20 +3,25 @@
 
 #include "Sensor.hpp"
 
+#include <string>
+
 class Temperature:public Sensor
 {
 private:
     int value; 
+    std::string type; // = "Temperature";
+    std::string unity; // = "C";
 
 public:
 
     Temperature();
     Temperature(const Temperature& t); 
     Temperature& operator=(const Temperature& t); 
-    Temperature& operator=(float t);
     ~Temperature();
 
     int aleaGenValue() override; 
+    std::string getType() override;
+    std::string getUnity() override;
 
 };
 

@@ -27,7 +27,10 @@ void Server::consoleWrite(int value, std::string type, std::string unity) {
 
 void Server::fileWrite(int value, std::string type, std::string unity) {
     ofstream file("data.txt", ios::app);
-    file << value << endl; 
+    file << type + " : ";
+    file << value;
+    file << " " + unity << endl;
+    file.close();
 }
 
 void Server::consoleWrite() {
@@ -37,4 +40,10 @@ void Server::consoleWrite() {
 void Server::fileWrite() {
     ofstream file("data.txt", ios::app);
     file << "" << endl;
+    file.close();
+}
+
+void Server::resetLogs() {
+    ofstream file("data.txt", ios::trunc);
+    file.close();
 }

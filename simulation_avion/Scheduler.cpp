@@ -17,11 +17,17 @@ Scheduler::Scheduler()
 
 Scheduler::~Scheduler()
 {
+    delete hu; 
+    delete te; 
+    delete pr; 
+    delete li; 
 }
 
 void Scheduler::scheduler() {
 
     Server server; 
+
+    server.resetLogs();
 
     int valueHu, valueTe, valuePr, valueLi; 
 
@@ -32,20 +38,20 @@ void Scheduler::scheduler() {
         
         clock(3); 
         valueHu = hu->getData();
-        server.consoleWrite(valueHu, "humidity", "%");
-        server.fileWrite(valueHu, "humidity", "%"); 
+        server.consoleWrite(valueHu, hu->getSensorType(), hu->getSensorUnity());
+        server.fileWrite(valueHu, hu->getSensorType(), hu->getSensorUnity()); 
 
         valueTe = te->getData( ); 
-        server.consoleWrite(valueTe, "temperature", "C");
-        server.fileWrite(valueTe, "temperature", "C"); 
+        server.consoleWrite(valueTe, te->getSensorType(), te->getSensorUnity());
+        server.fileWrite(valueTe, te->getSensorType(), te->getSensorUnity());
 
         valuePr = pr->getData(); 
-        server.consoleWrite(valuePr, "pression", "hPa");
-        server.fileWrite(valuePr, "pression", "hPa"); 
+        server.consoleWrite(valuePr, pr->getSensorType(), pr->getSensorUnity());
+        server.fileWrite(valuePr, pr->getSensorType(), pr->getSensorUnity()); 
 
         valueLi = li->getData();
-        server.consoleWrite(valueLi, "light", "on/off");
-        server.fileWrite(valueLi, "light", "on/off"); 
+        server.consoleWrite(valueLi, li->getSensorType(), li->getSensorUnity());
+        server.fileWrite(valueLi, li->getSensorType(), li->getSensorUnity());
  
         server.consoleWrite();
         server.fileWrite();

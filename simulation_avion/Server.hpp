@@ -26,6 +26,8 @@ class Server
         void consoleWrite();
 
         void fileWrite();
+
+        void resetLogs();
 };
 
 

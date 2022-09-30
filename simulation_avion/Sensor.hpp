@@ -1,10 +1,16 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
+#include <string>
+
 class Sensor 
 {
     protected:
-        int data; 
+        int data;
+        std::string type; 
+        std::string unity;
+        virtual std::string getType() = 0;
+        virtual std::string getUnity() = 0;
         virtual int aleaGenValue() = 0; 
 
     public: 
@@ -12,9 +18,11 @@ class Sensor
         Sensor();
         Sensor(const Sensor& s); 
         Sensor& operator=(const Sensor& s); 
-        ~Sensor() {}
+        ~Sensor() {};
 
         int getData();
+        std::string getSensorType();
+        std::string getSensorUnity();
 
 };
 
