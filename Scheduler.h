@@ -16,6 +16,10 @@ private :
 
 public:
     Scheduler();
+	void clock();
+
+private :
     void wait(float time);
+
 };
 
