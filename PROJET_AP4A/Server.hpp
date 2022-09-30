@@ -28,14 +28,14 @@ public:
     /**
      * @brief Ecrire les données reçues dans la console
      * @return void
-     * @param Demande un int 
+     * @param 4 sensors
      */ 
     void consoleWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
 
     /**
      * @brief Ecrire les données reçues dans un fichier
      * @return void
-     * @param Demande un int 
+     * @param 4 sensors 
      */
     void fileWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
     

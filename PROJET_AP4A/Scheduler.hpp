@@ -24,15 +24,15 @@ class Scheduler
 public:
     // Definition de la forme canonique
     Scheduler();
-    Scheduler(Server &param_server,Temperature &param_temperature,Humidity &param_humidity,Light &param_light,Pression &param_pression);
+    Scheduler(Server &param_server,Temperature &param_temperature,Humidity &param_humidity,Light &param_light,Pression &param_pression,int param_time);
     Scheduler(Scheduler &s);
     ~Scheduler(){};
     // ...
 
     /**
-     * @brief Récupérer les valeurs
+     * @brief Fonction qui envoi les valeurs des capteurs au serveur en utilisant les méthodes de celui-ci
      * @return void
-     * @param int,int,int,int
+     * @param rien
      */ 
     void setValue();
 
@@ -41,11 +41,11 @@ public:
     
 private:
     int m_time; ///Interval de temps choisi par l'utilisateur
-    Temperature m_temperature;
-    Humidity m_humidity;
-    Light m_light;
-    Pression m_pression;
-    Server m_server;
+    Temperature m_temperature; ///Capteur de température
+    Humidity m_humidity; ///Capteur d'humidité
+    Light m_light; ///Capteur de lumière
+    Pression m_pression; ///Capteur de pression
+    Server m_server; ///Server lié au scheduler
 };
 
 

@@ -35,7 +35,7 @@ class Sensor
 public:
     // Definition de la forme canonique
     Sensor(){};
-    Sensor(Sensor &s);
+    Sensor(const Sensor &s);
     ~Sensor(){};
     // ...
 
@@ -53,13 +53,24 @@ public:
      */ 
     int getValue();
 
+    /**
+     * @brief Surcharge d'opérateur pour un cout
+     * @return ostream&
+     * @param ostream& et sensor&
+     */ 
     friend std::ostream & operator<<(std::ostream &param_os, const Sensor &param_sensor);
+
+    /**
+     * @brief Surcharge d'opérateur pour une écriture dans un fichier
+     * @return ofstream&
+     * @param ofstream& et sensor&
+     */ 
     friend std::ofstream &operator<<(std::ofstream &param_of, const Sensor &param_sensor);
 
 protected:
     std::string m_name; /// Nom du capteur
     int m_value; /// Valeur du capteur
-    ESensor m_sensor;
+    ESensor m_sensor;   /// Enumeration pour pouvoir utiliser la fonction switch
 };
 
 /**
@@ -71,7 +82,7 @@ class Temperature : public Sensor
 public:
     // Definition de la forme canonique
     Temperature();
-    Temperature(Temperature &t);
+    Temperature(const Temperature &t);
     ~Temperature(){};
     // ...
        
@@ -86,7 +97,7 @@ class Humidity : public Sensor
 public:
     // Definition de la forme canonique
     Humidity();
-    Humidity(Humidity &h);
+    Humidity(const Humidity &h);
     ~Humidity(){};
     // ...
 
@@ -101,7 +112,7 @@ class Light : public Sensor
 public:
     // Definition de la forme canonique
     Light();
-    Light(Light &l);
+    Light(const Light &l);
     ~Light(){};
     // ...
       
@@ -116,7 +127,7 @@ class Pression : public Sensor
 public:
     // Definition de la forme canonique
     Pression();
-    Pression(Pression &p);
+    Pression(const Pression &p);
     ~Pression(){};
     // ...
       
