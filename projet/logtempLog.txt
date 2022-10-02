@@ -1,7 +1,0 @@
-Value: 23.5,
-Value: 23.5,
-Value: 23.5,
-Value: 23.5,
-s | Value: 23.5,
-s | Value: 23.5,
-s | Value: 23.5,

@@ -6,7 +6,12 @@
 #define UNTITLED72_HUMIDITY_H
 #include "Sensor.h"
 
-class Humidity : public Sensor{
+
+class Humidity : public Sensor<float>{
+public:
+    Humidity();
+    ~Humidity();
+    const SensorData& getData();
 
 };
 #endif //UNTITLED72_HUMIDITY_H

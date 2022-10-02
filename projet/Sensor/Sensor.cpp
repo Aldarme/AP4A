@@ -1,22 +1,29 @@
 //
 // Created by rayan on 26/09/2022.
 //
-#include <iostream>
+#include <random>
 #include "Sensor.h"
 
-Sensor::Sensor() = default;
-Sensor::~Sensor() = default;
-Sensor::Sensor(Sensor &sensor) = default;
+template <class T>
+Sensor<T>::Sensor() : T(){};
 
-float Sensor::aleaGenVal() {
-    float alea;
-    alea=rand() % (100 - 0 + 1) + 0;
-    return alea;
-}
+/**
+ * @brief Construct a new Sensor Base:: Sensor Base object with default values
+ */
+SensorBase::SensorBase()
+{
+    this->m_data.sensorType = e_unknown_type;
+    this->m_data.dataType = e_unknown_data;
+};
 
-float Sensor::getData() {
-    float data;
-    data = this->aleaGenVal();
-    return data;
-}
-
+/**
+ * @brief Construct a new Sensor Base:: Sensor Base object with values
+ * @param sT sensor type
+ * @param dT sensor data type
+ */
+SensorBase::SensorBase(SensorType sT, DataType dT)
+{
+    this->m_data.sensorType = sT;
+    this->m_data.dataType = dT;
+    this->m_data.value = "";
+};

@@ -6,7 +6,12 @@
 #define UNTITLED72_PRESSION_H
 #include "Sensor.h"
 
-class Pression : public Sensor{
+class Pression : public Sensor<int>{
+
+public:
+    Pression();
+    ~Pression();
+    const SensorData& getData();
 
 };
 #endif //UNTITLED72_PRESSION_H

@@ -5,22 +5,22 @@
 #ifndef UNTITLED72_SERVER_H
 #define UNTITLED72_SERVER_H
 #include <iostream>
+#include "../Enum.h"
+
 
 class Server {
 
 private:
     bool m_consolActivation;
     bool m_logActivation;
-
+    void consolWrite(const SensorData& data);
+    void fileWrite(const SensorData& data);
 public:
-
-    void consolWrite(float temperature, float humidite, float lumiere, float pression);
-    void fileWrite(const std::string& sensor, float valeur);
     Server();
     Server(Server const& server);
     ~Server();
-    Server& operator=(const Server& server);
-
-
+    void dataRcv(const SensorData& data);
 };
+
+void operator<<(Server& server, const SensorData& data);
 #endif //UNTITLED72_SERVER_H

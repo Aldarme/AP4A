@@ -1,2 +1,3 @@
-Temperature: 30.5
+s | Value: 23.5,
+Temperature: 30.5,
 Temperature: 52

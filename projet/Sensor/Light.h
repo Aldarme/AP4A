@@ -6,7 +6,11 @@
 #define UNTITLED72_LIGHT_H
 #include "Sensor.h"
 
-class Light : public Sensor{
+class Light : public Sensor<bool>{
+public:
+    Light();
+    ~Light();
+    const SensorData& getData();
 
 };
 #endif //UNTITLED72_LIGHT_H

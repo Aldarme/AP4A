@@ -1,16 +1,19 @@
 #include <iostream>
-using namespace std;
+#include <string>
 #include "Server/Server.h"
+#include "Scheduler/Scheduler.h"
+
+using namespace std;
+
+/**
+ * @brief types for data value of a sensor
+ */
+
 
 int main() {
     cout << "Hello, World!" << std::endl;
-    Server server;
-    float temp, hum, lum, pre;
-    temp = 52;
-    hum = 30;
-    lum = 35.68;
-    pre = 50.3;
-    server.consolWrite(temp, hum, lum, pre);
-    server.fileWrite("temp",temp);
+    Scheduler sc; // Start the scheduler
+
+
     return 0;
 }
