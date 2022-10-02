@@ -13,6 +13,11 @@
 #include "Sensor.hpp"
 #include "Server.hpp"
 
+class Temperature;
+class Humidity;
+class Light;
+class Pression;
+
 /**
  * @class
  * @brief
