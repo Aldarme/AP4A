@@ -16,6 +16,8 @@ class Sensor
 {
 protected:
     T m_minValue, m_maxValue;
+    std::string m_name;
+    std::string m_unite;
 public:
     Sensor<T>();
     Sensor<T>(const Sensor<T>& param_Sensor);
@@ -23,6 +25,9 @@ public:
     Sensor<T>& operator=(const Sensor<T>& param_Sensor);
     virtual T getData();
     T aleaGenVal(float param_minVal, float param_maxVal);
+    std::string getName();
+    std::string getUnite();
+
 };
 
 template<typename T>
@@ -30,10 +35,16 @@ Sensor<T>::Sensor()
 {
     this->m_minValue = 0;
     this->m_maxValue = 1;
+    this->m_name = "Sensor";
+    this->m_unite = "";
 }
 
 template<typename T>
 Sensor<T>::Sensor(const Sensor<T>& param_Sensor): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue) {}
+
+template<typename T>
+Sensor<T>::~Sensor<T>()
+= default;
 
 template<typename T>
 Sensor<T>& Sensor<T>::operator=(const Sensor<T>& param_Sensor) {
@@ -52,6 +63,18 @@ template<typename T>
 T Sensor<T>::aleaGenVal(float param_minVal, float param_maxVal)
 {
     return (param_minVal + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(param_maxVal-param_minVal))));
+}
+
+template<typename T>
+std::string Sensor<T>::getName()
+{
+    return this->m_name;
+}
+
+template<typename T>
+std::string Sensor<T>::getUnite()
+{
+    return this->m_unite;
 }
 
 

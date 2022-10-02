@@ -9,4 +9,6 @@ Humidite::Humidite()
     srand(time(nullptr));
     this->m_minValue = 40;
     this->m_maxValue = 60;
+    this->m_name = "Humidite";
+    this->m_unite = "%";
 }

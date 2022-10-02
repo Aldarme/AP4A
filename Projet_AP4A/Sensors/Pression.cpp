@@ -10,6 +10,7 @@ Pression::Pression()
     srand(time(nullptr));
     this->m_minValue = 76;
     this->m_maxValue = 81;
+    this->m_name = "Pression";
 }
 
 int Pression::aleaGenVal(int param_minVal, int param_maxVal)

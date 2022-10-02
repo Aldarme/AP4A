@@ -8,12 +8,14 @@
 Light::Light()
 {
     srand(time(nullptr));
-    this->m_minValue = 0;
-    this->m_maxValue = 1;
+    this->m_minValue = false;
+    this->m_maxValue = true;
+    this->m_name = "Light";
 }
-bool aleaGenVal()
+
+bool Light::aleaGenVal()
 {
-    return rand()%2;
+    return (rand()) % 2;
 }
 
 bool Light::getData()
