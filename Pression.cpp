@@ -3,8 +3,9 @@
 
 Pression::Pression() {
 	this->setData(this->aleaGenVal());
+	this->setSpecifications("Pression","hPa");
 }
 
 int Pression::aleaGenVal() {
-	return rand() % 20;
+	return rand() % 795 + 55;
 }

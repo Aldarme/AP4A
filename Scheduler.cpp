@@ -14,6 +14,20 @@ Scheduler::Scheduler() {
     sensor4 = new Temperature();
 }
 
+Scheduler::Scheduler(Scheduler& scheduler){
+    this->sensor1 = scheduler.sensor1;
+    this->sensor2 = scheduler.sensor2;
+    this->sensor3 = scheduler.sensor3;
+    this->sensor4 = scheduler.sensor4;
+}
+
+Scheduler& Scheduler::operator=(Scheduler& scheduler){
+    this->sensor1 = scheduler.sensor1;
+    this->sensor2 = scheduler.sensor2;
+    this->sensor3 = scheduler.sensor3;
+    this->sensor4 = scheduler.sensor4;
+}
+
 void Scheduler::wait(float seconds) {
     time_t lastTime = time(NULL); 
     time_t delta = 0;
@@ -33,14 +47,14 @@ void Scheduler::clock(){
         data2 = sensor2->getData();
         data3 = sensor3->getData();
         data4 = sensor4->getData();
-        s.consoleWrite(data1);
-        s.consoleWrite(data2);
-        s.consoleWrite(data3);
-        s.consoleWrite(data4);
-        s.fileWrite(data1);
-        s.fileWrite(data2);
-        s.fileWrite(data3);
-        s.fileWrite(data4);
+        s.consoleWrite(data1,sensor1->getSpecifications());
+        s.consoleWrite(data2,sensor2->getSpecifications());
+        s.consoleWrite(data3,sensor3->getSpecifications());
+        s.consoleWrite(data4,sensor4->getSpecifications());
+        s.fileWrite(data1,sensor1->getSpecifications());
+        s.fileWrite(data2,sensor2->getSpecifications());
+        s.fileWrite(data3,sensor3->getSpecifications());
+        s.fileWrite(data4,sensor4->getSpecifications());
         cout << "" << endl; 
     }
 }

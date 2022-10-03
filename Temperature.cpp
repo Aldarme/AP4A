@@ -3,8 +3,9 @@
 
 Temperature::Temperature() {
 	this->setData(this->aleaGenVal());
+	this->setSpecifications("Temperature","degrees Celsius");
 }
 
 int Temperature::aleaGenVal() {
-	return rand() % 22 + 18;
+	return rand() % 2 + 23;
 }

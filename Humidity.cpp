@@ -3,8 +3,9 @@
 
 Humidity::Humidity() {
 	this->setData(this->aleaGenVal());
+	this->setSpecifications("Humidity","%");
 }
 
 int Humidity::aleaGenVal() {
-	return rand() % 100;
+	return rand() % 101;
 }

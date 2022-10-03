@@ -16,10 +16,17 @@ private :
 
 public:
     Scheduler();
+	Scheduler(Scheduler& scheduler);
+	~Scheduler(){
+		delete sensor1;
+		delete sensor2;
+		delete sensor3;
+		delete sensor4;
+	}
+	Scheduler& operator=(Scheduler& scheduler);
 	void clock();
 
 private :
     void wait(float time);
-
 };
 
