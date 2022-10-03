@@ -72,23 +72,22 @@ void Scheduler::sendDataToServer(int time)
 {
     float temperature, humidity, pression, light;
 
-    temperature=getTemperatureSensor().getData();            // On récupère les données aléatoires engendrées que l'on stocke dans des variables
-    humidity=getHumiditySensor().getData();
-    pression=getPressionSensor().getData();
-
-    if(getLightSensor().getData()<0.5)                       // Le système de génération de valeur étant adapté aux flottants, la valeur de m_data de
-    {                                                        // l'objet de classe LightSensor se situe entre 0 et 1. Afin qu'elle soit égale soit à 0,
-        light=0;                                             //soit à 1, on réalise un test découpant en deux l'écart entre 0 et 1, affectant ensuite
-    }
-    else                                                    // 0 à light si la valeur de m_data est inférieure à 0.5, ou 1 si elle est supérieure
-    {
-        light=1;
-    }
-
-
     for(int i=0;i<time;i++)
     {
         setRandDataAllSensor();
+
+        temperature=getTemperatureSensor().getData();            // On récupère les données aléatoires engendrées que l'on stocke dans des variables
+        humidity=getHumiditySensor().getData();
+        pression=getPressionSensor().getData();
+
+        if(getLightSensor().getData()<0.5)                       // Le système de génération de valeur étant adapté aux flottants, la valeur de m_data de
+        {                                                        // l'objet de classe LightSensor se situe entre 0 et 1. Afin qu'elle soit égale soit à 0,
+            light=0;                                             //soit à 1, on réalise un test découpant en deux l'écart entre 0 et 1, affectant ensuite
+        }
+        else                                                    // 0 à light si la valeur de m_data est inférieure à 0.5, ou 1 si elle est supérieure
+        {
+            light=1;
+        }
 
         if(getServer().getConsolActivation())        // On teste la valeur de l'attribut m_consolActivation de l'attribut 'objet de classe Server' de
         {                                                // l'objet de classe Scheduler, afin d'afficher ou non les données dans la console
