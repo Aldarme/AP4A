@@ -10,11 +10,11 @@ class Server
 {
 private:
     void fileWrite(char nom[], int value) ;
-    void consolWrite(char nom[], int value);
+    void consolWrite(char nom[], int value, char unit[5]);
     
 
 public:
-    void fileAndConsoleWrite(char nom[], int value);
+    void fileAndConsoleWrite(char nom[], int value, char unit[5]);
     // Server(): a(), b(), c(), d(){};
     // virtual ~Server(){};
     

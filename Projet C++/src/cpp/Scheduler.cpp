@@ -40,11 +40,12 @@ int Scheduler::getSensorData()
         
         while(clock() - now <delay);
         
+        std::cout << "--------------Relevé n°"<< i+1 <<"--------------" << std::endl;
         std::cout << "--------------------------------------" << std::endl;
-        server.fileAndConsoleWrite("Temperature" , temperature->getData());
-        server.fileAndConsoleWrite("Humidity" , humidity->getData());
-        server.fileAndConsoleWrite("Light" , light->getData());
-        server.fileAndConsoleWrite("Sound" , sound->getData());
+        server.fileAndConsoleWrite("Temperature" , temperature->getData(), "°C");
+        server.fileAndConsoleWrite("Humidity" , humidity->getData(), "%");
+        server.fileAndConsoleWrite("Light" , light->getData(), "lumens");
+        server.fileAndConsoleWrite("Sound" , sound->getData(), "dB");
         std::cout << "--------------------------------------" << std::endl;
 
 

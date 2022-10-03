@@ -2,9 +2,9 @@
 #ifndef SENSOR_HPP
 #define SENSOR_HPP
 #include "../hpp/Sensor.hpp"
-
 #endif
 
+#include <string>
 #include <cstdlib>
 #include <ctime>
 

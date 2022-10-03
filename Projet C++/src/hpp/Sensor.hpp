@@ -12,6 +12,7 @@ protected:
     int aleaGenVal();
 
 public:
+    char unit[5];
     int data;
     Sensor();
     ~Sensor();

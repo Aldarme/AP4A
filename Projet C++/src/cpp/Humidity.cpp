@@ -4,4 +4,6 @@
 
 Humidity :: Humidity(){
     data = aleaGenVal();
+    unit[5] = *"%";
+
 }

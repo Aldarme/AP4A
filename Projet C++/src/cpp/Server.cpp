@@ -26,12 +26,12 @@ void Server::fileWrite(char nom[], int value){
     
 }
 
-void Server::consolWrite(char nom[], int value){
-    std::cout << nom << " : " << value << std::endl;
+void Server::consolWrite(char nom[], int value, char unit[5]){
+    std::cout << nom << " : " << value << " " << unit << std::endl;
 }
 
-void Server::fileAndConsoleWrite(char nom[], int value){
-    consolWrite(nom, value);
+void Server::fileAndConsoleWrite(char nom[], int value, char unit[5]){
+    consolWrite(nom, value, unit);
     fileWrite(nom,value);
 }
 
