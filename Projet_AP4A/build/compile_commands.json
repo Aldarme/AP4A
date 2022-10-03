@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/choulot/Bureau/Projet_AP4A/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/Main.dir/Main.cpp.o -c /home/choulot/Bureau/Projet_AP4A/Main.cpp",
+  "file": "/home/choulot/Bureau/Projet_AP4A/Main.cpp"
+},
+{
+  "directory": "/home/choulot/Bureau/Projet_AP4A/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/Main.dir/Server.cpp.o -c /home/choulot/Bureau/Projet_AP4A/Server.cpp",
+  "file": "/home/choulot/Bureau/Projet_AP4A/Server.cpp"
+},
+{
+  "directory": "/home/choulot/Bureau/Projet_AP4A/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/Main.dir/Sensor.cpp.o -c /home/choulot/Bureau/Projet_AP4A/Sensor.cpp",
+  "file": "/home/choulot/Bureau/Projet_AP4A/Sensor.cpp"
+},
+{
+  "directory": "/home/choulot/Bureau/Projet_AP4A/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/Main.dir/Scheduler.cpp.o -c /home/choulot/Bureau/Projet_AP4A/Scheduler.cpp",
+  "file": "/home/choulot/Bureau/Projet_AP4A/Scheduler.cpp"
+}
+]

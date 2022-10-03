@@ -1,2 +1,2 @@
-# Empty dependencies file for PROJET_AP4A.
+# Empty dependencies file for Main.
 # This may be replaced when dependencies are built.

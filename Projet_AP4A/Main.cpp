@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "Server.cpp"
-#include "Sensor.cpp"
-#include "Scheduler.cpp"
+#include "Server.hpp"
+#include "Sensor.hpp"
+#include "Scheduler.hpp"
 
 using namespace std;
 
@@ -51,8 +51,7 @@ int main()
         boss.takeData(t, h, l, p, m_temps_intervalle);
         s.dataRCV(boss);
         s.consoleWrite();
-        s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1/Capteurs.csv"); //à changer en fonction de l'endroit où l'on
-                                                                                //souhaite sauvegarder le fichier
+        s.fileWrite("/home/choulot/Bureau/Projet_AP4A/Capteurs.csv");
 
     }
 

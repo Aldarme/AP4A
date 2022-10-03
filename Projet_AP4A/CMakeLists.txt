@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(PROJET_AP4A)
+project(MonProjet)
 
 set(SRCS
     Main.cpp
@@ -15,4 +15,4 @@ set(HEADERS
     Scheduler.hpp
     )
 
-add_executable(PROJET_AP4A ${SRCS} ${HEADERS})
+add_executable(Main ${SRCS} ${HEADERS})

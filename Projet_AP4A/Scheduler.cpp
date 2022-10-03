@@ -83,4 +83,4 @@ void Scheduler::takeData(Temperature& t, Humidity& h, Light& l, Pression& p, int
 
     this_thread::sleep_for(chrono::milliseconds(m_intervalle_temps*1000));
 
-}
+}	
