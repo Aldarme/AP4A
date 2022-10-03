@@ -1,5 +1,8 @@
 #include "Scheduler.hpp"
 
+#include <stdlib.h>
+#include <time.h>
+
 #include <fstream>
 #include <iostream>
 using namespace std;
@@ -28,6 +31,7 @@ void Scheduler::scheduler() {
     Server server; 
 
     server.resetLogs();
+    srand(time(NULL));
 
     int valueHu, valueTe, valuePr, valueLi; 
 

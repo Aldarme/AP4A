@@ -1,15 +1,5 @@
-Humidity : 26 %
-Temperature : 27 C
-Pression : 84 hPa
-Light : 0 on/off
-
-Humidity : 29 %
-Temperature : 24 C
-Pression : 278 hPa
-Light : 0 on/off
-
 Humidity : 22 %
-Temperature : 24 C
-Pression : 355 hPa
+Temperature : 26 C
+Pression : 190 hPa
 Light : 1 on/off
 

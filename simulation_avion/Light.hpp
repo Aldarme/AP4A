@@ -8,9 +8,7 @@
 class Light:public Sensor
 {
 private:
-    int value; 
-    std::string type; // = "Light";
-    std::string unity; // = "On/Off";
+
 public:
     
     Light();

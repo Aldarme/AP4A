@@ -8,9 +8,6 @@
 class Temperature:public Sensor
 {
 private:
-    int value; 
-    std::string type; // = "Temperature";
-    std::string unity; // = "C";
 
 public:
 

@@ -5,7 +5,6 @@
 using namespace std;
 
 
-
 Server::Server() { 
 }
 
@@ -19,10 +18,15 @@ Server& Server::operator=(const Server& autre) {
 Server::~Server() {
 }
 
+
 void Server::consoleWrite(int value, std::string type, std::string unity) {
     cout << type + " : ";
     cout << value; 
     cout << " " + unity << endl;
+}
+
+void Server::consoleWrite() {
+    cout << "" << endl;
 }
 
 void Server::fileWrite(int value, std::string type, std::string unity) {
@@ -31,10 +35,6 @@ void Server::fileWrite(int value, std::string type, std::string unity) {
     file << value;
     file << " " + unity << endl;
     file.close();
-}
-
-void Server::consoleWrite() {
-    cout << "" << endl;
 }
 
 void Server::fileWrite() {

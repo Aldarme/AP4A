@@ -8,9 +8,6 @@
 class Pression:public Sensor
 {
 private:
-    int value; 
-    std::string type; // = "Pression";
-    std::string unity; // = "hPa";
 
 public:
 

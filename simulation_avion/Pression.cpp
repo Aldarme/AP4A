@@ -21,7 +21,7 @@ Pression::~Pression() {
 }
 
 int Pression::aleaGenValue(){
-    return (rand()%450 + 50); //pression between 50 and 500
+    return (rand()%800 + 50); // pression between 50 and 850 hPa
 }
 
 std::string Pression::getType() {

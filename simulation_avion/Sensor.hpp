@@ -6,7 +6,7 @@
 class Sensor 
 {
     protected:
-        int data;
+        int value;
         std::string type; 
         std::string unity;
         virtual std::string getType() = 0;
@@ -18,12 +18,11 @@ class Sensor
         Sensor();
         Sensor(const Sensor& s); 
         Sensor& operator=(const Sensor& s); 
-        ~Sensor() {};
+        ~Sensor();
 
         int getData();
         std::string getSensorType();
         std::string getSensorUnity();
-
 };
 
 
