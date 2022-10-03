@@ -9,14 +9,15 @@
 class Sensor
 {
 protected:
-    int aleaGenVal();
+    int aleaGenVal(); // Fonction de generation de nombre aléatoire entre 1 et 10
 
 public:
-    char unit[5];
-    int data;
-    Sensor();
-    ~Sensor();
-    int getData();
+    int data; 
+    Sensor(); // Constructeur par défaut
+    ~Sensor(); // Destructeur
+    Sensor (const Sensor&); // Constructeur de recopie
+    Sensor &operator=(const Sensor&); // Opérateur d'affectation
+    int getData(); // Fonction permettant de récuperer la donnée à envoyer
 
 };
 

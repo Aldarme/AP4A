@@ -2,7 +2,7 @@
 @author BENEDUCI Marie
 @file  Temperature.hpp
 @date 26/09/2022
-@brief  Classe capteur permetant de recuperer les données de temperature
+@brief  Classe capteur permetant d'avoir les données de temperature
 */
 #ifndef SENSOR_HPP
 #define SENSOR_HPP
@@ -12,7 +12,7 @@
 class Temperature : public Sensor
 {
 public:
-    Temperature();
+    Temperature(); //Constructeur par défaut
 };
 
 

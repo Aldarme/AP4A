@@ -2,7 +2,7 @@
 @author BENEDUCI Marie
 @file  Light.hpp
 @date 26/09/2022
-@brief  Classe capteur permetant de recuperer les données de luminosité
+@brief  Classe capteur permetant d'avoir les données de luminosité
 */
 
 #ifndef SENSOR_HPP
@@ -13,6 +13,6 @@
 class Light : public Sensor
 {
 public:
-    Light();
+    Light(); //Constructeur par défaut
 };
 

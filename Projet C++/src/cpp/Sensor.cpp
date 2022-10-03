@@ -17,12 +17,12 @@ Sensor::~Sensor()
 
 
 
-int Sensor::aleaGenVal(){
+int Sensor::aleaGenVal(){ //Fonction de generation de nombre aléatoire entre 1 et 10
     int randomNumber = rand() % 10 + 1;
     return randomNumber;
 }
 
 
-int Sensor::getData(){
+int Sensor::getData(){ // Fonction permettant de récuperer la donnée à envoyer
     return data;
 }

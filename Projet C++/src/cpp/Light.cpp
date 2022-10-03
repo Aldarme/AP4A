@@ -2,6 +2,5 @@
 
 
 Light :: Light(){
-    data = aleaGenVal();
-    unit[5] = *"Lumens";
+    data = aleaGenVal(); //instanciation de la valeur Light avec un nombre aléatoire generé par la fonction de la classe mère Sensor
 }

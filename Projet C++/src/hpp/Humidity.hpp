@@ -2,7 +2,7 @@
 @author BENEDUCI Marie
 @file  Humidity.hpp
 @date 26/09/2022
-@brief  Classe capteur permetant de recuperer les données d'humidité
+@brief  Classe capteur permetant d'avoir les données d'humidité
 */
 
 #ifndef SENSOR_HPP
@@ -13,6 +13,6 @@
 class Humidity : public Sensor
 {
 public:
-    Humidity();
+    Humidity(); //Constructeur par défaut
 };
 

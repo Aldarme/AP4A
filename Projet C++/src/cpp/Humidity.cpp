@@ -3,7 +3,6 @@
 
 
 Humidity :: Humidity(){
-    data = aleaGenVal();
-    unit[5] = *"%";
+    data = aleaGenVal(); //instanciation de la valeur Humidity avec un nombre aléatoire generé par la fonction de la classe mère Sensor
 
 }

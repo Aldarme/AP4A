@@ -9,8 +9,11 @@
 class Scheduler
 {
 public:
-    Scheduler();
-    int getSensorData();
+    Scheduler(); // Constructeur par défaut
+    ~Scheduler(); // Destructeur
+    Scheduler (const Scheduler&); // Constructeur de recopie
+    Scheduler &operator=(const Scheduler&); // Opérateur d'affectation
+    int getSensorData(); // Fonction de récuperation des données des Sensors
 
 };
 
