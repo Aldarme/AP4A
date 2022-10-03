@@ -1,20 +1,25 @@
-Temperature : 4
-Humidity : 8
-Light : 7
-Sound : 6
-Temperature : 4
-Humidity : 7
-Light : 6
-Sound : 3
-Temperature : 10
-Humidity : 3
-Light : 2
-Sound : 8
-Temperature : 1
-Humidity : 4
-Light : 10
-Sound : 7
-Temperature : 1
-Humidity : 3
-Light : 7
-Sound : 7
+--------------Relevé n°1--------------
+Temperature : 4 °C
+Humidity : 8 %
+Light : 7 lumens
+Sound : 6 dB
+--------------Relevé n°2--------------
+Temperature : 4 °C
+Humidity : 7 %
+Light : 6 lumens
+Sound : 3 dB
+--------------Relevé n°3--------------
+Temperature : 10 °C
+Humidity : 3 %
+Light : 2 lumens
+Sound : 8 dB
+--------------Relevé n°4--------------
+Temperature : 1 °C
+Humidity : 4 %
+Light : 10 lumens
+Sound : 7 dB
+--------------Relevé n°5--------------
+Temperature : 1 °C
+Humidity : 3 %
+Light : 7 lumens
+Sound : 7 dB

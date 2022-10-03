@@ -9,14 +9,15 @@
 class Server
 {
 private:
-    void fileWrite(char nom[], int value) ;
-    void consolWrite(char nom[], int value, char unit[5]);
+    void fileWrite(char nom[], int value, char unit[]) ;
+    void consolWrite(char nom[], int value, char unit[]);
     
 
 public:
-    void fileAndConsoleWrite(char nom[], int value, char unit[5]);
-    // Server(): a(), b(), c(), d(){};
-    // virtual ~Server(){};
+    void newStatement(int relevé);
+    void fileAndConsoleWrite(char nom[], int value, char unit[]);
+    Server();
+    ~Server();
     
 };
 
