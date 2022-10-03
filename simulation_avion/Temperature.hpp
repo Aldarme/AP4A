@@ -1,3 +1,10 @@
+/**
+ * @author  gilles_maurer
+ * @file    Temperature.hpp
+ * @date    03/10/2022
+ * @brief   Child class of Sensor, temperature sensor
+ */
+
 #ifndef TEMPERATURE_H
 #define TEMPERATURE_H
 
@@ -12,8 +19,8 @@ private:
 public:
 
     Temperature();
-    Temperature(const Temperature& t); 
-    Temperature& operator=(const Temperature& t); 
+    Temperature(const Temperature& param); 
+    Temperature& operator=(const Temperature& param); 
     ~Temperature();
 
     int aleaGenValue() override; 

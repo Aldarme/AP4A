@@ -8,15 +8,15 @@ Humidity::Humidity() {
     this->type = "Humidity";
     this->unity = "%";
 }
-Humidity::Humidity(const Humidity& h) {
-    this->value = h.value; 
-    this->type = h.type;
-    this->unity = h.unity;
+Humidity::Humidity(const Humidity& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
 }
-Humidity& Humidity::operator=(const Humidity& h) {
-    this->value = h.value; 
-    this->type = h.type;
-    this->unity = h.unity;
+Humidity& Humidity::operator=(const Humidity& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
     return *this; 
 }
 Humidity::~Humidity() {

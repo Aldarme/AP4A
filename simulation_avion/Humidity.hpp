@@ -1,3 +1,11 @@
+/**
+ * @author  gilles_maurer
+ * @file    Humidity.hpp
+ * @date    03/10/2022
+ * @brief   Child class of Sensor, humidity sensor
+ */
+
+
 #ifndef HUMIDITY_H
 #define HUMIDITY_H
 
@@ -11,8 +19,8 @@ private:
 
 public:
     Humidity();
-    Humidity(const Humidity& h); 
-    Humidity& operator=(const Humidity& h); 
+    Humidity(const Humidity& param); 
+    Humidity& operator=(const Humidity& param); 
     ~Humidity();
 
     int aleaGenValue() override; 

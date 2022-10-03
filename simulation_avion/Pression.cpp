@@ -6,15 +6,15 @@ Pression::Pression() {
     this->type = "Pression";
     this->unity = "hPa";  
 }
-Pression::Pression(const Pression& p) {
-    this->value = p.value;
-    this->type = p.type;
-    this->unity = p.unity; 
+Pression::Pression(const Pression& param) {
+    this->value = param.value;
+    this->type = param.type;
+    this->unity = param.unity; 
 }
-Pression& Pression::operator=(const Pression& p) {
-    this->value = p.value; 
-    this->type = p.type;
-    this->unity = p.unity;
+Pression& Pression::operator=(const Pression& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
     return *this; 
 }
 Pression::~Pression() {

@@ -6,16 +6,16 @@
 Sensor::Sensor() {   
 }
 
-Sensor::Sensor(const Sensor& s) {
-    this->value = s.value; 
-    this->type = s.type;
-    this->unity = s.unity;
+Sensor::Sensor(const Sensor& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
 }
 
-Sensor& Sensor::operator=(const Sensor& s) {
-    this->value = s.value;
-    this->type = s.type;
-    this->unity = s.unity;
+Sensor& Sensor::operator=(const Sensor& param) {
+    this->value = param.value;
+    this->type = param.type;
+    this->unity = param.unity;
     return *this;
 }
 

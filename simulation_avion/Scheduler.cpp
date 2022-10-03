@@ -12,18 +12,18 @@ using namespace std::chrono;
 
 Scheduler::Scheduler()
 {
-    hu = new Humidity(); 
-    te = new Temperature(); 
-    pr = new Pression(); 
-    li = new Light(); 
+    pHu = new Humidity(); 
+    pTe = new Temperature(); 
+    pPr = new Pression(); 
+    pLi = new Light(); 
 }
 
 Scheduler::~Scheduler()
 {
-    delete hu; 
-    delete te; 
-    delete pr; 
-    delete li; 
+    delete pHu; 
+    delete pTe; 
+    delete pPr; 
+    delete pLi; 
 }
 
 void Scheduler::scheduler() {
@@ -41,21 +41,21 @@ void Scheduler::scheduler() {
     {
         
         clock(3); 
-        valueHu = hu->getData();
-        server.consoleWrite(valueHu, hu->getSensorType(), hu->getSensorUnity());
-        server.fileWrite(valueHu, hu->getSensorType(), hu->getSensorUnity()); 
+        valueHu = pHu->getData();
+        server.consoleWrite(valueHu, pHu->getSensorType(), pHu->getSensorUnity());
+        server.fileWrite(valueHu, pHu->getSensorType(), pHu->getSensorUnity()); 
 
-        valueTe = te->getData( ); 
-        server.consoleWrite(valueTe, te->getSensorType(), te->getSensorUnity());
-        server.fileWrite(valueTe, te->getSensorType(), te->getSensorUnity());
+        valueTe = pTe->getData( ); 
+        server.consoleWrite(valueTe, pTe->getSensorType(), pTe->getSensorUnity());
+        server.fileWrite(valueTe, pTe->getSensorType(), pTe->getSensorUnity());
 
-        valuePr = pr->getData(); 
-        server.consoleWrite(valuePr, pr->getSensorType(), pr->getSensorUnity());
-        server.fileWrite(valuePr, pr->getSensorType(), pr->getSensorUnity()); 
+        valuePr = pPr->getData(); 
+        server.consoleWrite(valuePr, pPr->getSensorType(), pPr->getSensorUnity());
+        server.fileWrite(valuePr, pPr->getSensorType(), pPr->getSensorUnity()); 
 
-        valueLi = li->getData();
-        server.consoleWrite(valueLi, li->getSensorType(), li->getSensorUnity());
-        server.fileWrite(valueLi, li->getSensorType(), li->getSensorUnity());
+        valueLi = pLi->getData();
+        server.consoleWrite(valueLi, pLi->getSensorType(), pLi->getSensorUnity());
+        server.fileWrite(valueLi, pLi->getSensorType(), pLi->getSensorUnity());
  
         server.consoleWrite();
         server.fileWrite();

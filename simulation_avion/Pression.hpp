@@ -1,3 +1,10 @@
+/**
+ * @author  gilles_maurer
+ * @file    Pression.hpp
+ * @date    03/10/2022
+ * @brief   Child class of Sensor, pression sensor
+ */
+
 #ifndef PRESSION_H
 #define PRESSION_H
 
@@ -12,8 +19,8 @@ private:
 public:
 
     Pression();
-    Pression(const Pression& p); 
-    Pression& operator=(const Pression& p); 
+    Pression(const Pression& param); 
+    Pression& operator=(const Pression& param); 
     ~Pression();
 
     int aleaGenValue() override;

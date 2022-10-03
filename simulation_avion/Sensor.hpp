@@ -1,3 +1,10 @@
+/**
+ * @author  gilles_maurer
+ * @file    Sensor.hpp
+ * @date    03/10/2022
+ * @brief   Parent class of all sensors, virtual class
+ */
+
 #ifndef SENSOR_H
 #define SENSOR_H
 
@@ -16,8 +23,8 @@ class Sensor
     public: 
 
         Sensor();
-        Sensor(const Sensor& s); 
-        Sensor& operator=(const Sensor& s); 
+        Sensor(const Sensor& param); 
+        Sensor& operator=(const Sensor& param); 
         ~Sensor();
 
         int getData();

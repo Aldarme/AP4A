@@ -6,15 +6,15 @@ Light::Light() {
     this->type = "Light";
     this->unity = "on/off";
 }
-Light::Light(const Light& l) {
-    this->value = l.value; 
-    this->type = l.type;
-    this->unity = l.unity;
+Light::Light(const Light& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
 }
-Light& Light::operator=(const Light& l) {
-    this->value = l.value; 
-    this->type = l.type;
-    this->unity = l.unity;
+Light& Light::operator=(const Light& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
     return *this; 
 }
 Light::~Light() {

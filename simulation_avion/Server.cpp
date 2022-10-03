@@ -8,10 +8,10 @@ using namespace std;
 Server::Server() { 
 }
 
-Server::Server(const Server& autre) {
+Server::Server(const Server& param) {
 }
 
-Server& Server::operator=(const Server& autre) {
+Server& Server::operator=(const Server& param) {
     return *this; 
 }
 

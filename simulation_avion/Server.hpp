@@ -1,3 +1,10 @@
+/**
+ * @author  gilles_maurer
+ * @file    Server.hpp
+ * @date    03/10/2022
+ * @brief   Server class, write data in a file and in the console
+ */
+
 #ifndef SERVER_H
 #define SERVER_H
 
@@ -11,8 +18,8 @@ class Server
     
     public:
         Server();
-        Server(const Server& autre);
-        Server& operator=(const Server& autre);
+        Server(const Server& param);
+        Server& operator=(const Server& param);
         ~Server();
 
         void consoleWrite(int value, std::string type, std::string unity);

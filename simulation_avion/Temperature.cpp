@@ -6,15 +6,15 @@ Temperature::Temperature() {
     this->type = "Temperature";
     this->unity = "C";
 }
-Temperature::Temperature(const Temperature& t) {
-    this->value = t.value; 
-    this->type = t.type;
-    this->unity = t.unity;
+Temperature::Temperature(const Temperature& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
 }
-Temperature& Temperature::operator=(const Temperature& t) {
-    this->value = t.value; 
-    this->type = t.type;
-    this->unity = t.unity;
+Temperature& Temperature::operator=(const Temperature& param) {
+    this->value = param.value; 
+    this->type = param.type;
+    this->unity = param.unity;
     return *this; 
 }
 Temperature::~Temperature() {
