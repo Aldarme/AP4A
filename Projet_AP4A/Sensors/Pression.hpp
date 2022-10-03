@@ -11,6 +11,9 @@ class Pression : public Sensor<int>
 {
 public:
     Pression();
+    Pression(const Pression& param_p);
+    ~Pression();
+    Pression& operator=(const Pression& param_p);
     int aleaGenVal(int param_minVal, int param_maxVal);
     int getData();
 };

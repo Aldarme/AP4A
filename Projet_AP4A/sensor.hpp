@@ -40,11 +40,10 @@ Sensor<T>::Sensor()
 }
 
 template<typename T>
-Sensor<T>::Sensor(const Sensor<T>& param_Sensor): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue) {}
+Sensor<T>::Sensor(const Sensor<T>& param_Sensor): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue), m_name(this->m_name), m_unite(this->m_unite) {}
 
 template<typename T>
-Sensor<T>::~Sensor<T>()
-= default;
+Sensor<T>::~Sensor<T>() = default;
 
 template<typename T>
 Sensor<T>& Sensor<T>::operator=(const Sensor<T>& param_Sensor) {

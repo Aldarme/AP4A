@@ -22,10 +22,6 @@ public:
     Server(const Server& param_server);
     ~Server();
     Server& operator=(const Server& param_server);
-/*
-    template<typename T>
-    void fileWrite(Sensor<T> param_sensor);
-*/
     template<typename T>
     void fileWrite(const std::string& param_name,T param_value,const std::string& param_unite);
     template<typename T>
@@ -33,15 +29,6 @@ public:
 
 
 };
-/*
-template<typename T>
-void fileWrite(Sensor<T> param_sensor)
-{
-    std::ofstream file(param_sensor.getName() + ".txt", std::ios::app);
-    file << param_sensor.getData() << " " << param_sensor.getUnite() << std::endl;
-    file.close();
-}
- */
 
 template<typename T>
 void Server::fileWrite(const std::string& param_name, const T param_value, const std::string& param_unite)
