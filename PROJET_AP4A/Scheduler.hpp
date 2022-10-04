@@ -14,6 +14,10 @@
 #include <chrono>
 #include "Server.cpp"
 #include "Sensor.cpp"
+#include "Temperature.cpp"
+#include "Pression.cpp"
+#include "Humidity.cpp"
+#include "Light.cpp"
 
 /**
  * @class Scheduler
@@ -30,7 +34,7 @@ public:
     // ...
 
     /**
-     * @brief Fonction qui envoi les valeurs des capteurs au serveur en utilisant les méthodes de celui-ci
+     * @brief Fonction qui récupère les données des capteurs et envoi les valeurs des capteurs au serveur en utilisant les méthodes de celui-ci
      * @return void
      * @param rien
      */ 

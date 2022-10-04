@@ -35,7 +35,7 @@ class Sensor
 public:
     // Definition de la forme canonique
     Sensor(){};
-    Sensor(const Sensor &s);
+    Sensor(const Sensor &param_sensor);
     ~Sensor(){};
     // ...
 
@@ -45,13 +45,6 @@ public:
      * @param rien
      */ 
     void aleaValue();
-
-    /**
-     * @brief Obtenir la valeur du capteur
-     * @return int
-     * @param rien
-     */ 
-    int getValue();
 
     /**
      * @brief Surcharge d'opérateur pour un cout
@@ -72,68 +65,6 @@ protected:
     int m_value; /// Valeur du capteur
     ESensor m_sensor;   /// Enumeration pour pouvoir utiliser la fonction switch
 };
-
-/**
- * @class Temperature
- * @brief La classe Temperature simule le fonctionnement du capteur de température
- */
-class Temperature : public Sensor
-{
-public:
-    // Definition de la forme canonique
-    Temperature();
-    Temperature(const Temperature &t);
-    ~Temperature(){};
-    // ...
-       
-};
-
-/**
- * @class Humidity
- * @brief La classe Humidity simule le fonctionnement du capteur d'humidité
- */
-class Humidity : public Sensor
-{
-public:
-    // Definition de la forme canonique
-    Humidity();
-    Humidity(const Humidity &h);
-    ~Humidity(){};
-    // ...
-
-};
-
-/**
- * @class Light
- * @brief La classe Light simule le fonctionnement du capteur de lumière
- */
-class Light : public Sensor
-{
-public:
-    // Definition de la forme canonique
-    Light();
-    Light(const Light &l);
-    ~Light(){};
-    // ...
-      
-};
-
-/**
- * @class Pression
- * @brief La classe Pression simule le fonctionnement du capteur de pression
- */
-class Pression : public Sensor
-{
-public:
-    // Definition de la forme canonique
-    Pression();
-    Pression(const Pression &p);
-    ~Pression(){};
-    // ...
-      
-};
-
-
 
 
 
