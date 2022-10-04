@@ -9,11 +9,15 @@
 #include <iostream>
 #include <cstdlib>
 
+/**
+ * 
+ * 
+ * */
 int Sensor::aleaGenVal(){
-    this->m_data = this->getData();
+    this->m_data = (rand()%m_maxData)+m_minData;
     return this->m_data;
 }
 
 int Sensor::getData(){
-    return (rand()%m_maxData)+m_minData;
+    return this->m_data;
 }

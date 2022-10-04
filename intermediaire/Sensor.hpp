@@ -28,7 +28,7 @@ public:
     Sensor& operator=(const Sensor& param_s); //Opérateur d'affectation
     ~Sensor(); //Destructeur
 
-    int aleaGenVal(); //Nous pouvons déclarer le type dans la classe sensor pour le rendu intermédiaire
+    int aleaGenVal(); //Nous pouvons déclarer le type dans la classe sensor pour le rendu intermédiaire car les capteurs ont tous des données de type int
     int getData();
 };
 

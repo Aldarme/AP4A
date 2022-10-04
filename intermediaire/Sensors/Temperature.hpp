@@ -16,14 +16,14 @@
  * @class Temperature
  * @brief 
  */
-class Termperature : public Sensor
+class Temperature : public Sensor
 {
 public:
 // Definition de la forme canonique
-    Termperature(); //Constructeur pas défaut
-    Termperature(const Termperature& param_s); //Constructeur par recopie
-    Termperature& operator=(const Termperature& param_s); //Opérateur d'affectation
-    ~Termperature(); //Destructeur
+    Temperature(); //Constructeur pas défaut
+    Temperature(const Temperature& param_s); //Constructeur par recopie
+    Temperature& operator=(const Temperature& param_s); //Opérateur d'affectation
+    ~Temperature(); //Destructeur
 
     float aleaGenVal(); //Nous pouvons déclarer le type dans la classe sensor pour le rendu intermédiaire
     float getData();
