@@ -1,3 +1,10 @@
+/*
+@author BENEDUCI Marie
+@file  Sensor.cpp
+@date 19/09/2022
+@brief  Implementation de la Classe ayant pour objectif de generer à intervalle régulier des données en int
+*/
+
 
 #ifndef SENSOR_HPP
 #define SENSOR_HPP
@@ -24,5 +31,5 @@ int Sensor::aleaGenVal(){ //Fonction de generation de nombre aléatoire entre 1 
 
 
 int Sensor::getData(){ // Fonction permettant de récuperer la donnée à envoyer
-    return data;
+    return m_data;
 }

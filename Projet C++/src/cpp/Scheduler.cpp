@@ -1,3 +1,10 @@
+/*
+@author BENEDUCI Marie
+@file  Scheduler.cpp
+@date 19/09/2022
+@brief  Implementation de la Classe ayant pour objectif d'envoyer au Server les données des Sensor récupérées
+*/
+
 #include<cstdio>
 #include<iostream>
 #include<ctime>

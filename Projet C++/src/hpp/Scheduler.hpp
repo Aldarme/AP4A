@@ -2,9 +2,11 @@
 @author BENEDUCI Marie
 @file  Scheduler.hpp
 @date 19/09/2022
-@brief  Classe ayant pour objectif d'envoyer au Server les données des Sensor récupérées
+@brief  Déclaration de la Classe ayant pour objectif d'envoyer au Server les données des Sensor récupérées
 */
 
+#ifndef SCHEDULER_HPP
+#define SCHEDULER_HPP
 
 class Scheduler
 {
@@ -19,3 +21,4 @@ public:
 
 
 
+#endif
