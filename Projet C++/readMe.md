@@ -18,3 +18,8 @@
 ### 3. Lancement du programme
     ./app
 
+## Remarques
+
+- Lors de la compilation du fichier 'Scheduler.cpp' des warnings concerant les char[] apparaissent me demandant de les remplacer par des Strings cependant je n'ai pas réussi à les implémenter
+
+- Lors de l'execution du programme, uniquement 5 instances seront lancés et il s'arretera automatiquement, c'est un choix. Concernant l'affichage que ce soit dans le fichier log ou la console, l'instance en cours sera affiché à chaque fois.
