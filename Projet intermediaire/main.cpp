@@ -1,13 +1,10 @@
 /**
  * @author Tontsa apala frank
  * @file Main.cpp
- * @date 25/09/2022
+ * @date 01/10/2022
  * @brief main simulation file 
  */
 
-#include <iostream>
-#include <fstream>
-#include <string>
 #include "Scheduler.cpp"
 #include "Server.cpp"
 #include "Sensor.cpp"
@@ -15,6 +12,9 @@
 #include "Light.cpp"
 #include "Pression.cpp"
 #include "Humidity.cpp"
+#include <iostream>
+#include <fstream>
+#include <string>
 #include <ctime>
 
 using namespace std;
@@ -22,8 +22,8 @@ using namespace std;
 int main(){
     srand(time(0));
 
-    Scheduler alpha;
+    Scheduler Sched;
 
-    alpha.SignalServer();
+    Sched.dataServer();
     
 }
