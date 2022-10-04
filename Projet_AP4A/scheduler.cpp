@@ -30,7 +30,7 @@ Scheduler& Scheduler::operator=(const Scheduler& scheduler_p)
 void Scheduler::setDuration()
 {
     int durer;
-    std::cout << "Entre la durer de la simulation:";
+    std::cout << "Entrez la durer de la simulation:";
     std::cin >> durer;
     while (durer < 0)
     {
@@ -57,6 +57,6 @@ void Scheduler::startSimulation()
         this->m_server.fileWrite(this->m_light.getName(), this->m_light.getData(), this->m_light.getUnite());
         this->m_server.fileWrite(this->m_temperature.getName(), this->m_temperature.getData(), this->m_temperature.getUnite());
         this->m_server.fileWrite(this->m_pression.getName(), this->m_pression.getData(), this->m_pression.getUnite());
-
+        sleep(1);
     }
 }

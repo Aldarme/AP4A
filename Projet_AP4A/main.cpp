@@ -1,15 +1,9 @@
 #include <iostream>
-#include "sensor.hpp"
-#include "server.hpp"
+#include "scheduler.hpp"
 
 int main() {
-    Temperature t;
-    Humidite h;
-    Pression p;
-    Light l;
-    Server s;
-    s.fileWrite(t.getName(), t.getData(), t.getUnite());
-    s.consolWrite(t.getName(), t.getData(), t.getUnite());
+    Scheduler s;
+    s.startSimulation();
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

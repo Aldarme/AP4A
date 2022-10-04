@@ -4,677 +4,718 @@
 CMakeFiles/Projet_AP4A.dir/Sensors/Humidite.cpp.obj: ../Sensors/Humidite.cpp \
   ../Sensors/Humidite.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h
 
 CMakeFiles/Projet_AP4A.dir/Sensors/Light.cpp.obj: ../Sensors/Light.cpp \
   ../Sensors/Light.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h
 
 CMakeFiles/Projet_AP4A.dir/Sensors/Pression.cpp.obj: ../Sensors/Pression.cpp \
   ../Sensors/Pression.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h
 
 CMakeFiles/Projet_AP4A.dir/Sensors/Temperature.cpp.obj: ../Sensors/Temperature.cpp \
   ../Sensors/Temperature.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h
 
 CMakeFiles/Projet_AP4A.dir/main.cpp.obj: ../main.cpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  ../scheduler.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
   ../server.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
   ../Sensors/Humidite.hpp \
   ../sensor.hpp \
   ../Sensors/Light.hpp \
@@ -682,556 +723,736 @@ CMakeFiles/Projet_AP4A.dir/main.cpp.obj: ../main.cpp \
   ../Sensors/Temperature.hpp
 
 CMakeFiles/Projet_AP4A.dir/scheduler.cpp.obj: ../scheduler.cpp \
-  ../scheduler.hpp
+  ../scheduler.hpp \
+  ../sensor.hpp \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
+  ../server.hpp \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
+  ../Sensors/Humidite.hpp \
+  ../sensor.hpp \
+  ../Sensors/Light.hpp \
+  ../Sensors/Pression.hpp \
+  ../Sensors/Temperature.hpp
 
 CMakeFiles/Projet_AP4A.dir/sensor.cpp.obj: ../sensor.cpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h
 
 CMakeFiles/Projet_AP4A.dir/server.cpp.obj: ../server.cpp \
   ../server.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
   ../Sensors/Humidite.hpp \
   ../sensor.hpp \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
-  C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h \
   ../Sensors/Light.hpp \
   ../Sensors/Pression.hpp \
   ../Sensors/Temperature.hpp
 
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdlib:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/atomicity.h:
 
 ../Sensors/Humidite.cpp:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdlib.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/limits.h:
-
 ../Sensors/Humidite.hpp:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stddef.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdlib.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwctype:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
 
 ../sensor.hpp:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/std_abs.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/move.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/process.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/getopt.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_pair.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_defines.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/malloc.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/streambuf:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/move.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/numeric_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/concept_check.h:
-
-../Sensors/Light.cpp:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wchar.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functexcept.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h:
-
-../Sensors/Temperature.cpp:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/type_traits:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_algobase.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cpp_type_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/type_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_types.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator_base_funcs.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/assertions.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_iterator.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ptr_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/debug/debug.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/predefined_ops.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdint.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/locale.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/ctype.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/errno.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/types.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/process.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/signal.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/stdexcept:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/wctype.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/streambuf_iterator.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_facets.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream:
-
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdlib.h:
 
 ../Sensors/Light.hpp:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/range_access.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/limits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/errno.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stddef.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/time.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_timeval.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/type_traits:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_funcs.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wchar.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/binders.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stddef.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_defines.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/signal.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hash_bytes.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functexcept.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/type_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator_base_types.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ptr_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/clocale:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/locale.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/stdio.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/ctype.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sys/types.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/string:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocator.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/initializer_list:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdio:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/io.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/unistd.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/string.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+../Sensors/Light.cpp:
 
 ../server.cpp:
 
@@ -1241,22 +1462,24 @@ C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x8
 
 ../Sensors/Pression.hpp:
 
+../Sensors/Temperature.cpp:
+
 ../Sensors/Temperature.hpp:
 
 ../main.cpp:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/fstream:
+../scheduler.hpp:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/codecvt.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
 
-C:/Program\ Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/fstream.tcc:
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/Users/jules/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc:
 
 ../scheduler.cpp:
-
-../scheduler.hpp:
 
 ../sensor.cpp:
