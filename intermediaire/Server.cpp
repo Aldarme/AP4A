@@ -6,4 +6,13 @@
  * */
 
 #include "Server.hpp"
+#include "Packet.cpp"
+
+void Server::fileWrite(Packet& data_p){
+
+}
+
+void Server::consolWrite(Packet& data_p){
+
+}
 

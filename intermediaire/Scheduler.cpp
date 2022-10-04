@@ -6,3 +6,8 @@
  * */
 
 #include "Scheduler.hpp"
+#include "Sensors/Humidity.cpp"
+#include "Sensors/Light.cpp"
+#include "Sensors/Pression.cpp"
+#include "Sensors/Temperature.cpp"
+#include <ctime>

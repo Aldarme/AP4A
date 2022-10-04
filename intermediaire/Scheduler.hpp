@@ -25,6 +25,14 @@ public:
     Scheduler(const Scheduler& param_s):m_interval(param_s.m_interval){}; //Constructeur par recopie
     Scheduler& operator=(const Scheduler& param_s); //Opérateur d'affectation
     ~Scheduler(); //Destructeur
+
+    //Récuperer toutes les données en même temps
+    void getData();
+    void startSimulation(Humidity& humid_p, Light& light_p, Pression& press_p, Temperature& temp_p);
+    //Transmettre les données en même temps : one solution is taking all the data as parameters OR creating a new class "Packet" that holds the different data [Therefore easier to send out all the data at the same time]
+    bool sendDataToServer(Humidity& humid_p, Light& light_p, Pression& press_p, Temperature& temp_p); //Sends data to server, returns TRUE if successful FALSE if not
+
+    //Fonction Attendre() Pas pertinent pour rendu final
 };
 
 
