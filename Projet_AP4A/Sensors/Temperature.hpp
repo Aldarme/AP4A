@@ -11,9 +11,9 @@ class Temperature : public Sensor<float>
 {
 public:
     Temperature();
-    Temperature(const Temperature& param_temp);
+    Temperature(const Temperature& temp_p);
     ~Temperature();
-    Temperature& operator=(const Temperature& param_temp);
+    Temperature& operator=(const Temperature& temp_p);
 };
 
 #endif //PROJET_AP4A_TEMPERATURE_HPP

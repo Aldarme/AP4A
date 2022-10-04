@@ -14,22 +14,22 @@ Pression::Pression()
     this->m_unite = "kPa";
 }
 
-Pression::Pression(const Pression &param_p) : Sensor<int>(param_p) {}
+Pression::Pression(const Pression &p_p) : Sensor<int>(p_p) {}
 
 Pression::~Pression() = default;
 
-Pression& Pression::operator=(const Pression &param_p)
+Pression& Pression::operator=(const Pression &p_p)
 {
-    this->m_minValue = param_p.m_minValue;
-    this->m_maxValue = param_p.m_maxValue;
-    this->m_name = param_p.m_name;
-    this->m_unite = param_p.m_unite;
+    this->m_minValue = p_p.m_minValue;
+    this->m_maxValue = p_p.m_maxValue;
+    this->m_name = p_p.m_name;
+    this->m_unite = p_p.m_unite;
     return *this;
 }
 
-int Pression::aleaGenVal(int param_minVal, int param_maxVal)
+int Pression::aleaGenVal(int minVal_p, int maxVal_p)
 {
-    return std::rand() % (param_maxVal - param_minVal) + param_minVal;
+    return std::rand() % (maxVal_p - minVal_p) + minVal_p;
 }
 
 int Pression::getData()

@@ -11,9 +11,9 @@ class Humidite : public Sensor<float>
 {
 public:
     Humidite();
-    Humidite(const Humidite& param_h);
+    Humidite(const Humidite& h_p);
     ~Humidite();
-    Humidite& operator=(const Humidite& param_h);
+    Humidite& operator=(const Humidite& h_p);
 };
 
 #endif //PROJET_AP4A_HUMIDITE_HPP

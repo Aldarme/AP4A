@@ -26,9 +26,9 @@ protected:
 public:
     // Forme canonique
     Sensor<T>();
-    Sensor<T>(const Sensor<T>& param_Sensor);
+    Sensor<T>(const Sensor<T>& Sensor_p);
     ~Sensor<T>();
-    Sensor<T>& operator=(const Sensor<T>& param_Sensor);
+    Sensor<T>& operator=(const Sensor<T>& Sensor_p);
 
     /**
      * @brief Fait appelle à aleaGenVal pour générer une valeur pour un capteur
@@ -37,12 +37,12 @@ public:
     virtual T getData();
 
     /**
-     * @brief Créer une valeur aléatoire compris entre param_minVal et param_maxVal
-     * @param param_minVal Borne minimum
-     * @param param_maxVal Borne maximum
+     * @brief Créer une valeur aléatoire compris entre minVal_p et maxVal_p
+     * @param minVal_p Borne minimum
+     * @param maxVal_p Borne maximum
      * @return Retourne la valeur générée aléatoirement
      */
-    T aleaGenVal(float param_minVal, float param_maxVal);
+    T aleaGenVal(float minVal_p, float maxVal_p);
 
     /**
      * Fonction permettant d'obtenir le nom de l'objet, du capteur
@@ -68,15 +68,15 @@ Sensor<T>::Sensor()
 }
 
 template<typename T>
-Sensor<T>::Sensor(const Sensor<T>& param_Sensor): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue), m_name(this->m_name), m_unite(this->m_unite) {}
+Sensor<T>::Sensor(const Sensor<T>& Sensor_p): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue), m_name(this->m_name), m_unite(this->m_unite) {}
 
 template<typename T>
 Sensor<T>::~Sensor<T>() = default;
 
 template<typename T>
-Sensor<T>& Sensor<T>::operator=(const Sensor<T>& param_Sensor) {
-    this->m_minValue = param_Sensor.m_minValue;
-    this->m_maxValue = param_Sensor.m_maxValue;
+Sensor<T>& Sensor<T>::operator=(const Sensor<T>& Sensor_p) {
+    this->m_minValue = Sensor_p.m_minValue;
+    this->m_maxValue = Sensor_p.m_maxValue;
     return *this;
 }
 
@@ -87,9 +87,9 @@ T Sensor<T>::getData()
 }
 
 template<typename T>
-T Sensor<T>::aleaGenVal(float param_minVal, float param_maxVal)
+T Sensor<T>::aleaGenVal(float minVal_p, float maxVal_p)
 {
-    return (param_minVal + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(param_maxVal-param_minVal))));
+    return (minVal_p + static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(maxVal_p-minVal_p))));
 }
 
 template<typename T>

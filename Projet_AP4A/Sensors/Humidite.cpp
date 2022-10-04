@@ -13,15 +13,15 @@ Humidite::Humidite()
     this->m_unite = "%";
 }
 
-Humidite::Humidite(const Humidite &param_h) : Sensor<float>(param_h) {}
+Humidite::Humidite(const Humidite &h_p) : Sensor<float>(h_p) {}
 
 Humidite::~Humidite() = default;
 
-Humidite& Humidite::operator=(const Humidite &param_h)
+Humidite& Humidite::operator=(const Humidite &h_p)
 {
-    this->m_minValue = param_h.m_minValue;
-    this->m_maxValue = param_h.m_maxValue;
-    this->m_name = param_h.m_name;
-    this->m_unite = param_h.m_unite;
+    this->m_minValue = h_p.m_minValue;
+    this->m_maxValue = h_p.m_maxValue;
+    this->m_name = h_p.m_name;
+    this->m_unite = h_p.m_unite;
     return *this;
 }

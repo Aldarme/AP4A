@@ -11,9 +11,9 @@ class Light : public Sensor<bool>
 {
 public:
     Light();
-    Light(const Light& param_l);
+    Light(const Light& l_p);
     ~Light();
-    Light& operator=(const Light& param_l);
+    Light& operator=(const Light& l_p);
     bool aleaGenVal();
     bool getData();
 };

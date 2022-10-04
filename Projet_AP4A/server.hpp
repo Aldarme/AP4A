@@ -30,45 +30,60 @@ private:
 public:
     // Définition de la forme canonique
     Server();
-    Server(const Server& param_server);
+    Server(const Server& server_p);
     ~Server();
-    Server& operator=(const Server& param_server);
+    Server& operator=(const Server& server_p);
+
+
+    /**
+     * @brief Demande à l'utilisateur si il veut écrire dans la console ou non
+     */
+    void toggleConsolWrite();
+
+    /**
+     * @brief Demande à l'utilisateur si il veut écrire dans les logs ou non
+     */
+    void toggleLogWrite();
 
     /**
      *
      * @tparam T
-     * @param param_name
-     * @param param_value
-     * @param param_unite
+     * @param name_p
+     * @param value_p
+     * @param unite_p
      */
     template<typename T>
-    void fileWrite(const std::string& param_name,T param_value,const std::string& param_unite);
+    void fileWrite(const std::string& name_p,T value_p,const std::string& unite_p);
 
     /**
      *
      * @tparam T
-     * @param param_name
-     * @param param_value
-     * @param param_unite
+     * @param name_p
+     * @param value_p
+     * @param unite_p
      */
     template<typename T>
-    void consolWrite(const std::string& param_name,T param_value,const std::string& param_unite);
+    void consolWrite(const std::string& name_p,T value_p,const std::string& unite_p);
 
 
 };
 
 template<typename T>
-void Server::fileWrite(const std::string& param_name, const T param_value, const std::string& param_unite)
+void Server::fileWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
 {
-    std::ofstream file(param_name + ".txt", std::ios::app);
-    file << param_name << " " << param_value << " " << param_unite << std::endl;
-    file.close();
+    if (this->m_logActivation == 1)
+    {
+        std::ofstream file(name_p + ".txt", std::ios::app);
+        file << name_p << " " << value_p << " " << unite_p << std::endl;
+        file.close();
+    }
 }
 
 template<typename T>
-void Server::consolWrite(const std::string& param_name, const T param_value, const std::string& param_unite)
+void Server::consolWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
 {
-    std::cout << param_name << " " << param_value << " " << param_unite << std::endl;
+    if (this->m_consolActivation == 1)
+        std::cout << name_p << " " << value_p << " " << unite_p << std::endl;
 }
 
 

@@ -11,10 +11,10 @@ class Pression : public Sensor<int>
 {
 public:
     Pression();
-    Pression(const Pression& param_p);
+    Pression(const Pression& p_p);
     ~Pression();
-    Pression& operator=(const Pression& param_p);
-    int aleaGenVal(int param_minVal, int param_maxVal);
+    Pression& operator=(const Pression& p_p);
+    int aleaGenVal(int minVal_p, int maxVal_p);
     int getData();
 };
 
