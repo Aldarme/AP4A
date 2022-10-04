@@ -1,6 +1,9 @@
-//
-// Created by Jules Ferlin on 24/09/2022.
-//
+/**
+ * @author Jules Ferlin
+ * @file server.cpp
+ * @date 03/10/2022
+ * @brief Fichier source contenant l'implémentation de certaine méthode de la classe Server
+ */
 
 #include "server.hpp"
 
