@@ -22,6 +22,8 @@ private:
     Sensor* pLi; 
 public:
     Scheduler();
+    Scheduler(const Scheduler& param);
+    Scheduler& operator=(const Scheduler& param);
     ~Scheduler();
 
     void scheduler();   
@@ -29,4 +31,6 @@ public:
 };
 
 void clock(int time);
+
+void initilizeServerParameters(Server& server);
 

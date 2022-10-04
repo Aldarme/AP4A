@@ -2,7 +2,7 @@
 
 int main () {
 
-    Scheduler s; 
+    Scheduler s;
     s.scheduler();
 
     return 0; 

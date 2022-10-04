@@ -1,10 +1,25 @@
-Humidity : 30 %
-Temperature : 20 C
-Pression : 786 hPa
+Humidity : 20 %
+Temperature : 22 C
+Pression : 74 hPa
+Light : 0 on/off
+
+Humidity : 17 %
+Temperature : 24 C
+Pression : 290 hPa
 Light : 1 on/off
 
-Humidity : 11 %
-Temperature : 20 C
-Pression : 691 hPa
+Humidity : 23 %
+Temperature : 28 C
+Pression : 143 hPa
+Light : 1 on/off
+
+Humidity : 25 %
+Temperature : 24 C
+Pression : 424 hPa
+Light : 1 on/off
+
+Humidity : 12 %
+Temperature : 23 C
+Pression : 786 hPa
 Light : 1 on/off
 

@@ -3,7 +3,8 @@
 #include <stdlib.h>
 #include <string>
 
-Sensor::Sensor() {   
+Sensor::Sensor() {
+    //les atributs sont initialisés dans les enfants de Sensor   
 }
 
 Sensor::Sensor(const Sensor& param) {

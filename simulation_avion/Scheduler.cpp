@@ -18,6 +18,30 @@ Scheduler::Scheduler()
     pLi = new Light(); 
 }
 
+Scheduler::Scheduler(const Scheduler& param)
+{
+    pHu = new Humidity(); 
+    *(this->pHu) = *(param.pHu);
+
+    pTe = new Temperature(); 
+    *(this->pTe) = *(param.pTe);
+
+    pPr = new Pression(); 
+    *(this->pPr) = *(param.pPr);
+
+    pLi = new Light(); 
+    *(this->pLi) = *(param.pLi);
+}
+
+Scheduler& Scheduler::operator=(const Scheduler& param)
+{
+    *(this->pHu) = *(param.pHu);
+    *(this->pTe) = *(param.pTe);
+    *(this->pPr) = *(param.pPr);
+    *(this->pLi) = *(param.pLi);
+    return *this;
+}
+
 Scheduler::~Scheduler()
 {
     delete pHu; 
@@ -31,6 +55,7 @@ void Scheduler::scheduler() {
     Server server; 
 
     server.resetLogs();
+    initilizeServerParameters(server);
     srand(time(NULL));
 
     int valueHu, valueTe, valuePr, valueLi; 
@@ -73,5 +98,23 @@ void clock(int time) {
         stop = high_resolution_clock::now(); 
         duration = duration_cast<seconds>(stop - start); 
     } while (duration.count() < time); 
+
+}
+
+void initilizeServerParameters(Server& server) {
+
+//ask the user if he wants to activate the logs
+    char answer; 
+    cout << "Do you want to activate the logs ? (y/n)" << endl; 
+    cin >> answer; 
+    if (answer == 'y') {
+        server.activateLogs();
+    }
+//ask the user if he wants to activate the console
+    cout << "Do you want to activate the console ? (y/n)" << endl; 
+    cin >> answer; 
+    if (answer == 'y') {
+        server.activateConsole();
+    }
 
 }

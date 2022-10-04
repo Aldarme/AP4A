@@ -15,7 +15,8 @@
 class Server 
 {
     private:
-    
+        bool logsActivated;
+        bool consoleActivated;
     public:
         Server();
         Server(const Server& param);
@@ -24,10 +25,13 @@ class Server
 
         void consoleWrite(int value, std::string type, std::string unity);
         void consoleWrite();
+        void activateConsole();
+
 
         void fileWrite(int value, std::string type, std::string unity);
         void fileWrite();
         void resetLogs();
+        void activateLogs();
 };
 
 
