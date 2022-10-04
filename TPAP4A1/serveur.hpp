@@ -72,7 +72,7 @@ public:
 		cin >> reponse;
 
 		if (reponse == 'O') {
-			string const fichiersound("C:/Users/OUBRAIM/fichiersound.txt");
+			string const fichiersound("C:/Users/OUBRAIM/AP4A/TPAP4A1/logs/fichiersound.txt");
 			ofstream fluxsound(fichiersound.c_str());
 
 			if (fluxsound)
@@ -91,7 +91,7 @@ public:
 		cin >> reponse;
 		
 		if (reponse == 'O') {
-			string const fichiertemperature("C:/Users/OUBRAIM/fichiertemperature.txt");
+			string const fichiertemperature("C:/Users/OUBRAIM/AP4A/TPAP4A1/logs/fichiertemperature.txt");
 			ofstream fluxtemperature(fichiertemperature.c_str());
 
 			if (fluxtemperature)
@@ -110,7 +110,7 @@ public:
 		cin >> reponse;
 
 		if (reponse == 'O') {
-			string const fichierlight("C:/Users/OUBRAIM/fichierlight.txt");
+			string const fichierlight("C:/Users/OUBRAIM/AP4A/TPAP4A1/logs/fichierlight.txt");
 			ofstream fluxlight(fichierlight.c_str());
 
 			if (fluxlight)
@@ -129,7 +129,7 @@ public:
 		cin >> reponse;
 
 		if (reponse == 'O') {
-			string const fichierhumidity("C:/Users/OUBRAIM/fichierhumidity.txt");
+			string const fichierhumidity("C:/Users/OUBRAIM/AP4A/TPAP4A1/logs/fichierhumidity.txt");
 			ofstream fluxhumidity(fichierhumidity.c_str());
 
 			if (fluxhumidity)

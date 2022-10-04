@@ -1,0 +1,2 @@
+Voici les valeurs de la temperature:
+La temperature est de 41.

@@ -1,0 +1,2 @@
+Voici les valeurs de l'humidité: 
+l'humidité est de 11.
