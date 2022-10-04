@@ -18,7 +18,7 @@ Scheduler::Scheduler(Server &param_server,Temperature &param_temperature,Humidit
 }
 
 
-void Scheduler::setValue(){
+void Scheduler::sendServer(){
     
     m_temperature.aleaValue();
     m_humidity.aleaValue();

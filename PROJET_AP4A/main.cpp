@@ -27,7 +27,7 @@ int main(){
     
     //Boucle de temps symbolisant la période d'étude choisis par l'utilisateur
     for(int i=0;i<m_time/m_interval;i++){
-        Sch.setValue();
+        Sch.sendServer();
     }
     return 0;
 }

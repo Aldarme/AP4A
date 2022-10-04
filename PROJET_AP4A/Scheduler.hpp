@@ -2,7 +2,7 @@
  * @author RENON Emilien
  * @file Scheduler.hpp
  * @date 23/09/2022
- * @brief Recupérer les données et les envoyer au serveur
+ * @brief Récupérer les données et les envoyer au serveur
  */
 
 //
@@ -34,7 +34,7 @@ public:
      * @return void
      * @param rien
      */ 
-    void setValue();
+    void sendServer();
 
     friend class Server;
     friend class Sensor;
