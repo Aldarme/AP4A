@@ -18,6 +18,12 @@ public:
 	 * @brief Default constructor
 	 */
 	Light();
+	/**
+	 * generates a random boolean
+	 * @param min minimum value
+	 * @param max maximum value
+	 * @return a random boolean, true or false
+	 */
 	bool generateRandomValue(bool min, bool max) override
 	{
 		return std::rand() % 2;

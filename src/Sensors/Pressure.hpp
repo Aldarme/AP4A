@@ -18,6 +18,12 @@ public:
 	 * @brief Default constructor
 	 */
 	Pressure();
+	/**
+	 * generates a random integer between min and max
+	 * @param min minimum value
+	 * @param max maximum value
+	 * @return a random integer in |[min, max]|
+	 */
 	int generateRandomValue(int min, int max) override
 	{
 		return std::rand() % static_cast <int>(max - min) + min;
