@@ -1,6 +1,6 @@
 /**
 * @author Alan HERVE
-* @file Server.hpp
+* @file Server.cpp
 * @date 01/10/2022
 * @brief Is in charge of writing values received from the captors in files and in the console
 **/
