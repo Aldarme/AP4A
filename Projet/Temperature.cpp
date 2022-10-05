@@ -1,3 +1,11 @@
+/**
+* @author Alan HERVE
+* @file Temperature.cpp
+* @date 01/10/2022
+* @brief Child class of Sensor
+**/
+
+
 #ifndef TEMPERATURE_CPP
 #define TEMPERATURE_CPP
 
