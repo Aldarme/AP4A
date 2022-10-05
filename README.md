@@ -25,7 +25,7 @@ faire en sorte que, plus la valeur du sensor est supérieur à la "moyenne", plu
 [Capture](https://user-images.githubusercontent.com/113534586/194127988-ca5dc5df-073d-4656-813a-846f596969cd.PNG)
 
 Pour faire cella de manière à simplifier, j'ai simplement séparé l'écart entre le min et le max en 6 parties ( Premier tiers supérieur, deuxième  
-tiers inférieur à la moyenne) et modifier le min et le max de la fonction random.
+tiers inférieur à la moyenne, ...) et modifier le min et le max de la fonction random.
 
 Enfin, dernièrement, j'ai pris la liberté d'écrire les logs dans un fichier csv pour une facilitée de lecture. Mon projet comporte donc un seul fichier log
 et non 1 par Sensor comme demandé, mais je trouve cela plus pratique à lire.
