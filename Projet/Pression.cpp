@@ -1,6 +1,6 @@
 /**
 * @author Alan HERVE
-* @file Pression.hpp
+* @file Pression.cpp
 * @date 01/10/2022
 * @brief Child class of Sensor
 **/
