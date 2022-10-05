@@ -44,17 +44,20 @@ Scheduler& Scheduler::operator=(Scheduler& scheduler_p)
 void Scheduler::wait(float frequency_p)
 {
     char detection;
-    if(kbhit())
-    {
-        detection = getch();
-        checkAnswer(detection);
-    }
-
 
     time_t lastTime = time(NULL); 
     time_t delta = 0;
     while (delta < frequency_p)
     {
+        if(kbhit())
+        {
+            detection = getch();
+            checkAnswer(detection);
+            if((detection == 'y' || detection == 'q') && !m_server->m_consoleActivation && !m_server->m_logActivation)
+            {
+                return;
+            }
+        }
         time_t now = time(NULL);
         delta = (now - lastTime);
     }
