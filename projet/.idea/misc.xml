@@ -4,7 +4,6 @@
   <component name="CidrRootsConfiguration">
     <sourceRoots>
       <file path="$PROJECT_DIR$" />
-      <file path="$PROJECT_DIR$/Sensor" />
     </sourceRoots>
   </component>
 </project>

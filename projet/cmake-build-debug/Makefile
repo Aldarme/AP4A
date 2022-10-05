@@ -66,24 +66,13 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rayan\CLionProjects\untitled72
+CMAKE_SOURCE_DIR = C:\Users\rayan\Desktop\Projet
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rayan\CLionProjects\untitled72\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\rayan\Desktop\Projet\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -96,11 +85,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rayan\CLionProjects\untitled72\cmake-build-debug\CMakeFiles C:\Users\rayan\CLionProjects\untitled72\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rayan\Desktop\Projet\cmake-build-debug\CMakeFiles C:\Users\rayan\Desktop\Projet\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rayan\CLionProjects\untitled72\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rayan\Desktop\Projet\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,125 +129,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named untitled72
+# Target rules for targets named projet
 
 # Build rule for target.
-untitled72: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 untitled72
-.PHONY : untitled72
+projet: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 projet
+.PHONY : projet
 
 # fast build rule for target.
-untitled72/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/build
-.PHONY : untitled72/fast
-
-Scheduler/Scheduler.obj: Scheduler/Scheduler.cpp.obj
-
-.PHONY : Scheduler/Scheduler.obj
-
-# target to build an object file
-Scheduler/Scheduler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Scheduler/Scheduler.cpp.obj
-.PHONY : Scheduler/Scheduler.cpp.obj
-
-Scheduler/Scheduler.i: Scheduler/Scheduler.cpp.i
-
-.PHONY : Scheduler/Scheduler.i
-
-# target to preprocess a source file
-Scheduler/Scheduler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Scheduler/Scheduler.cpp.i
-.PHONY : Scheduler/Scheduler.cpp.i
-
-Scheduler/Scheduler.s: Scheduler/Scheduler.cpp.s
-
-.PHONY : Scheduler/Scheduler.s
-
-# target to generate assembly for a file
-Scheduler/Scheduler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Scheduler/Scheduler.cpp.s
-.PHONY : Scheduler/Scheduler.cpp.s
-
-Sensor/Sensor.obj: Sensor/Sensor.cpp.obj
-
-.PHONY : Sensor/Sensor.obj
-
-# target to build an object file
-Sensor/Sensor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Sensor.cpp.obj
-.PHONY : Sensor/Sensor.cpp.obj
-
-Sensor/Sensor.i: Sensor/Sensor.cpp.i
-
-.PHONY : Sensor/Sensor.i
-
-# target to preprocess a source file
-Sensor/Sensor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Sensor.cpp.i
-.PHONY : Sensor/Sensor.cpp.i
-
-Sensor/Sensor.s: Sensor/Sensor.cpp.s
-
-.PHONY : Sensor/Sensor.s
-
-# target to generate assembly for a file
-Sensor/Sensor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Sensor.cpp.s
-.PHONY : Sensor/Sensor.cpp.s
-
-Sensor/Temperature.obj: Sensor/Temperature.cpp.obj
-
-.PHONY : Sensor/Temperature.obj
-
-# target to build an object file
-Sensor/Temperature.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Temperature.cpp.obj
-.PHONY : Sensor/Temperature.cpp.obj
-
-Sensor/Temperature.i: Sensor/Temperature.cpp.i
-
-.PHONY : Sensor/Temperature.i
-
-# target to preprocess a source file
-Sensor/Temperature.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Temperature.cpp.i
-.PHONY : Sensor/Temperature.cpp.i
-
-Sensor/Temperature.s: Sensor/Temperature.cpp.s
-
-.PHONY : Sensor/Temperature.s
-
-# target to generate assembly for a file
-Sensor/Temperature.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Sensor/Temperature.cpp.s
-.PHONY : Sensor/Temperature.cpp.s
-
-Server/Server.obj: Server/Server.cpp.obj
-
-.PHONY : Server/Server.obj
-
-# target to build an object file
-Server/Server.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Server/Server.cpp.obj
-.PHONY : Server/Server.cpp.obj
-
-Server/Server.i: Server/Server.cpp.i
-
-.PHONY : Server/Server.i
-
-# target to preprocess a source file
-Server/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Server/Server.cpp.i
-.PHONY : Server/Server.cpp.i
-
-Server/Server.s: Server/Server.cpp.s
-
-.PHONY : Server/Server.s
-
-# target to generate assembly for a file
-Server/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/Server/Server.cpp.s
-.PHONY : Server/Server.cpp.s
+projet/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/build
+.PHONY : projet/fast
 
 main.obj: main.cpp.obj
 
@@ -255,7 +147,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -264,7 +156,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -273,8 +165,224 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled72.dir\build.make CMakeFiles/untitled72.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+sources/scheduler/Time.obj: sources/scheduler/Time.cpp.obj
+
+.PHONY : sources/scheduler/Time.obj
+
+# target to build an object file
+sources/scheduler/Time.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/Time.cpp.obj
+.PHONY : sources/scheduler/Time.cpp.obj
+
+sources/scheduler/Time.i: sources/scheduler/Time.cpp.i
+
+.PHONY : sources/scheduler/Time.i
+
+# target to preprocess a source file
+sources/scheduler/Time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/Time.cpp.i
+.PHONY : sources/scheduler/Time.cpp.i
+
+sources/scheduler/Time.s: sources/scheduler/Time.cpp.s
+
+.PHONY : sources/scheduler/Time.s
+
+# target to generate assembly for a file
+sources/scheduler/Time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/Time.cpp.s
+.PHONY : sources/scheduler/Time.cpp.s
+
+sources/scheduler/scheduler.obj: sources/scheduler/scheduler.cpp.obj
+
+.PHONY : sources/scheduler/scheduler.obj
+
+# target to build an object file
+sources/scheduler/scheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/scheduler.cpp.obj
+.PHONY : sources/scheduler/scheduler.cpp.obj
+
+sources/scheduler/scheduler.i: sources/scheduler/scheduler.cpp.i
+
+.PHONY : sources/scheduler/scheduler.i
+
+# target to preprocess a source file
+sources/scheduler/scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/scheduler.cpp.i
+.PHONY : sources/scheduler/scheduler.cpp.i
+
+sources/scheduler/scheduler.s: sources/scheduler/scheduler.cpp.s
+
+.PHONY : sources/scheduler/scheduler.s
+
+# target to generate assembly for a file
+sources/scheduler/scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/scheduler/scheduler.cpp.s
+.PHONY : sources/scheduler/scheduler.cpp.s
+
+sources/sensor/humidity.obj: sources/sensor/humidity.cpp.obj
+
+.PHONY : sources/sensor/humidity.obj
+
+# target to build an object file
+sources/sensor/humidity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/humidity.cpp.obj
+.PHONY : sources/sensor/humidity.cpp.obj
+
+sources/sensor/humidity.i: sources/sensor/humidity.cpp.i
+
+.PHONY : sources/sensor/humidity.i
+
+# target to preprocess a source file
+sources/sensor/humidity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/humidity.cpp.i
+.PHONY : sources/sensor/humidity.cpp.i
+
+sources/sensor/humidity.s: sources/sensor/humidity.cpp.s
+
+.PHONY : sources/sensor/humidity.s
+
+# target to generate assembly for a file
+sources/sensor/humidity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/humidity.cpp.s
+.PHONY : sources/sensor/humidity.cpp.s
+
+sources/sensor/light.obj: sources/sensor/light.cpp.obj
+
+.PHONY : sources/sensor/light.obj
+
+# target to build an object file
+sources/sensor/light.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/light.cpp.obj
+.PHONY : sources/sensor/light.cpp.obj
+
+sources/sensor/light.i: sources/sensor/light.cpp.i
+
+.PHONY : sources/sensor/light.i
+
+# target to preprocess a source file
+sources/sensor/light.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/light.cpp.i
+.PHONY : sources/sensor/light.cpp.i
+
+sources/sensor/light.s: sources/sensor/light.cpp.s
+
+.PHONY : sources/sensor/light.s
+
+# target to generate assembly for a file
+sources/sensor/light.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/light.cpp.s
+.PHONY : sources/sensor/light.cpp.s
+
+sources/sensor/pression.obj: sources/sensor/pression.cpp.obj
+
+.PHONY : sources/sensor/pression.obj
+
+# target to build an object file
+sources/sensor/pression.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/pression.cpp.obj
+.PHONY : sources/sensor/pression.cpp.obj
+
+sources/sensor/pression.i: sources/sensor/pression.cpp.i
+
+.PHONY : sources/sensor/pression.i
+
+# target to preprocess a source file
+sources/sensor/pression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/pression.cpp.i
+.PHONY : sources/sensor/pression.cpp.i
+
+sources/sensor/pression.s: sources/sensor/pression.cpp.s
+
+.PHONY : sources/sensor/pression.s
+
+# target to generate assembly for a file
+sources/sensor/pression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/pression.cpp.s
+.PHONY : sources/sensor/pression.cpp.s
+
+sources/sensor/sensor.obj: sources/sensor/sensor.cpp.obj
+
+.PHONY : sources/sensor/sensor.obj
+
+# target to build an object file
+sources/sensor/sensor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/sensor.cpp.obj
+.PHONY : sources/sensor/sensor.cpp.obj
+
+sources/sensor/sensor.i: sources/sensor/sensor.cpp.i
+
+.PHONY : sources/sensor/sensor.i
+
+# target to preprocess a source file
+sources/sensor/sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/sensor.cpp.i
+.PHONY : sources/sensor/sensor.cpp.i
+
+sources/sensor/sensor.s: sources/sensor/sensor.cpp.s
+
+.PHONY : sources/sensor/sensor.s
+
+# target to generate assembly for a file
+sources/sensor/sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/sensor.cpp.s
+.PHONY : sources/sensor/sensor.cpp.s
+
+sources/sensor/temperature.obj: sources/sensor/temperature.cpp.obj
+
+.PHONY : sources/sensor/temperature.obj
+
+# target to build an object file
+sources/sensor/temperature.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/temperature.cpp.obj
+.PHONY : sources/sensor/temperature.cpp.obj
+
+sources/sensor/temperature.i: sources/sensor/temperature.cpp.i
+
+.PHONY : sources/sensor/temperature.i
+
+# target to preprocess a source file
+sources/sensor/temperature.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/temperature.cpp.i
+.PHONY : sources/sensor/temperature.cpp.i
+
+sources/sensor/temperature.s: sources/sensor/temperature.cpp.s
+
+.PHONY : sources/sensor/temperature.s
+
+# target to generate assembly for a file
+sources/sensor/temperature.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/sensor/temperature.cpp.s
+.PHONY : sources/sensor/temperature.cpp.s
+
+sources/server/server.obj: sources/server/server.cpp.obj
+
+.PHONY : sources/server/server.obj
+
+# target to build an object file
+sources/server/server.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/server/server.cpp.obj
+.PHONY : sources/server/server.cpp.obj
+
+sources/server/server.i: sources/server/server.cpp.i
+
+.PHONY : sources/server/server.i
+
+# target to preprocess a source file
+sources/server/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/server/server.cpp.i
+.PHONY : sources/server/server.cpp.i
+
+sources/server/server.s: sources/server/server.cpp.s
+
+.PHONY : sources/server/server.s
+
+# target to generate assembly for a file
+sources/server/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet.dir\build.make CMakeFiles/projet.dir/sources/server/server.cpp.s
+.PHONY : sources/server/server.cpp.s
 
 # Help Target
 help:
@@ -284,22 +392,34 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... untitled72
-	@echo ... Scheduler/Scheduler.obj
-	@echo ... Scheduler/Scheduler.i
-	@echo ... Scheduler/Scheduler.s
-	@echo ... Sensor/Sensor.obj
-	@echo ... Sensor/Sensor.i
-	@echo ... Sensor/Sensor.s
-	@echo ... Sensor/Temperature.obj
-	@echo ... Sensor/Temperature.i
-	@echo ... Sensor/Temperature.s
-	@echo ... Server/Server.obj
-	@echo ... Server/Server.i
-	@echo ... Server/Server.s
+	@echo ... projet
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sources/scheduler/Time.obj
+	@echo ... sources/scheduler/Time.i
+	@echo ... sources/scheduler/Time.s
+	@echo ... sources/scheduler/scheduler.obj
+	@echo ... sources/scheduler/scheduler.i
+	@echo ... sources/scheduler/scheduler.s
+	@echo ... sources/sensor/humidity.obj
+	@echo ... sources/sensor/humidity.i
+	@echo ... sources/sensor/humidity.s
+	@echo ... sources/sensor/light.obj
+	@echo ... sources/sensor/light.i
+	@echo ... sources/sensor/light.s
+	@echo ... sources/sensor/pression.obj
+	@echo ... sources/sensor/pression.i
+	@echo ... sources/sensor/pression.s
+	@echo ... sources/sensor/sensor.obj
+	@echo ... sources/sensor/sensor.i
+	@echo ... sources/sensor/sensor.s
+	@echo ... sources/sensor/temperature.obj
+	@echo ... sources/sensor/temperature.i
+	@echo ... sources/sensor/temperature.s
+	@echo ... sources/server/server.obj
+	@echo ... sources/server/server.i
+	@echo ... sources/server/server.s
 .PHONY : help
 
 
