@@ -6,18 +6,11 @@
  * in order to store and display them.
  */
 
+#include "chrono"
+#include "thread"
 #include "Scheduler.hpp"
 
-Scheduler::Scheduler() {
-	this->m_clock = *new Clock();
-	this->m_server = *new Server();
-	this->m_temperatureSensor = *new Temperature();
-	this->m_humiditySensor = *new Humidity();
-	this->m_lightSensor = *new Light();
-	this->m_pressureSensor = *new Pressure();
-	this->m_lastMeasure = -1;
-}
-
+Scheduler::Scheduler() = default;
 Scheduler::Scheduler(const Scheduler& scheduler) = default;
 Scheduler::~Scheduler() = default;
 Scheduler& Scheduler::operator=(const Scheduler &scheduler) = default;
@@ -32,21 +25,28 @@ void Scheduler::LaunchScheduler()
 
 	m_clock.setStartTime();
 
-	// The simulation keeps going until the end of the time inputted previously
-	while(this->m_clock.getTime() <= simDuration)
-	{
-		// At each new second, logs the values using the server
-		if(this->m_lastMeasure != this->m_clock.getTime())
-		{
-			this->m_lastMeasure = this->m_clock.getTime();
-			RetrieveAllData();
-			// sends all the data to the server
-			m_server.DataReceive(m_measures, this->m_clock.getTime());
-		}
+	// The program uses a thread per sensor, therefore it just has to put to sleep one thread between each measure for each sensor
+	std::thread threads[4];
+	threads[0] = std::thread(&Scheduler::startSensorTransmission<float>, this, &m_temperatureSensor, simDuration);
+	sleepForMs(100);	// Adding delay between threads, otherwise the console prints intertwine
+	threads[1] = std::thread(&Scheduler::startSensorTransmission<float>, this, &m_humiditySensor, simDuration);
+	sleepForMs(100);
+	threads[2] = std::thread(&Scheduler::startSensorTransmission<bool>, this, &m_lightSensor, simDuration);
+	sleepForMs(100);
+	threads[3] = std::thread(&Scheduler::startSensorTransmission<int>, this, &m_pressureSensor, simDuration);
+
+	for (int i = 0; i < 4; ++i) {
+		threads[i].join();
 	}
 }
 
-void Scheduler::askUserForOutput() {
+void Scheduler::sleepForMs(long t) const
+{
+	std::this_thread::sleep_for(std::chrono::milliseconds(t));
+}
+
+void Scheduler::askUserForOutput()
+{
 	char consoleActivation;
 	char logsActivation;
 	std::cout << "Do you want to activate the console write ? [Y/N] :" << std::endl;
@@ -64,7 +64,8 @@ void Scheduler::askUserForOutput() {
 	}
 }
 
-long Scheduler::askUserForSimulationTime() {
+long Scheduler::askUserForSimulationTime()
+{
 	long simDuration = 0;
 	std::cout << "How much time (in seconds) do you want the simulation to last ? (type a negative value for an indefinite time) :" << std::endl;
 	std::cin >> simDuration;
@@ -79,6 +80,6 @@ void Scheduler::RetrieveAllData()
 {
 	m_measures[0] = m_temperatureSensor.getData();
 	m_measures[1] = m_humiditySensor.getData();
-	m_measures[2] = m_lightSensor.getData();
-	m_measures[3] = m_pressureSensor.getData();
+	m_measures[2] = static_cast<float>(m_lightSensor.getData());
+	m_measures[3] = static_cast<float>(m_pressureSensor.getData());
 }

@@ -9,6 +9,8 @@
 #define AP4A_SERVER_HPP
 
 #include "iostream"
+#include "fstream"
+#include "Package.hpp"
 
 class Server
 {
@@ -19,32 +21,37 @@ private:
 	/**
 	 * @brief Writes all the sensors values in the console
 	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void consoleWrite(float measures[4], long time);
+	void consoleWrite(float measures[4], std::string units[4], long time);
 	/**
-	 * @brief Writes a sensor value in the console
-	 * @param sensor character indicating the sensor used
+	 * @brief Writes all the sensors measures in the main log file
+	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param units units of the measures values
+	 * @param time time of the measures
+	 */
+	void fileWrite(float measures[4], std::string units[4], long time);
+	/**
+	 * @brief Writes a measure from one sensor in the console
+	 * @tparam T type of return of the sensor
+	 * @param sensor type of sensor (temperature, humidity, light, pressure)
+	 * @param unit unit of the measure
 	 * @param measures measured value
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void consoleWrite(std::string sensor, T measure, long time);
-
+	void consoleWrite(const std::string& sensor, T measure, const std::string& unit, long time);
 	/**
-	 * @brief Writes all the sensors values in the main log file
-	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param time time of the measures
-	 */
-	void fileWrite(float measures[4], long time);
-	/**
-	 * @brief Writes the value of one sensor in the corresponding log file
+	 * @brief Writes the measure of one sensor in the corresponding log file
+	 * @tparam T type of return of the sensor
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
-	 * @param measure measure of the sensor
+	 * @param unit unit of the measure
+	 * @param measure measured value
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void fileWrite(std::string sensor, T value, long time);
+	void fileWrite(const std::string& sensor, T value, const std::string& unit, long time);
 
 public:
 	/**
@@ -56,28 +63,58 @@ public:
 	Server& operator=(const Server& server);
 
 	/**
-	 * Receives data from the sensors
+	 * @brief Receives data from the sensors
 	 * @param measures measures of the sensors
+	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void DataReceive(float measures[4], long time);
+	void DataReceive(float measures[4], std::string units[4], long time);
 	/**
-	 * Receives data from a single sensor
-	 * @param sensor type of sensor (temperature, humidity, light, pressure)
-	 * @param measure measure of the sensor
+	 * @brief Receives data from a single sensor
+	 * @tparam T type of return of the sensor
+	 * @param dataPackage package containing the sensor's name, the data and the unit of the data
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void DataReceive(std::string sensor, T measure, long time);
+	void DataReceive(Package<T> dataPackage, long time);
 
 	/**
-	 * Toggles the console log to true or false
+	 * @brief Toggles the console log to true or false
 	 */
 	void toggleConsoleLog();
 	/**
-	 * Toggles the files log to true or false
+	 * @brief Toggles the files log to true or false
 	 */
 	void toggleFileLog();
 };
+
+// Template functions have to be declared in the header of the class
+
+template<typename T>
+void Server::consoleWrite(const std::string& sensor, T measure, const std::string& unit, long time)
+{
+	std::cout << time << "s | " << sensor << " : " << measure << unit << std::endl;
+}
+
+template<typename T>
+void Server::fileWrite(const std::string& sensor, T value, const std::string& unit, long time)
+{
+	std::ofstream logFile("logs/" + sensor + "Log.csv", std::fstream::app); // opens the corresponding log file
+	logFile << time << "s," << value << "," << unit << "," << std::endl; // writes in the file
+	logFile.close();
+}
+
+template<typename T>
+void Server::DataReceive(Package<T> dataPackage, long time)
+{
+	if (m_consoleActivation)
+	{
+		consoleWrite(dataPackage.getName(), dataPackage.getData(), dataPackage.getUnit(), time);
+	}
+	if (m_logActivation)
+	{
+		fileWrite(dataPackage.getName(), dataPackage.getData(), dataPackage.getUnit(), time);
+	}
+}
 
 #endif //AP4A_SERVER_HPP

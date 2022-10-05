@@ -9,14 +9,19 @@
 #define AP4A_LIGHT_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Light : public Sensor
+class Light : public Sensor<bool>
 {
 public:
 	/**
 	 * @brief Default constructor
 	 */
 	Light();
+	bool generateRandomValue(bool min, bool max) override
+	{
+		return std::rand() % 2;
+	}
 };
 
 #endif //AP4A_LIGHT_HPP

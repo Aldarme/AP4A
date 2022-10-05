@@ -15,4 +15,4 @@ add_executable(AP4A
         src/Sensors/Pressure.cpp src/Sensors/Pressure.hpp
         src/Scheduler/Clock.cpp src/Scheduler/Clock.hpp
         src/Plane.cpp src/Plane.hpp
-        src/main.cpp)
+        src/main.cpp src/Server/Package.cpp src/Server/Package.hpp)

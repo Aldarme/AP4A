@@ -9,14 +9,19 @@
 #define AP4A_HUMIDITY_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Humidity : public Sensor
+class Humidity : public Sensor<float>
 {
 public:
 	/**
 	 * @brief Default constructor
 	 */
 	Humidity();
+	float generateRandomValue(float min, float max) override
+	{
+		return static_cast<float> (std::rand() % static_cast <int>(floor(max - min) * 10)) / 10 + min;
+	}
 };
 
 #endif //AP4A_HUMIDITY_HPP

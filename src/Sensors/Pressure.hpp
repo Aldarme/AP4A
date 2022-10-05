@@ -9,14 +9,19 @@
 #define AP4A_PRESSURE_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Pressure : public Sensor
+class Pressure : public Sensor<int>
 {
 public:
 	/**
 	 * @brief Default constructor
 	 */
 	Pressure();
+	int generateRandomValue(int min, int max) override
+	{
+		return std::rand() % static_cast <int>(max - min) + min;
+	}
 };
 
 #endif //AP4A_PRESSURE_HPP

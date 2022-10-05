@@ -9,14 +9,22 @@
 #define AP4A_TEMPERATURE_HPP
 
 #include "Sensor.hpp"
+#include "Sensor.cpp"
 
-class Temperature : public Sensor
+class Temperature : public Sensor<float>
 {
 public:
 	/**
 	 * @brief Default constructor
 	 */
 	Temperature();
+	float generateRandomValue(float min, float max) override
+	{
+		return static_cast<float> (std::rand() % static_cast <int>(floor(max - min) * 100)) / 100 + min;
+	}
 };
+
+
+
 
 #endif //AP4A_TEMPERATURE_HPP

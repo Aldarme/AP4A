@@ -10,12 +10,15 @@
 #define AP4A_SCHEDULER_HPP
 
 #include "ctime"
+#include "chrono"
+#include "thread"
 #include "Clock.hpp"
 #include "../Server/Server.hpp"
 #include "../Sensors/Temperature.hpp"
 #include "../Sensors/Humidity.hpp"
 #include "../Sensors/Light.hpp"
 #include "../Sensors/Pressure.hpp"
+#include "../Server/Package.hpp"
 
 class Scheduler
 {
@@ -27,7 +30,7 @@ private:
 	Light m_lightSensor; // Light sensor
 	Pressure m_pressureSensor; // Pressure sensor
 	float m_measures[4] = {0, 0, 0, 0}; // Measures of the sensors
-	long m_lastMeasure; // time of the least measure
+	std::string m_units[4] = {m_temperatureSensor.getUnit(), m_humiditySensor.getUnit(), m_lightSensor.getUnit(), m_pressureSensor.getUnit()}; // units of the sensors
 
 public:
 	/**
@@ -52,9 +55,34 @@ public:
 	 */
 	long askUserForSimulationTime();
 	/**
-	 * @brief Retrieves all data of the sensors into the m_measures attribute
+	 * @brief Retrieves all data of the sensors into the m_measures attribute, used if all the data is of the same type (even though float can contain booleans and int)
 	 */
 	void RetrieveAllData();
+	/**
+	 * @brief Sends the data of a sensor to the server periodically until the end of the simulation. There is a thread per sensor.
+	 * @tparam T type of return of the sensor
+	 * @param sensor sensor from which we log the data
+	 * @param simDuration duration of the simulation
+	 */
+	template<typename T>
+	void startSensorTransmission(Sensor<T>* sensor, long simDuration);
+	/**
+	 * @brief Puts the thread to sleep for t milliseconds
+	 * @param t time to sleep in milliseconds
+	 */
+	void sleepForMs(long t) const;
 };
+
+template<typename T>
+void Scheduler::startSensorTransmission(Sensor<T>* sensor, long simDuration)
+{
+	while(m_clock.getTime() <= simDuration) // Loops until the simulation duration is over
+	{
+		Package<T>* dataPackage = new Package<T>(sensor->getName(), sensor->getData(), sensor->getUnit());
+		m_server.DataReceive(*dataPackage, m_clock.getTime()); // sends the data to the server
+		delete dataPackage;
+		std::this_thread::sleep_for(std::chrono::seconds(sensor->getMeasurePeriod())); // Puts the thread to sleep until the next measure
+	}
+}
 
 #endif //AP4A_SCHEDULER_HPP
