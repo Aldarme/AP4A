@@ -18,13 +18,13 @@ celle-ci fasse appel à l'horloge globale et non local au thread.
 
 J'ai aussi modifié la fonction aleaGenVal pour que le simulateur renvoie des valeurs plus cohérentes. En effet en utilisant simplement la
 fonction random pour affecter des valeurs, on se retrouve avec par exemple une température qui passe de 15 à 30 °C en une seconde. J'ai donc
-fait en sorte que la fonction aleaGenVal renvoie une petite valeur (aléatoire dans un écuart de 10% de l'écuart entre le max et le min) qui
+fait en sorte que la fonction aleaGenVal renvoie une petite valeur (aléatoire dans un écart de 10% de l'écart entre le max et le min) qui
 sera ensuite ajouté ou soustrait (ajout de valeur négatif) à la valeur du sensor. De plus, je me suis inspiré de la figure ci-dessous pour
 faire en sorte que, plus la valeur du sensor est supérieur à la "moyenne", plus la valeur aléatoire es de chance d'être négatif (et inversement)
 
 [Capture](https://user-images.githubusercontent.com/113534586/194127988-ca5dc5df-073d-4656-813a-846f596969cd.PNG)
 
-Pour faire cella de manière à simplifier, j'ai simplement séparé l'écuart entre le min et le max en 6 parties ( Premier tiers supérieur, deuxième  
+Pour faire cella de manière à simplifier, j'ai simplement séparé l'écart entre le min et le max en 6 parties ( Premier tiers supérieur, deuxième  
 tiers inférieur à la moyenne) et modifier le min et le max de la fonction random.
 
 Enfin, dernièrement, j'ai pris la liberté d'écrire les logs dans un fichier csv pour une facilitée de lecture. Mon projet comporte donc un seul fichier log
