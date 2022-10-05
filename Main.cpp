@@ -1,8 +1,11 @@
 #include "Scheduler.h"
-#include "Server.h"
 #include <iostream>
 
-int main() {
+int main()
+{
     Scheduler s;
-    s.clock();
+
+    s.ask();
+
+    return 0;
 }

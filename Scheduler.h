@@ -1,32 +1,83 @@
-#pragma once
+/*
+ * @author raphael_perrin
+ * @file Scheduler.h
+ * @date 05/10/2022
+ * @brief Classe permettant l'envoit à une fréquence régulière des informations des Sensors de l'avion
+ */
+
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
 
 #include "Sensor.h"
+#include "Server.h"
 
 #include "Temperature.h"
 #include "Light.h"
 #include "Humidity.h"
 #include "Pression.h"
 
-class Scheduler {
+class Scheduler
+{
 private :
-	Sensor* sensor1;
-	Sensor* sensor2;
-	Sensor* sensor3;
-	Sensor* sensor4;
+	Sensor* m_sensor1;
+	Sensor* m_sensor2;
+	Sensor* m_sensor3;
+	Sensor* m_sensor4;
+
+	float m_frequency;
+
+	Server* m_server;
 
 public:
+	// Définition de la forme canonique
     Scheduler();
-	Scheduler(Scheduler& scheduler);
-	~Scheduler(){
-		delete sensor1;
-		delete sensor2;
-		delete sensor3;
-		delete sensor4;
+	Scheduler(Scheduler& scheduler_p);
+	~Scheduler()
+	{
+		delete m_sensor1;
+		delete m_sensor2;
+		delete m_sensor3;
+		delete m_sensor4;
 	}
-	Scheduler& operator=(Scheduler& scheduler);
-	void clock();
+	Scheduler& operator=(Scheduler& scheduler_p);
+
+	/*
+    * @brief Methode permettant de demander à l'utilisateur quel type d'affichage d'informations il souhaite lors du lancement du programme
+    * @return void
+    * @param none
+    * 
+    */
+	void ask();
 
 private :
-    void wait(float time);
+	/*
+    * @brief Methode permettant au programme d'afficher ou enregistrer les informations des sensors à une fréquence donnée
+    * @return void
+    * @param float frequency
+    * 
+    */
+    void wait(float frequency_p);
+
+	/*
+    * @brief Methode permettant au programme de récupérer les informations des sensors indéfiniment jusqu'à la fin du programme
+    * @return void
+    * @param none
+    */
+	void clock();
+
+	/*
+    * @brief Methode permettant de connaître si le scheduler est actuellement actif, c'est à dire s'il écrit soit dans les logs, soit dans la console
+    * @return bool
+    * @param none
+    */
+	bool isRunning();
+
+	/*
+    * @brief Methode permettant d'activer ou de désactiver le mode console seulement, log seulement ou les deux par l'intermédiaire de la réponse envoyée en paramètres
+    * @return void
+    * @param char answer_p
+    */
+	void checkAnswer(char answer_p);
 };
 
+#endif // SCHEDULER_H

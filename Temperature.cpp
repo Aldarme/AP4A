@@ -1,11 +1,13 @@
 #include "Temperature.h"
 #include <cstdlib>
 
-Temperature::Temperature() {
+Temperature::Temperature()
+{
 	this->setData(this->aleaGenVal());
 	this->setSpecifications("Temperature","degrees Celsius");
 }
 
-int Temperature::aleaGenVal() {
+int Temperature::aleaGenVal()
+{
 	return rand() % 2 + 23;
 }

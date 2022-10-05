@@ -4,44 +4,58 @@
 
 using namespace std;
 
-Sensor::Sensor() {
-    this->data = 0;
-    specs = new const char*[LENGTH];
+Sensor::Sensor()
+{
+    this->m_data = 0;
+    m_specs = new const char*[LENGTH];
 }
 
-Sensor::Sensor(int type) {
-    this->data = type;
-    specs = new const char*[LENGTH];
+void Sensor::refreshData()
+{
+    m_data = aleaGenVal();
 }
 
-Sensor::Sensor(const Sensor& sensor) {
-    this->data = sensor.data;
-    specs = new const char*[LENGTH];
-    if(specs){
+Sensor::Sensor(const Sensor& sensor_p)
+{
+    this->m_data = sensor_p.m_data;
+    m_specs = new const char*[LENGTH];
+    if(m_specs)
+    {
         for(int i = 0; i < LENGTH; i++){
-            this->specs[i] = sensor.specs[i];
+            this->m_specs[i] = sensor_p.m_specs[i];
         }
     }
 }
 
-const char** Sensor::getSpecifications() {
-    return specs;
+Sensor& Sensor::operator=(const Sensor& sensor_p)
+{
+    this->m_data = sensor_p.m_data;
+    if(m_specs)
+    {
+        for(int i = 0; i < LENGTH; i++){
+            this->m_specs[i] = sensor_p.m_specs[i];
+        }
+    }
+    return *this;
 }
 
-void Sensor::setSpecifications(const char* spec1, const char* spec2){
-    this->specs[0] = spec1;
-    this->specs[1] = spec2;
+void Sensor::setSpecifications(const char* spec1_p, const char* spec2_p)
+{
+    this->m_specs[0] = spec1_p;
+    this->m_specs[1] = spec2_p;
 }
 
-int Sensor::getData() {
-    this->setData(aleaGenVal());
-    return data;
+int Sensor::getData()
+{
+    return m_data;
 }
 
-void Sensor::setData(int data) {
-    this->data = data;
+void Sensor::setData(int data_p) 
+{
+    this->m_data = data_p;
 }
 
-int Sensor::aleaGenVal() {
+int Sensor::aleaGenVal()
+{
     return rand() % 100;
 }

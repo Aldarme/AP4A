@@ -1,60 +1,156 @@
 #include "Scheduler.h"
-#include "Server.h"
+#include "windows.h"
+#include <conio.h>
 
 #include <iostream>
 #include <chrono>
 
-using namespace std::chrono;
 using namespace std;
 
-Scheduler::Scheduler() {
-    sensor1 = new Humidity();
-    sensor2 = new Light();
-    sensor3 = new Pression();
-    sensor4 = new Temperature();
+
+Scheduler::Scheduler()
+{
+	m_server = new Server();
+	m_frequency = 2.;
+
+    m_sensor1 = new Humidity();
+    m_sensor2 = new Light();
+    m_sensor3 = new Pression();
+    m_sensor4 = new Temperature();
 }
 
-Scheduler::Scheduler(Scheduler& scheduler){
-    this->sensor1 = scheduler.sensor1;
-    this->sensor2 = scheduler.sensor2;
-    this->sensor3 = scheduler.sensor3;
-    this->sensor4 = scheduler.sensor4;
+Scheduler::Scheduler(Scheduler& scheduler_p)
+{
+    this->m_sensor1 = scheduler_p.m_sensor1;
+    this->m_sensor2 = scheduler_p.m_sensor2;
+    this->m_sensor3 = scheduler_p.m_sensor3;
+    this->m_sensor4 = scheduler_p.m_sensor4;
+    
+    m_server = scheduler_p.m_server;
+	m_frequency = scheduler_p.m_frequency;
 }
 
-Scheduler& Scheduler::operator=(Scheduler& scheduler){
-    this->sensor1 = scheduler.sensor1;
-    this->sensor2 = scheduler.sensor2;
-    this->sensor3 = scheduler.sensor3;
-    this->sensor4 = scheduler.sensor4;
+Scheduler& Scheduler::operator=(Scheduler& scheduler_p)
+{
+    this->m_sensor1 = scheduler_p.m_sensor1;
+    this->m_sensor2 = scheduler_p.m_sensor2;
+    this->m_sensor3 = scheduler_p.m_sensor3;
+    this->m_sensor4 = scheduler_p.m_sensor4;
+
+    m_server = scheduler_p.m_server;
+	m_frequency = scheduler_p.m_frequency;
 }
 
-void Scheduler::wait(float seconds) {
+void Scheduler::wait(float frequency_p)
+{
+    char detection;
+    if(kbhit())
+    {
+        detection = getch();
+        checkAnswer(detection);
+    }
+
+
     time_t lastTime = time(NULL); 
     time_t delta = 0;
-    while (delta < seconds) {
+    while (delta < frequency_p)
+    {
         time_t now = time(NULL);
         delta = (now - lastTime);
     }
 }
 
-void Scheduler::clock(){
-    Server s;
-    int data1,data2,data3,data4;
+bool Scheduler::isRunning()
+{
+    return (m_server->m_consoleActivation || m_server->m_logActivation);
+}
 
-    while(true){
-        this->wait(2.);
-        data1 = sensor1->getData();
-        data2 = sensor2->getData();
-        data3 = sensor3->getData();
-        data4 = sensor4->getData();
-        s.consoleWrite(data1,sensor1->getSpecifications());
-        s.consoleWrite(data2,sensor2->getSpecifications());
-        s.consoleWrite(data3,sensor3->getSpecifications());
-        s.consoleWrite(data4,sensor4->getSpecifications());
-        s.fileWrite(data1,sensor1->getSpecifications());
-        s.fileWrite(data2,sensor2->getSpecifications());
-        s.fileWrite(data3,sensor3->getSpecifications());
-        s.fileWrite(data4,sensor4->getSpecifications());
-        cout << "" << endl; 
+void Scheduler::clock()
+{
+    while(isRunning()){
+        this->wait(m_frequency);
+        m_sensor1->refreshData();
+        m_sensor2->refreshData();
+        m_sensor3->refreshData();
+        m_sensor4->refreshData();
+        if(m_server->m_consoleActivation)
+        {
+            m_server->consoleWrite(*m_sensor1);
+            m_server->consoleWrite(*m_sensor2);
+            m_server->consoleWrite(*m_sensor3);
+            m_server->consoleWrite(*m_sensor4);
+            cout << "" << endl; 
+        }
+        if(m_server->m_logActivation)
+        {
+            m_server->fileWrite(*m_sensor1);
+            m_server->fileWrite(*m_sensor2);
+            m_server->fileWrite(*m_sensor3);
+            m_server->fileWrite(*m_sensor4);
+        }
+    }
+}
+
+void Scheduler::ask()
+{
+    char answer;
+    do{
+        cout << "Activate console only : c" << endl;
+        cout << "Activate logs only : l" << endl;
+        cout << "Activate logs and console : y" << endl; 
+        cout << "\nTo desactivate/activate \n\t- logs\n\t- console\n\t- both\nduring the program, press the same keys as mentionned above during the program" << endl;
+        cout << "\n-- Press 'q' to simply quit the programm --\n" << endl;
+        cin >> answer;
+    }while(answer != 'c' && answer != 'l' && answer != 'y' && answer != 'q');
+
+    checkAnswer(answer);
+    this->clock();
+}
+
+void Scheduler::checkAnswer(char answer_p)
+{
+    switch(answer_p){
+        case 'q' :
+            m_server->m_consoleActivation = false;
+            m_server->m_logActivation = false;
+            cout << "Quitting program" << endl;
+        break;
+        case 'c' :
+            if(m_server->m_consoleActivation){
+                m_server->m_consoleActivation = false;
+                cout << "Console log desactivated!" << endl;
+            }
+            else
+            {
+                m_server->m_consoleActivation = true;
+                cout << "Console log activated!" << endl;
+            }
+        break;
+        case 'l' :
+            if (m_server->m_logActivation)
+            {
+                m_server->m_logActivation = false;
+                cout << "Logs desactivated!" << endl;
+            }
+            else
+            {
+                m_server->m_logActivation = true;
+                cout << "Logs activated!" << endl;
+            }
+        break;
+        case 'y' :
+            if(m_server->m_consoleActivation && m_server->m_logActivation)
+            {
+                m_server->m_consoleActivation = false;
+                m_server->m_logActivation = false;
+                cout << "Console & Logs desactivated!" << endl;
+            }
+            else
+            {
+                m_server->m_consoleActivation = true;
+                m_server->m_logActivation = true;
+                cout << "Console & Logs activated!" << endl;
+            }
+        break;
     }
 }

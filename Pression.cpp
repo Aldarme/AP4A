@@ -1,11 +1,13 @@
 #include "Pression.h"
 #include <cstdlib>
 
-Pression::Pression() {
+Pression::Pression()
+{
 	this->setData(this->aleaGenVal());
 	this->setSpecifications("Pression","hPa");
 }
 
-int Pression::aleaGenVal() {
+int Pression::aleaGenVal()
+{
 	return rand() % 795 + 55;
 }
