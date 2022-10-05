@@ -1,3 +1,10 @@
+/**
+* @author Alan HERVE
+* @file Sensor.cpp
+* @date 01/10/2022
+* @brief Sensor class is the bases of the 4 classes : Temperature, Pression, Light, Humidity
+**/
+
 #ifndef SENSOR_CPP
 #define SENSOR_CPP
 
