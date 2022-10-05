@@ -39,11 +39,6 @@ public:
      */
     void fileWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
     
-    /**
-     * @brief Création d'un opérateur << pour la sortie des paramètres d'un capteur
-     * @return ostream&
-     * @param Demande ostream&, const Sensor&
-     */
     friend class Sensor;
 };
 
