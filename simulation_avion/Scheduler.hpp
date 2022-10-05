@@ -5,6 +5,9 @@
  * @brief   Scheduler class, manage the sensors and the server, use the clock to regulate
  */
 
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
+
 #include "Server.hpp"
 #include "Sensor.hpp"
 
@@ -16,21 +19,26 @@
 class Scheduler
 {
 private:
-    Sensor* pHu;
-    Sensor* pTe; 
-    Sensor* pPr;
-    Sensor* pLi; 
+    Sensor* m_pHu;
+    Sensor* m_pTe; 
+    Sensor* m_pPr;
+    Sensor* m_pLi; 
+    
 public:
+    //Definition of the canonical form
     Scheduler();
-    Scheduler(const Scheduler& param);
-    Scheduler& operator=(const Scheduler& param);
+    Scheduler(const Scheduler& param_sc);
+    Scheduler& operator=(const Scheduler& param_sc);
     ~Scheduler();
 
+    //manage all the simulation
     void scheduler();   
-
 };
 
-void clock(int time);
+//wait param_time seconds
+void clock(int param_time);
 
-void initilizeServerParameters(Server& server);
+//ask the user if he want to activate the console and the logs
+void initilizeServerParameters(Server& param_server);
 
+#endif // SCHEDULER_H

@@ -18,13 +18,19 @@ private:
 
 public:
 
+    //Definition of the canonical form
     Pression();
-    Pression(const Pression& param); 
-    Pression& operator=(const Pression& param); 
+    Pression(const Pression& param_pr); 
+    Pression& operator=(const Pression& param_pr); 
     ~Pression();
 
+    //generate a value for the pression
     int aleaGenValue() override;
+
+    //get the type of the sensor
     std::string getType() override;
+
+    //get the unity of the sensor
     std::string getUnity() override; 
 
 };

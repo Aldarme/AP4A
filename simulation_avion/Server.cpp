@@ -5,68 +5,89 @@
 using namespace std;
 
 
-Server::Server() { 
-    this->logsActivated = false; 
-    this->consoleActivated = false; 
+//Definition of the canonical form
+Server::Server() 
+{ 
+    this->m_logsActivated = false; 
+    this->m_consoleActivated = false; 
 }
 
-Server::Server(const Server& param) {
-    this->logsActivated = param.logsActivated; 
-    this->consoleActivated = param.consoleActivated; 
+Server::Server(const Server& param_se) 
+{
+    this->m_logsActivated = param_se.m_logsActivated; 
+    this->m_consoleActivated = param_se.m_consoleActivated; 
 }
 
-Server& Server::operator=(const Server& param) {
-    this->logsActivated = param.logsActivated;
-    this->consoleActivated = param.consoleActivated;
+Server& Server::operator=(const Server& param_se) 
+{
+    this->m_logsActivated = param_se.m_logsActivated;
+    this->m_consoleActivated = param_se.m_consoleActivated;
     return *this; 
 }
 
-Server::~Server() {
+Server::~Server() 
+{
 }
 
-
-void Server::consoleWrite(int value, std::string type, std::string unity) {
-    if (this->consoleActivated) {
-        cout << type + " : ";
-        cout << value; 
-        cout << " " + unity << endl;
+//write the data on the console
+void Server::consoleWrite(int param_value, std::string param_type, std::string param_unity) 
+{
+    if (this->m_consoleActivated) 
+    {
+        cout << param_type + " : ";
+        cout << param_value; 
+        cout << " " + param_unity << endl;
     }
 }
 
-void Server::consoleWrite() {
-    if (this->consoleActivated) {
+//add a new line on the console 
+void Server::consoleWrite()
+{
+    if (this->m_consoleActivated) 
+    {
         cout << endl;
     }
 }
 
-void Server::activateConsole() {
-    this->consoleActivated = true; 
+//activate the console
+void Server::activateConsole() 
+{
+    this->m_consoleActivated = true; 
 }
 
-void Server::fileWrite(int value, std::string type, std::string unity) {
-    if (this->logsActivated) {
-    ofstream file("data.txt", ios::app);
-    file << type + " : ";
-    file << value;
-    file << " " + unity << endl;
-    file.close();
+//write the data in the file
+void Server::fileWrite(int param_value, std::string param_type, std::string param_unity) 
+{
+    if (this->m_logsActivated) 
+    {
+        ofstream file("data.txt", ios::app);
+        file << param_type + " : ";
+        file << param_value;
+        file << " " + param_unity << endl;
+        file.close();
     }
-
 }
 
-void Server::fileWrite() {
-    if (this->logsActivated) {
+//add a new line in the file
+void Server::fileWrite() 
+{
+    if (this->m_logsActivated) 
+    {
         ofstream file("data.txt", ios::app);
         file << "" << endl;
         file.close();
     }
 }
 
-void Server::resetLogs() {
+//reset the logs file
+void Server::resetLogs() 
+{
     ofstream file("data.txt", ios::trunc);
     file.close();
 }
 
-void Server::activateLogs() {
-    this->logsActivated = true; 
+//activate the logs
+void Server::activateLogs() 
+{
+    this->m_logsActivated = true; 
 }

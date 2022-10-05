@@ -14,26 +14,39 @@
 
 class Server 
 {
-    private:
-        bool logsActivated;
-        bool consoleActivated;
-    public:
-        Server();
-        Server(const Server& param);
-        Server& operator=(const Server& param);
-        ~Server();
+private:
+    bool m_logsActivated;
+    bool m_consoleActivated;
+    
+public:
 
-        void consoleWrite(int value, std::string type, std::string unity);
-        void consoleWrite();
-        void activateConsole();
+    //Definition of the canonical form
+    Server();
+    Server(const Server& param_se);
+    Server& operator=(const Server& param_se);
+    ~Server();
 
+    //write the data on the console
+    void consoleWrite(int param_value, std::string param_type, std::string param_unity);
 
-        void fileWrite(int value, std::string type, std::string unity);
-        void fileWrite();
-        void resetLogs();
-        void activateLogs();
+    //add a new line on the console
+    void consoleWrite();
+
+    //activate the console
+    void activateConsole();
+    
+    //write the data in the file
+    void fileWrite(int param_value, std::string param_type, std::string param_unity);
+    
+    //add a new line in the file
+    void fileWrite();
+
+    //reset the logs file
+    void resetLogs();
+
+    //activate the logs
+    void activateLogs();
 };
-
 
 #endif // SERVER_H
 

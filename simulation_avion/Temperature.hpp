@@ -18,15 +18,20 @@ private:
 
 public:
 
+    //Definition of the canonical form
     Temperature();
-    Temperature(const Temperature& param); 
-    Temperature& operator=(const Temperature& param); 
+    Temperature(const Temperature& param_te); 
+    Temperature& operator=(const Temperature& param_te); 
     ~Temperature();
 
+    //generate a value for the temperature
     int aleaGenValue() override; 
-    std::string getType() override;
-    std::string getUnity() override;
 
+    //get the type of the sensor
+    std::string getType() override;
+
+    //get the unity of the sensor
+    std::string getUnity() override;
 };
 
 #endif // TEMPERATURE_H

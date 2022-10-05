@@ -18,17 +18,20 @@ private:
 
 public:
     
+    //Definition of the canonical form
     Light();
-    Light(const Light& param); 
-    Light& operator=(const Light& param); 
+    Light(const Light& param_li); 
+    Light& operator=(const Light& param_li); 
     ~Light();
 
+    //generate a value for the light
     int aleaGenValue() override; 
+
+    //get the type of the sensor
     std::string getType() override;
+
+    //get the unity of the sensor
     std::string getUnity() override;
-
 };
-
-
 
 #endif // LIGHT_H

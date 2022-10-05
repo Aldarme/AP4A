@@ -12,26 +12,31 @@
 
 class Sensor 
 {
-    protected:
-        int value;
-        std::string type; 
-        std::string unity;
-        virtual std::string getType() = 0;
-        virtual std::string getUnity() = 0;
-        virtual int aleaGenValue() = 0; 
+protected:
+    int m_value;
+    std::string m_type; 
+    std::string m_unity;
+    virtual std::string getType() = 0;
+    virtual std::string getUnity() = 0;
+    virtual int aleaGenValue() = 0; 
 
-    public: 
+public: 
 
-        Sensor();
-        Sensor(const Sensor& param); 
-        Sensor& operator=(const Sensor& param); 
-        ~Sensor();
+    //Definition of the canonical form
+    Sensor();
+    Sensor(const Sensor& param_se); 
+    Sensor& operator=(const Sensor& param_se); 
+    ~Sensor();
 
-        int getData();
-        std::string getSensorType();
-        std::string getSensorUnity();
+    //get the value of the sensor : call the aleaGenValue() function of the right child
+    int getData();
+
+    //get the type of the sensor : call the getType() function of the right child
+    std::string getSensorType();
+
+    //get the unity of the sensor : call the getUnity() function of the right child
+    std::string getSensorUnity();
 };
-
 
 #endif // SENSOR_H
 

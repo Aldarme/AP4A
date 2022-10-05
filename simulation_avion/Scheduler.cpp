@@ -10,86 +10,95 @@ using namespace std;
 #include <chrono> 
 using namespace std::chrono;
 
+#define WAITING_TIME 3
+
+
+//Definition of the canonical form
 Scheduler::Scheduler()
 {
-    pHu = new Humidity(); 
-    pTe = new Temperature(); 
-    pPr = new Pression(); 
-    pLi = new Light(); 
+    m_pHu = new Humidity(); 
+    m_pTe = new Temperature(); 
+    m_pPr = new Pression(); 
+    m_pLi = new Light(); 
 }
 
-Scheduler::Scheduler(const Scheduler& param)
+Scheduler::Scheduler(const Scheduler& param_sc)
 {
-    pHu = new Humidity(); 
-    *(this->pHu) = *(param.pHu);
+    m_pHu = new Humidity(); 
+    *(this->m_pHu) = *(param_sc.m_pHu);
 
-    pTe = new Temperature(); 
-    *(this->pTe) = *(param.pTe);
+    m_pTe = new Temperature(); 
+    *(this->m_pTe) = *(param_sc.m_pTe);
 
-    pPr = new Pression(); 
-    *(this->pPr) = *(param.pPr);
+    m_pPr = new Pression(); 
+    *(this->m_pPr) = *(param_sc.m_pPr);
 
-    pLi = new Light(); 
-    *(this->pLi) = *(param.pLi);
+    m_pLi = new Light(); 
+    *(this->m_pLi) = *(param_sc.m_pLi);
 }
 
-Scheduler& Scheduler::operator=(const Scheduler& param)
+Scheduler& Scheduler::operator=(const Scheduler& param_sc)
 {
-    *(this->pHu) = *(param.pHu);
-    *(this->pTe) = *(param.pTe);
-    *(this->pPr) = *(param.pPr);
-    *(this->pLi) = *(param.pLi);
+    *(this->m_pHu) = *(param_sc.m_pHu);
+    *(this->m_pTe) = *(param_sc.m_pTe);
+    *(this->m_pPr) = *(param_sc.m_pPr);
+    *(this->m_pLi) = *(param_sc.m_pLi);
     return *this;
 }
 
 Scheduler::~Scheduler()
 {
-    delete pHu; 
-    delete pTe; 
-    delete pPr; 
-    delete pLi; 
+    delete m_pHu; 
+    delete m_pTe; 
+    delete m_pPr; 
+    delete m_pLi; 
 }
 
-void Scheduler::scheduler() {
-
+//manage all the simulation
+void Scheduler::scheduler() 
+{
+    //create the server
     Server server; 
 
+    //reset logs + ask the user if he want to activate the console and the logs 
     server.resetLogs();
     initilizeServerParameters(server);
+
     srand(time(NULL));
 
     int valueHu, valueTe, valuePr, valueLi; 
 
-    bool stop_condition = true;
-
-    while (stop_condition)
+    //endless loop
+    while (true)
     {
         
-        clock(3); 
-        valueHu = pHu->getData();
-        server.consoleWrite(valueHu, pHu->getSensorType(), pHu->getSensorUnity());
-        server.fileWrite(valueHu, pHu->getSensorType(), pHu->getSensorUnity()); 
+        clock(WAITING_TIME); 
+        valueHu = m_pHu->getData();
+        server.consoleWrite(valueHu, m_pHu->getSensorType(), m_pHu->getSensorUnity());
+        server.fileWrite(valueHu, m_pHu->getSensorType(), m_pHu->getSensorUnity()); 
 
-        valueTe = pTe->getData( ); 
-        server.consoleWrite(valueTe, pTe->getSensorType(), pTe->getSensorUnity());
-        server.fileWrite(valueTe, pTe->getSensorType(), pTe->getSensorUnity());
+        valueTe = m_pTe->getData( ); 
+        server.consoleWrite(valueTe, m_pTe->getSensorType(), m_pTe->getSensorUnity());
+        server.fileWrite(valueTe, m_pTe->getSensorType(), m_pTe->getSensorUnity());
 
-        valuePr = pPr->getData(); 
-        server.consoleWrite(valuePr, pPr->getSensorType(), pPr->getSensorUnity());
-        server.fileWrite(valuePr, pPr->getSensorType(), pPr->getSensorUnity()); 
+        valuePr = m_pPr->getData(); 
+        server.consoleWrite(valuePr, m_pPr->getSensorType(), m_pPr->getSensorUnity());
+        server.fileWrite(valuePr, m_pPr->getSensorType(), m_pPr->getSensorUnity()); 
 
-        valueLi = pLi->getData();
-        server.consoleWrite(valueLi, pLi->getSensorType(), pLi->getSensorUnity());
-        server.fileWrite(valueLi, pLi->getSensorType(), pLi->getSensorUnity());
+        valueLi = m_pLi->getData();
+        server.consoleWrite(valueLi, m_pLi->getSensorType(), m_pLi->getSensorUnity());
+        server.fileWrite(valueLi, m_pLi->getSensorType(), m_pLi->getSensorUnity());
  
+        //add a new line in the logs and the console
         server.consoleWrite();
         server.fileWrite();
 
     }
 }
 
-void clock(int time) {
-
+//wait param_time seconds
+void clock(int param_time) 
+{
     auto start = high_resolution_clock::now(); 
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<seconds>(stop - start);
@@ -97,24 +106,26 @@ void clock(int time) {
     do {
         stop = high_resolution_clock::now(); 
         duration = duration_cast<seconds>(stop - start); 
-    } while (duration.count() < time); 
-
+    } while (duration.count() < param_time); 
 }
 
-void initilizeServerParameters(Server& server) {
 
-//ask the user if he wants to activate the logs
+//ask the user if he want to activate the console and the logs
+void initilizeServerParameters(Server& param_server) 
+{
+    //ask the user if he wants to activate the logs
     char answer; 
     cout << "Do you want to activate the logs ? (y/n)" << endl; 
     cin >> answer; 
-    if (answer == 'y') {
-        server.activateLogs();
+    if (answer == 'y') 
+    {
+        param_server.activateLogs();
     }
-//ask the user if he wants to activate the console
+    //ask the user if he wants to activate the console
     cout << "Do you want to activate the console ? (y/n)" << endl; 
     cin >> answer; 
-    if (answer == 'y') {
-        server.activateConsole();
+    if (answer == 'y') 
+    {
+        param_server.activateConsole();
     }
-
 }

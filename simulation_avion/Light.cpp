@@ -1,34 +1,49 @@
 #include "Light.hpp"
 #include "stdlib.h"
 
-Light::Light() {
-    this->value = 0;  
-    this->type = "Light";
-    this->unity = "on/off";
-}
-Light::Light(const Light& param) {
-    this->value = param.value; 
-    this->type = param.type;
-    this->unity = param.unity;
-}
-Light& Light::operator=(const Light& param) {
-    this->value = param.value; 
-    this->type = param.type;
-    this->unity = param.unity;
-    return *this; 
-}
-Light::~Light() {
+
+//Definition of the canonical form
+Light::Light() 
+{
+    this->m_value = 0;  
+    this->m_type = "Light";
+    this->m_unity = "on/off";
 }
 
-int Light::aleaGenValue(){
+Light::Light(const Light& param_li) 
+{
+    this->m_value = param_li.m_value; 
+    this->m_type = param_li.m_type;
+    this->m_unity = param_li.m_unity;
+}
+
+Light& Light::operator=(const Light& param_li) 
+{
+    this->m_value = param_li.m_value; 
+    this->m_type = param_li.m_type;
+    this->m_unity = param_li.m_unity;
+    return *this; 
+}
+
+Light::~Light() 
+{
+}
+
+//generate a value for the light
+int Light::aleaGenValue()
+{
     return rand()%2; // light on or off
 }
 
-std::string Light::getType() {
-    return this->type; 
+//get the type of the sensor
+std::string Light::getType() 
+{
+    return this->m_type; 
 }
 
-std::string Light::getUnity() {
-    return this->unity; 
+//get the unity of the sensor
+std::string Light::getUnity() 
+{
+    return this->m_unity; 
 }
 
