@@ -1,3 +1,9 @@
+/**@author Alan_HERVE
+*@file Humditiy.cpp
+*@date 05/10/2022
+*@brief child class of Sensor
+**/
+
 #ifndef HUMIDITY_CPP
 #define HUMIDITY_CPP
 
