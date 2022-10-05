@@ -103,7 +103,8 @@ void clock(int param_time)
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<seconds>(stop - start);
 
-    do {
+    do 
+    {
         stop = high_resolution_clock::now(); 
         duration = duration_cast<seconds>(stop - start); 
     } while (duration.count() < param_time); 
