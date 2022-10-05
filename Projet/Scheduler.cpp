@@ -1,6 +1,6 @@
 /**
 * @author Alan HERVE
-* @file Scheduler.hpp
+* @file Scheduler.cpp
 * @date 01/10/2022
 * @brief Is in charge of getting values from our captors and sending them to the Server class
 **/
