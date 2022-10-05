@@ -1,0 +1,64 @@
+Humidity 80 %
+Light 0 
+Pression 403 hPa
+Temperature 23 degrees Celsius
+Humidity 96 %
+Light 0 
+Pression 195 hPa
+Temperature 24 degrees Celsius
+Humidity 51 %
+Light 1 
+Pression 476 hPa
+Temperature 24 degrees Celsius
+Humidity 66 %
+Light 0 
+Pression 112 hPa
+Temperature 23 degrees Celsius
+Humidity 71 %
+Light 0 
+Pression 777 hPa
+Temperature 24 degrees Celsius
+Humidity 90 %
+Light 0 
+Pression 781 hPa
+Temperature 23 degrees Celsius
+Humidity 23 %
+Light 1 
+Pression 732 hPa
+Temperature 23 degrees Celsius
+Humidity 25 %
+Light 0 
+Pression 334 hPa
+Temperature 23 degrees Celsius
+Humidity 13 %
+Light 1 
+Pression 395 hPa
+Temperature 23 degrees Celsius
+Humidity 19 %
+Light 1 
+Pression 372 hPa
+Temperature 24 degrees Celsius
+Humidity 99 %
+Light 0 
+Pression 91 hPa
+Temperature 24 degrees Celsius
+Humidity 74 %
+Light 0 
+Pression 162 hPa
+Temperature 23 degrees Celsius
+Humidity 39 %
+Light 1 
+Pression 217 hPa
+Temperature 24 degrees Celsius
+Humidity 37 %
+Light 1 
+Pression 554 hPa
+Temperature 23 degrees Celsius
+Humidity 95 %
+Light 1 
+Pression 780 hPa
+Temperature 23 degrees Celsius
+Humidity 86 %
+Light 0 
+Pression 350 hPa
+Temperature 23 degrees Celsius
