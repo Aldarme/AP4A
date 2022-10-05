@@ -6,4 +6,4 @@ les renvoie au server. Ce dernier les stock dans le fichier de log principal et 
 L'utilisateur peut choisir au début du programme si les données seront écrites dans les fichiers de log et dans la
 console. Il peut aussi choisir la durée de la simulation.
 
-Commit correspondant : https://github.com/Aldarme/AP4A/tree/48d6141ba2cdadfe6410bcc164c9742776daa537
+Commit correspondant : https://github.com/Aldarme/AP4A/tree/750f26bd599380500a542f4b930742a2bda5eaad
