@@ -2,7 +2,7 @@
  * @author Timothe Watteau
  * @file Plane.hpp
  * @date 25/09/2022
- * @brief Plane class, ecosystem of the simulation
+ * @brief plane class, ecosystem of the simulation
  */
 
 #ifndef AP4A_PLANE_HPP
@@ -24,7 +24,7 @@ public:
 	Plane& operator=(const Plane& plane);
 
 	/**
-	 * @brief Launches the simulation for a definite time, or indefinite if the time is not specified
+	 * Launches the simulation for a definite time, or indefinite if the time is not specified
 	 * @param time time to run the simulation in seconds, optional
 	 */
 	void LaunchSimulation();

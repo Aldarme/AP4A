@@ -2,7 +2,7 @@
  * @author Timothe Watteau
  * @file Plane.cpp
  * @date 25/09/2022
- * @brief Plane class, ecosystem of the simulation
+ * @brief plane class, ecosystem of the simulation
  */
 
 #include "Plane.hpp"

@@ -9,7 +9,6 @@
 #define AP4A_SERVER_HPP
 
 #include "iostream"
-#include "fstream"
 
 class Server
 {
@@ -20,37 +19,32 @@ private:
 	/**
 	 * @brief Writes all the sensors values in the console
 	 * @param measures measured values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void consoleWrite(float measures[4], std::string units[4], long time);
+	void consoleWrite(float measures[4], long time);
 	/**
-	 * @brief Writes all the sensors measures in the main log file
-	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
-	 * @param units units of the measures values
-	 * @param time time of the measures
-	 */
-	void fileWrite(float measures[4], std::string units[4], long time);
-	/**
-	 * @brief Writes a measure from one sensor in the console
-	 * @tparam T type of return of the sensor
-	 * @param sensor type of sensor (temperature, humidity, light, pressure)
-	 * @param unit unit of the measure
+	 * @brief Writes a sensor value in the console
+	 * @param sensor character indicating the sensor used
 	 * @param measures measured value
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void consoleWrite(std::string sensor, std::string unit, T measure, long time);
+	void consoleWrite(std::string sensor, T measure, long time);
+
 	/**
-	 * @brief Writes the measure of one sensor in the corresponding log file
-	 * @tparam T type of return of the sensor
+	 * @brief Writes all the sensors values in the main log file
+	 * @param measures values of the 0: temperature, 1: humidity, 2: light, 3: pressure
+	 * @param time time of the measures
+	 */
+	void fileWrite(float measures[4], long time);
+	/**
+	 * @brief Writes the value of one sensor in the corresponding log file
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
-	 * @param unit unit of the measure
-	 * @param measure measured value
+	 * @param measure measure of the sensor
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void fileWrite(std::string sensor, std::string unit, T value, long time);
+	void fileWrite(std::string sensor, T value, long time);
 
 public:
 	/**
@@ -62,60 +56,28 @@ public:
 	Server& operator=(const Server& server);
 
 	/**
-	 * @brief Receives data from the sensors
+	 * Receives data from the sensors
 	 * @param measures measures of the sensors
-	 * @param units units of the measures values
 	 * @param time time of the measures
 	 */
-	void DataReceive(float measures[4], std::string units[4], long time);
+	void DataReceive(float measures[4], long time);
 	/**
-	 * @brief Receives data from a single sensor
-	 * @tparam T type of return of the sensor
+	 * Receives data from a single sensor
 	 * @param sensor type of sensor (temperature, humidity, light, pressure)
 	 * @param measure measure of the sensor
-	 * @param unit unit of the measure
 	 * @param time time of the measure
 	 */
 	template<typename T>
-	void DataReceive(std::string sensor, std::string unit, T measure, long time);
+	void DataReceive(std::string sensor, T measure, long time);
 
 	/**
-	 * @brief Toggles the console log to true or false
+	 * Toggles the console log to true or false
 	 */
 	void toggleConsoleLog();
 	/**
-	 * @brief Toggles the files log to true or false
+	 * Toggles the files log to true or false
 	 */
 	void toggleFileLog();
 };
-
-// Template functions have to be declared in the header of the class
-
-template<typename T>
-void Server::consoleWrite(std::string sensor, std::string unit, T measure, long time)
-{
-	std::cout << time << "s | " << sensor << " : " << measure << unit << std::endl;
-}
-
-template<typename T>
-void Server::fileWrite(std::string sensor, std::string unit, T value, long time)
-{
-	std::ofstream logFile("logs/" + sensor + "Log.txt", std::fstream::app); // opens the corresponding log file
-	logFile << time << "s | Value: " << value << unit << "," << std::endl; // writes in the file
-	logFile.close();
-}
-
-template<typename T>
-void Server::DataReceive(std::string sensor, std::string unit, T measure, long time)
-{
-	if (m_consoleActivation)
-	{
-		consoleWrite(sensor, unit, measure, time);
-	}
-	if (m_logActivation)
-	{
-		fileWrite(sensor, unit, measure, time);
-	}
-}
 
 #endif //AP4A_SERVER_HPP
