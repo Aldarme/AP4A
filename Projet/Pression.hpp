@@ -11,7 +11,7 @@
 
 #pragma once
 
-#include "Sensor.hpp"
+#include "Sensor.cpp"
 #include <iostream>
 
 using namespace std;
