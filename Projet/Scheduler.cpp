@@ -1,14 +1,9 @@
-/**
-* @author Alan HERVE
-* @file Scheduler.cpp
-* @date 01/10/2022
-* @brief Is in charge of getting values from our captors and sending them to the Server class
-**/
-
 #ifndef SCHEDULER_CPP
 #define SCHEDULER_CPP
 
 #include "Scheduler.hpp"
+
+
 
 
 
@@ -26,6 +21,37 @@ void Scheduler::startClock()
 
     while (true)
     {
+        if(kbhit()){
+
+        
+        switch (getch())
+        {
+        case 'c':
+
+            if(this->server_object.statusConsole())
+            {
+                this->server_object.deActivateConsole();
+            }else
+            {
+                this->server_object.activateConsole();
+            }
+
+            break;
+        case 'l': 
+
+            if(this->server_object.statusLog())
+            {
+                this->server_object.deActivateLog();
+            }else
+            {
+                this->server_object.activateLog();
+            }
+
+        default:
+            break;
+        }
+        }
+
         this->pression_d.info = this->pression_object.getData();
         this->light_d.info = this->light_object.getData();
         this->humidity_d.info = this->humidty_object.getData();

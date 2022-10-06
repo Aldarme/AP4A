@@ -7,14 +7,16 @@
 
 
 
-#ifndef SCHEDULER_H
-#define SCHEDULER_H
+#ifndef SCHEDULER_HPP
+#define SCHEDULER_HPP
 
 #pragma once
 
 #include <iostream>
 #include <chrono>
 #include <thread>
+#include <conio.h>
+
 
 #include "Temperature.cpp"
 #include "Pression.cpp"
@@ -76,9 +78,9 @@ class Scheduler
 
         Scheduler()
         {
-            this->frequency = 5;
+            this->frequency = 1;
             this->going = true;
-
+            cout << "Press 'c' to manage console activation, an 'l' for log activation" <<endl;
             this->startClock();    
         }
 
