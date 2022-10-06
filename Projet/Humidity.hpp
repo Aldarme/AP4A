@@ -11,7 +11,7 @@
 #define HUMIDITY_H
 
 #include <iostream>
-#include "Sensor.hpp"
+#include "Sensor.cpp"
 
 using namespace std;
 
