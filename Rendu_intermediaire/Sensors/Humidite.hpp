@@ -6,6 +6,7 @@
  */
 
 
+// Define Guards
 #ifndef PROJET_AP4A_HUMIDITE_HPP
 #define PROJET_AP4A_HUMIDITE_HPP
 
@@ -19,11 +20,11 @@
 class Humidite : public Sensor<TYPE>
 {
 public:
-    // Forme canonique
-    Humidite();
-    Humidite(const Humidite& h_p);
-    ~Humidite();
-    Humidite& operator=(const Humidite& h_p);
+  // Forme canonique
+  Humidite();
+  Humidite(const Humidite& h_p);
+  ~Humidite();
+  Humidite& operator=(const Humidite& h_p);
 };
 
 #endif //PROJET_AP4A_HUMIDITE_HPP

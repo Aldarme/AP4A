@@ -25,65 +25,64 @@
 class Server
 {
 private:
-    bool m_consolActivation;    ///< Attribut permetant de vérifier l'écriture des informations dans la console
-    bool m_logActivation;       ///< Attribut permetant de vérifier l'écriture des informations dans les fichiers logs
+  bool m_consolActivation;    ///< Attribut permetant de vérifier l'écriture des informations dans la console
+  bool m_logActivation;       ///< Attribut permetant de vérifier l'écriture des informations dans les fichiers logs
 public:
-    // Définition de la forme canonique
-    Server();
-    Server(const Server& server_p);
-    ~Server();
-    Server& operator=(const Server& server_p);
+  // Définition de la forme canonique
+  Server();
+  Server(const Server& server_p);
+  ~Server();
+  Server& operator=(const Server& server_p);
 
+  /**
+   * @brief Demande à l'utilisateur si il veut écrire dans la console ou non
+   */
+  void toggleConsolWrite();
 
-    /**
-     * @brief Demande à l'utilisateur si il veut écrire dans la console ou non
-     */
-    void toggleConsolWrite();
+  /**
+   * @brief Demande à l'utilisateur si il veut écrire dans les logs ou non
+   */
+  void toggleLogWrite();
 
-    /**
-     * @brief Demande à l'utilisateur si il veut écrire dans les logs ou non
-     */
-    void toggleLogWrite();
+  /**
+   *
+   * @tparam T
+   * @param name_p
+   * @param value_p
+   * @param unite_p
+   */
+  template<typename T>
+  void fileWrite(const std::string& name_p,T value_p,const std::string& unite_p);
 
-    /**
-     *
-     * @tparam T
-     * @param name_p
-     * @param value_p
-     * @param unite_p
-     */
-    template<typename T>
-    void fileWrite(const std::string& name_p,T value_p,const std::string& unite_p);
-
-    /**
-     *
-     * @tparam T
-     * @param name_p
-     * @param value_p
-     * @param unite_p
-     */
-    template<typename T>
-    void consolWrite(const std::string& name_p,T value_p,const std::string& unite_p);
-
-
+  /**
+   *
+   * @tparam T
+   * @param name_p
+   * @param value_p
+   * @param unite_p
+   */
+  template<typename T>
+  void consolWrite(const std::string& name_p,T value_p,const std::string& unite_p);
 };
 
 template<typename T>
 void Server::fileWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
 {
-    if (this->m_logActivation == 1)
-    {
-        std::ofstream file("log.txt", std::ios::app);
-        file << name_p << " " << value_p << " " << unite_p << std::endl;
-        file.close();
-    }
+  // Si l'utilisateur a choisi d'afficher dans les logs alors on lui affiche
+  if (this->m_logActivation == 1)
+  {
+    std::ofstream file("log.txt", std::ios::app);
+    file << name_p << " " << value_p << " " << unite_p << std::endl;
+    file.close();
+  }
 }
 
 template<typename T>
 void Server::consolWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
 {
-    if (this->m_consolActivation == 1)
-        std::cout << name_p << " " << value_p << " " << unite_p << std::endl;
+  // Si l'utilisateur a choisi d'afficher dans les logs alors on lui affiche
+  if (this->m_consolActivation == 1)
+    std::cout << name_p << " " << value_p << " " << unite_p << std::endl;
 }
 
 
