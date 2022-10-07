@@ -1,35 +1,34 @@
 #ifndef PACKAGE_H
 #define PACKAGE_H
 
-#include "string"
+#include <string>
+#include <fstream>
 
-template <typename TYPE>
 class Package
 {
 private:
     
-    TYPE m_data;
+    float m_data;
     std::string m_sensor_name;
     std::string m_sensor_unit;
 
 public:
-    Package(TYPE p_data, std::string p_sensor_name, std::string p_sensor_unit)
+    Package(float p_data, std::string p_sensor_name, std::string p_sensor_unit);
+    std::string getName()
     {
-        m_data = p_data;
-        m_sensor_name = p_sensor_name;
-        m_sensor_unit = p_sensor_unit;
-    };
-
-    friend std::ostream &operator<<( std::ostream &output, const Package &p_package ) 
-    { 
-         output << p_package.m_sensor_name << ": " << p_package.m_data << p_package.m_sensor_unit;
-         return output;            
+        return m_sensor_name;
     }
 
-    friend std::istream &operator>>( std::istream  &input, Package &p_package )
-    { 
-        input >> p_package.m_data << ";";
-        return input;            
+    friend std::ostream& operator<<( std::ostream &p_output, const Package &p_package)
+    {
+        p_output << p_package.m_sensor_name << ": " << p_package.m_data << " " << p_package.m_sensor_unit;          
+        return p_output;
+    }
+
+    friend std::ofstream& operator<<( std::ofstream &p_output_f, Package &p_package)
+    {
+        p_output_f << p_package.m_data << ";";
+        return p_output_f;
     }
 };
 
