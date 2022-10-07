@@ -15,9 +15,9 @@
 
 /**
  * @class Humidite
- * @brief Classe humidite héritant de la classe Sensor
+ * @brief Classe humidité héritant de la classe Sensor
  */
-class Humidite : public Sensor<TYPE>
+class Humidite : public Sensor<float>
 {
 public:
   // Forme canonique
