@@ -1,11 +1,13 @@
+#include <random>
+#include <ctime>
+
 #include "Sensor.hpp"
-#include "iostream"
 
 Sensor::Sensor(float p_MIN_VAL, float p_MAX_VAL)
 {
-        srand(time(NULL));
-        m_MIN_VAL = p_MIN_VAL;
-        m_MAX_VAL = p_MAX_VAL;
+    srand(time(NULL));
+    m_MIN_VAL = p_MIN_VAL;
+    m_MAX_VAL = p_MAX_VAL;
 }
 
 float Sensor::aleaGenVal()
