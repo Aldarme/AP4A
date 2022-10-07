@@ -9,5 +9,5 @@
 
 /*
  * Ce fichier est vide, il est rattaché au fichier header sensor.hpp pour la définition de la classe Sensor.
- * Il ne contient aucune implémentation a cause de l'utilisation des templates
+ * Il ne contient aucune implémentation à cause de l'utilisation des templates
  */

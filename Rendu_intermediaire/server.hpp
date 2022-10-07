@@ -25,8 +25,8 @@
 class Server
 {
 private:
-  bool m_consolActivation;    ///< Attribut permetant de vérifier l'écriture des informations dans la console
-  bool m_logActivation;       ///< Attribut permetant de vérifier l'écriture des informations dans les fichiers logs
+  bool m_consolActivation;    ///< Attribut permettant de vérifier l'écriture des informations dans la console
+  bool m_logActivation;       ///< Attribut permettant de vérifier l'écriture des informations dans les fichiers logs
 public:
   // Définition de la forme canonique
   Server();
@@ -45,44 +45,42 @@ public:
   void toggleLogWrite();
 
   /**
-   *
-   * @tparam T
-   * @param name_p
-   * @param value_p
-   * @param unite_p
+   * @brief Fonction pour écrire dans les logs
+   * @param nomCapteur_p Nom du capteur à écrire
+   * @param valeur_p Valeur du capteur
+   * @param unite_p Unité du capteur
    */
   template<typename T>
-  void fileWrite(const std::string& name_p,T value_p,const std::string& unite_p);
+  void fileWrite(const std::string& nomCapteur_p,T valeur_p,const std::string& unite_p);
 
   /**
-   *
-   * @tparam T
-   * @param name_p
-   * @param value_p
-   * @param unite_p
+   * @brief Fonction pour écrire dans la console
+   * @param nomCapteur_p Nom du capteur à écrire
+   * @param valeur_p Valeur du capteur
+   * @param unite_p Unité du capteur
    */
   template<typename T>
-  void consolWrite(const std::string& name_p,T value_p,const std::string& unite_p);
+  void consolWrite(const std::string& nomCapteur_p,T valeur_p,const std::string& unite_p);
 };
 
 template<typename T>
-void Server::fileWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
+void Server::fileWrite(const std::string& nomCapteur_p, const T valeur_p, const std::string& unite_p)
 {
   // Si l'utilisateur a choisi d'afficher dans les logs alors on lui affiche
   if (this->m_logActivation == 1)
   {
     std::ofstream file("log.txt", std::ios::app);
-    file << name_p << " " << value_p << " " << unite_p << std::endl;
+    file << nomCapteur_p << " " << valeur_p << " " << unite_p << std::endl;
     file.close();
   }
 }
 
 template<typename T>
-void Server::consolWrite(const std::string& name_p, const T value_p, const std::string& unite_p)
+void Server::consolWrite(const std::string& nomCapteur_p, const T valeur_p, const std::string& unite_p)
 {
   // Si l'utilisateur a choisi d'afficher dans les logs alors on lui affiche
   if (this->m_consolActivation == 1)
-    std::cout << name_p << " " << value_p << " " << unite_p << std::endl;
+    std::cout << nomCapteur_p << " " << valeur_p << " " << unite_p << std::endl;
 }
 
 

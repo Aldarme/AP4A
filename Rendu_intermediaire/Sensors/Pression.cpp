@@ -13,21 +13,21 @@ Pression::Pression()
 {
   // Initialise les attributs hérités de Sensor avec des valeurs cohérentes
   srand(time(nullptr));
-  this->m_minValue = 76;
-  this->m_maxValue = 81;
-  this->m_name = "Pression";
+  this->m_minValeur = 76;
+  this->m_maxValeur = 81;
+  this->m_nomCapteur = "Pression";
   this->m_unite = "kPa";
 }
 
-Pression::Pression(const Pression &p_p) : Sensor<TYPE>(p_p) {} // Utilise le constructeur par recopie de Sensor
+Pression::Pression(const Pression &p_p) : Sensor<TYPE>(p_p) {} // Utilise le constructeur par recopiage de Sensor
 
 Pression::~Pression() = default;
 
 Pression& Pression::operator=(const Pression &p_p)
 {
-  this->m_minValue = p_p.m_minValue;
-  this->m_maxValue = p_p.m_maxValue;
-  this->m_name = p_p.m_name;
+  this->m_minValeur = p_p.m_minValeur;
+  this->m_maxValeur = p_p.m_maxValeur;
+  this->m_nomCapteur = p_p.m_nomCapteur;
   this->m_unite = p_p.m_unite;
   return *this;
 }

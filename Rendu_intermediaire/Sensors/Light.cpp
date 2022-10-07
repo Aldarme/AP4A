@@ -13,21 +13,21 @@ Light::Light()
 {
   // Initialise les attributs hérités de Sensor avec des valeurs cohérentes
   srand(time(nullptr));
-  this->m_minValue = false;
-  this->m_maxValue = true;
-  this->m_name = "Light";
+  this->m_minValeur = false;
+  this->m_maxValeur = true;
+  this->m_nomCapteur = "Light";
   this->m_unite = "";
 }
 
-Light::Light(const Light &l_p) : Sensor<TYPE>(l_p) {} // Utilise le constructeur par re-copie de Sensor
+Light::Light(const Light &l_p) : Sensor<TYPE>(l_p) {} // Utilise le constructeur par recopiage de Sensor
 
 Light::~Light() = default;
 
 Light& Light::operator=(const Light &l_p)
 {
-  this->m_minValue = l_p.m_minValue;
-  this->m_maxValue = l_p.m_maxValue;
-  this->m_name = l_p.m_name;
+  this->m_minValeur = l_p.m_minValeur;
+  this->m_maxValeur = l_p.m_maxValeur;
+  this->m_nomCapteur = l_p.m_nomCapteur;
   this->m_unite = l_p.m_unite;
   return *this;
 }

@@ -8,9 +8,9 @@
 
 #include "scheduler.hpp"
 
-Scheduler::Scheduler() : m_duration(0), m_humidite(), m_light(), m_pression(), m_temperature(), m_server() {}
+Scheduler::Scheduler() : m_durerSimulation(0), m_humidite(), m_light(), m_pression(), m_temperature(), m_server() {}
 
-Scheduler::Scheduler(const Scheduler& s_p) : m_duration(s_p.m_duration), m_temperature(s_p.m_temperature), m_pression(s_p.m_pression), m_light(s_p.m_light), m_humidite(s_p.m_humidite), m_server(s_p.m_server) {}
+Scheduler::Scheduler(const Scheduler& s_p) : m_durerSimulation(s_p.m_durerSimulation), m_temperature(s_p.m_temperature), m_pression(s_p.m_pression), m_light(s_p.m_light), m_humidite(s_p.m_humidite), m_server(s_p.m_server) {}
 
 Scheduler::~Scheduler() = default;
 
@@ -20,27 +20,27 @@ Scheduler& Scheduler::operator=(const Scheduler& scheduler_p)
   this->m_light = scheduler_p.m_light;
   this->m_pression = scheduler_p.m_pression;
   this->m_temperature = scheduler_p.m_temperature;
-  this->m_duration = scheduler_p.m_duration;
+  this->m_durerSimulation = scheduler_p.m_durerSimulation;
   return *this;
 }
 
-void Scheduler::setDuration()
+void Scheduler::setDurerSimulation()
 {
   int durer;
   std::cout << "Entrez la durer de la simulation (en seconde):";
   std::cin >> durer;
   while (durer < 0) // Boucle tant que la valeur est inférieure à 0.
   {
-    std::cout << "Vous devez entrer une valeur supérieur à 0" << std::endl << "Entre la durer de la simulation:";
+    std::cout << "Vous devez entrer une valeur sup\x82rieur \x85 0" << std::endl << "Entre la durer de la simulation:";
     std::cin >> durer;
   }
-  this->m_duration = durer;
+  this->m_durerSimulation = durer;
 }
 
 void Scheduler::startSimulation()
 {
   // Demande le temps de la simulation
-  this->setDuration();
+  this->setDurerSimulation();
   // Demande à l'utilisateur s'il souhaite écrire dans la console ou les logs
   this->m_server.toggleConsolWrite();
   this->m_server.toggleLogWrite();
@@ -49,7 +49,7 @@ void Scheduler::startSimulation()
   start = (clock()/CLOCKS_PER_SEC);
 
   // Boucle tant que le temps d'exécution de la boucle ne correspond pas au temps entré par l'utilisateur
-  while (((clock()/CLOCKS_PER_SEC) - start) < this->m_duration)
+  while (((clock()/CLOCKS_PER_SEC) - start) < this->m_durerSimulation)
   {
     // Recuperation des données
     this->m_data[0] = this->m_humidite.getData();

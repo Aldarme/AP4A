@@ -18,14 +18,14 @@
 
 /**
  * @class Sensor
- * @brief Classe définisant les Sensors. Cette classe est une classe mere pour tous les types de capteur
+ * @brief Classe définissant les Sensors. Cette classe est une classe mere pour tous les types de capteur
  */
 template<class T>
 class Sensor
 {
 protected:
-  T m_minValue, m_maxValue;      ///< Valeur minimum et maximum que le capteur peut avoir
-  std::string m_name;            ///< Nom du capteur pour l'ecriture dans la console et dans les fichiers logs
+  T m_minValeur, m_maxValeur;      ///< Valeur minimum et maximum que le capteur peut avoir
+  std::string m_nomCapteur;            ///< Nom du capteur pour l'ecriture dans la console et dans les fichiers logs
   std::string m_unite;           ///< Unité des valeurs du capteur pour affichage dans la console et écriture dans les fichiers logs
 public:
   // Forme canonique
@@ -36,7 +36,7 @@ public:
 
   /**
    * @brief Fait appelle à aleaGenVal pour générer une valeur pour un capteur
-   * @return Retourne la valeur générée pour etre utilisation
+   * @return Retourne la valeur générée pour être utilisation
    */
   virtual T getData();
 
@@ -50,7 +50,7 @@ public:
 
   /**
    * Fonction permettant d'obtenir le nom de l'objet, du capteur
-   * @return Retourne le nom de l'onjet appelant
+   * @return Retourne le nom de l'objet appelant
    */
   std::string getName();
 
@@ -65,14 +65,14 @@ public:
 template<typename T>
 Sensor<T>::Sensor()
 {
-  this->m_minValue = 0;
-  this->m_maxValue = 1;
-  this->m_name = "Sensor";
+  this->m_minValeur = 0;
+  this->m_maxValeur = 1;
+  this->m_nomCapteur = "Sensor";
   this->m_unite = "";
 }
 
 template<typename T>
-Sensor<T>::Sensor(const Sensor<T>& Sensor_p): m_minValue(this->m_minValue), m_maxValue(this->m_maxValue), m_name(this->m_name), m_unite(this->m_unite) {}
+Sensor<T>::Sensor(const Sensor<T>& Sensor_p): m_minValeur(this->m_minValeur), m_maxValeur(this->m_maxValeur), m_nomCapteur(this->m_nomCapteur), m_unite(this->m_unite) {}
 
 template<typename T>
 Sensor<T>::~Sensor<T>() = default;
@@ -80,15 +80,15 @@ Sensor<T>::~Sensor<T>() = default;
 template<typename T>
 Sensor<T>& Sensor<T>::operator=(const Sensor<T>& Sensor_p)
 {
-  this->m_minValue = Sensor_p.m_minValue;
-  this->m_maxValue = Sensor_p.m_maxValue;
+  this->m_minValeur = Sensor_p.m_minValeur;
+  this->m_maxValeur = Sensor_p.m_maxValeur;
   return *this;
 }
 
 template<typename T>
 T Sensor<T>::getData()
 {
-  return this->aleaGenVal(this->m_minValue, this->m_maxValue);
+  return this->aleaGenVal(this->m_minValeur, this->m_maxValeur);
 }
 
 template<typename T>
@@ -100,7 +100,7 @@ T Sensor<T>::aleaGenVal(float minVal_p, float maxVal_p)
 template<typename T>
 std::string Sensor<T>::getName()
 {
-  return this->m_name;
+  return this->m_nomCapteur;
 }
 
 template<typename T>

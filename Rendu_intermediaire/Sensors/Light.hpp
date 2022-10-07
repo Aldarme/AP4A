@@ -13,7 +13,7 @@
 
 /**
  * @class Light
- * @brief Classe Light héritant de la classe Sensor. Elle surchage les méthodes aleaGenVal et getData de celle-ci
+ * @brief Classe Light héritant de la classe Sensor. Elle surcharge les méthodes aleaGenVal et getData de celle-ci
  */
 class Light : public Sensor<TYPE>
 {
@@ -32,7 +32,7 @@ public:
 
   /**
    * Redéfinition de la méthode getData de la classe Sensor afin de renvoyer 0 ou 1
-   * @return Retourn la valeur aléatoire retourné par aleaGenVal
+   * @return Retourne la valeur aléatoire retourné par aleaGenVal
    */
   TYPE getData();
 };

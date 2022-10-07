@@ -21,18 +21,18 @@
 class Scheduler
 {
 private:
-  Humidite m_humidite;        ///< Attribut définisant le capteur humidite
-  Light m_light;              ///< Attribut définisant le capteur lumière
-  Pression m_pression;        ///< Attribut définisant le capteur prssion
-  Temperature m_temperature;  ///< Attribut définisant le capteur température
-  Server m_server;            ///< Attribut définisant le serveur pour écire et les données
-  int m_duration;             ///< Attribut définisant le durée de la simulation
-  float m_data[4];            ///< Attribut définisant les informations reçu par les capteurs
+  Humidite m_humidite;        ///< Attribut définissant le capteur humidite
+  Light m_light;              ///< Attribut définissant le capteur lumière
+  Pression m_pression;        ///< Attribut définissant le capteur pression
+  Temperature m_temperature;  ///< Attribut définissant le capteur température
+  Server m_server;            ///< Attribut définissant le serveur pour écrire et les données
+  int m_durerSimulation;             ///< Attribut définissant le durée de la simulation
+  float m_data[4];            ///< Attribut définissant les informations reçu par les capteurs
 
   /**
    * @brief Demande à l'utilisateur d'entrer la durer de la simulation
    */
-  void setDuration();
+  void setDurerSimulation();
 public:
   // Forme canonique
   Scheduler();
@@ -41,7 +41,7 @@ public:
   Scheduler& operator=(const Scheduler& scheduler_p);
 
   /**
-   * @brief Méthode principale du programme qui s'occupe d'initialiser certaines variable et ensuite de récuperer les données et de les envoyer au serveur
+   * @brief Méthode principale du programme qui s'occupe d'initialiser certaines variable et ensuite de récupérer les données et de les envoyer au serveur
    */
   void startSimulation();
 };

@@ -12,22 +12,22 @@ Humidite::Humidite()
 {
   // Initialise les attributs hérités de Sensor avec des valeurs cohérentes
   srand(time(nullptr));
-  this->m_minValue = 40;
-  this->m_maxValue = 60;
-  this->m_name = "Humidite";
+  this->m_minValeur = 40;
+  this->m_maxValeur = 60;
+  this->m_nomCapteur = "Humidite";
   this->m_unite = "%";
 }
 
 
-Humidite::Humidite(const Humidite &h_p) : Sensor<TYPE>(h_p) {} // Utilise le constructeur par re-copie de Sensor
+Humidite::Humidite(const Humidite &h_p) : Sensor<TYPE>(h_p) {} // Utilise le constructeur par recopiage de Sensor
 
 Humidite::~Humidite() = default;
 
 Humidite& Humidite::operator=(const Humidite &h_p)
 {
-  this->m_minValue = h_p.m_minValue;
-  this->m_maxValue = h_p.m_maxValue;
-  this->m_name = h_p.m_name;
+  this->m_minValeur = h_p.m_minValeur;
+  this->m_maxValeur = h_p.m_maxValeur;
+  this->m_nomCapteur = h_p.m_nomCapteur;
   this->m_unite = h_p.m_unite;
   return *this;
 }
