@@ -16,26 +16,27 @@
 
 using namespace std;
 
+template <typename T>
 //constructeur par défaut
-Sensor::Sensor()
+Sensor<T>::Sensor()
 {
 
     m_name = e_temperature;
-    m_valeur = 0;
 
 }
 
+template <typename T>
 //constructeur par valeur
-Sensor::Sensor(const ESensors param_name)
+Sensor<T>::Sensor(const ESensors param_name)
 {
 
     m_name = param_name;
-    m_valeur = 0;
 
 }
 
+template <typename T>
 //constructeur par recopie
-Sensor::Sensor(const Sensor& s)
+Sensor<T>::Sensor(const Sensor& s)
 {
 
     this->m_name = s.m_name;
@@ -43,16 +44,18 @@ Sensor::Sensor(const Sensor& s)
 
 }
 
+template <typename T>
 //destructeur
-Sensor::~Sensor()
+Sensor<T>::~Sensor()
 {
 
     cout << "Destructeur appelle\n" << endl;
 
 }
 
+template <typename T>
 //operator
-Sensor& Sensor::operator=(const Sensor& s)
+Sensor<T>& Sensor<T>::operator=(const Sensor<T>& s)
 {
 
     this->m_name = s.m_name;
@@ -62,30 +65,35 @@ Sensor& Sensor::operator=(const Sensor& s)
 
 }
 
+template <typename T>
 /**
  * @brief permet de générer des valeurs aléatoires de int pour les différents capteurs
  * @return int
  * @param void
  */
-int Sensor::aleaGenVal()
+T Sensor<T>::aleaGenVal()
 {
 
-    int m_valeur;
+    T m_valeur;
 
     switch (this->m_name){
 
         case e_temperature :
         {
 
-            m_valeur = rand() % 30 + 15;
+            int low = 30;
+            int high = 45;
+            m_valeur = low + static_cast<float>(rand()) * static_cast<float>(high - low) / RAND_MAX;
 
         }
         break;
 
         case e_humidity :
         {
-
-            m_valeur = rand() % 101;
+            
+            int low = 0;
+            int high = 100;
+            m_valeur = low + static_cast<float>(rand()) * static_cast<float>(high - low) / RAND_MAX;
 
         }
         break;
@@ -93,7 +101,7 @@ int Sensor::aleaGenVal()
         case e_light :
         {
 
-            m_valeur = rand() % 12001;
+            m_valeur = rand() > (RAND_MAX / 2);;
 
         }
         break;
@@ -119,12 +127,13 @@ int Sensor::aleaGenVal()
     return m_valeur;
 }
 
+template <typename T>
 /**
  * @brief permet de récupérer la valeur des capteurs
  * @return int
  * @param void
  */
-int Sensor::getData()
+T Sensor<T>::getData()
 {
 
     return this->m_valeur;
@@ -135,8 +144,8 @@ int Sensor::getData()
 Temperature::Temperature()
 {
 
-    m_name = ESensors::e_temperature;
-    m_valeur = 0;
+    this->m_name = ESensors::e_temperature;
+    this->m_valeur = 0;
 
 }
 
@@ -149,12 +158,18 @@ Temperature::Temperature(const Temperature& t)
 
 }
 
+//destructeur
+Temperature::~Temperature()
+{
+
+}
+
 //constructeur par défaut des capteurs Humidity
 Humidity::Humidity()
 {
 
-    m_name = ESensors::e_humidity;
-    m_valeur = 0;
+    this->m_name = ESensors::e_humidity;
+    this->m_valeur = 0;
 
 }
 
@@ -167,12 +182,18 @@ Humidity::Humidity(const Humidity& h)
 
 }
 
+//destructeur
+Humidity::~Humidity()
+{
+
+}
+
 //constructeur par défaut des capteurs Light
 Light::Light()
 {
 
-    m_name = ESensors::e_light;
-    m_valeur = 0;
+    this->m_name = ESensors::e_light;
+    this->m_valeur = 0;
 
 }
 
@@ -185,12 +206,19 @@ Light::Light(const Light& l)
 
 }
 
+//destructeur
+Light::~Light()
+{
+
+}
+
+
 //constructeur par défaut des capteurs Pression
 Pression::Pression()
 {
 
-    m_name = ESensors::e_pression;
-    m_valeur = 0;
+    this->m_name = ESensors::e_pression;
+    this->m_valeur = 0;
 
 }
 
@@ -201,4 +229,10 @@ Pression::Pression(const Pression& p)
     this->m_name = p.m_name;
     this->m_valeur = p.m_valeur;
 
+}
+
+//destructeur
+Pression::~Pression()
+{
+    
 }

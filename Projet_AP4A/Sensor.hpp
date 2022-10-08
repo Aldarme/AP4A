@@ -30,6 +30,8 @@ enum ESensors
 
 };
 
+template <typename T>
+
 /**
  * @class Sensor
  * @brief Classe mère des différents capteurs
@@ -40,7 +42,7 @@ class Sensor
 protected :
 
     //attributs
-    int m_valeur;
+    T m_valeur;
     ESensors m_name;
 
 public :
@@ -48,33 +50,33 @@ public :
     //Définition de la forme canonique
 
     //constructeur par défaut
-    Sensor();
+    Sensor<T>();
 
     //constructeur par valeur
-    Sensor(const ESensors param_name);
+    Sensor<T>(const ESensors param_name);
 
     //constructeur par recopie
-    Sensor(const Sensor& s);
+    Sensor<T>(const Sensor<T>& s);
 
     //destructeur
-    ~Sensor();
+    ~Sensor<T>();
 
     //operator
-    Sensor& operator=(const Sensor& s);
+    Sensor<T>& operator=(const Sensor<T>& s);
 
     /**
      * @brief permet de générer des valeurs aléatoires de int pour les différents capteurs
      * @return int
      * @param void
      */
-    int aleaGenVal();
+    T aleaGenVal();
 
     /**
     * @brief permet de récupérer la valeur des capteurs
     * @return int
     * @param void
     */
-    int getData();
+    T getData();
 
 };
 
@@ -82,7 +84,7 @@ public :
  * @class Temperature
  * @brief Permet de générer des objets capteurs de température
  */
-class Temperature : public Sensor {
+class Temperature : public Sensor<float> {
 
     public:
 
@@ -92,13 +94,16 @@ class Temperature : public Sensor {
     //constructeur par recopie des capteurs Température
     Temperature(const Temperature& t);
 
+    //destructeur
+    ~Temperature();
+
 };
 
 /**
  * @class Humidity
  * @brief Permet de générer des objets capteurs d'humidité
  */
-class Humidity : public Sensor {
+class Humidity : public Sensor<float> {
 
     public:
 
@@ -108,13 +113,16 @@ class Humidity : public Sensor {
     //constructeur par recopie des capteurs Humidity
     Humidity(const Humidity& h);
 
+        //destructeur
+    ~Humidity();
+
 };
 
 /**
  * @class Light
  * @brief Permet de générer des objets capteurs de lumière
  */
-class Light : public Sensor {
+class Light : public Sensor<bool> {
 
     public :
 
@@ -124,13 +132,16 @@ class Light : public Sensor {
     //constructeur par recopie des capteurs Light
     Light(const Light& l);
 
+        //destructeur
+    ~Light();
+
 };
 
 /**
  * @class Pression
  * @brief Permet de générer des objets capteurs de pression
  */
-class Pression : public Sensor {
+class Pression : public Sensor<int> {
 
     public :
 
@@ -139,6 +150,9 @@ class Pression : public Sensor {
 
     //constructeur par recopie des capteurs Pression
     Pression(const Pression& p);
+
+    //destructeur
+    ~Pression();
 
 };
 

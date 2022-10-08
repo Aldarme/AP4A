@@ -19,15 +19,15 @@ using namespace std;
 Server::Server()
 {
 
-    m_temperature_server = 0;
-    m_humidity_server = 0;
-    m_light_server = 0;
+    m_temperature_server = 0.;
+    m_humidity_server = 0.;
+    m_light_server = false;
     m_pression_server = 0;
 
 }
 
 //constructeur par valeurs
-Server::Server(const int t, const int h, const int l, const int p)
+Server::Server(const float t, const float h, const bool l, const int p)
 {
 
     m_temperature_server = t;
@@ -76,10 +76,17 @@ Server& Server::operator=(const Server& s)
  */
 void Server::consoleWrite()
 {
-
-    cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
-    << this->m_humidity_server << " %" << "\n" << "Light : " << this->m_light_server << " lx" <<
-     "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
+    if(this->m_light_server == true){
+        cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
+        << this->m_humidity_server << " %" << "\n" << "Light : True" <<
+         "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
+    }
+    else
+    {
+        cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
+        << this->m_humidity_server << " %" << "\n" << "Light : False" <<
+         "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
+    }
 
 }
 
@@ -98,7 +105,7 @@ void Server::fileWrite(string const cheminFichier)
 
         cout << "Ecriture\n" << endl;
         donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_server << ";"
-        << "Humidity (%)" << ";" <<this->m_humidity_server << ";" << "Light (lx)" << ";"
+        << "Humidity (%)" << ";" <<this->m_humidity_server << ";" << "Light" << ";"
         <<this->m_light_server << ";" << "Pression (hPa)" << ";" <<this->m_pression_server << endl;
 
     }

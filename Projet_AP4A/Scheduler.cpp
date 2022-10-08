@@ -19,15 +19,15 @@ using namespace std;
 Scheduler::Scheduler()
 {
 
-    m_temperature_scheduler = 0;
-    m_humidity_scheduler = 0;
-    m_light_scheduler = 0;
+    m_temperature_scheduler = 0.;
+    m_humidity_scheduler = 0.;
+    m_light_scheduler = false;
     m_pression_scheduler = 0;
 
 }
 
 //constructeur par valeurs
-Scheduler::Scheduler(int t, int h, int l, int p)
+Scheduler::Scheduler(float t, float h, bool l, int p)
 {
 
     m_temperature_scheduler = t;

@@ -28,9 +28,9 @@ class Scheduler
     private :
 
     //attributs
-    int m_temperature_scheduler;
-    int m_humidity_scheduler;
-    int m_light_scheduler;
+    float m_temperature_scheduler;
+    float m_humidity_scheduler;
+    bool m_light_scheduler;
     int m_pression_scheduler;
 
     public :
@@ -41,7 +41,7 @@ class Scheduler
     Scheduler();
 
     //constructeur par valeurs
-    Scheduler(int t, int h, int l, int p);
+    Scheduler(float t, float h, bool l, int p);
 
     //constructeur par recopie
     Scheduler(const Scheduler& sc);

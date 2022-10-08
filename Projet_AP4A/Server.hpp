@@ -28,9 +28,9 @@ class Server
 private:
 
     //attributs
-    int m_temperature_server;
-    int m_humidity_server;
-    int m_light_server;
+    float m_temperature_server;
+    float m_humidity_server;
+    bool m_light_server;
     int m_pression_server;
 
 public:
@@ -41,7 +41,7 @@ public:
     Server();
 
     //constructeur par valeurs
-    Server(const int t, const int h, const int l, const int p);
+    Server(const float t, const float h, const bool l, const int p);
 
     //constructeur par recopie
     Server(const Server& s);
