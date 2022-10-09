@@ -1,13 +1,41 @@
 #include "Sensor.hpp"
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
-int sensor::aleaGenVal()
+sensor sensor::aleaGenVal(int min, int max)
 {
-    srand((unsigned int)time(0));
-    return rand() % (max + 1 - min) + min;
+    srand((int)time(0));
+    m_data = rand() % (max + 1 - min) + min;
+    return *this;
 }
 
-sensor sensor::getData()
+int sensor::getData()
 {
-    data = aleaGenVal();
-    return *this;
+    return m_data;
+}
+
+sensor temperature::getAlea()
+{
+    return aleaGenVal(20, 25);
+}
+
+sensor pressure::getAlea()
+{
+    return aleaGenVal(75, 81);
+}
+
+sensor light_::getAlea()
+{
+    return aleaGenVal(0, 1);
+}
+
+sensor humidity::getAlea()
+{
+    return aleaGenVal(5, 10);
+}
+
+void sensor::printData()
+{
+    cout << "Data sensor : " << m_data << endl;
 }

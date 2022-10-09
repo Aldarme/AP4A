@@ -1,40 +1,45 @@
-#ifndef FICHIER_H
-#define FICHIER_H
+#ifndef SENSOR_H
+#define SENSOR_H
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 
 class sensor
 {
 private:
-    int data;
+    int m_data;
 
 public:
-    sensor() : data() {}
-    sensor(const sensor &s) : data(s.data) {}
-    ~sensor(){}
+    sensor() : m_data() {}
+    sensor(const sensor &s) : m_data(s.m_data) {}
+    ~sensor() {}
 
-    int min;
-    int max;
-    int aleaGenVal();
-    sensor getData();
+    sensor aleaGenVal(int, int);
+    int getData();
+    void printData();
 };
 
 class temperature : public sensor
 {
+public:
+    sensor getAlea();
 };
 
-class pression : public sensor
+class pressure : public sensor
 {
+public:
+    sensor getAlea();
 };
 
-class light : public sensor
+class light_ : public sensor
 {
+public:
+    sensor getAlea();
 };
 
 class humidity : public sensor
 {
+public:
+    sensor getAlea();
 };
 
-#endif //FICHIER_H
+#endif // SENSOR_H
