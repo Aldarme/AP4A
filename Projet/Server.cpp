@@ -3,9 +3,9 @@
 #include <ctime>
 using namespace std;
 
-server server::getData(scheduler s)
+server server::getData(packet param_p)
 {
-    m_packet = s.transferData();
+    m_packet = param_p;
     return *this;
 }
 
@@ -48,7 +48,7 @@ void server::fileReset()
     char* dt = ctime(&current);
     if (file)
     {
-        file << dt << " FLIGHT RECORD\n\n" << endl;
+        file << dt << "FLIGHT RECORD\n\n" << endl;
     }
     else
     {

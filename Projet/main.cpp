@@ -1,5 +1,3 @@
-#include "Server.hpp"
-#include "Sensor.hpp"
 #include "Scheduler.hpp"
 
 int main(){
@@ -7,10 +5,10 @@ int main(){
     server serv;
 
     serv.fileReset();
-    for(int i = 0; i < 10; i++)
+    while(1)
     {
         sched.getData();
-        serv.getData(sched);
+        sched.transferData(serv);
         serv.consolWrite();
         serv.fileWrite();
         sched.timer();

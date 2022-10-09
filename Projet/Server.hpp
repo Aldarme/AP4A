@@ -1,7 +1,7 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-#include "Scheduler.hpp"
+#include "Packet.hpp"
 #include <iostream>
 
 class server
@@ -11,10 +11,10 @@ private:
 
 public:
     server():m_packet(){}
-    server(const server& s): m_packet(s.m_packet){}
+    server(const server& param_s): m_packet(param_s.m_packet){}
     ~server(){}
 
-    server getData(scheduler);
+    server getData(packet);
     void consolWrite();
     void fileWrite();
     void fileReset();
