@@ -1,0 +1,54 @@
+Sun Oct 09 18:31:56 2022
+ FLIGHT RECORD
+
+
+18:31:56 Temperature : 24
+18:31:56 Pressure : 80
+18:31:56 Light : 0
+18:31:56 Humidity : 9
+
+18:31:57 Temperature : 21
+18:31:57 Pressure : 76
+18:31:57 Light : 1
+18:31:57 Humidity : 6
+
+18:31:58 Temperature : 25
+18:31:58 Pressure : 80
+18:31:58 Light : 1
+18:31:58 Humidity : 10
+
+18:31:59 Temperature : 22
+18:31:59 Pressure : 76
+18:31:59 Light : 0
+18:31:59 Humidity : 7
+
+18:32:0 Temperature : 25
+18:32:0 Pressure : 79
+18:32:0 Light : 1
+18:32:0 Humidity : 10
+
+18:32:1 Temperature : 22
+18:32:1 Pressure : 75
+18:32:1 Light : 0
+18:32:1 Humidity : 7
+
+18:32:2 Temperature : 20
+18:32:2 Pressure : 79
+18:32:2 Light : 0
+18:32:2 Humidity : 5
+
+18:32:3 Temperature : 23
+18:32:3 Pressure : 75
+18:32:3 Light : 1
+18:32:3 Humidity : 8
+
+18:32:4 Temperature : 20
+18:32:4 Pressure : 78
+18:32:4 Light : 0
+18:32:4 Humidity : 5
+
+18:32:5 Temperature : 24
+18:32:5 Pressure : 75
+18:32:5 Light : 0
+18:32:5 Humidity : 9
+

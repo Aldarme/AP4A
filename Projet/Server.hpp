@@ -17,6 +17,7 @@ public:
     server getData(scheduler);
     void consolWrite();
     void fileWrite();
+    void fileReset();
 };
 
 #endif //SERVER_H

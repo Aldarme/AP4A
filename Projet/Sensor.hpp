@@ -15,7 +15,6 @@ public:
 
     sensor aleaGenVal(int, int);
     int getData();
-    void printData();
 };
 
 class temperature : public sensor

@@ -34,8 +34,3 @@ sensor humidity::getAlea()
 {
     return aleaGenVal(5, 10);
 }
-
-void sensor::printData()
-{
-    cout << "Data sensor : " << m_data << endl;
-}
