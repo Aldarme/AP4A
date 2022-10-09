@@ -9,7 +9,7 @@ TARGET6 = Scheduler
 TARGET7 = Server
 TARGET8 = Packet
 
-main: main.o $(TARGET2).o $(TARGET3).o $(TARGET4).o $(TARGET5).o $(TARGET6).o $(TARGET7).o $(TARGET8).o
+main: main.o $(TARGET1).o $(TARGET2).o $(TARGET3).o $(TARGET4).o $(TARGET5).o $(TARGET6).o $(TARGET7).o $(TARGET8).o
 	$(CC) $(CFLAGS) -o main main.o $(TARGET1).o $(TARGET2).o $(TARGET3).o $(TARGET4).o $(TARGET5).o $(TARGET6).o $(TARGET7).o $(TARGET8).o
 
 main.o: main.cpp $(TARGET1).hpp $(TARGET2).hpp $(TARGET3).hpp $(TARGET4).hpp $(TARGET5).hpp $(TARGET6).hpp $(TARGET7).hpp $(TARGET8).hpp

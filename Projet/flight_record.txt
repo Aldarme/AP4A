@@ -1,54 +1,119 @@
-Sun Oct 09 18:56:46 2022
+Sun Oct 09 19:37:56 2022
 FLIGHT RECORD
 
 
-18:56:46 Temperature : 24
-18:56:46 Pressure : 81
-18:56:46 Light : 0
-18:56:46 Humidity : 9
+19:37:56 Temperature : 20
+19:37:56 Pressure : 76
+19:37:56 Light : 0
+19:37:56 Humidity : 5
 
-18:56:47 Temperature : 21
-18:56:47 Pressure : 77
-18:56:47 Light : 1
-18:56:47 Humidity : 6
+19:37:57 Temperature : 23
+19:37:57 Pressure : 79
+19:37:57 Light : 1
+19:37:57 Humidity : 8
 
-18:56:48 Temperature : 24
-18:56:48 Pressure : 80
-18:56:48 Light : 0
-18:56:48 Humidity : 9
+19:37:58 Temperature : 20
+19:37:58 Pressure : 75
+19:37:58 Light : 0
+19:37:58 Humidity : 5
 
-18:56:49 Temperature : 22
-18:56:49 Pressure : 77
-18:56:49 Light : 0
-18:56:49 Humidity : 7
+19:37:59 Temperature : 24
+19:37:59 Pressure : 79
+19:37:59 Light : 0
+19:37:59 Humidity : 9
 
-18:56:50 Temperature : 25
-18:56:50 Pressure : 80
-18:56:50 Light : 1
-18:56:50 Humidity : 10
+19:38:0 Temperature : 21
+19:38:0 Pressure : 75
+19:38:0 Light : 1
+19:38:0 Humidity : 6
 
-18:56:51 Temperature : 22
-18:56:51 Pressure : 76
-18:56:51 Light : 0
-18:56:51 Humidity : 7
+19:38:1 Temperature : 24
+19:38:1 Pressure : 78
+19:38:1 Light : 0
+19:38:1 Humidity : 9
 
-18:56:52 Temperature : 25
-18:56:52 Pressure : 79
-18:56:52 Light : 1
-18:56:52 Humidity : 10
+19:38:2 Temperature : 21
+19:38:2 Pressure : 81
+19:38:2 Light : 1
+19:38:2 Humidity : 6
 
-18:56:53 Temperature : 23
-18:56:53 Pressure : 76
-18:56:53 Light : 1
-18:56:53 Humidity : 8
+19:38:3 Temperature : 25
+19:38:3 Pressure : 78
+19:38:3 Light : 1
+19:38:3 Humidity : 10
 
-18:56:55 Temperature : 23
-18:56:55 Pressure : 75
-18:56:55 Light : 1
-18:56:55 Humidity : 8
+19:38:4 Temperature : 22
+19:38:4 Pressure : 81
+19:38:4 Light : 0
+19:38:4 Humidity : 7
 
-18:56:56 Temperature : 21
-18:56:56 Pressure : 79
-18:56:56 Light : 1
-18:56:56 Humidity : 6
+19:38:5 Temperature : 25
+19:38:5 Pressure : 77
+19:38:5 Light : 1
+19:38:5 Humidity : 10
+
+19:38:6 Temperature : 23
+19:38:6 Pressure : 81
+19:38:6 Light : 1
+19:38:6 Humidity : 8
+
+19:38:8 Temperature : 23
+19:38:8 Pressure : 80
+19:38:8 Light : 1
+19:38:8 Humidity : 8
+
+19:38:9 Temperature : 20
+19:38:9 Pressure : 76
+19:38:9 Light : 0
+19:38:9 Humidity : 5
+
+19:38:10 Temperature : 24
+19:38:10 Pressure : 80
+19:38:10 Light : 0
+19:38:10 Humidity : 9
+
+19:38:11 Temperature : 21
+19:38:11 Pressure : 76
+19:38:11 Light : 1
+19:38:11 Humidity : 6
+
+19:38:12 Temperature : 24
+19:38:12 Pressure : 79
+19:38:12 Light : 0
+19:38:12 Humidity : 9
+
+19:38:13 Temperature : 21
+19:38:13 Pressure : 75
+19:38:13 Light : 1
+19:38:13 Humidity : 6
+
+19:38:14 Temperature : 25
+19:38:14 Pressure : 79
+19:38:14 Light : 1
+19:38:14 Humidity : 10
+
+19:38:15 Temperature : 22
+19:38:15 Pressure : 75
+19:38:15 Light : 0
+19:38:15 Humidity : 7
+
+19:38:16 Temperature : 25
+19:38:16 Pressure : 78
+19:38:16 Light : 1
+19:38:16 Humidity : 10
+
+19:38:17 Temperature : 22
+19:38:17 Pressure : 81
+19:38:17 Light : 0
+19:38:17 Humidity : 7
+
+19:38:18 Temperature : 20
+19:38:18 Pressure : 78
+19:38:18 Light : 0
+19:38:18 Humidity : 5
+
+19:38:19 Temperature : 23
+19:38:19 Pressure : 81
+19:38:19 Light : 1
+19:38:19 Humidity : 8
 
