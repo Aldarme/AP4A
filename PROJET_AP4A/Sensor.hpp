@@ -30,6 +30,7 @@ enum ESensor
  * @class Sensor
  * @brief La classe Sensor permettra de créer les données des capteurs.
  */
+template <class T>
 class Sensor
 {
 public:
@@ -51,21 +52,22 @@ public:
      * @return ostream&
      * @param ostream& et sensor&
      */ 
-    friend std::ostream & operator<<(std::ostream &param_os, const Sensor &param_sensor);
+    template <class U>
+    friend std::ostream& operator<<(std::ostream &param_os,const Sensor<U> &param_sensor);
 
     /**
      * @brief Surcharge d'opérateur pour une écriture dans un fichier
      * @return ofstream&
      * @param ofstream& et sensor&
      */ 
-    friend std::ofstream &operator<<(std::ofstream &param_of, const Sensor &param_sensor);
+    template <class U>
+    friend std::ofstream& operator<<(std::ofstream &param_of, const Sensor<U> &param_sensor);
 
 protected:
     std::string m_name; /// Nom du capteur
-    int m_value; /// Valeur du capteur
+    T m_value; /// Valeur du capteur
     ESensor m_sensor;   /// Enumeration pour pouvoir utiliser la fonction switch
 };
-
 
 
 #endif // SENSOR_H

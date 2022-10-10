@@ -19,16 +19,18 @@
 #include "Humidity.cpp"
 #include "Light.cpp"
 
+
 /**
  * @class Scheduler
  * @brief La classe Scheduler permettra de créer les périodes de temps
  */
+
 class Scheduler
 {
 public:
     // Definition de la forme canonique
     Scheduler();
-    Scheduler(Server &param_server,Temperature &param_temperature,Humidity &param_humidity,Light &param_light,Pression &param_pression,int param_time);
+    Scheduler(Server &param_server,Temperature<float> &param_temperature,Humidity<float> &param_humidity,Light<bool> &param_light,Pression<int> &param_pression,int param_time);
     Scheduler(Scheduler &s);
     ~Scheduler(){};
     // ...
@@ -39,16 +41,17 @@ public:
      * @param rien
      */ 
     void sendServer();
+    
 
     friend class Server;
-    friend class Sensor;
+    template <class T> class Sensor;
     
 private:
     int m_time; ///Interval de temps choisi par l'utilisateur
-    Temperature m_temperature; ///Capteur de température
-    Humidity m_humidity; ///Capteur d'humidité
-    Light m_light; ///Capteur de lumière
-    Pression m_pression; ///Capteur de pression
+    Temperature<float> m_temperature; ///Capteur de température
+    Humidity<float> m_humidity; ///Capteur d'humidité
+    Light<bool> m_light; ///Capteur de lumière
+    Pression<int> m_pression; ///Capteur de pression
     Server m_server; ///Server lié au scheduler
 };
 

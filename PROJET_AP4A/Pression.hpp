@@ -19,7 +19,8 @@
  * @class Pression
  * @brief La classe Pression simule le fonctionnement du capteur de pression
  */
-class Pression : public Sensor
+template <class T>
+class Pression : public Sensor<int>
 {
 public:
     // Definition de la forme canonique

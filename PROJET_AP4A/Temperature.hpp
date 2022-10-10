@@ -19,7 +19,8 @@
  * @class Temperature
  * @brief La classe Temperature simule le fonctionnement du capteur de température
  */
-class Temperature : public Sensor
+template <class T>
+class Temperature : public Sensor<float>
 {
 public:
     // Definition de la forme canonique

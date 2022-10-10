@@ -19,7 +19,8 @@
  * @class Humidity
  * @brief La classe Humidity simule le fonctionnement du capteur d'humidité.
  */
-class Humidity : public Sensor
+template <class T>
+class Humidity : public Sensor<float>
 {
 public:
     // Definition de la forme canonique

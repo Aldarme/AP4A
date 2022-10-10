@@ -2,10 +2,10 @@
 #include "Scheduler.cpp"
 
 int main(){
-    Temperature T;
-    Humidity H;
-    Light L;
-    Pression P;
+    Temperature<float> T;
+    Humidity<float> H;
+    Light<bool> L;
+    Pression<int> P;
     Server Ser;
     int m_interval;
     int m_time=0;

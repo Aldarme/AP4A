@@ -19,7 +19,8 @@
  * @class Light
  * @brief La classe Light simule le fonctionnement du capteur de lumière
  */
-class Light : public Sensor
+template <class T>
+class Light : public Sensor<bool>
 {
 public:
     // Definition de la forme canonique

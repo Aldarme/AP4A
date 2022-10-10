@@ -8,7 +8,8 @@
 #include "Pression.hpp"
 using namespace std;
 
-Pression::Pression(){
-    this->m_name="Pression (atm)";
+template <class T>
+Pression<T>::Pression(){
+    this->m_name="Pression (bar)";
     this->m_sensor=e_pression;
 }

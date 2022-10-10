@@ -8,37 +8,46 @@
 #include "Sensor.hpp"
 using namespace std;
 
-void Sensor::aleaValue(){
+template <class T>
+void Sensor<T>::aleaValue(){
     switch(this->m_sensor){
         case e_temperature : 
         {
-            this->m_value = rand()% 30 + 10; 
+            this->m_value = 18 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(22-18))); 
         }
         break;
         case e_humidity : 
         {
-            this->m_value = rand()%20 + 10;
+            this->m_value = 40 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(60-40)));
         }
         break;
         case e_light : 
-        {
-            this->m_value = rand()%100;
+        {   
+            int boolean;
+            boolean = rand()%2;
+            if(boolean == 1){
+                this->m_value = true;
+            }else{
+                this->m_value = false;
+            }
         }
         break;
         case e_pression : 
         { 
-            this->m_value = rand()%20;
+            this->m_value = rand()%81 + 75;
         }
         break;
     }
 }
 
-ostream &operator<<(ostream &param_os, const Sensor &param_sensor){
+template <class T>
+ostream& operator<<(ostream &param_os, const Sensor<T> &param_sensor){
     param_os << param_sensor.m_name <<" : "<<param_sensor.m_value<<endl;
     return param_os;
 }
 
-ofstream &operator<<(ofstream &param_of, const Sensor &param_sensor){
+template <class T>
+ofstream& operator<<(ofstream &param_of, const Sensor<T> &param_sensor){
     param_of << param_sensor.m_name <<";"<<param_sensor.m_value<<";";
     return param_of;
 }

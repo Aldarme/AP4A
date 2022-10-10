@@ -8,7 +8,8 @@
 #include "Temperature.hpp"
 using namespace std;
 
-Temperature::Temperature(){
+template <class T>
+Temperature<T>::Temperature(){
     this->m_name="Temperature (°C)";
     this->m_sensor=e_temperature;
 }

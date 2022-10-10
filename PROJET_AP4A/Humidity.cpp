@@ -8,7 +8,8 @@
 #include "Humidity.hpp"
 using namespace std;
 
-Humidity::Humidity(){
+template <class T>
+Humidity<T>::Humidity(){
     this->m_name="Humidity (%)";
     this->m_sensor=e_humidity;
 }

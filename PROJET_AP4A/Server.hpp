@@ -16,6 +16,7 @@
  * @class Server
  * @brief La classe Server permettra de recevoir les données envoyées par le Scheduler et aussi d'écrire dans la console ou dans un fichier ces données.
  */
+
 class Server
 {      
 public:
@@ -30,21 +31,18 @@ public:
      * @return void
      * @param 4 sensors
      */ 
-    void consoleWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
+    template <class T>
+    void consoleWrite(const Sensor<T> &param_sensor1);
 
     /**
      * @brief Ecrire les données reçues dans un fichier
      * @return void
      * @param 4 sensors 
      */
-    void fileWrite(Sensor &param_sensor1,Sensor &param_sensor2,Sensor &param_sensor3,Sensor &param_sensor4);
+    template <class T>
+    void fileWrite(const Sensor<T> &param_sensor1);
     
-    /**
-     * @brief Création d'un opérateur << pour la sortie des paramètres d'un capteur
-     * @return ostream&
-     * @param Demande ostream&, const Sensor&
-     */
-    friend class Sensor;
+    template <class T> friend class Sensor;
 };
 
 

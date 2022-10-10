@@ -8,7 +8,8 @@
 #include "Light.hpp"
 using namespace std;
 
-Light::Light(){
+template <class T>
+Light<T>::Light(){
     this->m_name="Light (lm)";
     this->m_sensor=e_light;
 }
