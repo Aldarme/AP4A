@@ -13,9 +13,6 @@
 #include <iostream>
 #include <string>
 
-#include "Scheduler.hpp"
-#include "Server.hpp"
-
 /**
  * @enum ESensors
  * @brief Liste les differents types de capteurs
@@ -69,7 +66,7 @@ public :
      * @return int
      * @param void
      */
-    T aleaGenVal();
+    virtual T aleaGenVal()=0;
 
     /**
     * @brief permet de récupérer la valeur des capteurs
@@ -77,82 +74,6 @@ public :
     * @param void
     */
     T getData();
-
-};
-
-/**
- * @class Temperature
- * @brief Permet de générer des objets capteurs de température
- */
-class Temperature : public Sensor<float> {
-
-    public:
-
-    //constructeur par défaut des capteurs Température
-    Temperature();
-
-    //constructeur par recopie des capteurs Température
-    Temperature(const Temperature& t);
-
-    //destructeur
-    ~Temperature();
-
-};
-
-/**
- * @class Humidity
- * @brief Permet de générer des objets capteurs d'humidité
- */
-class Humidity : public Sensor<float> {
-
-    public:
-
-    //constructeur par défaut des capteurs Humidity
-    Humidity();
-
-    //constructeur par recopie des capteurs Humidity
-    Humidity(const Humidity& h);
-
-        //destructeur
-    ~Humidity();
-
-};
-
-/**
- * @class Light
- * @brief Permet de générer des objets capteurs de lumière
- */
-class Light : public Sensor<bool> {
-
-    public :
-
-    //constructeur par défaut des capteurs Light
-    Light();
-
-    //constructeur par recopie des capteurs Light
-    Light(const Light& l);
-
-        //destructeur
-    ~Light();
-
-};
-
-/**
- * @class Pression
- * @brief Permet de générer des objets capteurs de pression
- */
-class Pression : public Sensor<int> {
-
-    public :
-
-    //constructeur par défaut des capteurs Pression
-    Pression();
-
-    //constructeur par recopie des capteurs Pression
-    Pression(const Pression& p);
-
-    //destructeur
-    ~Pression();
 
 };
 

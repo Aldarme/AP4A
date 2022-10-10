@@ -10,13 +10,16 @@
 #ifndef Projet_AP4A_SCHEDULER_H
 #define Projet_AP4A_SCHEDULER_H
 
-#include "Sensor.hpp"
 #include "Server.hpp"
+#include "Temperature.hpp"
+#include "Humidity.hpp"
+#include "Light.hpp"
+#include "Pression.hpp"
 
-class Temperature;
-class Humidity;
-class Light;
-class Pression;
+//class Temperature; "has not been declared"
+//class Humidity; "has not been declared"
+//class Light; "has not been declared"
+//class Pression; "has not been declared"
 
 /**
  * @class

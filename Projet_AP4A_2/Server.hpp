@@ -13,10 +13,9 @@
 #include <iostream>
 #include <string>
 
-#include "Sensor.hpp"
 #include "Scheduler.hpp"
 
-class Scheduler; //permet d'utiliser Scheduler dans les méthodes de Server, autrement erreur "Scheduler has not been declared"
+//class Scheduler; //permet d'utiliser Scheduler dans les méthodes de Server, autrement erreur "Scheduler has not been declared"
 
 /**
  * @class Server
@@ -64,7 +63,7 @@ public:
      * @return void
      * @param chemin du fichier où l'on souhaite stocker les valeurs entre ""
      */
-    void fileWrite(const std::string cheminFichier);
+    void fileWrite();
 
     /**
      * @brief Permet de recevoir les données des capteurs récupérer par le Scheduler

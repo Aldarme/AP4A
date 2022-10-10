@@ -10,8 +10,6 @@
 #include <chrono>
 
 #include "Scheduler.hpp"
-#include "Sensor.hpp"
-#include "Server.hpp"
 
 using namespace std;
 

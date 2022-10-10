@@ -2,6 +2,10 @@
 
 #include "Server.cpp"
 #include "Sensor.cpp"
+#include "Temperature.cpp"
+#include "Humidity.cpp"
+#include "Light.cpp"
+#include "Pression.cpp"
 #include "Scheduler.cpp"
 
 using namespace std;
@@ -20,9 +24,12 @@ int main()
     //déclaration du Server
     Server s;
 
-    //déclaration de la durée de récolte des données et de l'intervalle de temps
+    //variables de la durée de récolte des données et de l'intervalle de temps
     int m_temps_recolt = -1;
     int m_temps_intervalle = -1;
+
+    //varaible de la réponse de l'utilisateur concernant l'affichage et loggage des données
+    char m_activer;
     
     //permet de générer des nombres aléatoires différents à chaque exécution
     srand(time(NULL));
@@ -45,14 +52,36 @@ int main()
 
     }
 
-    for(int i=0;i<m_temps_recolt/m_temps_intervalle;i++)
+    //demande à l'utilisateur si il souhaite afficher et logger les données
+    while(m_activer != 'Y' && m_activer != 'N')
     {
+        
+        cout << "Souhaitez-vous activer l'affichage et le log des données ? (Y/N)" << endl;
+        cin >> m_activer;
 
-        boss.takeData(t, h, l, p, m_temps_intervalle);
-        s.dataRCV(boss);
-        s.consoleWrite();
-        s.fileWrite("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Capteurs.csv");
+    }
 
+    if(m_activer == 'Y'){
+
+        for(int i=0;i<m_temps_recolt/m_temps_intervalle;i++)
+        {
+
+            boss.takeData(t, h, l, p, m_temps_intervalle);
+            s.dataRCV(boss);
+            s.consoleWrite();
+            s.fileWrite();
+
+        }
+    }
+    else
+    {
+        for(int i=0;i<m_temps_recolt/m_temps_intervalle;i++)
+        {
+
+            boss.takeData(t, h, l, p, m_temps_intervalle);
+            s.dataRCV(boss);
+
+        }
     }
 
     return 0;

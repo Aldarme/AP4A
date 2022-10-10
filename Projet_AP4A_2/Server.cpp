@@ -9,8 +9,6 @@
 #include <fstream>
 #include <string>
 
-#include "Scheduler.hpp"
-#include "Sensor.hpp"
 #include "Server.hpp"
 
 using namespace std;
@@ -95,10 +93,10 @@ void Server::consoleWrite()
  * @return void
  * @param
  */
-void Server::fileWrite(string const cheminFichier)
+void Server::fileWrite()
 {
 
-    ofstream donnéesCapteurs(cheminFichier, ios::app);
+    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Capteurs.csv", ios::app);
 
     if(donnéesCapteurs)
     {
