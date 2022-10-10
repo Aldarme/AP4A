@@ -1,8 +1,21 @@
+/*
+author: Tom PALLEAU
+date: 10/1/2022
+licence: free
+class: Sensor
+*/
+
 #include <random>
 #include <ctime>
 
 #include "Sensor.hpp"
 
+/**
+ * @brief Construct a new Sensor:: Sensor object sets interval for getData()
+ * 
+ * @param p_MIN_VAL 
+ * @param p_MAX_VAL 
+ */
 Sensor::Sensor(float p_MIN_VAL, float p_MAX_VAL)
 {
     srand(time(NULL));
@@ -17,5 +30,5 @@ float Sensor::aleaGenVal()
 
 float Sensor::getData()
 {
-    return (m_MIN_VAL + aleaGenVal()) * (m_MAX_VAL - m_MIN_VAL);
+    return aleaGenVal() * (m_MAX_VAL - m_MIN_VAL) + m_MIN_VAL;
 }

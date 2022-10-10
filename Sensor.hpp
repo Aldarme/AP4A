@@ -1,6 +1,13 @@
 #ifndef SENSOR_H
 #define SENSOR_H
 
+/*
+author: Tom PALLEAU
+date: 10/1/2022
+licence: free
+class: Sensor
+*/
+
 class Sensor
 {
 protected:

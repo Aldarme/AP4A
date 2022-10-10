@@ -1,10 +1,12 @@
-#include "Server.hpp"
-#include "Light.hpp"
+/*
+author: Tom PALLEAU
+date: 10/1/2022
+licence: free
+class: 
+*/
+
+#include "Scheduler.hpp"
 
 int main(){
-    Light light;
-    Package pacman(light.getData(), "light", "lux");
-
-    Server serv;
-    serv.consolWrite(pacman);
+    Scheduler sched;
 }
