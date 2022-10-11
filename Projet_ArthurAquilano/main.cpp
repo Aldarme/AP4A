@@ -9,6 +9,7 @@
 #include <string>
 #include <stdlib.h>
 
+//J'ai include tous les fichiers .cpp pour des erreurs de références: "Undefined reference to Class::Methode au moment de la compilation"
 #include "Scheduler.cpp"
 #include "DataPacket.cpp"
 #include "Server.cpp"
@@ -49,6 +50,11 @@ int main ()
 
 };
 
+
+/** @brief Demande à l'utilisateur si il veut démarrer le programe
+ *  @return Rien
+ *  @param Aucun
+ */ 
 void StartProgram()
 {
     char userAnswer;

@@ -14,19 +14,30 @@
 #include <cstdlib>
 #include <time.h>
 
-
+/**
+* @class Sensor
+* @brief Déclaration de la classe Sensor
+*/
 class Sensor
 {
 public:    
     int data;
 
+    /** 
+    * @brief Déclaration de la forme canonique de coplien
+    * @return Rien
+    * @param Ceux par défaut
+    */
     Sensor(): data(){};
     Sensor(const Sensor& s): data(s.data){};
     ~Sensor(){};
     
-    int aleaGenVal(int minValue, int maxValue);   
-
-    int getData();
+    /** 
+    * @brief Génère un entier aléatoire compris entre minValue et MaxValue
+    * @return Int
+    * @param Deux entiers minValue et maxValue
+    */
+    int aleaGenVal(int minValue, int maxValue);
 
 };
 

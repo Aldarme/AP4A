@@ -5,6 +5,5 @@
  * @brief Implémentation de la classe DataPacket
  */
 
-
 #include "DataPacket.hpp"
 #include "Data.hpp"

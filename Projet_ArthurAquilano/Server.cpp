@@ -14,6 +14,7 @@ using namespace std;
 
 void Server::fileWrite()
 {
+    //Defini le fichier à utiliser pour entrer les valeurs dans logFile, ios::app permets d'écrire à la suite de ce qui est déjà écrit
     ofstream logFile("logFile.txt", ios::app);
     
     if (logFile)
@@ -40,5 +41,6 @@ void Server::consolWrite()
 
 void Server::resetFile()
 {
+    //Defini le fichier à utiliser pour entrer les valeurs dans logFile, ios::trunc permets de supprimer le contenu du fichier
     ofstream logFile("logFile.txt", ios::trunc);
 }
