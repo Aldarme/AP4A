@@ -1,0 +1,6 @@
+Voici les différentes valeurs mesurées : 
+
+ Température: 12.1346 °C    Humidité: 47.8403 % rel.    Pression:  512027 Pa     Lumière:  6410.03 Lumen
+ Température: 17.8674 °C    Humidité: 23.8099 % rel.    Pression:  732070 Pa     Lumière:  8966.44 Lumen
+ Température: 127.992 °C    Humidité: 59.1855 % rel.    Pression:  304192 Pa     Lumière:  5516.92 Lumen
+ Température: 6.70275 °C    Humidité: 1.55663 % rel.    Pression:  623088 Pa     Lumière:  2440.81 Lumen
