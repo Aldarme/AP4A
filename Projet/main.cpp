@@ -1,18 +1,14 @@
 #include "Scheduler.hpp"
 
-int main(){
+int main()
+{
     scheduler sched;
     server serv;
 
+    serv.chooseConsoleActivation();
+    serv.chooseFileActivation();
     serv.fileReset();
-    while(1)
-    {
-        sched.getData();
-        sched.transferData(serv);
-        serv.consolWrite();
-        serv.fileWrite();
-        sched.timer();
-    }
+    sched.loop(serv);
 
     return EXIT_SUCCESS;
 }

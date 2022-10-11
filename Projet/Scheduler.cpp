@@ -1,37 +1,58 @@
 #include "Scheduler.hpp"
-#ifdef _WIN32
-#include <windows.h>
-#else
-#include <unistd.h>
-#endif
+using namespace std;
+
+scheduler &scheduler::operator=(const scheduler &param_s)
+{
+    m_packet = param_s.m_packet;
+    return *this;
+}
 
 void scheduler::timer()
 {
     Sleep(1000);
 }
 
-scheduler scheduler::getData()
+void scheduler::loop(server param_serv)
+{
+    string str = "s";
+    int loop = 0;
+    int i = 0;
+
+    do
+    {
+        cout << "Pendant combien de secondes voulez enregistrer les donnees des capteurs ?"
+             << endl;
+        cin >> str;
+
+    } while (str.find_first_not_of("0123456789") != string::npos);
+    loop = stoi(str);
+
+    while (i < loop)
+    {
+        getData();
+        param_serv.consolWrite(transferData());
+        param_serv.fileWrite(transferData());
+        i++;
+        timer();
+    }
+}
+
+scheduler &scheduler::getData()
 {
     temperature t;
     pressure p;
     light_ l;
     humidity h;
 
-    t.getAlea();
-    p.getAlea();
-    l.getAlea();
-    h.getAlea();
-    
-    m_packet.m_temp = t.getData();
-    m_packet.m_press = p.getData();
-    m_packet.m_light = l.getData();
-    m_packet.m_humid = h.getData();
+    m_packet.m_temp = t.aleaGenVal();
+    m_packet.m_press = p.aleaGenVal();
+    m_packet.m_light = l.aleaGenVal();
+    m_packet.m_humid = h.aleaGenVal();
 
     return *this;
 }
 
-server scheduler::transferData(server& param_s)
+packet scheduler::transferData()
 {
-    param_s.getData(m_packet);
-    return param_s;
+    return m_packet;
 }

@@ -1,16 +1,26 @@
+/**
+ * @file Sensor.cpp
+ * @author Aurélien PETRA
+ * @brief Classe mère de tous les capteurs, elle possède des méthodes génériques utilent à tous les capteurs
+ * @version 0.1
+ * @date 2022-10-09
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
+
 #include "Sensor.hpp"
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 
-sensor sensor::aleaGenVal(int param_min, int param_max)
+sensor &sensor::operator=(const sensor &param_s)
 {
-    srand((int)time(0));
-    m_data = rand() % (param_max + 1 - param_min) + param_min;
+    m_min = param_s.m_min;
+    m_max = param_s.m_max;
     return *this;
 }
 
-int sensor::getData()
+int sensor::aleaGenVal()
 {
-    return m_data;
+    srand((int)time(0));
+    return rand() % (m_max + 1 - m_min) + m_min;
 }
