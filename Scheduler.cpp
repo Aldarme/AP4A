@@ -30,7 +30,7 @@ Scheduler::Scheduler()
     cin >> file_write;
 
     Server server(consol_write, file_write);
-    send_data(server);
+    sendData(server);
 }
 
 
@@ -39,7 +39,7 @@ Scheduler::Scheduler()
  * 
  * @param p_server 
  */
-void Scheduler::send_data(Server p_server)
+void Scheduler::sendData(Server p_server)
 {
     time_t start, end;
     

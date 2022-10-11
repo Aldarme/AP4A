@@ -22,7 +22,7 @@ private:
     Pressure m_pres;
     Humidity m_humid;
 
-    void send_data(Server p_server);
+    void sendData(Server p_server);
 
 
 public:
