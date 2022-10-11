@@ -25,6 +25,7 @@ private:
 
 public:
 
+    //Définition de la forme canonique
     Packet();
     Packet(const Packet& param_p);
     ~Packet() {}

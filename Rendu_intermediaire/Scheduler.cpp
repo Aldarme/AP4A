@@ -9,7 +9,6 @@
 
 Scheduler::Scheduler()
 {
-
 }
 
 Scheduler::Scheduler(const Scheduler& s)

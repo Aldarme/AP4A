@@ -26,7 +26,7 @@ private:
 
 public :
 
-	//Définition de la forme canonique 
+	//Définition de la forme canonique de Coplien
 	Scheduler();
 	Scheduler(const Scheduler& s);
 	~Scheduler();
@@ -46,7 +46,5 @@ public :
 	**/
 	Packet sendData();
 };
-
-//pensez à détruire objet
 
 #endif  // Scheduler_H

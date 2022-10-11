@@ -15,16 +15,14 @@
 
 /**
 * @class Server
-* @brief
+* @brief permet de recevoir les données des capteurs par Scheduler et de les afficher dans la console et/ou les stocker dans le fichier de log
 */
 
 class Server {
 
 private:
 
-	//Packet m_packet;	à envoyer directement ? via packet.m_temp...
-
-	//Descriptif des attributs 
+	//Definition des attributs 
 	bool consoleActivation;
 	bool logActivation;
 
@@ -59,29 +57,29 @@ public:
 	void consoleWrite(const Packet);
 
 	/**
-	* @brief
-	* @return void 
+	* @brief Permet la saisie par l'utilisateur de l'activation ou non de l'affichage dans la console
+	* @return type référence sur Server
 	* @param void
 	*/
 	Server& setConsole();
 
 	/**
-	* @brief
-	* @return void
+	* @brief permet la saisie par l'utilisateur de l'écriture ou non de dans la fichier de log
+	* @return type référence sur Server
 	* @param void
 	*/
 	Server& setLogActivation();
 
 	/**
-	* @brief
-	* @return
-	* @param
+	* @brief permet de récupérer la valeur de consoleActivation
+	* @return bool
+	* @param void
 	*/
 	bool getConsoleActiv();
 
 	/**
-	* @brief
-	* @return void
+	* @brief permet de récupérer la valeur de logActivation
+	* @return bool
 	* @param void
 	*/
 	bool getLogActiv();

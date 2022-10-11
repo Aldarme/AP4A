@@ -15,7 +15,7 @@
 
 /**
 * @class Sensor
-* @brief
+* @brief class mère des différents capteurs
 */
 class Sensor
 {
@@ -42,9 +42,9 @@ public:
 	Sensor& operator=(const Sensor& s);
 
 	/**
-	* @brief 
-	* @return 
-	* @param
+	* @brief fonction qui permet de générer les valeurs des capteurs
+	* @return void
+	* @param void
 	*/
 	int getData();
 

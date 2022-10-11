@@ -35,7 +35,7 @@ void Server::consoleWrite(const Packet param_p)
     cout << "Humidity    : " << param_p.m_humid << " %" << endl;
 }
 
-//penser à mettre fpath en paramètre / demander le path le main (string)
+
 void Server::fileWrite(const string fpath, const Packet param_p)
 {
     ofstream file(fpath, ios::app);

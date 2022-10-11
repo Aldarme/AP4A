@@ -26,13 +26,12 @@ int main() {
 
 	if (nb_iteration >= 0 && nb_iteration < 1000) {
 
-		cin >> nb_iteration;		//Saisie du temps de simulation par l'utilisateur
+		cin>>nb_iteration;
 	}
+	serv.setLogActivation();	//Demande à l'utilisateur s'il souhaite que les valeurs soient écrites dans le fichier log
+	serv.setConsole();			//Demande à l'utilisateur s'il souhaite que les valeurs soient affichées dans la console
 
-	serv.setLogActivation();		//Demande à l'utilisateur s'il souhaite écrire dans le fichier log ou non
-	serv.setConsole();				//Demande à l'utilisateur s'il souhaite écrire dans la console ou non
-
-	//Affiche dans la console lorsqu'il y a ecriture dans le fichier log mais pas dans la console
+	//Affiche dans la console qu'une écriture à lieu dans le fichier log lorsque l'utilsateur ne veut pas afficher les valeurs dans la console
 	if (serv.getConsoleActiv() == false && serv.getLogActiv())
 	{
 		cout << "writing on : " << f_path << endl;
