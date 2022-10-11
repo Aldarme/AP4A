@@ -21,6 +21,8 @@
 //class Light; "has not been declared"
 //class Pression; "has not been declared"
 
+class Server;
+
 /**
  * @class
  * @brief
@@ -28,13 +30,18 @@
 class Scheduler
 {
 
-    private :
+    protected :
 
     //attributs
-    float m_temperature_scheduler;
-    float m_humidity_scheduler;
-    bool m_light_scheduler;
-    int m_pression_scheduler;
+    //float m_temperature_scheduler;
+    //float m_humidity_scheduler;
+    //bool m_light_scheduler;
+    //int m_pression_scheduler;
+
+    Temperature m_temperature_scheduler;
+    Humidity m_humidity_scheduler;
+    Light m_light_scheduler;
+    Pression m_pression_scheduler;
 
     public :
 
@@ -44,7 +51,7 @@ class Scheduler
     Scheduler();
 
     //constructeur par valeurs
-    Scheduler(float t, float h, bool l, int p);
+    Scheduler(Temperature t, Humidity h, Light l, Pression p);
 
     //constructeur par recopie
     Scheduler(const Scheduler& sc);
@@ -60,7 +67,7 @@ class Scheduler
      * @return void
      * @param Capteurs Temperature, Humidity, Light et Pression + int intervalle de temps
      */
-    void takeData(Temperature& t, Humidity& h, Light& l, Pression& p, int m_intervalle_temps);
+    void takeData(int m_intervalle_temps, int m_temps_temperature, int m_temps_humidity, int m_temps_light, int m_temps_pression, Server& s, char log, char affichage);
 
     //déclaration d'ami avec Server
     friend class Server;

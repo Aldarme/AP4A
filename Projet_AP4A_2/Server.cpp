@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstring>
 
 #include "Server.hpp"
 
@@ -50,8 +51,6 @@ Server::Server(const Server& s)
 Server::~Server()
 {
 
-    cout << "Destructeur appelle\n" << endl;
-
 }
 
 //operator
@@ -72,18 +71,64 @@ Server& Server::operator=(const Server& s)
  * @return void
  * @param pas de paramètres
  */
-void Server::consoleWrite()
+void Server::consoleWrite(const Temperature& t)
 {
-    if(this->m_light_server == true){
-        cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
-        << this->m_humidity_server << " %" << "\n" << "Light : True" <<
-         "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
+    cout << "Temperature : " << t.m_valeur << " °C" << "\n" << endl;
+}
+
+ /**
+ * @brief Visualiser les données des capteurs
+ * @return void
+ * @param pas de paramètres
+ */
+void Server::consoleWrite(const Humidity& h)
+{
+    cout << "Humidity : " << h.m_valeur << " %" << "\n" << endl;
+}
+
+ /**
+ * @brief Visualiser les données des capteurs
+ * @return void
+ * @param pas de paramètres
+ */
+void Server::consoleWrite(const Light& l)
+{
+    if(l.m_valeur == true){
+        cout << "Light : True" << "\n" << endl;
     }
     else
     {
-        cout << "Temperature : " << this->m_temperature_server << " °C" << "\n" << "Humidity : "
-        << this->m_humidity_server << " %" << "\n" << "Light : False" <<
-         "\n" << "Pression : " << this->m_pression_server << " hPa" << "\n" << endl;
+        cout << "Light : False" << "\n" << endl;
+    }
+
+}
+
+ /**
+ * @brief Visualiser les données des capteurs
+ * @return void
+ * @param pas de paramètres
+ */
+void Server::consoleWrite(const Pression& p)
+{
+    cout << "Pression : " << p.m_valeur << " hPa" << "\n" << endl;
+}
+
+/**
+ * @brief Stocker les données des capteurs dans des fichiers de logs
+ * @return void
+ * @param
+ */
+void Server::fileWrite(const Temperature& t)
+{
+    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Temperature.csv", ios::app);
+
+    if(donnéesCapteurs)
+    {
+        donnéesCapteurs << "Temperature (°C)" << ";" << t.m_valeur << endl;
+    }
+    else 
+    {
+        cout << "Erreur" << endl;
     }
 
 }
@@ -93,25 +138,57 @@ void Server::consoleWrite()
  * @return void
  * @param
  */
-void Server::fileWrite()
+void Server::fileWrite(const Humidity& h)
 {
-
-    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Capteurs.csv", ios::app);
+    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Humidity.csv", ios::app);
 
     if(donnéesCapteurs)
     {
-
-        cout << "Ecriture\n" << endl;
-        donnéesCapteurs << "Temperature (°C)" << ";" << this->m_temperature_server << ";"
-        << "Humidity (%)" << ";" <<this->m_humidity_server << ";" << "Light" << ";"
-        <<this->m_light_server << ";" << "Pression (hPa)" << ";" <<this->m_pression_server << endl;
-
+        donnéesCapteurs << "Humidity (%)" << ";" << h.m_valeur << endl;
     }
     else 
     {
-
         cout << "Erreur" << endl;
+    }
 
+}
+
+/**
+ * @brief Stocker les données des capteurs dans des fichiers de logs
+ * @return void
+ * @param
+ */
+void Server::fileWrite(const Light& l)
+{
+    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Light.csv", ios::app);
+
+    if(donnéesCapteurs)
+    {
+        donnéesCapteurs <<  "Light" << ";" << l.m_valeur << endl;
+    }
+    else 
+    {
+        cout << "Erreur" << endl;
+    }
+
+}
+
+/**
+ * @brief Stocker les données des capteurs dans des fichiers de logs
+ * @return void
+ * @param
+ */
+void Server::fileWrite(const Pression& p)
+{
+    ofstream donnéesCapteurs("C:/Users/hugoc/OneDrive/Bureau/Projet_AP4A_1.2/Pression.csv", ios::app);
+
+    if(donnéesCapteurs)
+    {
+        donnéesCapteurs << "Pression (hPa)" << ";" << p.m_valeur << endl;
+    }
+    else 
+    {
+        cout << "Erreur" << endl;
     }
 
 }
@@ -124,9 +201,9 @@ void Server::fileWrite()
 void Server::dataRCV(Scheduler& sc)
 {
 
-    this->m_temperature_server = sc.m_temperature_scheduler;
-    this->m_humidity_server = sc.m_humidity_scheduler;
-    this->m_light_server = sc.m_light_scheduler;
-    this->m_pression_server = sc.m_pression_scheduler;
+    this->m_temperature_server = sc.m_temperature_scheduler.m_valeur;
+    this->m_humidity_server = sc.m_humidity_scheduler.m_valeur;
+    this->m_light_server = sc.m_light_scheduler.m_valeur;
+    this->m_pression_server = sc.m_pression_scheduler.m_valeur;
     
 }

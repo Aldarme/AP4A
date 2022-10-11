@@ -16,22 +16,21 @@ using namespace std;
 //constructeur par défaut
 Scheduler::Scheduler()
 {
-
-    m_temperature_scheduler = 0.;
-    m_humidity_scheduler = 0.;
-    m_light_scheduler = false;
-    m_pression_scheduler = 0;
+    Temperature m_temperature_scheduler;
+    Humidity m_humidity_scheduler;
+    Light m_light_scheduler;
+    Pression m_pression_scheduler;
 
 }
 
 //constructeur par valeurs
-Scheduler::Scheduler(float t, float h, bool l, int p)
+Scheduler::Scheduler(Temperature t, Humidity h, Light l, Pression p)
 {
 
-    m_temperature_scheduler = t;
-    m_humidity_scheduler = h;
-    m_light_scheduler = l;
-    m_pression_scheduler = p;
+    this->m_temperature_scheduler = t;
+    this->m_humidity_scheduler = h;
+    this->m_light_scheduler = l;
+    this->m_pression_scheduler = p;
 
 }
 
@@ -47,9 +46,9 @@ Scheduler::Scheduler(const Scheduler& sc)
 }
 
 //destructeur
-Scheduler::~Scheduler(){
+Scheduler::~Scheduler()
+{
 
-    cout << "Destructeur appelle\n" << endl;
 
 }
 
@@ -71,14 +70,97 @@ Scheduler& Scheduler::operator=(const Scheduler& sc)
  * @return void
  * @param Capteurs Temperature, Humidity, Light et Pression + int intervalle de temps
  */
-void Scheduler::takeData(Temperature& t, Humidity& h, Light& l, Pression& p, int m_intervalle_temps)
+void Scheduler::takeData(int m_temps_restant, int m_temps_temperature, int m_temps_humidity, int m_temps_light, int m_temps_pression, Server& s, char log, char affichage)
 {
+    if(m_temps_restant % m_temps_temperature == 0){
 
-    m_temperature_scheduler = t.aleaGenVal();
-    m_humidity_scheduler = h.aleaGenVal();
-    m_light_scheduler = l.aleaGenVal();
-    m_pression_scheduler = p.aleaGenVal();
+        m_temperature_scheduler.m_valeur= m_temperature_scheduler.aleaGenVal();
+        if(log == 'Y' && affichage == 'Y')
+        {
+            s.fileWrite(this->m_temperature_scheduler);
+            s.consoleWrite(this->m_temperature_scheduler);
+        }
+        else if(log == 'N' && affichage == 'Y')
+        {
+            s.consoleWrite(this->m_temperature_scheduler);
+        }
+        else if(log == 'Y' && affichage == 'N')
+        {
+            s.fileWrite(this->m_temperature_scheduler);
+        }
+        else
+        {
 
-    this_thread::sleep_for(chrono::milliseconds(m_intervalle_temps*1000));
+        }
+
+    }
+    
+    if (m_temps_restant % m_temps_humidity == 0)
+    {
+        m_humidity_scheduler.m_valeur = m_humidity_scheduler.aleaGenVal();
+        if(log == 'Y' && affichage == 'Y')
+        {
+            s.fileWrite(this->m_humidity_scheduler);
+            s.consoleWrite(this->m_humidity_scheduler);
+        }
+        else if(log == 'N' && affichage == 'Y')
+        {
+            s.consoleWrite(this->m_humidity_scheduler);
+        }
+        else if(log == 'Y' && affichage == 'N')
+        {
+            s.fileWrite(this->m_humidity_scheduler);
+        }
+        else
+        {
+            
+        }
+    }
+    
+    if (m_temps_restant % m_temps_light == 0)
+    {
+        m_light_scheduler.m_valeur = m_light_scheduler.aleaGenVal();
+        if(log == 'Y' && affichage == 'Y')
+        {
+            s.fileWrite(this->m_light_scheduler);
+            s.consoleWrite(this->m_light_scheduler);
+        }
+        else if(log == 'N' && affichage == 'Y')
+        {
+            s.consoleWrite(this->m_light_scheduler);
+        }
+        else if(log == 'Y' && affichage == 'N')
+        {
+            s.fileWrite(this->m_light_scheduler);
+        }
+        else
+        {
+            
+        }
+    }
+    
+    if(m_temps_restant % m_temps_pression == 0)
+    {
+        m_pression_scheduler.m_valeur = m_pression_scheduler.aleaGenVal();
+        if(log == 'Y' && affichage == 'Y')
+        {
+            s.fileWrite(this->m_pression_scheduler);
+            s.consoleWrite(this->m_pression_scheduler);
+        }
+        else if(log == 'N' && affichage == 'Y')
+        {
+            s.consoleWrite(this->m_pression_scheduler);
+        }
+        else if(log == 'Y' && affichage == 'N')
+        {
+            s.fileWrite(this->m_pression_scheduler);
+        }
+        else
+        {
+            
+        }
+    }
+
+    //this_thread::sleep_for(chrono::milliseconds(1000));
 
 }	

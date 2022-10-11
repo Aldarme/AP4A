@@ -56,14 +56,26 @@ public:
      * @return void
      * @param void
      */
-    void consoleWrite();
+    void consoleWrite(const Temperature& t);
+
+    void consoleWrite(const Humidity& h);
+
+    void consoleWrite(const Light& l);
+
+    void consoleWrite(const Pression& p);
 
     /**
      * @brief Stocker les données des capteurs dans des fichiers de logs
      * @return void
      * @param chemin du fichier où l'on souhaite stocker les valeurs entre ""
      */
-    void fileWrite();
+    void fileWrite(const Temperature& t);
+
+    void fileWrite(const Humidity& h);
+
+    void fileWrite(const Light& l);
+
+    void fileWrite(const Pression& p);
 
     /**
      * @brief Permet de recevoir les données des capteurs récupérer par le Scheduler
@@ -71,6 +83,8 @@ public:
      * @param Scheduler stockant les données des capteurs
      */
     void dataRCV(Scheduler& sp);
+
+    friend Scheduler;
 
 };
 

@@ -47,8 +47,6 @@ template <typename T>
 Sensor<T>::~Sensor()
 {
 
-    cout << "Destructeur appelle\n" << endl;
-
 }
 
 template <typename T>

@@ -75,6 +75,9 @@ public :
     */
     T getData();
 
+    friend class Scheduler;
+    friend class Server;
+
 };
 
 #endif // Projet_AP4A_SENSOR_H
