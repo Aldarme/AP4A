@@ -12,7 +12,7 @@
 #include "Server.hpp"
 using namespace std;
 
-server& server::operator=(const server& param_s)
+server &server::operator=(const server &param_s)
 {
     consoleActivation = param_s.consoleActivation;
     fileActivation = param_s.fileActivation;
@@ -25,10 +25,11 @@ void server::consolWrite(const packet param_p)
     {
         time_t current = time(0);
         tm *ltm = localtime(&current);
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << endl;
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << endl;
+        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << "C" << endl; // le caractère '°' n'est pas reconnu dans la console
+        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << "atm" << endl;
         cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Light : " << param_p.m_light << endl;
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << "\n"
+        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << "%"
+             << "\n"
              << endl;
     }
 }
@@ -46,7 +47,7 @@ void server::fileWrite(const packet param_p)
 
         if (file1)
         {
-            file1 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << endl;
+            file1 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << "°C" << endl;
             file1.close();
         }
         else
@@ -55,7 +56,7 @@ void server::fileWrite(const packet param_p)
         }
         if (file2)
         {
-            file2 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << endl;
+            file2 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << "atm" << endl;
             file2.close();
         }
         else
@@ -73,8 +74,7 @@ void server::fileWrite(const packet param_p)
         }
         if (file1)
         {
-            file4 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid
-                  << endl;
+            file4 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << "%" << endl;
             file1.close();
         }
         else

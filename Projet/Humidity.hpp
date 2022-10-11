@@ -4,9 +4,9 @@
  * @brief Classe fille de "sensor", détermine et génère des valeurs d'humidité (entre 5 et 10)
  * @version 0.1
  * @date 2022-10-09
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 
 // Define Guards
@@ -23,7 +23,7 @@
 class humidity : public sensor
 {
 public:
-    humidity() {m_min = 5, m_max = 10;}
+    humidity() { m_min = 5, m_max = 10; }
 };
 
-#endif //HUMIDITY_H
+#endif // HUMIDITY_H

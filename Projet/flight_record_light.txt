@@ -1,16 +1,14 @@
-Tue Oct 11 20:41:24 2022
+Tue Oct 11 23:23:34 2022
 FLIGHT RECORD
 
 
-20:41:27 Light : 1
-20:41:28 Light : 0
-20:41:29 Light : 0
-20:41:30 Light : 1
-20:41:31 Light : 0
-20:41:32 Light : 1
-20:41:33 Light : 1
-20:41:34 Light : 0
-20:41:35 Light : 1
-20:41:36 Light : 0
-20:41:37 Light : 0
-20:41:38 Light : 1
+23:23:35 Light : 1
+23:23:36 Light : 0
+23:23:37 Light : 1
+23:23:38 Light : 0
+23:23:39 Light : 0
+23:23:41 Light : 0
+23:23:42 Light : 1
+23:23:43 Light : 1
+23:23:44 Light : 0
+23:23:45 Light : 1
