@@ -2,7 +2,7 @@
  * @author Céliane ALLAIRE
  * @file Scheduler.hpp
  * @date 28/09/2022
- * @brief 
+ * @brief Classe qui gère les requêtes de l'utilisateur et assure la communication avec les différentes classes
  * */
 
 //
@@ -10,6 +10,8 @@
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
+#include "Sensor.hpp"
+#include "Server.hpp"
 
 /**
  * @class Scheduler
@@ -18,23 +20,34 @@
 class Scheduler
 {
 private:
-    int m_interval; //Utilisé pour définir l'intervale de temps entre chaque récolte de données
-    int m_simDuration; //La duration totale de la simulation
-    int m_chrono; //Le temps écoulé depuis le commencement de la simulation
+  Humidity m_hum;
+  Light m_light;
+  Pression m_press;
+  Temperature m_temp;
+  Server m_serv;
+  int m_interval; //Utilisé pour définir l'intervale de temps entre chaque récolte de données
+  int m_chrono; //Notre chronomètre
 public:
 // Definition de la forme canonique
-    Scheduler():m_interval(), m_simDuration(), m_chrono(){}; //Constructeur pas défaut
-    Scheduler(const Scheduler& param_s):m_interval(param_s.m_interval), m_simDuration(param_s.m_simDuration), m_chrono(param_s.m_chrono){}; //Constructeur par recopie
-    Scheduler& operator=(const Scheduler& param_s); //Opérateur d'affectation
-    ~Scheduler(); //Destructeur
+  Scheduler(); //Constructeur pas défaut
+  Scheduler(const Scheduler& s_p); //Constructeur par recopie
+  Scheduler& operator=(const Scheduler& param_s); //Opérateur d'affectation
+  ~Scheduler(); //Destructeur
 
-    //Récuperer toutes les données en même temps
-    Packet& getData(Humidity& humid_p, Light& light_p, Pression& press_p, Temperature& temp_p);
-    void startSimulation();
-    //Transmettre les données en même temps : one solution is taking all the data as parameters OR creating a new class "Packet" that holds the different data [Therefore easier to send out all the data at the same time]
-    bool sendDataToServer(Packet& packet_p); //Sends data to server, returns TRUE if successful FALSE if not
+  /**
+   * Randomizes the values of the different sensors
+  */
+  void aleaSensors();
 
-    //On utilise la méthode sleep pour seulement envoyer les infos à l'intervalle voulu. Pas pertinent pour rendu final par contre!!!
+  /**
+   * Sends Data to the Server and writes the data in the log and/or the file depending on the user's request
+   */
+  void sendDataToServer();
+
+  /**
+   * Used to start our simulation
+   */
+  void startSimulation();
 };
 
 
