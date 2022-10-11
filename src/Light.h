@@ -10,17 +10,23 @@
 
 #include "Sensor.h"
 
-class Light : public Sensor
+template <class T>
+class Light : public Sensor<T>
 {
 public :
-	Light();
+	Light(){
+        this->setData(this->aleaGenVal());
+	    this->setSpecifications("Light");
+    }
 protected :
 	/*
     * @brief Methode permettant la génération d'un nombre aléatoire comprise entre 0 et 1 (ON ou OFF)
     * @return int
     * @param none
     */
-	int aleaGenVal();
+	T aleaGenVal(){
+        return rand() % 2 == 1 ? true : false;
+    }
 };
 
 #endif // LIGHT_H

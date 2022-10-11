@@ -19,10 +19,10 @@
 class Scheduler
 {
 private :
-	Sensor* m_sensor1;
-	Sensor* m_sensor2;
-	Sensor* m_sensor3;
-	Sensor* m_sensor4;
+	Sensor<float>* m_sensor1;
+	Sensor<bool>* m_sensor2;
+	Sensor<int>* m_sensor3;
+	Sensor<float>* m_sensor4;
 
 	float m_frequency;
 

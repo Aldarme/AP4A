@@ -13,10 +13,10 @@ Scheduler::Scheduler()
 	m_server = new Server();
 	m_frequency = 2.;
 
-    m_sensor1 = new Humidity();
-    m_sensor2 = new Light();
-    m_sensor3 = new Pression();
-    m_sensor4 = new Temperature();
+    m_sensor1 = new Humidity<float>();
+    m_sensor2 = new Light<bool>();
+    m_sensor3 = new Pression<int>();
+    m_sensor4 = new Temperature<float>();
 }
 
 Scheduler::Scheduler(Scheduler& scheduler_p)

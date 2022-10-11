@@ -10,13 +10,19 @@
 
 #include "Sensor.h"
 
-class Temperature : public Sensor
+template <class T>
+class Temperature : public Sensor<T>
 {
 public :
-	Temperature();
+	Temperature(){
+		this->setData(this->aleaGenVal());
+		this->setSpecifications("Temperature","degrees Celsius");
+	}
 	
 protected :
-	int aleaGenVal() override;
+	T aleaGenVal(){
+		return static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2)) + 23.;
+	}
 };
 
 #endif // TEMPERATURE_H

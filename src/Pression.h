@@ -9,10 +9,14 @@
 #define PRESSION_H
 #include "Sensor.h"
 
-class Pression : public Sensor
+template <class T>
+class Pression : public Sensor<T>
 {
 public :
-	Pression();
+	Pression(){
+        this->setData(this->aleaGenVal());
+	    this->setSpecifications("Pression","hPa");
+    }
 
 protected :
 	/*
@@ -20,7 +24,9 @@ protected :
     * @return int
     * @param none
     */
-	int aleaGenVal();
+	T aleaGenVal(){
+        return rand() % 795 + 55;
+    }
 };
 
 #endif // PRESSION_H

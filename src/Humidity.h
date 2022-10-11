@@ -10,17 +10,23 @@
 
 #include "Sensor.h"
 
-class Humidity : public Sensor
+template <class T>
+class Humidity : public Sensor<T>
 {
 public:
-    Humidity();
+    Humidity(){
+        this->setData(this->aleaGenVal());
+	    this->setSpecifications("Humidity","%");
+    }
 protected :
     /*
     * @brief Methode permettant la génération d'un nombre aléatoire comprise entre 0 et 100%
     * @return int
     * @param none
     */
-	int aleaGenVal();
+	T aleaGenVal(){
+        return static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/101));
+    }
 };
 
 #endif // HUMIDITY_H

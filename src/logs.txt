@@ -1,64 +1,56 @@
-Humidity 80 %
+Humidity 59.163582 %
 Light 0 
 Pression 403 hPa
-Temperature 23 degrees Celsius
-Humidity 96 %
+Temperature 24.791979 degrees Celsius
+Humidity 83.216049 %
 Light 0 
 Pression 195 hPa
-Temperature 24 degrees Celsius
-Humidity 51 %
+Temperature 24.717939 degrees Celsius
+Humidity 71.854935 %
 Light 1 
 Pression 476 hPa
-Temperature 24 degrees Celsius
-Humidity 66 %
+Temperature 23.029970 degrees Celsius
+Humidity 9.243827 %
 Light 0 
 Pression 112 hPa
-Temperature 23 degrees Celsius
-Humidity 71 %
+Temperature 23.331808 degrees Celsius
+Humidity 99.972221 %
 Light 0 
 Pression 777 hPa
-Temperature 24 degrees Celsius
-Humidity 90 %
+Temperature 23.009338 degrees Celsius
+Humidity 0.901235 %
 Light 0 
 Pression 781 hPa
-Temperature 23 degrees Celsius
-Humidity 23 %
+Temperature 24.142405 degrees Celsius
+Humidity 60.858025 %
 Light 1 
 Pression 732 hPa
-Temperature 23 degrees Celsius
-Humidity 25 %
+Temperature 24.326130 degrees Celsius
+Humidity 45.589508 %
 Light 0 
 Pression 334 hPa
-Temperature 23 degrees Celsius
-Humidity 13 %
+Temperature 24.215406 degrees Celsius
+Humidity 79.219139 %
 Light 1 
 Pression 395 hPa
-Temperature 23 degrees Celsius
-Humidity 19 %
+Temperature 23.603918 degrees Celsius
+Humidity 88.589508 %
 Light 1 
 Pression 372 hPa
-Temperature 24 degrees Celsius
-Humidity 99 %
+Temperature 24.851492 degrees Celsius
+Humidity 54.546295 %
 Light 0 
 Pression 91 hPa
-Temperature 24 degrees Celsius
-Humidity 74 %
+Temperature 23.470671 degrees Celsius
+Humidity 87.200615 %
 Light 0 
 Pression 162 hPa
-Temperature 23 degrees Celsius
-Humidity 39 %
+Temperature 24.687359 degrees Celsius
+Humidity 100.808640 %
 Light 1 
 Pression 217 hPa
-Temperature 24 degrees Celsius
-Humidity 37 %
+Temperature 23.784899 degrees Celsius
+Humidity 26.922840 %
 Light 1 
 Pression 554 hPa
-Temperature 23 degrees Celsius
-Humidity 95 %
-Light 1 
-Pression 780 hPa
-Temperature 23 degrees Celsius
-Humidity 86 %
-Light 0 
-Pression 350 hPa
-Temperature 23 degrees Celsius
+Temperature 23.047489 degrees Celsius

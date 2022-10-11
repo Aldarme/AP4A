@@ -9,6 +9,9 @@
 #define SERVER_H
 
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
 
 #include "Sensor.h"
 
@@ -32,14 +35,31 @@ private :
     * @return void
     * @param Sensor& sensor
     */
-    void consoleWrite(Sensor& sensor_p);
+    template <typename T> void consoleWrite(Sensor<T>& sensor_p){
+        cout << sensor_p.getSpec(0) << " : " << sensor_p.getData() << " " << sensor_p.getSpec(1) << endl;
+    }
 
     /*
     * @brief Méthode écrivant les données des sensors dans un fichier logs
     * @return void
     * @param Sensor& sensor
     */
-    void fileWrite(Sensor& sensor_p); 
+    template <typename T> void fileWrite(Sensor<T>& sensor_p){
+         string filename("C:/Users/rapha/AP4A/src/logs.txt");
+        FILE *o_file = fopen(filename.c_str(), "a");
+        if (o_file)
+        {
+            string chaine;
+            chaine += sensor_p.getSpec(0);
+            chaine += " ";    
+            chaine += to_string(sensor_p.getData());
+            chaine += " ";
+            chaine += sensor_p.getSpec(1);
+            chaine += "\n";
+            fwrite(chaine.c_str(), 1, chaine.size(), o_file);
+        }
+        fclose(o_file);
+    }
 
     friend class Scheduler;
 };
