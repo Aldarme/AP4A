@@ -2,7 +2,7 @@
  * @author Céliane ALLAIRE
  * @file Pression.hpp
  * @date 28/09/2022
- * @brief 
+ * @brief Classe pour le sensor pression
  * */
 
 //
@@ -14,19 +14,12 @@
 
 /**
  * @class Pression
- * @brief 
+ * @brief
  */
 class Pression : public Sensor
 {
 public:
-// Definition de la forme canonique
-    Pression(); //Constructeur pas défaut
-    Pression(const Pression& param_s); //Constructeur par recopie
-    Pression& operator=(const Pression& param_s); //Opérateur d'affectation
-    ~Pression(); //Destructeur
 
-    float aleaGenVal(); //Nous pouvons déclarer le type dans la classe sensor pour le rendu intermédiaire
-    float getData();
 };
 
 
