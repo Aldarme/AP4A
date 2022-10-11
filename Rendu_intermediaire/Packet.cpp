@@ -2,7 +2,7 @@
 * @author SZATKOWSKI Maxime
 * @file Packet.cpp
 * @date 02/10/2022
-* @brief Fichier header contenant la définition des méthodes de la classe Server
+* @brief Fichier header contenant la définition des méthodes de la classe Packet
 */
 
 #include "Packet.hpp"
