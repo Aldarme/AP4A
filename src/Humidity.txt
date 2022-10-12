@@ -1,0 +1,11 @@
+Humidity 0.126543 %
+Humidity 56.996914 %
+Humidity 19.549383 %
+Humidity 81.790123 %
+Humidity 59.163582 %
+Humidity 48.530865 %
+Humidity 35.425926 %
+Humidity 90.611115 %
+Humidity 83.216049 %
+Humidity 75.506172 %
+Humidity 17.608025 %

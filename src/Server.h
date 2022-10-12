@@ -35,8 +35,9 @@ private :
     * @return void
     * @param Sensor& sensor
     */
-    template <typename T> void consoleWrite(Sensor<T>& sensor_p){
-        cout << sensor_p.getSpec(0) << " : " << sensor_p.getData() << " " << sensor_p.getSpec(1) << endl;
+    template <typename T> void consoleWrite(Sensor<T>& sensor_p)
+    {
+        std::cout << sensor_p.getSpec(0) << " : " << sensor_p.getData() << " " << sensor_p.getSpec(1) << std::endl;
     }
 
     /*
@@ -44,15 +45,19 @@ private :
     * @return void
     * @param Sensor& sensor
     */
-    template <typename T> void fileWrite(Sensor<T>& sensor_p){
-         string filename("C:/Users/rapha/AP4A/src/logs.txt");
+    template <typename T> void fileWrite(Sensor<T>& sensor_p)
+    {
+        std::string path = "C:/Users/rapha/AP4A/src/";
+        path += sensor_p.getSpec(0);
+        path += ".txt";
+        std::string filename(path);
         FILE *o_file = fopen(filename.c_str(), "a");
         if (o_file)
         {
-            string chaine;
+            std::string chaine;
             chaine += sensor_p.getSpec(0);
             chaine += " ";    
-            chaine += to_string(sensor_p.getData());
+            chaine += std::to_string(sensor_p.getData());
             chaine += " ";
             chaine += sensor_p.getSpec(1);
             chaine += "\n";
