@@ -78,7 +78,7 @@ void Server::fileWrite(const std::string& nomCapteur_p, const T valeur_p, const 
 template<typename T>
 void Server::consolWrite(const std::string& nomCapteur_p, const T valeur_p, const std::string& unite_p)
 {
-  // Si l'utilisateur a choisi d'afficher dans les logs alors on lui affiche
+  // Si l'utilisateur a choisi d'afficher dans la console alors on lui affiche
   if (this->m_consolActivation == 1)
     std::cout << nomCapteur_p << " " << valeur_p << " " << unite_p << std::endl;
 }

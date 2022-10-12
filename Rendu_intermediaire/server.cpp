@@ -29,12 +29,12 @@ Server& Server::operator=(const Server& server_p)
 void Server::toggleConsolWrite()
 {
   std::string string;
-  std::cout << "Est-ce que vous voulez \x82crire dans la console ? (oui/non)";
+  std::cout << "Est-ce que vous voulez \x82""crire dans la console ? (oui/non)";
   std::cin >> string;
   // Boucle de vérification avec message d'erreur
   while (string != "oui" && string != "OUI" && string != "non" && string != "NON")
   {
-    std::cout << "Vous ne pouvez entrer que oui ou non, recommencer" << std::endl << "Est-ce que vous voulez \x82crire dans la console ? (oui/non)";
+    std::cout << "Vous ne pouvez entrer que oui ou non, recommencer" << std::endl << "Est-ce que vous voulez \x82""crire dans la console ? (oui/non)";
     std::cin >> string;
   }
   if (string == "oui" || string == "OUI")
@@ -47,12 +47,12 @@ void Server::toggleConsolWrite()
 void Server::toggleLogWrite()
 {
   std::string string;
-  std::cout << "Est-ce que vous voulez \x82crire dans les logs ? (oui/non)";
+  std::cout << "Est-ce que vous voulez \x82""crire dans les logs ? (oui/non)";
   std::cin >> string;
   // Boucle de vérification avec message d'erreur
   while (string != "oui" && string != "OUI" && string != "non" && string != "NON")
   {
-    std::cout << "Vous ne pouvez entrer que oui ou non, recommencer" << std::endl << "Est-ce que vous voulez \x82crire dans les logs ? (oui/non)";
+    std::cout << "Vous ne pouvez entrer que oui ou non, recommencer" << std::endl << "Est-ce que vous voulez \x82""crire dans les logs ? (oui/non)";
     std::cin >> string;
   }
   if (string == "oui" || string == "OUI")

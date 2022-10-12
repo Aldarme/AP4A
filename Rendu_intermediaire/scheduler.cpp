@@ -31,7 +31,7 @@ void Scheduler::setDurerSimulation()
   std::cin >> durer;
   while (durer < 0) // Boucle tant que la valeur est inférieure à 0.
   {
-    std::cout << "Vous devez entrer une valeur sup\x82rieur \x85 0" << std::endl << "Entre la durer de la simulation:";
+    std::cout << "Vous devez entrer une valeur sup\x82""rieur \x85"" 0" << std::endl << "Entre la durer de la simulation:";
     std::cin >> durer;
   }
   this->m_durerSimulation = durer;
