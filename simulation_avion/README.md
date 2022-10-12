@@ -1,7 +1,6 @@
 Projet AP4A
 ================ 
-par Gilles Maurer 
-12/10/2022
+Gilles Maurer - 12/10/2022
 
 Simulation du système interne d'un avion en c++.
 
