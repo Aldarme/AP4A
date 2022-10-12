@@ -12,7 +12,7 @@
 #pragma once
 
 #include <iostream>
-#include "Sensor.hpp"
+#include "Sensor.cpp"
 
 
 
