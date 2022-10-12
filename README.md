@@ -16,15 +16,15 @@ Les capteurs génèrent les informations dimensionnées pour s'approcher au plus
   - Température moyenne de 23°C avec une dispertion de 3°C
   - Humidité idéale de 20% avec une dispertion de 8%
   - Pression moyenne de 79289 Pa avec une dispertion de 3447 Pa
-  - Intensité lumineuse moyenne de 10000 L avec une dispertion de 1000 L (On suppose que le vol s'effectue lors d'une journée, au alentours de 12H)
+  - Intensité lumineuse moyenne de 10000 L avec une dispertion de 1000 L (On suppose que le vol s'effectue lors d'une journée, aux alentours de 12H)
 
 ## 1.3. Utilisation du programme
 
-Il est nécessaire pour le bon fonctionnement du programme d'executer FlightSim.exe depuis le répertoire FlightSim.
+Il est nécessaire pour le bon fonctionnement du programme d'executer FlightSim.exe depuis le répertoire contenant le répertoire nommé "logs".
 
-Une fois lancé, l'utilisateur pourra idiquer le temps de simulation (en secondes) ainsi que la période séparant les mesures (en secondes). Il devra ensuite idiquer s'il veux logger les mesures et/ou les afficher. Il faudra ensuite attendre la fin de l'exécution.
+Une fois le programme lancé, l'utilisateur pourra idiquer le temps de simulation (en secondes) ainsi que la période séparant les mesures (en secondes). Il devra ensuite idiquer s'il veux logger les mesures et/ou les afficher. Il faudra, pour terminer, attendre la fin de l'exécution.
 
 ## 1.4. Crédits
 
-Cette implémentation de la simulation d'un écosystème de capteur à été réalisée dans l'UV AP4A, au cours du semestre d'Automne 2022. <br>
+Cette implémentation de la simulation d'un écosystème de capteur à été réalisée pour l'UV AP4A, au cours du semestre d'Automne 2022. <br>
 Auteur : Flavian THEUREL
