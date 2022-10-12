@@ -63,9 +63,8 @@ void Scheduler::startClock()
             this->pression_object.next();
             this->server_object.consoleWrite<pression_data>(this->pression_d);
             this->server_object.fileWrite<pression_data>(this->pression_d);
-            if(this->server_object.statusConsole()){
-                cout << "--------------------------------------------------" <<endl;        
-            }
+            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            
         }
 
         //Light
@@ -76,9 +75,8 @@ void Scheduler::startClock()
             this->server_object.consoleWrite<light_data>(this->light_d);
             this->server_object.fileWrite<light_data>(this->light_d);
             
-            if(this->server_object.statusConsole()){
-                cout << "--------------------------------------------------" <<endl;        
-            }
+            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+
         }
 
         //Humidity
@@ -88,9 +86,8 @@ void Scheduler::startClock()
             this->humidty_object.next();
             this->server_object.consoleWrite<humidity_data>(this->humidity_d);
             this->server_object.fileWrite<humidity_data>(this->humidity_d);
-            if(this->server_object.statusConsole()){
-                cout << "--------------------------------------------------" <<endl;        
-            }
+            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            
         }
 
         //Temperature
@@ -100,9 +97,7 @@ void Scheduler::startClock()
             this->temperature_object.next();
             this->server_object.consoleWrite<temperature_data>(this->temperature_d);
             this->server_object.fileWrite<temperature_data>(this->temperature_d);
-            if(this->server_object.statusConsole()){
-                cout << "--------------------------------------------------" <<endl;        
-            }
+            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
         }
 
         
