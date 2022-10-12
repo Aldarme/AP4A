@@ -6,15 +6,15 @@
 **/
 
 
-#ifndef PRESSION_H
-#define PRESSION_H
+#ifndef PRESSION_HPP
+#define PRESSION_HPP
 
 #pragma once
 
 #include "Sensor.hpp"
 #include <iostream>
 
-using namespace std;
+
 
 class Pression : public Sensor<int>
 {
@@ -26,13 +26,13 @@ class Pression : public Sensor<int>
 
     Pression()
     {
-        cout<< "   -> " <<this->name<<endl;
+        std::cout<< "   -> " <<this->name<<std::endl;
         this->type = 2;
-        this->value = Sensor<int>::aleaGenVal();
+        this->value = aleaGenVal();
     }
 
 
-    ~Pression()
+    virtual ~Pression()
     {
 
     }

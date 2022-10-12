@@ -6,15 +6,14 @@
 **/
 
 
-#ifndef TEMPERATURE_H
-#define TEMPERATURE_H
+#ifndef TEMPERATURE_HPP
+#define TEMPERATURE_HPP
 
 #pragma once
 
 #include <iostream>
 #include "Sensor.hpp"
 
-using namespace std;
 
 
 
@@ -26,15 +25,15 @@ class Temperature : public Sensor<int>{
     
     public:
     
-    Temperature()
+    Temperature() 
     {
         
-        cout<< "   -> " <<this->name<<endl;
+        std::cout<< "   -> " <<this->name<<std::endl;
         this->type = 3;
-        this->value = Sensor<int>::aleaGenVal();
+        this->value = aleaGenVal();
     }
 
-    ~Temperature(){
+    virtual ~Temperature(){
 
     }
 

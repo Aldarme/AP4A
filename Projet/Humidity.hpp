@@ -7,15 +7,15 @@
 
 
 
-#ifndef HUMIDTY_H
-#define HUMIDITY_H
+#ifndef HUMIDITY_HPP
+#define HUMIDITY_HPP
 
 #include <iostream>
 #include "Sensor.hpp"
 
-using namespace std;
 
 
+/// @brief 
 class Humidity : public Sensor<float>
 {
 
@@ -27,12 +27,12 @@ class Humidity : public Sensor<float>
 
     Humidity()
     {
-        cout<< "   -> " <<this->name<<endl;
+        std::cout<< "   -> " <<this->name<<std::endl;
         this->type = 0;
-        this->value = Sensor<float>::aleaGenVal();
+        this->value = aleaGenVal();
     }
 
-    ~Humidity()
+    virtual ~Humidity()
     {
 
     }

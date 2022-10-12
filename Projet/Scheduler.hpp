@@ -18,11 +18,12 @@
 #include <conio.h>
 
 
-#include "Temperature.cpp"
-#include "Pression.cpp"
-#include "Light.cpp"
-#include "Humidity.cpp"
-#include "Server.cpp"
+#include "Temperature.hpp"
+#include "Pression.hpp"
+#include "Light.hpp"
+#include "Humidity.hpp"
+#include "Server.hpp"
+
 
 
 
@@ -58,7 +59,9 @@ class Scheduler
         
 
         int frequency;
+        int step;
         bool going;
+        
 
        
         Temperature temperature_object;
@@ -76,11 +79,13 @@ class Scheduler
     public:
 
 
-        Scheduler()
+        Scheduler() :
+        frequency(10),
+        step(0),
+        going(true)
         {
-            this->frequency = 1;
-            this->going = true;
-            cout << "Press 'c' to manage console activation, an 'l' for log activation" <<endl;
+            
+            std::cout << "Press 'c' to manage console activation, an 'l' for log activation" << std::endl;
             this->startClock();    
         }
 
@@ -90,7 +95,7 @@ class Scheduler
             this->frequency = copy.frequency;
         }
 
-        ~Scheduler()
+        virtual ~Scheduler()
         {
 
         }

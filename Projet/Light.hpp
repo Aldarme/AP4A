@@ -5,15 +5,15 @@
 * @brief Child class of Sensor
 **/
 
-#ifndef LIGHT_H
-#define LIGHT_H
+#ifndef LIGHT_HPP
+#define LIGHT_HPP
 #pragma once
 
 #include <iostream>
 
 #include "Sensor.hpp"
 
-using namespace std;
+
 
 class Light : public Sensor<bool>
 {
@@ -25,12 +25,12 @@ class Light : public Sensor<bool>
 
     Light()
     {
-        cout<< "   -> " <<this->name<<endl;
+        std::cout<< "   -> " <<this->name<<std::endl;
         this->type = 1;
-        this->value = Sensor<bool>::aleaGenVal();
+        this->value = aleaGenVal();
     }
 
-    ~Light()
+    virtual ~Light()
     {
 
     }

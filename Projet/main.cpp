@@ -1,14 +1,10 @@
 /**
 * @author Alan HERVE
 * @file main.cpp
-* @date 01/10/2022
 **/
 
 #include <iostream>
-#include "Server.cpp"
-#include "Sensor.cpp"
-#include "Scheduler.cpp"
-#include "Temperature.cpp"
+#include "Scheduler.hpp"
 
 
 using  namespace std;
