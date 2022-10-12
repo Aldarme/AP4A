@@ -2,8 +2,8 @@
  * @file Server.cpp
  * @author Flavian THEUREL
  * @brief The server receives datas from captors and displays/saves them
- * @version 0.1
- * @date 2022-09-28
+ * @version 0.2
+ * @date 2022-10-02
  */
 
 #include "Server.hpp"
@@ -11,138 +11,86 @@
 #include <iomanip>
 #include <fstream>
 
-Server::Server(): m_temperatureBuffer(), m_humidityBuffer(), m_pressureBuffer(), m_lightBuffer(){}
+Server::Server(): m_settingDisplay(true), m_settingLog(true)
+{
+}
 
-Server::Server(const Server& serv_p): m_temperatureBuffer(serv_p.m_temperatureBuffer), m_humidityBuffer(serv_p.m_humidityBuffer), m_pressureBuffer(serv_p.m_pressureBuffer), m_lightBuffer(serv_p.m_lightBuffer){}
+Server::Server(const Server& serv_p): m_settingDisplay(serv_p.m_settingDisplay), m_settingLog(serv_p.m_settingLog)
+{
+}
 
 Server::~Server(){}
 
 Server& Server::operator=(const Server& serv_p)
 {
-  m_temperatureBuffer = serv_p.m_temperatureBuffer;
-  m_humidityBuffer = serv_p.m_humidityBuffer;
-  m_pressureBuffer = serv_p.m_pressureBuffer;
-  m_lightBuffer = serv_p.m_lightBuffer;
+  m_settingDisplay = serv_p.m_settingDisplay;
+  m_settingLog = serv_p.m_settingLog;
+  return *this;
 }
 
-void Server::fileWriter(EType type_p)
+void Server::fileWrite(std::string type_p, std::string unit_p, int value_p)
 {
   std::ofstream m_outfile;
 
-  // Select the correct data type to print in the corresponding log file
-  switch (type_p)
-  {
-    case e_temperature:
-    {
-      m_outfile.open("logs/temperature_log.txt", std::ios_base::app); // Append the new data to the Save file
-      m_outfile << m_temperatureBuffer << "\t";
-    }
-    break;
-
-    case e_humidity:
-    {
-      m_outfile.open("logs/humidity_log.txt", std::ios_base::app); // Append the new data to the Save file
-      m_outfile << m_humidityBuffer << "\t";
-    }
-    break;
-
-    case e_pressure:
-    {
-      m_outfile.open("logs/presure_log.txt", std::ios_base::app); // Append the new data to the Save file
-      m_outfile << m_pressureBuffer << "\t";
-    }
-    break;
-
-    case e_light:
-    {
-      m_outfile.open("logs/light_log.txt", std::ios_base::app); // Append the new data to the Save file
-      m_outfile << m_lightBuffer << "\t";
-    }
-    break;
-  
-    default:
-    break;
-  }
+  std::string path = "logs/"+type_p+"_log.txt";
+  // Open the corresponding log file
+  m_outfile.open(path, std::ios::out | std::ios::app);
+  // Print the data from the corresponding sensor
+  m_outfile << type_p << "\t" << value_p << unit_p << std::endl;
 
   m_outfile.close();
 }
 
-void Server::consolWrite(EType type_p)
+void Server::consolWrite(std::string type_p, std::string unit_p, int value_p)
 {
-  // Select the according data type
-  switch (type_p)
+  // Print the datas in the console
+  std::cout << type_p << "\t" << value_p << "\t" << unit_p << std::endl;
+
+}
+
+
+void Server::treatment2Package(const Package& package_p)
+{
+  int pValue = package_p.m_value;
+  std::string pType = package_p.m_type;
+  std::string pUnit = package_p.m_unit;
+
+  if (m_settingDisplay == true)
   {
-    case e_temperature:
-    {
-      std::cout << "\r" << "Temperature : " << std::setw(3) << std::setfill('0') << m_temperatureBuffer << "°C" << std::flush;
-    }
-    break;
-
-    case e_humidity:
-    {
-      std::cout << "\r" << "Humidity : " << std::setw(3) << std::setfill('0') << m_humidityBuffer << "%" << std::flush;
-    }
-    break;
-
-    case e_pressure:
-    {
-      std::cout << "\r" << "Pressure : " << std::setw(3) << std::setfill('0') << m_pressureBuffer << "bar" << std::flush;
-    }
-    break;
-
-    case e_light:
-    {
-      std::cout << "\r" << "Light : " << std::setw(3) << std::setfill('0') << m_lightBuffer << "L" << std::flush;
-    }
-    break;
-  
-    default:
-    break;
+    consolWrite(pType, pUnit, pValue);
+  }
+  if (m_settingLog == true)
+  {
+    fileWrite(pType, pUnit, pValue);
   }
 }
 
-void Server::receiveData(EType type_p, int data_p)
+void Server::receiveData(const Package& package_p)
 {
-  // Select the according data type
-  switch (type_p)
-  {
-    case e_temperature:
-    {
-      m_temperatureBuffer = data_p;
-    }
-    break;
-
-    case e_humidity:
-    {
-      m_humidityBuffer = data_p;
-    }
-    break;
-
-    case e_pressure:
-    {
-      m_pressureBuffer = data_p;
-    }
-    break;
-
-    case e_light:
-    {
-      m_lightBuffer = data_p;
-    }
-    break;
-  
-    default:
-    break;
-  }
+  treatment2Package(package_p);
 }
 
-void Server::operator>>(EType type_p)
+void Server::askParameters()
 {
-  if (m_settingLog)
+  
+  std::string input;
+  // Ask the user if he want to log the datas
+  std::cout << "Do you want to log the datas? (Y/N)" << std::endl;
+  std::cin >> input;
+  while (input != "Y" && input != "N")
   {
-    fileWriter(type_p);
+    std::cout << "You entered a wrong answer. Do you want to log the datas? (Y/N)" << std::endl;
+    std::cin >> input;
   }
-  if (m_settingDisplay)
+  m_settingLog=(input=="Y");
+  
+  // Ask the user if he want to print the datas in the console
+  std::cout << "Do you want to print the datas? (Y/N)" << std::endl;
+  std::cin >> input;
+  while (input != "Y" && input != "N")
   {
-    consolWrite(type_p);
-  }  
+    std::cout << "You entered a wrong answer. Do you want to print the datas? (Y/N)" << std::endl;
+    std::cin >> input;
+  }
+  m_settingDisplay=(input=="Y");
 }

@@ -2,25 +2,19 @@
  * @file Server.hpp
  * @author Flavian THEUREL
  * @brief The server receives datas from captors and displays/saves them
- * @version 0.1
- * @date 2022-09-28
+ * @version 0.2
+ * @date 2022-10-02
  */
 
 
 #ifndef SERVER_H
 #define SERVER_H
 
-/**
- * @class EType
- * @brief Enumeration of the data type that are provided by the sensors 
- */
-enum EType
-{
-  e_temperature,
-  e_humidity,
-  e_pressure,
-  e_light
-};
+#include <vector>
+#include "../Package/Package.hpp"
+
+// Faire une FIFO avec la liste
+
 
 /**
  * @class Server
@@ -29,16 +23,15 @@ enum EType
 class Server
 {
 private:
-  int m_temperatureBuffer, m_humidityBuffer, m_pressureBuffer, m_lightBuffer; // Attribute used to stock the data from the sensor until a new data is sent
-  bool m_settingLog = true, m_settingDisplay = true; // Status of the diplaying / logging methods
+  bool m_settingLog, m_settingDisplay; // Status of the diplaying / logging methods
 
-   /**
+  /**
    * @brief Write in a file the data provided by the sensor
    * 
    * @param type Data type
    * @param data_p Data from the sensor
    */
-  void fileWriter(EType type_p);
+  void fileWrite(std::string type_p, std::string unit_p, int value_p);
 
   /**
    * @brief Write in the console the data provided by a sensor
@@ -46,7 +39,14 @@ private:
    * @param type Data type
    * @param data_p Data from the sensor
    */
-  void consolWrite(EType type_p);
+  void consolWrite(std::string type_p, std::string unit_p, int value_p);
+
+  /**
+   * @brief Take the datas from the package
+   * 
+   * @param package_p Package sent by the scheduler
+   */
+  void treatment2Package(const Package& package_p);
 
 public:
   Server();
@@ -54,21 +54,25 @@ public:
   ~Server();
   Server& operator=(const Server& serv_p);
 
-  /**
-   * @brief Do the display / log of the data corresponding to its type (take in account the settings)
-   * 
-   * @param type Data type
-   */
-  void operator>>(EType type);
+  // /**
+  //  * @brief Do the display / log of the data corresponding to its type (take in account the settings)
+  //  * 
+  //  * @param type Data type
+  //  */
+  // void operator>>(std::string type_p);
 
   /**
-   * @brief Get the data from a sensor
+   * @brief Retrieve the data and log them
    * 
-   * @param type_p Data type
-   * @param data_p Data from the sensor
-   * @return true if the data has been correctly sent
+   * @param package_p Package containing the datas from the sensor
    */
-  void receiveData(EType type_p, int data_p);
+  void receiveData(const Package& package_p);
+
+  /**
+   * @brief Ask the user to enter the parameter of the logging and printing
+   * 
+   */
+  void askParameters();
 };
 
 #endif
