@@ -16,13 +16,16 @@
 #include "Light.hpp"
 #include "Temperature.hpp"
 
+#include <iostream>
+
 class Scheduler
 {
 private:
-    Sensor* m_pHu;
-    Sensor* m_pTe; 
-    Sensor* m_pPr;
-    Sensor* m_pLi; 
+
+    Sensor<float>* m_pHu;
+    Sensor<float>* m_pTe; 
+    Sensor<int>* m_pPr;
+    Sensor<bool>* m_pLi; 
     
 public:
     //Definition of the canonical form
@@ -39,6 +42,15 @@ public:
 void clock(int param_time);
 
 //ask the user if he want to activate the console and the logs
-void initilizeServerParameters(Server& param_server);
+void initializeServerParameters(Server& param_server);
+
+//ask the user the waiting time for the sensor
+template <typename T>
+void initializeWaitTime(Sensor<T>& param_sensor) {
+    int waitTime;
+    std::cout << "Enter the waiting time for the " << param_sensor.getType() << " sensor (in seconds): ";
+    std::cin >> waitTime;
+    param_sensor.setWaitTime(waitTime);
+}
 
 #endif // SCHEDULER_H

@@ -224,30 +224,6 @@ Scheduler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation_avion.dir\build.make CMakeFiles/simulation_avion.dir/Scheduler.cpp.s
 .PHONY : Scheduler.cpp.s
 
-Sensor.obj: Sensor.cpp.obj
-.PHONY : Sensor.obj
-
-# target to build an object file
-Sensor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation_avion.dir\build.make CMakeFiles/simulation_avion.dir/Sensor.cpp.obj
-.PHONY : Sensor.cpp.obj
-
-Sensor.i: Sensor.cpp.i
-.PHONY : Sensor.i
-
-# target to preprocess a source file
-Sensor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation_avion.dir\build.make CMakeFiles/simulation_avion.dir/Sensor.cpp.i
-.PHONY : Sensor.cpp.i
-
-Sensor.s: Sensor.cpp.s
-.PHONY : Sensor.s
-
-# target to generate assembly for a file
-Sensor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation_avion.dir\build.make CMakeFiles/simulation_avion.dir/Sensor.cpp.s
-.PHONY : Sensor.cpp.s
-
 Server.obj: Server.cpp.obj
 .PHONY : Server.obj
 
@@ -341,9 +317,6 @@ help:
 	@echo ... Scheduler.obj
 	@echo ... Scheduler.i
 	@echo ... Scheduler.s
-	@echo ... Sensor.obj
-	@echo ... Sensor.i
-	@echo ... Sensor.s
 	@echo ... Server.obj
 	@echo ... Server.i
 	@echo ... Server.s

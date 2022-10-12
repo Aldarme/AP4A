@@ -12,7 +12,7 @@
 
 #include <string>
 
-class Pression:public Sensor
+class Pression: public Sensor<int>
 {
 private:
 
@@ -26,12 +26,6 @@ public:
 
     //generate a value for the pression
     int aleaGenValue() override;
-
-    //get the type of the sensor
-    std::string getType() override;
-
-    //get the unity of the sensor
-    std::string getUnity() override; 
 
 };
 

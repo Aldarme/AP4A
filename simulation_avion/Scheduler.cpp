@@ -10,13 +10,11 @@ using namespace std;
 #include <chrono> 
 using namespace std::chrono;
 
-#define WAITING_TIME 3
-
 
 //Definition of the canonical form
 Scheduler::Scheduler()
 {
-    m_pHu = new Humidity(); 
+    m_pHu = new Humidity();
     m_pTe = new Temperature(); 
     m_pPr = new Pression(); 
     m_pLi = new Light(); 
@@ -61,38 +59,70 @@ void Scheduler::scheduler()
     Server server; 
 
     //reset logs + ask the user if he want to activate the console and the logs 
-    server.resetLogs();
-    initilizeServerParameters(server);
+    server.resetLogs(m_pHu->getType());
+    server.resetLogs(m_pTe->getType());
+    server.resetLogs(m_pPr->getType());
+    server.resetLogs(m_pLi->getType());
+
+    initializeServerParameters(server);
+
+    initializeWaitTime(*m_pHu);
+    initializeWaitTime(*m_pTe);
+    initializeWaitTime(*m_pPr);
+    initializeWaitTime(*m_pLi);
+
+    int totalLoopTime = m_pHu->getWaitTime() * m_pTe->getWaitTime() * m_pPr->getWaitTime() * m_pLi->getWaitTime();
 
     srand(time(NULL));
+    int counter = 0;
 
-    int valueHu, valueTe, valuePr, valueLi; 
+    float valueHu, valueTe;
+    int valuePr;
+    bool valueLi; 
 
     //endless loop
     while (true)
     {
         
-        clock(WAITING_TIME); 
-        valueHu = m_pHu->getData();
-        server.consoleWrite(valueHu, m_pHu->getSensorType(), m_pHu->getSensorUnity());
-        server.fileWrite(valueHu, m_pHu->getSensorType(), m_pHu->getSensorUnity()); 
+        clock(1); 
+        counter++; 
 
-        valueTe = m_pTe->getData( ); 
-        server.consoleWrite(valueTe, m_pTe->getSensorType(), m_pTe->getSensorUnity());
-        server.fileWrite(valueTe, m_pTe->getSensorType(), m_pTe->getSensorUnity());
+        //to avoid the counter to be too big
+        if (counter == totalLoopTime) 
+        {
+            counter = 0; 
+        }
 
-        valuePr = m_pPr->getData(); 
-        server.consoleWrite(valuePr, m_pPr->getSensorType(), m_pPr->getSensorUnity());
-        server.fileWrite(valuePr, m_pPr->getSensorType(), m_pPr->getSensorUnity()); 
+        if (counter % m_pHu->getWaitTime() == 0)
+        {
+            valueHu = m_pHu->getData();
+            server.consoleWrite(valueHu, m_pHu->getType(), m_pHu->getUnity());
+            server.fileWrite(valueHu, m_pHu->getType(), m_pHu->getUnity());
+        }
+         
+        if (counter % m_pTe->getWaitTime() == 0)
+        {
+            valueTe = m_pTe->getData();
+            server.consoleWrite(valueTe, m_pTe->getType(), m_pTe->getUnity());
+            server.fileWrite(valueTe, m_pTe->getType(), m_pTe->getUnity());
+        }
+      
+        if (counter % m_pPr->getWaitTime() == 0)
+        {
+            valuePr = m_pPr->getData();
+            server.consoleWrite(valuePr, m_pPr->getType(), m_pPr->getUnity());
+            server.fileWrite(valuePr, m_pPr->getType(), m_pPr->getUnity());
+        }
 
-        valueLi = m_pLi->getData();
-        server.consoleWrite(valueLi, m_pLi->getSensorType(), m_pLi->getSensorUnity());
-        server.fileWrite(valueLi, m_pLi->getSensorType(), m_pLi->getSensorUnity());
+        if (counter % m_pLi->getWaitTime() == 0)
+        {
+            valueLi = m_pLi->getData();
+            server.consoleWrite(valueLi, m_pLi->getType(), m_pLi->getUnity());
+            server.fileWrite(valueLi, m_pLi->getType(), m_pLi->getUnity());
+        }
  
-        //add a new line in the logs and the console
+        //add a new line in the console
         server.consoleWrite();
-        server.fileWrite();
-
     }
 }
 
@@ -110,9 +140,8 @@ void clock(int param_time)
     } while (duration.count() < param_time); 
 }
 
-
 //ask the user if he want to activate the console and the logs
-void initilizeServerParameters(Server& param_server) 
+void initializeServerParameters(Server& param_server) 
 {
     //ask the user if he wants to activate the logs
     char answer; 

@@ -11,6 +11,8 @@
 #include "Sensor.hpp"
 
 #include <string>
+#include <fstream>
+#include <iostream>
 
 class Server 
 {
@@ -27,7 +29,16 @@ public:
     ~Server();
 
     //write the data on the console
-    void consoleWrite(int param_value, std::string param_type, std::string param_unity);
+    template <typename T>
+    void consoleWrite(T param_value, std::string param_type, std::string param_unity)
+    {
+        if (this->m_consoleActivated) 
+        {
+            std::cout << param_type + " : ";
+            std::cout << param_value; 
+            std::cout << " " + param_unity << std::endl;
+        }
+    }
 
     //add a new line on the console
     void consoleWrite();
@@ -36,13 +47,21 @@ public:
     void activateConsole();
     
     //write the data in the file
-    void fileWrite(int param_value, std::string param_type, std::string param_unity);
-    
-    //add a new line in the file
-    void fileWrite();
+    template <typename T>
+    void fileWrite(T param_value, std::string param_type, std::string param_unity)
+    {
+        if (this->m_logsActivated) 
+        {
+            std::ofstream file(param_type + "_data.txt", std::ios::app);
+            file << param_type + " : ";
+            file << param_value;
+            file << " " + param_unity << std::endl;
+            file.close();
+        }
+    }
 
-    //reset the logs file
-    void resetLogs();
+    //reset logs files
+    void resetLogs(std::string param_type);
 
     //activate the logs
     void activateLogs();

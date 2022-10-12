@@ -10,32 +10,69 @@
 
 #include <string>
 
-class Sensor 
+template <class T> class Sensor 
 {
 protected:
-    int m_value;
+    T m_value;
     std::string m_type; 
-    std::string m_unity;
-    virtual std::string getType() = 0;
-    virtual std::string getUnity() = 0;
-    virtual int aleaGenValue() = 0; 
+    std::string m_unity; 
+    int m_waitTime; //time between two measures
+    virtual T aleaGenValue() = 0; 
 
 public: 
 
     //Definition of the canonical form
-    Sensor();
-    Sensor(const Sensor& param_se); 
-    Sensor& operator=(const Sensor& param_se); 
-    ~Sensor();
+    Sensor() {}
+
+    Sensor(const Sensor<T>& param_se) 
+    {
+        this->m_value = param_se.m_value; 
+        this->m_type = param_se.m_type;
+        this->m_unity = param_se.m_unity;
+        this->m_waitTime = param_se.m_waitTime;
+    }
+
+    Sensor<T>& operator=(const Sensor<T>& param_se) 
+    {
+        this->m_value = param_se.m_value;
+        this->m_type = param_se.m_type;
+        this->m_unity = param_se.m_unity;
+        this->m_waitTime = param_se.m_waitTime;
+        return *this;
+    } 
+
+    ~Sensor() {}
 
     //get the value of the sensor : call the aleaGenValue() function of the right child
-    int getData();
+    T getData()
+    {
+        return this->aleaGenValue();  
+    }
 
-    //get the type of the sensor : call the getType() function of the right child
-    std::string getSensorType();
+    //get the type of the sensor
+    std::string getType()
+    {
+        return this->m_type;
+    }
 
-    //get the unity of the sensor : call the getUnity() function of the right child
-    std::string getSensorUnity();
+    //get the unity of the sensor
+    std::string getUnity()
+    {
+        return this->m_unity; 
+    }
+
+    //set the wait time between two measures for the sensor
+    void setWaitTime(int param_time) 
+    {
+        this->m_waitTime = param_time; 
+    }
+
+    //get the wait time between two measures for the sensor
+    int getWaitTime() 
+    {
+        return this->m_waitTime;
+    }
+
 };
 
 #endif // SENSOR_H

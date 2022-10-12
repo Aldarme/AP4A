@@ -7,8 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/simulation_avion.dir/Pression.cpp.obj.d"
   "CMakeFiles/simulation_avion.dir/Scheduler.cpp.obj"
   "CMakeFiles/simulation_avion.dir/Scheduler.cpp.obj.d"
-  "CMakeFiles/simulation_avion.dir/Sensor.cpp.obj"
-  "CMakeFiles/simulation_avion.dir/Sensor.cpp.obj.d"
   "CMakeFiles/simulation_avion.dir/Server.cpp.obj"
   "CMakeFiles/simulation_avion.dir/Server.cpp.obj.d"
   "CMakeFiles/simulation_avion.dir/Temperature.cpp.obj"

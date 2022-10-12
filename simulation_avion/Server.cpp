@@ -29,17 +29,6 @@ Server::~Server()
 {
 }
 
-//write the data on the console
-void Server::consoleWrite(int param_value, std::string param_type, std::string param_unity) 
-{
-    if (this->m_consoleActivated) 
-    {
-        cout << param_type + " : ";
-        cout << param_value; 
-        cout << " " + param_unity << endl;
-    }
-}
-
 //add a new line on the console 
 void Server::consoleWrite()
 {
@@ -55,34 +44,10 @@ void Server::activateConsole()
     this->m_consoleActivated = true; 
 }
 
-//write the data in the file
-void Server::fileWrite(int param_value, std::string param_type, std::string param_unity) 
+//reset logs files
+void Server::resetLogs(string param_type) 
 {
-    if (this->m_logsActivated) 
-    {
-        ofstream file("data.txt", ios::app);
-        file << param_type + " : ";
-        file << param_value;
-        file << " " + param_unity << endl;
-        file.close();
-    }
-}
-
-//add a new line in the file
-void Server::fileWrite() 
-{
-    if (this->m_logsActivated) 
-    {
-        ofstream file("data.txt", ios::app);
-        file << "" << endl;
-        file.close();
-    }
-}
-
-//reset the logs file
-void Server::resetLogs() 
-{
-    ofstream file("data.txt", ios::trunc);
+    ofstream file(param_type + "_data.txt", ios::trunc);
     file.close();
 }
 

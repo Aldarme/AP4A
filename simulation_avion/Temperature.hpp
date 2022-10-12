@@ -12,7 +12,7 @@
 
 #include <string>
 
-class Temperature:public Sensor
+class Temperature: public Sensor<float>
 {
 private:
 
@@ -25,13 +25,7 @@ public:
     ~Temperature();
 
     //generate a value for the temperature
-    int aleaGenValue() override; 
-
-    //get the type of the sensor
-    std::string getType() override;
-
-    //get the unity of the sensor
-    std::string getUnity() override;
+    float aleaGenValue() override; 
 };
 
 #endif // TEMPERATURE_H

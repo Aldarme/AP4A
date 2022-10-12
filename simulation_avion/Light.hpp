@@ -12,7 +12,7 @@
 
 #include <string>
 
-class Light:public Sensor
+class Light: public Sensor<bool>
 {
 private:
 
@@ -25,13 +25,7 @@ public:
     ~Light();
 
     //generate a value for the light
-    int aleaGenValue() override; 
-
-    //get the type of the sensor
-    std::string getType() override;
-
-    //get the unity of the sensor
-    std::string getUnity() override;
+    bool aleaGenValue() override; 
 };
 
 #endif // LIGHT_H

@@ -5,7 +5,6 @@
  * @brief   Child class of Sensor, humidity sensor
  */
 
-
 #ifndef HUMIDITY_H
 #define HUMIDITY_H
 
@@ -13,7 +12,7 @@
 
 #include <string> 
 
-class Humidity: public Sensor 
+class Humidity: public Sensor<float> 
 {
 private:
 
@@ -26,14 +25,7 @@ public:
     ~Humidity();
 
     //generate a value for the humidity 
-    int aleaGenValue() override; 
-
-    //get the type of the sensor
-    std::string getType() override;
-
-    //get the unity of the sensor
-    std::string getUnity() override;
-
+    float aleaGenValue() override; 
 };
 
 

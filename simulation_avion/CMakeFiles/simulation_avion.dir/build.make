@@ -138,24 +138,10 @@ CMakeFiles/simulation_avion.dir/Pression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation_avion.dir/Pression.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gillo\Documents\simulation_avion\Pression.cpp -o CMakeFiles\simulation_avion.dir\Pression.cpp.s
 
-CMakeFiles/simulation_avion.dir/Sensor.cpp.obj: CMakeFiles/simulation_avion.dir/flags.make
-CMakeFiles/simulation_avion.dir/Sensor.cpp.obj: Sensor.cpp
-CMakeFiles/simulation_avion.dir/Sensor.cpp.obj: CMakeFiles/simulation_avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulation_avion.dir/Sensor.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation_avion.dir/Sensor.cpp.obj -MF CMakeFiles\simulation_avion.dir\Sensor.cpp.obj.d -o CMakeFiles\simulation_avion.dir\Sensor.cpp.obj -c C:\Users\gillo\Documents\simulation_avion\Sensor.cpp
-
-CMakeFiles/simulation_avion.dir/Sensor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulation_avion.dir/Sensor.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gillo\Documents\simulation_avion\Sensor.cpp > CMakeFiles\simulation_avion.dir\Sensor.cpp.i
-
-CMakeFiles/simulation_avion.dir/Sensor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation_avion.dir/Sensor.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gillo\Documents\simulation_avion\Sensor.cpp -o CMakeFiles\simulation_avion.dir\Sensor.cpp.s
-
 CMakeFiles/simulation_avion.dir/Server.cpp.obj: CMakeFiles/simulation_avion.dir/flags.make
 CMakeFiles/simulation_avion.dir/Server.cpp.obj: Server.cpp
 CMakeFiles/simulation_avion.dir/Server.cpp.obj: CMakeFiles/simulation_avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulation_avion.dir/Server.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulation_avion.dir/Server.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation_avion.dir/Server.cpp.obj -MF CMakeFiles\simulation_avion.dir\Server.cpp.obj.d -o CMakeFiles\simulation_avion.dir\Server.cpp.obj -c C:\Users\gillo\Documents\simulation_avion\Server.cpp
 
 CMakeFiles/simulation_avion.dir/Server.cpp.i: cmake_force
@@ -169,7 +155,7 @@ CMakeFiles/simulation_avion.dir/Server.cpp.s: cmake_force
 CMakeFiles/simulation_avion.dir/Temperature.cpp.obj: CMakeFiles/simulation_avion.dir/flags.make
 CMakeFiles/simulation_avion.dir/Temperature.cpp.obj: Temperature.cpp
 CMakeFiles/simulation_avion.dir/Temperature.cpp.obj: CMakeFiles/simulation_avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simulation_avion.dir/Temperature.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulation_avion.dir/Temperature.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulation_avion.dir/Temperature.cpp.obj -MF CMakeFiles\simulation_avion.dir\Temperature.cpp.obj.d -o CMakeFiles\simulation_avion.dir\Temperature.cpp.obj -c C:\Users\gillo\Documents\simulation_avion\Temperature.cpp
 
 CMakeFiles/simulation_avion.dir/Temperature.cpp.i: cmake_force
@@ -187,7 +173,6 @@ simulation_avion_OBJECTS = \
 "CMakeFiles/simulation_avion.dir/Humidity.cpp.obj" \
 "CMakeFiles/simulation_avion.dir/Light.cpp.obj" \
 "CMakeFiles/simulation_avion.dir/Pression.cpp.obj" \
-"CMakeFiles/simulation_avion.dir/Sensor.cpp.obj" \
 "CMakeFiles/simulation_avion.dir/Server.cpp.obj" \
 "CMakeFiles/simulation_avion.dir/Temperature.cpp.obj"
 
@@ -199,14 +184,13 @@ simulation_avion.exe: CMakeFiles/simulation_avion.dir/Scheduler.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/Humidity.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/Light.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/Pression.cpp.obj
-simulation_avion.exe: CMakeFiles/simulation_avion.dir/Sensor.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/Server.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/Temperature.cpp.obj
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/build.make
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/linklibs.rsp
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/objects1.rsp
 simulation_avion.exe: CMakeFiles/simulation_avion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable simulation_avion.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gillo\Documents\simulation_avion\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable simulation_avion.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\simulation_avion.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

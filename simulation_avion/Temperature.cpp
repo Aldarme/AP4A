@@ -4,9 +4,10 @@
 //Definition of the canonical form
 Temperature::Temperature() 
 {
-    this->m_value = 0;  
+    this->m_value = 0.0;  
     this->m_type = "Temperature";
     this->m_unity = "C";
+    this->m_waitTime = 0;
 }
 
 Temperature::Temperature(const Temperature& param_te) 
@@ -14,6 +15,7 @@ Temperature::Temperature(const Temperature& param_te)
     this->m_value = param_te.m_value; 
     this->m_type = param_te.m_type;
     this->m_unity = param_te.m_unity;
+    this->m_waitTime = param_te.m_waitTime;
 }
 
 Temperature& Temperature::operator=(const Temperature& param_te)
@@ -21,6 +23,7 @@ Temperature& Temperature::operator=(const Temperature& param_te)
     this->m_value = param_te.m_value; 
     this->m_type = param_te.m_type;
     this->m_unity = param_te.m_unity;
+    this->m_waitTime = param_te.m_waitTime;
     return *this; 
 }
 
@@ -29,20 +32,9 @@ Temperature::~Temperature()
 }
 
 //generate a value for the temperature
-int Temperature::aleaGenValue()
+float Temperature::aleaGenValue()
 {
-    return (rand()%10 + 20); //temp between 20 and 30
+    float answer = 0.0;
+    answer = (rand()%1000 + 2000)/100.0;
+    return answer; //temp between 20.00 and 30.00
 }
-
-//get the type of the sensor
-std::string Temperature::getType() 
-{
-    return this->m_type; 
-}
-
-//get the unity of the sensor
-std::string Temperature::getUnity() 
-{
-    return this->m_unity; 
-}
-
