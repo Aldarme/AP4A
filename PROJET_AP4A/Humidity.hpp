@@ -24,7 +24,10 @@ class Humidity : public Sensor<float>
 {
 public:
     // Definition de la forme canonique
-    Humidity();
+    Humidity(){
+        this->m_name="Humidity (%)";
+        this->m_sensor=e_humidity;
+    }
     Humidity(const Humidity &param_humidity);
     ~Humidity(){};
     // ...

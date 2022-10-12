@@ -24,7 +24,10 @@ class Light : public Sensor<bool>
 {
 public:
     // Definition de la forme canonique
-    Light();
+    Light(){
+        this->m_name="Light (lm)";
+        this->m_sensor=e_light;
+    }
     Light(const Light &param_light);
     ~Light(){};
     // ...

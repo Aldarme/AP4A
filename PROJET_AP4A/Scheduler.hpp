@@ -14,10 +14,10 @@
 #include <chrono>
 #include "Server.cpp"
 #include "Sensor.cpp"
-#include "Temperature.cpp"
-#include "Pression.cpp"
-#include "Humidity.cpp"
-#include "Light.cpp"
+#include "Temperature.hpp"
+#include "Pression.hpp"
+#include "Humidity.hpp"
+#include "Light.hpp"
 
 
 /**

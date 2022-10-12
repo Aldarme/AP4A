@@ -24,7 +24,10 @@ class Temperature : public Sensor<float>
 {
 public:
     // Definition de la forme canonique
-    Temperature();
+    Temperature(){
+        this->m_name="Temperature (°C)";
+        this->m_sensor=e_temperature;
+    }
     Temperature(const Temperature &param_temperature);
     ~Temperature(){};
     // ...

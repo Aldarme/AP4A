@@ -24,7 +24,11 @@ class Pression : public Sensor<int>
 {
 public:
     // Definition de la forme canonique
-    Pression();
+    Pression(){
+        this->m_name="Pression (hPa)";
+        this->m_sensor=e_pression;
+    }
+
     Pression(const Pression &param_pression);
     ~Pression(){};
     // ...

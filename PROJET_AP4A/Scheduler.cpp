@@ -41,5 +41,4 @@ void Scheduler::sendServer(int param_time_occur,int param_time_temperature,int p
     }
    
     cout<<endl<<"====================="<<endl<<endl;
-    this_thread::sleep_for(chrono::milliseconds(1000));
 }
