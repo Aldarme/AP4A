@@ -1,0 +1,231 @@
+SENSOR DATA (à 0 secondes du début)
+
+Humidity: 2 g/m^3
+
+Light: 2 
+
+Pressure: 50 KPa
+
+Temperature: 29 °C 
+
+
+SENSOR DATA (à 1 secondes du début)
+
+Humidity: 5 g/m^3
+
+Light: 2 
+
+Pressure: 2 KPa
+
+Temperature: 1 °C 
+
+
+SENSOR DATA (à 2 secondes du début)
+
+Humidity: 9 g/m^3
+
+Light: 0 
+
+Pressure: 6 KPa
+
+Temperature: 5 °C 
+
+
+SENSOR DATA (à 3 secondes du début)
+
+Humidity: 12 g/m^3
+
+Light: 0 
+
+Pressure: 9 KPa
+
+Temperature: 8 °C 
+
+
+SENSOR DATA (à 4 secondes du début)
+
+Humidity: 15 g/m^3
+
+Light: 0 
+
+Pressure: 12 KPa
+
+Temperature: 11 °C 
+
+
+SENSOR DATA (à 5 secondes du début)
+
+Humidity: 18 g/m^3
+
+Light: 0 
+
+Pressure: 15 KPa
+
+Temperature: 14 °C 
+
+
+SENSOR DATA (à 6 secondes du début)
+
+Humidity: 1 g/m^3
+
+Light: 1 
+
+Pressure: 19 KPa
+
+Temperature: 18 °C 
+
+
+SENSOR DATA (à 7 secondes du début)
+
+Humidity: 4 g/m^3
+
+Light: 1 
+
+Pressure: 22 KPa
+
+Temperature: 21 °C 
+
+
+SENSOR DATA (à 8 secondes du début)
+
+Humidity: 7 g/m^3
+
+Light: 1 
+
+Pressure: 25 KPa
+
+Temperature: 24 °C 
+
+
+SENSOR DATA (à 9 secondes du début)
+
+Humidity: 10 g/m^3
+
+Light: 1 
+
+Pressure: 28 KPa
+
+Temperature: 27 °C 
+
+
+SENSOR DATA (à 10 secondes du début)
+
+Humidity: 14 g/m^3
+
+Light: 2 
+
+Pressure: 32 KPa
+
+Temperature: 0 °C 
+
+
+SENSOR DATA (à 11 secondes du début)
+
+Humidity: 17 g/m^3
+
+Light: 2 
+
+Pressure: 35 KPa
+
+Temperature: 3 °C 
+
+
+SENSOR DATA (à 12 secondes du début)
+
+Humidity: 2 g/m^3
+
+Light: 2 
+
+Pressure: 41 KPa
+
+Temperature: 9 °C 
+
+
+SENSOR DATA (à 13 secondes du début)
+
+Humidity: 6 g/m^3
+
+Light: 0 
+
+Pressure: 45 KPa
+
+Temperature: 13 °C 
+
+
+SENSOR DATA (à 14 secondes du début)
+
+Humidity: 9 g/m^3
+
+Light: 0 
+
+Pressure: 48 KPa
+
+Temperature: 16 °C 
+
+
+SENSOR DATA (à 15 secondes du début)
+
+Humidity: 12 g/m^3
+
+Light: 0 
+
+Pressure: 0 KPa
+
+Temperature: 19 °C 
+
+
+SENSOR DATA (à 16 secondes du début)
+
+Humidity: 16 g/m^3
+
+Light: 1 
+
+Pressure: 4 KPa
+
+Temperature: 23 °C 
+
+
+SENSOR DATA (à 17 secondes du début)
+
+Humidity: 19 g/m^3
+
+Light: 1 
+
+Pressure: 7 KPa
+
+Temperature: 26 °C 
+
+
+SENSOR DATA (à 18 secondes du début)
+
+Humidity: 1 g/m^3
+
+Light: 1 
+
+Pressure: 10 KPa
+
+Temperature: 29 °C 
+
+
+SENSOR DATA (à 19 secondes du début)
+
+Humidity: 4 g/m^3
+
+Light: 1 
+
+Pressure: 13 KPa
+
+Temperature: 1 °C 
+
+
+SENSOR DATA (à 20 secondes du début)
+
+Humidity: 8 g/m^3
+
+Light: 2 
+
+Pressure: 17 KPa
+
+Temperature: 5 °C 
+
+
