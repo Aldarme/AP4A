@@ -11,7 +11,7 @@
 
 #pragma once
 
-#include "Sensor.cpp"
+#include "Sensor.hpp"
 #include <iostream>
 
 
@@ -37,6 +37,10 @@ class Pression : public Sensor<int>
 
     }
 
+
+    /**
+     * @brief gets the next value at random for this sensor
+    **/
     void next();
 
 };

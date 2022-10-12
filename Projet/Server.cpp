@@ -62,10 +62,7 @@ void Server::deActivateAll()
         
 }
 
-/**
-* @brief Open different file depending on parameter's type and then write value into said file
-* @param classparam one of the 4 child classes of Sensor
-**/
+
 
 
 

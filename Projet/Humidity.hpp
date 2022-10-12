@@ -11,7 +11,7 @@
 #define HUMIDITY_HPP
 
 #include <iostream>
-#include "Sensor.cpp"
+#include "Sensor.hpp"
 
 
 
@@ -37,6 +37,10 @@ class Humidity : public Sensor<float>
 
     }
 
+
+    /**
+     * @brief gets the next value at random for this sensor
+    **/
     void next();
 };
 

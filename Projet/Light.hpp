@@ -11,7 +11,7 @@
 
 #include <iostream>
 
-#include "Sensor.cpp"
+#include "Sensor.hpp"
 
 
 
@@ -35,6 +35,10 @@ class Light : public Sensor<bool>
 
     }
 
+
+    /**
+     * @brief gets the next value at random for this sensor
+    **/
     void next();
 };
 
