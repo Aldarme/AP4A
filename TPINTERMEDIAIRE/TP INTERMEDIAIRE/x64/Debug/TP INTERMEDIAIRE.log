@@ -1,0 +1,102 @@
+﻿  Humidity.cpp
+  Light.cpp
+  Main.cpp
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7,13): error C2011: 'Server' : redéfinition du type 'class'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,1): error C2236: jeton 'class' inattendu. N'auriez-vous pas oublié un ';' ?
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,12): error C2059: erreur de syntaxe : ':'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,13): error C2059: erreur de syntaxe : 'public'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(17,11): error C3646: 'm_sound' : spécificateur de substitution inconnu
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(17,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(18,12): error C2079: 'Scheduler::m_server' utilise une class de 'Server' non défini
+  Scheduler.cpp
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7,13): error C2011: 'Server' : redéfinition du type 'class'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,1): error C2236: jeton 'class' inattendu. N'auriez-vous pas oublié un ';' ?
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,12): error C2059: erreur de syntaxe : ':'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,13): error C2059: erreur de syntaxe : 'public'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(17,11): error C3646: 'm_sound' : spécificateur de substitution inconnu
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(17,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(18,12): error C2079: 'Scheduler::m_server' utilise une class de 'Server' non défini
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(14,68): error C2614: 'Scheduler' : initialisation de membre non conforme : 'm_sound' n'est ni une base ni un membre
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(16,182): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(16,162): error C2614: 'Scheduler' : initialisation de membre non conforme : 'm_sound' n'est ni une base ni un membre
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(25,11): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(25,31): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(38,11): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(95,11): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(103,129): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.cpp(106,127): error C2039: 'm_sound' n'est pas membre de 'Scheduler'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Scheduler.hpp(11): message : voir la déclaration de 'Scheduler'
+  Sensor.cpp
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,1): error C2236: jeton 'class' inattendu. N'auriez-vous pas oublié un ';' ?
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,12): error C2059: erreur de syntaxe : ':'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,13): error C2059: erreur de syntaxe : 'public'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Sound.hpp(5,26): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+  Server.cpp
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7,13): error C2011: 'Server' : redéfinition du type 'class'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Humidity.hpp(5,1): error C2236: jeton 'class' inattendu. N'auriez-vous pas oublié un ';' ?
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Humidity.hpp(5,16): error C2059: erreur de syntaxe : ':'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Humidity.hpp(5,18): error C2059: erreur de syntaxe : 'public'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Humidity.hpp(6,1): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Humidity.hpp(6,1): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(17,9): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(17,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(17,60): error C2550: '{ctor}' : les listes d'initialiseurs de constructeur ne sont autorisées que dans la définition d'un constructeur
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(17,61): warning C4508: '{ctor}' : la fonction doit retourner une valeur ; type de retour 'void' pris par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(19,9): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(20,1): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(21,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(21,38): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(22,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(22,35): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(23,1): warning C4508: '{ctor}' : la fonction doit retourner une valeur ; type de retour 'void' pris par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(25,10): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(25,19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(25,16): error C2610: 'int {dtor}(void)' : n'est pas une fonction membre spéciale ou un opérateur de comparaison définissable par défaut
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(27,17): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(29,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(29,35): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(30,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(30,38): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(31,13): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(34,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(43,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(79,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(81,12): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(84,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(86,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(89,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(91,12): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(94,14): error C2027: utilisation du type non défini 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.hpp(7): message : voir la déclaration de 'Server'
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Server.cpp(96,5): error C2355: 'this' : ne peut être référencé qu'à l'intérieur de fonctions membres non static ou d'initialiseurs de membres de données non static
+  Sound.cpp
+  Temperature.cpp
+C:\Users\hjebb\OneDrive\Bureau\Nouveau dossier\TP INTERMEDIAIRE\TP INTERMEDIAIRE\Temperature.cpp(2,1): fatal  error C1004: fin de fichier inattendue rencontrée
+  Génération de code en cours...
