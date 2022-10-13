@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Server\Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Sensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Humidity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Pression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Temperature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Scheduler\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Server\Server.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Sensor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Humidity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Light.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Pression.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Sensor\Temperature.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\Scheduler\Scheduler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{038EC8CE-3D2E-369D-86C7-FADEF6A368D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{03E9E105-2A2A-31EF-8979-BE830F6C0895}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
