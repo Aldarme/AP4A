@@ -34,7 +34,8 @@ Sensor:
 
 Server :
 
-    Le serveur écrit toutes les secondes les valeurs des sensors qu'il a enregistré et qui sont parfois modifiés par le Scheduler.
+    Le serveur écrit toutes les secondes les valeurs des sensors qu'il a enregistré et 
+    qui sont parfois modifiés par le Scheduler.
 
 
 
