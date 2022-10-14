@@ -1,0 +1,9 @@
+#include "Light.hpp"
+using namespace std 
+ 
+void Light()
+{
+  int min = 0;
+  int max = 900;  
+
+~Light(){};
