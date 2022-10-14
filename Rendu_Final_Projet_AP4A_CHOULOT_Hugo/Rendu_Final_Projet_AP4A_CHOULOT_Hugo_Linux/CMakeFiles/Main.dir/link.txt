@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/Main.dir/Main.cpp.o CMakeFiles/Main.dir/Server.cpp.o CMakeFiles/Main.dir/Sensor.cpp.o CMakeFiles/Main.dir/Scheduler.cpp.o -o Main 
