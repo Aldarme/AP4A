@@ -1,0 +1,30 @@
+--------------Relevé n°1--------------
+Pression : pression->getData() Pa
+--------------Relevé n°2--------------
+Pression : pression->getData() Pa
+--------------Relevé n°3--------------
+Pression : pression->getData() Pa
+--------------Relevé n°4--------------
+Pression : pression->getData() Pa
+--------------Relevé n°5--------------
+Pression : pression->getData() Pa
+--------------Relevé n°1--------------
+Pression : pression->getData() Pa
+--------------Relevé n°2--------------
+Pression : pression->getData() Pa
+--------------Relevé n°3--------------
+Pression : pression->getData() Pa
+--------------Relevé n°4--------------
+Pression : pression->getData() Pa
+--------------Relevé n°5--------------
+Pression : pression->getData() Pa
+--------------Relevé n°1--------------
+Pression : 7 Pa
+--------------Relevé n°2--------------
+Pression : 6 Pa
+--------------Relevé n°3--------------
+Pression : 6 Pa
+--------------Relevé n°4--------------
+Pression : 3 Pa
+--------------Relevé n°5--------------
+Pression : 2 Pa

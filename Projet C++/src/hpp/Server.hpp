@@ -14,10 +14,8 @@
 class Server
 {
 private:
-    template<typename T>
-    void fileWrite(char nom_p[], T value_p, char unit_p[], int relevé_p) ; // fonction d'écriture des données reçues pour chaques capteurs dans un fichier log (pour le rendu intermédiaire)
-    template<typename T>
-    void consolWrite(char nom_p[], T value_p, char unit_p[]); // fonction d'écriture des données reçues pour chaques capteurs dans le terminal
+    void fileWrite(char nom_p[], std::string value_p, char unit_p[], int relevé_p) ; // fonction d'écriture des données reçues pour chaques capteurs dans un fichier log (pour le rendu intermédiaire)
+    void consolWrite(char nom_p[], std::string value_p, char unit_p[]); // fonction d'écriture des données reçues pour chaques capteurs dans le terminal
 
 public:
     Server(); // Constructeur par défaut
@@ -25,8 +23,7 @@ public:
     Server (const Server&); // Constructeur de recopie
     Server &operator=(const Server&); // Opérateur d'affectation
     void newStatement(int relevé_p); // fonction d'affichage du numéro de relevé des données des Sensors.
-    template<typename T>
-    void fileAndConsoleWrite(char nom_p[], T value_p, char unit_p[], int relevé_p); // Fonction regroupant l'affichage dans la console et le stockage dans le fichier log
+    void fileAndConsoleWrite(char nom_p[], std::string value_p, char unit_p[], int relevé_p); // Fonction regroupant l'affichage dans la console et le stockage dans le fichier log
     // void openFile(char nom_p[]);
 
 };

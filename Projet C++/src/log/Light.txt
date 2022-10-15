@@ -1,0 +1,30 @@
+--------------Relevé n°1--------------
+Light : light->getData() lm
+--------------Relevé n°2--------------
+Light : light->getData() lm
+--------------Relevé n°3--------------
+Light : light->getData() lm
+--------------Relevé n°4--------------
+Light : light->getData() lm
+--------------Relevé n°5--------------
+Light : light->getData() lm
+--------------Relevé n°1--------------
+Light : light->getData() lm
+--------------Relevé n°2--------------
+Light : light->getData() lm
+--------------Relevé n°3--------------
+Light : light->getData() lm
+--------------Relevé n°4--------------
+Light : light->getData() lm
+--------------Relevé n°5--------------
+Light : light->getData() lm
+--------------Relevé n°1--------------
+Light : 1 
+--------------Relevé n°2--------------
+Light : 1 
+--------------Relevé n°3--------------
+Light : 1 
+--------------Relevé n°4--------------
+Light : 0 
+--------------Relevé n°5--------------
+Light : 1 

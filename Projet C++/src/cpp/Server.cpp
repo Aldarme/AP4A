@@ -74,8 +74,8 @@ void Server::newStatement(int relevé_p){
     std::cout << "--------------Relevé n°"<< relevé_p <<"--------------" << std::endl; // affichage du numéro des relevé pour plus de lisibilité dans le terminal
 }
 
-template<typename T>
-void Server::fileWrite(char nom_p[], T value_p, char unit_p[], int relevé_p){
+
+void Server::fileWrite(char nom_p[], std::string value_p, char unit_p[], int relevé_p){
     
     std::string nomFichier("../log/");
     std::string nomF = nom_p;
@@ -100,13 +100,13 @@ void Server::fileWrite(char nom_p[], T value_p, char unit_p[], int relevé_p){
 
 }
 
-template<typename T>
-void Server::consolWrite(char nom_p[], T value_p, char unit_p[]){
+
+void Server::consolWrite(char nom_p[], std::string value_p, char unit_p[]){
     std::cout << nom_p << " : " << value_p << " " << unit_p << std::endl; // ecriture des données dans le terminal
 }
 
-template<typename T>
-void Server::fileAndConsoleWrite(char nom_p[], T value_p, char unit_p[], int relevé_p){ //Fonction public regroupant l'appel de la fonction d'affichage dans la console et celle du stockage dans le fichier log
+
+void Server::fileAndConsoleWrite(char nom_p[], std::string value_p, char unit_p[], int relevé_p){ //Fonction public regroupant l'appel de la fonction d'affichage dans la console et celle du stockage dans le fichier log
     consolWrite(nom_p, value_p, unit_p);
     fileWrite(nom_p,value_p, unit_p, relevé_p);
 }

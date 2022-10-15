@@ -9,6 +9,8 @@
 #include<iostream>
 #include<ctime>
 #include <thread>
+#include<sstream>
+
 #include "../hpp/Scheduler.hpp"
 #include "../hpp/Temperature.hpp"
 #include "../hpp/Pression.hpp"
@@ -16,7 +18,7 @@
 #include "../hpp/Light.hpp"
 #include "../hpp/Server.hpp"
 
-
+#define STRING(num) #num
 #define NUM_THREADS 4
 
 
@@ -46,6 +48,9 @@ int Scheduler::getSensorData()
         Pression *pression;
         pression = new Pression;
 
+
+        
+
         // Création d'un objet Server
         Server server;
     
@@ -58,10 +63,15 @@ int Scheduler::getSensorData()
         while(clock() - now <delay);
         // Appels des differentes fonctions de la classe Server pour afficher dans la console et ecrire dans le fichier log (rendu intermediaire) les données récuperées des differents Sensors toutes les 2 secondes
         server.newStatement(i+1);
-        // server.fileAndConsoleWrite<float>("Temperature" , temperature ->aleaGenVal(), "°C", i+1);
-        // server.fileAndConsoleWrite<float>("Humidity" , humidity->aleaGenVal(), "%", i+1);
-        // server.fileAndConsoleWrite<bool>("Light" , light->aleaGenVal(), "lm", i+1);
-        // server.fileAndConsoleWrite<int>("Pression" , pression->getData(), "dB", i+1);
+        
+
+        server.fileAndConsoleWrite("Temperature" , std::to_string(temperature->getData()), "°C", i+1);
+
+        server.fileAndConsoleWrite("Humidity" , std::to_string(humidity->getData()), "%", i+1);
+
+        server.fileAndConsoleWrite("Light" , std::to_string(light->getData()), "", i+1);
+
+        server.fileAndConsoleWrite("Pression" , std::to_string(pression->getData()), "Pa", i+1);
 
 
 

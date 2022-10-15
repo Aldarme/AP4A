@@ -1,0 +1,30 @@
+--------------Relevé n°1--------------
+Temperature : temperature->getData() °C
+--------------Relevé n°2--------------
+Temperature : temperature->getData() °C
+--------------Relevé n°3--------------
+Temperature : temperature->getData() °C
+--------------Relevé n°4--------------
+Temperature : temperature->getData() °C
+--------------Relevé n°5--------------
+Temperature : temperature->getData() °C
+--------------Relevé n°1--------------
+Temperature : 8.237313 °C
+--------------Relevé n°2--------------
+Temperature : 2.091074 °C
+--------------Relevé n°3--------------
+Temperature : 12.655287 °C
+--------------Relevé n°4--------------
+Temperature : 25.361574 °C
+--------------Relevé n°5--------------
+Temperature : 1.222097 °C
+--------------Relevé n°1--------------
+Temperature : 20.075989 °C
+--------------Relevé n°2--------------
+Temperature : 12.125496 °C
+--------------Relevé n°3--------------
+Temperature : 3.487895 °C
+--------------Relevé n°4--------------
+Temperature : 7.932856 °C
+--------------Relevé n°5--------------
+Temperature : 0.196664 °C
