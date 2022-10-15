@@ -13,10 +13,20 @@
 #ifndef HUMIDITY_HPP
 #define HUMIDITY_HPP
 
-class Humidity : public Sensor
+class Humidity : public Sensor<float>
 {
 public:
     Humidity(); //Constructeur par défaut
+    float aleaGenVal(){
+    // float random
+        std::random_device rd;
+        std::default_random_engine eng(rd());
+        std::uniform_real_distribution<float> distr(0, 40);
+        std::setprecision(6);
+        float randomData = distr(eng);
+        return randomData;
+    };
+
 };
 
 #endif 

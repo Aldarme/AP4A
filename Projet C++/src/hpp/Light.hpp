@@ -13,10 +13,12 @@
 #ifndef LIGHT_HPP
 #define LIGHT_HPP
 
-class Light : public Sensor
+class Light : public Sensor<bool>
 {
 public:
     Light(); //Constructeur par défaut
+    // bool aleaGenVal() override{
+    // }
 };
 
 #endif 

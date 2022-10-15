@@ -9,5 +9,5 @@
 
 
 Temperature :: Temperature(){
-    m_data = aleaGenVal(); //instanciation de la valeur Temperature avec un nombre aléatoire generé par la fonction de la classe mère Sensor
+    m_data = this -> aleaGenVal(); //instanciation de la valeur Temperature avec un nombre aléatoire generé par la fonction de la classe mère Sensor
 }

@@ -14,10 +14,19 @@
 #ifndef TEMPERATURE_HPP
 #define TEMPERATURE_HPP
 
-class Temperature : public Sensor
+class Temperature : public Sensor<float>
 {
 public:
     Temperature(); //Constructeur par défaut
+    float aleaGenVal(){
+    // float random
+        std::random_device rd;
+        std::default_random_engine eng(rd());
+        std::uniform_real_distribution<float> distr(0, 40);
+        std::setprecision(6);
+        float randomData = distr(eng);
+        return randomData;
+    };
 };
 
 #endif 
