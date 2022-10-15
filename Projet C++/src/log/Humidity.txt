@@ -1,30 +1,6 @@
---------------Relevé n°1--------------
-Humidity : humidity->getData() %
---------------Relevé n°2--------------
-Humidity : humidity->getData() %
---------------Relevé n°3--------------
-Humidity : humidity->getData() %
---------------Relevé n°4--------------
-Humidity : humidity->getData() %
 --------------Relevé n°5--------------
-Humidity : humidity->getData() %
---------------Relevé n°1--------------
-Humidity : humidity->getData() %
---------------Relevé n°2--------------
-Humidity : humidity->getData() %
---------------Relevé n°3--------------
-Humidity : humidity->getData() %
---------------Relevé n°4--------------
-Humidity : humidity->getData() %
---------------Relevé n°5--------------
-Humidity : humidity->getData() %
---------------Relevé n°1--------------
-Humidity : 9.959988 %
---------------Relevé n°2--------------
-Humidity : 33.852062 %
---------------Relevé n°3--------------
-Humidity : 20.210690 %
---------------Relevé n°4--------------
-Humidity : 6.832556 %
---------------Relevé n°5--------------
-Humidity : 23.513309 %
+Humidity : 18.773521 %
+--------------Relevé n°10--------------
+Humidity : 0.071509 %
+--------------Relevé n°15--------------
+Humidity : 18.179359 %
