@@ -10,7 +10,7 @@ Temperature::~Temperature(){};
 const SensorData& Temperature::getData()
 {
     this->m_value = this->aleaGenVal<float>(22.1, 25.9);
-    this->m_data.value = (this->m_value);
+    this->m_data.value = std::to_string(this->m_value);
 
     return this->m_data;
 }

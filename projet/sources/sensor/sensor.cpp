@@ -17,5 +17,5 @@ MainSensor::MainSensor(TypeSensor sT, TypeData dT)
 {
     this->m_data.TypeSensor = sT;
     this->m_data.TypeData = dT;
-    this->m_data.value = 0;
+    this->m_data.value = "";
 };

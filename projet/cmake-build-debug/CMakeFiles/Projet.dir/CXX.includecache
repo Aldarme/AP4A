@@ -6,67 +6,87 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rayan/Desktop/Projet/main.cpp
+C:/Users/rayan/AP4A/projet/main.cpp
 sources/scheduler/scheduler.h
-C:/Users/rayan/Desktop/Projet/sources/scheduler/scheduler.h
+C:/Users/rayan/AP4A/projet/sources/scheduler/scheduler.h
 
-C:/Users/rayan/Desktop/Projet/sources/enum.h
+C:/Users/rayan/AP4A/projet/sources/enum.h
 string
 -
 iostream
 -
 
-C:/Users/rayan/Desktop/Projet/sources/scheduler/Time.hpp
+C:/Users/rayan/AP4A/projet/sources/scheduler/Time.hpp
 ctime
 -
 ../enum.h
-C:/Users/rayan/Desktop/Projet/sources/enum.h
+C:/Users/rayan/AP4A/projet/sources/enum.h
 
-C:/Users/rayan/Desktop/Projet/sources/scheduler/scheduler.cpp
+C:/Users/rayan/AP4A/projet/sources/scheduler/scheduler.cpp
 scheduler.h
-C:/Users/rayan/Desktop/Projet/sources/scheduler/scheduler.h
+C:/Users/rayan/AP4A/projet/sources/scheduler/scheduler.h
 
-C:/Users/rayan/Desktop/Projet/sources/scheduler/scheduler.h
+C:/Users/rayan/AP4A/projet/sources/scheduler/scheduler.h
 vector
 -
 ctime
 -
 Time.hpp
-C:/Users/rayan/Desktop/Projet/sources/scheduler/Time.hpp
+C:/Users/rayan/AP4A/projet/sources/scheduler/Time.hpp
 ../server/server.h
-C:/Users/rayan/Desktop/Projet/sources/server/server.h
+C:/Users/rayan/AP4A/projet/sources/server/server.h
 ../sensor/humidity.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/humidity.h
+C:/Users/rayan/AP4A/projet/sources/sensor/humidity.h
 ../sensor/light.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/light.h
+C:/Users/rayan/AP4A/projet/sources/sensor/light.h
 ../sensor/temperature.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/temperature.h
+C:/Users/rayan/AP4A/projet/sources/sensor/temperature.h
 ../sensor/pression.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/pression.h
+C:/Users/rayan/AP4A/projet/sources/sensor/pression.h
 
-C:/Users/rayan/Desktop/Projet/sources/sensor/humidity.h
+C:/Users/rayan/AP4A/projet/sources/sensor/humidity.cpp
+humidity.h
+C:/Users/rayan/AP4A/projet/sources/sensor/humidity.h
+
+C:/Users/rayan/AP4A/projet/sources/sensor/humidity.h
 sensor.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
 
-C:/Users/rayan/Desktop/Projet/sources/sensor/light.h
+C:/Users/rayan/AP4A/projet/sources/sensor/light.cpp
+light.h
+C:/Users/rayan/AP4A/projet/sources/sensor/light.h
+
+C:/Users/rayan/AP4A/projet/sources/sensor/light.h
 sensor.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
 
-C:/Users/rayan/Desktop/Projet/sources/sensor/pression.h
+C:/Users/rayan/AP4A/projet/sources/sensor/pression.cpp
+pression.h
+C:/Users/rayan/AP4A/projet/sources/sensor/pression.h
+
+C:/Users/rayan/AP4A/projet/sources/sensor/pression.h
 sensor.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
 
-C:/Users/rayan/Desktop/Projet/sources/sensor/sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.cpp
+sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
+
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
 ../enum.h
-C:/Users/rayan/Desktop/Projet/sources/enum.h
+C:/Users/rayan/AP4A/projet/sources/enum.h
 cmath
 -
 
-C:/Users/rayan/Desktop/Projet/sources/sensor/temperature.h
-sensor.h
-C:/Users/rayan/Desktop/Projet/sources/sensor/sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/temperature.cpp
+temperature.h
+C:/Users/rayan/AP4A/projet/sources/sensor/temperature.h
 
-C:/Users/rayan/Desktop/Projet/sources/server/server.h
+C:/Users/rayan/AP4A/projet/sources/sensor/temperature.h
+sensor.h
+C:/Users/rayan/AP4A/projet/sources/sensor/sensor.h
+
+C:/Users/rayan/AP4A/projet/sources/server/server.h
 ../enum.h
-C:/Users/rayan/Desktop/Projet/sources/enum.h
+C:/Users/rayan/AP4A/projet/sources/enum.h
 

@@ -8,6 +8,7 @@
 void Scheduler::QuestionAffichage() {
     int consoleActivation;
     int logActivation;
+    std::cout << "Bienvenue\n" << std::endl;
     std::cout << "Voulez vous afficher les donnees ? [1/0] :" << std::endl;
     std::cin >> consoleActivation;
     while(consoleActivation>1 or consoleActivation<0){
@@ -37,15 +38,34 @@ void Scheduler::QuestionAffichage() {
 Scheduler::Scheduler()
 {
     QuestionAffichage();
+
     listSensors.push_back(&this->humiditySensor);
     listSensors.push_back(&this->lightSensor);
     listSensors.push_back(&this->temperatureSensor);
     listSensors.push_back(&this->pressureSensor);
 
-    time.push_back(Time(e_humidity, 1000));
-    time.push_back(Time(e_light, 1000));
-    time.push_back(Time(e_temperature, 1000));
-    time.push_back(Time(e_pressure, 1000));
+    std::cout << "Quelle duree (en secondes) entre chaque valeur pour la temperature ? " << std::endl;
+    int sectemp;
+    std::cin >> sectemp;
+    sectemp=sectemp*1000;
+    std::cout << "Quelle duree (en secondes) entre chaque valeur pour l'humidite ? " << std::endl;
+    int sechum;
+    std::cin >> sechum;
+    sechum=sechum*1000;
+    std::cout << "Quelle duree (en secondes) entre chaque valeur pour la lumiere ? " << std::endl;
+    int seclum;
+    std::cin >> seclum;
+    seclum=seclum*1000;
+    std::cout << "Quelle duree (en secondes) entre chaque valeur pour la pression ? " << std::endl;
+    int secpre;
+    std::cin >> secpre;
+    secpre=secpre*1000;
+
+
+    time.push_back(Time(e_humidity, sechum));
+    time.push_back(Time(e_light, seclum));
+    time.push_back(Time(e_temperature, sectemp));
+    time.push_back(Time(e_pressure, secpre));
 
 
 
@@ -72,3 +92,5 @@ Scheduler::Scheduler()
 
 
 Scheduler::~Scheduler() {}
+
+

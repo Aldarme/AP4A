@@ -7,7 +7,7 @@
 
 #include "sensor.h"
 
-class Light : public Sensor<float>
+class Light : public Sensor<bool>
 {
 public:
     Light();

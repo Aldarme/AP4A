@@ -8,6 +8,7 @@ public:
     Humidity();
     virtual ~Humidity();
     const SensorData& getData();
+
 };
 
 #endif //PROJET_HUMIDITY_H

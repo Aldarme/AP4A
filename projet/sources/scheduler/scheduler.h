@@ -20,6 +20,7 @@ public:
     virtual ~Scheduler();
     void QuestionAffichage();
 
+
 private:
     Server server;
     Temperature temperatureSensor;

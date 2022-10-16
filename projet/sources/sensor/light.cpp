@@ -4,14 +4,14 @@
 
 #include "light.h"
 
-Light::Light() : Sensor<float>(e_light, e_float){};
+Light::Light() : Sensor<bool>(e_light, e_bool){};
 
 Light::~Light(){};
 
 const SensorData& Light::getData()
 {
-    this->m_value = this->aleaGenVal<float>(0, 2);
-    this->m_data.value = (this->m_value);
+    this->m_value = this->aleaGenVal<int>() % 2;
+    this->m_data.value = (this->m_value < 1) ? "eteint" : "allume";
 
     return this->m_data;
 };

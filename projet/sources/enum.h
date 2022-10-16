@@ -17,11 +17,13 @@ enum TypeSensor
     e_pressure
 };
 
-// type de donnees des data (que float pour le rendu intermediaire)
+// type de donnees des data
 enum TypeData
 {
     e_data,
     e_float,
+    e_int,
+    e_bool
 };
 
 const std::string nomSensor[5]
@@ -39,7 +41,7 @@ typedef struct SensorData
 {
     TypeSensor TypeSensor;
     TypeData TypeData;
-    float value;
+    std::string value;
 } SensorData;
 
 #endif //PROJET_ENUM_H

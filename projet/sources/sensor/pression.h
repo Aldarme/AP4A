@@ -6,7 +6,7 @@
 #define PROJET_PRESSION_H
 #include "sensor.h"
 
-class Pression : public Sensor<float>
+class Pression : public Sensor<int>
 {
 public:
     Pression();

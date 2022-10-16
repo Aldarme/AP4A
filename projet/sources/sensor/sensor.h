@@ -9,7 +9,7 @@
 class MainSensor
 {
 protected:
-    SensorData m_data; // data of the sensor
+    SensorData m_data;
 
     template <typename T>
     T aleaGenVal()
