@@ -2,34 +2,54 @@
 #include "Humidity.hpp"
 #include "Server.hpp"
 #include "Sensor.hpp"
-#include <string.h>
+
 Humidity::Humidity()
 {
-  strcpy(m_unite,"%");
+  strcpy(unite,"%");
 };
 Humidity::Humidity(const char unite1[])
 {
-    strcpy(m_unite,unite1);
+    strcpy(unite,unite1);
   //  cout<<"\n"<<unite;
 };
 Humidity::Humidity(const Humidity& autre)
 {
-    strcpy(m_unite,autre.m_unite);
-    strcpy(m_type,autre.m_type);
+    strcpy(unite,autre.unite);
+    strcpy(type,autre.type);
 }
 Humidity& Humidity::operator=(const Humidity& autre)
 {
   
-    strcpy(m_unite,autre.m_unite);
-    strcpy(m_type,autre.m_type);
+    strcpy(unite,autre.unite);
+    strcpy(type,autre.type);
     return *this;
 }
 char* Humidity::getUnite()
 {
-  return m_unite;
+  return unite;
 }
 void Humidity::setUnite(const char unite2[])
 {
-    strcpy(m_unite,unite2);
+    strcpy(unite,unite2);
 }
 
+
+/*float Humidity::getData()
+{
+   // std::cout<<"I'm Here";
+    return (this->aleaGenVal());
+;
+}*/
+char* Humidity::gettype(){return type;};
+
+
+/*
+float Humidity::aleaGenVal()
+
+{      //valeur Min                                                 valeurMax-valeurMin
+        float r3 = 0 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(98-0)));
+        float rounded_down = floorf(r3 * 100) / 100;   
+    
+        return rounded_down;
+}
+*/

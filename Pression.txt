@@ -1,0 +1,88 @@
+Mon Oct 17 15:15:41 2022
+-->Pression:750 hPa
+Mon Oct 17 15:15:46 2022
+-->Pression:919 hPa
+Mon Oct 17 15:15:51 2022
+-->Pression:808 hPa
+Mon Oct 17 15:15:56 2022
+-->Pression:993 hPa
+Mon Oct 17 15:16:01 2022
+-->Pression:925 hPa
+Mon Oct 17 15:20:16 2022
+-->Pression:750 hPa
+Mon Oct 17 15:20:21 2022
+-->Pression:919 hPa
+Mon Oct 17 15:20:26 2022
+-->Pression:808 hPa
+Mon Oct 17 15:23:48 2022
+-->Pression:750 hPa
+Mon Oct 17 15:23:53 2022
+-->Pression:919 hPa
+Mon Oct 17 15:50:35 2022
+-->Pression:750 hPa
+Mon Oct 17 15:50:40 2022
+-->Pression:919 hPa
+Mon Oct 17 15:50:45 2022
+-->Pression:808 hPa
+Mon Oct 17 15:50:50 2022
+-->Pression:993 hPa
+Mon Oct 17 15:50:55 2022
+-->Pression:925 hPa
+Mon Oct 17 15:53:35 2022
+-->Pression:919 hPa
+Mon Oct 17 15:53:40 2022
+-->Pression:993 hPa
+Mon Oct 17 15:53:45 2022
+-->Pression:894 hPa
+Mon Oct 17 20:06:53 2022
+-->Pression:750 hPa
+Mon Oct 17 20:06:58 2022
+-->Pression:919 hPa
+Mon Oct 17 20:07:03 2022
+-->Pression:808 hPa
+Mon Oct 17 20:07:08 2022
+-->Pression:993 hPa
+Mon Oct 17 20:07:13 2022
+-->Pression:925 hPa
+Mon Oct 17 20:07:18 2022
+-->Pression:894 hPa
+Mon Oct 17 20:07:23 2022
+-->Pression:855 hPa
+Mon Oct 17 20:13:07 2022
+-->Pression:750 hPa
+Mon Oct 17 20:13:10 2022
+-->Pression:919 hPa
+Mon Oct 17 20:13:13 2022
+-->Pression:808 hPa
+Mon Oct 17 20:13:16 2022
+-->Pression:993 hPa
+Mon Oct 17 20:13:19 2022
+-->Pression:925 hPa
+Mon Oct 17 20:13:22 2022
+-->Pression:894 hPa
+Mon Oct 17 20:13:25 2022
+-->Pression:855 hPa
+Mon Oct 17 20:13:29 2022
+-->Pression:1019 hPa
+Mon Oct 17 20:13:41 2022
+-->Pression:91900 Bar
+Mon Oct 17 20:13:46 2022
+-->Pression:99300 Bar
+Mon Oct 17 20:13:51 2022
+-->Pression:89400 Bar
+Mon Oct 17 20:27:52 2022
+-->Pression:75000 Bar
+Mon Oct 17 20:27:55 2022
+-->Pression:91900 Bar
+Mon Oct 17 20:27:58 2022
+-->Pression:80800 Bar
+Mon Oct 17 20:28:01 2022
+-->Pression:99300 Bar
+Mon Oct 17 21:00:01 2022
+-->Pression:91900 Bar
+Mon Oct 17 21:00:37 2022
+-->Pression:75000 Bar
+Mon Oct 17 21:00:40 2022
+-->Pression:91900 Bar
+Mon Oct 17 21:00:43 2022
+-->Pression:80800 Bar

@@ -13,14 +13,14 @@
 #include <string>
 #include "Sensor.hpp"
 #include <iostream>
+using std::string;
 
 class Humidity: public Sensor
 {
 	private:
-		char m_unite[100];
-		char m_type[9]="Humidity";
-		friend class Server;
-		friend class Scheduler;
+		char unite[100];
+		char type[9]="Humidity";
+
 	//	char unite[50];
       
 	public:
@@ -32,6 +32,11 @@ class Humidity: public Sensor
 		void setUnite(const char unite2[]);
 		Humidity(const Humidity& autre);
 		Humidity& operator=(const Humidity& autre);
+		//float getData();
+
+		//float aleaGenVal();
+		char* gettype();
+
 
 };
 #endif

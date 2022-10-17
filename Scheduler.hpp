@@ -15,22 +15,22 @@
 class Scheduler
 {
 private:
-   float m_version;
+   float version;
    //string  unite;
-   Temperature m_temp;//l'objet atem de la classe temperature est un attribut de classe scheduler 
-   Humidity m_humid;
-   Light m_light;
-   Pression m_press;
+   Temperature atemp;//l'objet atemp de la classe temperature est un attribut de classe scheduler 
+   Humidity ahumid;
+   Light alight;
+   Pression apress;
 
    
 
 public:
    Scheduler(/* args */);
-   Scheduler(Temperature &atem2,Humidity &ahumid2,Light &alight2,Pression &apress2);
+   Scheduler(Temperature &atemp2,Humidity &ahumid2,Light &alight2,Pression &apress2);
    Scheduler(const Scheduler & autre);
    ~Scheduler(){};
    Scheduler& operator=(const Scheduler &p);
-   void Scheduler_in_and_out(Server MYFIRSTSERVER,int& choix2);//,char type2[]);//,Sensor humidity);
+   void Scheduler_in_and_out(Server MYFIRSTSERVER,int& choix2,int choix_du_fichier_a_lire);//,char type2[]);//,Sensor humidity);
    Temperature getTemp();
    void setTemp(Temperature temp);
    Humidity getHumid();

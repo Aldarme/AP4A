@@ -25,54 +25,56 @@ int main()
    
 
    Server MYFIRSTSERVER;
-   //C'est pour tester les differentess constructeurs:
-
-  // Server MYFIRSTSERVER2=MYFIRSTSERVER;    
-   //Server MYFIRSTSERVER3;
-   //MYFIRSTSERVER3=MYFIRSTSERVER2;
-
-   int choix2;//pour savoir ou on doit afficher les resultats
+   int option;//pour savoir l'option de l'affichage des resultats
    cout<<"\n\n";
-   printf("Choisissez :\n1-Afficher les Data sur le console\n2-Enregistrer les Data dans un file txt \n3-Lire les data stockees dans le file\nReponse:");
-   scanf("%i",&choix2);
-   if (choix2>3 || choix2<1)
+   printf("Choisissez :\n1:Afficher les Data sur le console\n2:Enregistrer les Data dans des files txt \n3:Lire les data stockees dans les files txt\n4:Write on the console and in files (en meme temps)\nReponse:");
+   scanf("%i",&option);
+   if (option>4 || option<1)
    {
       cout<<"Erreur!Choisissez un bon choix";
       return 0;
    }
 
-//les unitées des capteurs sont par defaut :celsius,%,dB,Hpa.
 
-
-
-   Temperature temp("C");//constructeur avec parametres l'unitée est C
+   Temperature temp("Celsius");//constructeur avec parametres l'unitée est Celsius
    Humidity humid;//constructeur par defaut
    Light light;
-   
-   Pression Pression;
-   Pression.setUnite("hPa");//encapsulation
+   Pression pression;
+ 
    
  
-   //light.unite="GDB";Interdit (attribut privé)
-   //cout<<"HI\n"<<temp.getUnite()<<" \n";//pour afficher l'unite choisit
-   Scheduler Sched(temp,humid,light,Pression);//sched e a pour attribut les differents capteurs
-  //je teste les constructeurs
-   Scheduler Sched2=Sched;//je teste le constructeur par recopie
-   Scheduler Sched3;
-   Sched3=Sched2;
-   //je teste l'operateure d'affectation de sched
-   //cout<<Sched.getTemp().type;Encapsulation des attributs de sched
+  
 
-   //je suis entrain de tester l'encapsulation des attribus du scheduler
-   Temperature temp3;
-   temp3=Sched.getTemp();//je suis entrain de tester l'encapsulation des attribus du scheduler
-   temp3.setUnite("Celsius");
-   Sched.setTemp(temp3);
-   //cout<<"VERSION"<<temp3.version;
-   cout<<"\nLoading information...\n\n\n\n";
-   if(choix2==2)
+   int choix_du_fichier_a_lire=-1;
+   if (option==3)//si l'option etait de lire un fichier seulement
    {
-      cout<<"les informations recupere de l'avion sont stockees dans le log file\n(chaque 1 seconde il y a une information recu)\nVous pouvez ouvrir le log.txt pour consulter les informations avec le temps correspondant a chaque requete\n ";
+   cout<<"Choisissez quel fichier:\n1-Temperature.txt\n2-Humidity.txt \n3-Light.txt\n4-Presion.txt\nReponse:";
+   cin>>choix_du_fichier_a_lire;
    }
-   Sched.Scheduler_in_and_out(MYFIRSTSERVER,choix2);//va lancer l'execution
+   else//ici pour choisir les unites 
+   {
+      int choixtypetemp;
+      int choixtypehumid;
+      int choixtypePression;
+      
+      cout<<"\n\nChoisissez l'unite de la temperature(les donnees seront compatibles avec l'unite :)) :\n1:Celsius\n2:Fahrenheit\n";
+      cin>>choixtypetemp;
+      if (choixtypetemp==1){temp.setUnite("Celsius");}//bien sur L'encapsulation existe :)
+      else{temp.setUnite("Fahrenheit");};
+      cout<<"\nChoisissez l'unite de la Pression:\n1:hPa\n2:Bar\n";
+      cin>>choixtypePression;
+      if (choixtypePression==1){pression.setUnite("hPa");}
+      else{pression.setUnite("Bar");};
+
+      
+   }
+   cout<<"\nLoading informations...\n\n\n\n";
+   if(option==2)
+   {
+      cout<<"les informations recupere de l'avion sont stockees dans des txt files\n(chaque instant il y a une information recu)\nVous pouvez ouvrir les fichiers pour consulter les informations en temps reels (avec le temps correspondant a chaque requete)\n ";
+   }
+   
+   Scheduler Sched(temp,humid,light,pression);
+   Sched.Scheduler_in_and_out(MYFIRSTSERVER,option,choix_du_fichier_a_lire);//va lancer l'execution
+
 }

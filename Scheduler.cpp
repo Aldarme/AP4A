@@ -1,115 +1,161 @@
-#include <iostream>
-#include "Server.hpp"
 #include "Scheduler.hpp"
+#include "Server.hpp"
+#include <iostream>
 #include <unistd.h>
-
-Scheduler::Scheduler():m_temp(),m_humid(),m_light(),m_press(),m_version(2062022.2){};
+#include <thread>
+#include <mutex>
+std::mutex mtx;
+Scheduler::Scheduler():atemp(),ahumid(),alight(),apress(),version(2062022.2){};
   //  std::cout<<"I'm here in constructeur par defaut!\n";
 
 //ils sont passer par reference pour eviter le copiage(j'aime l'optimisation de la memoire)
 Scheduler::Scheduler(Temperature &atemp2,Humidity &ahumid2,Light &alight2,Pression &apress2)
 {
 
-    m_temp=atemp2;
-    m_humid=ahumid2;
-    m_light=alight2;
-    m_press=apress2;
+    atemp=atemp2;
+    ahumid=ahumid2;
+    alight=alight2;
+    apress=apress2;
 }
 Scheduler::Scheduler(const Scheduler &p)
 {
    // cout<<"\nJe suis dans recopie\n";
-    m_temp=p.m_temp;
-    m_humid=p.m_humid;
-    m_light=p.m_light;
-    m_press=p.m_press;
+    atemp=p.atemp;
+    ahumid=p.ahumid;
+    alight=p.alight;
+    apress=p.apress;
 }
 
 Scheduler& Scheduler::operator=(const Scheduler &p)
 {
   //  cout<<"\nJe suis dans apperateur d'affectation\n";
-    m_temp=p.m_temp;
-    m_humid=p.m_humid;
-    m_light=p.m_light;
-    m_press=p.m_press;
+    atemp=p.atemp;
+    ahumid=p.ahumid;
+    alight=p.alight;
+    apress=p.apress;
     return *this;
 }
-
-void Scheduler::Scheduler_in_and_out(Server MYFIRSTSERVER,int& choix2)//,char type2[])//,Sensor humidity)
+void threadTemp(Server MYFIRSTSERVER,Temperature atemp,int option)
 {
-   for (int i=0;i<300;i++)
+    sleep(1);//attendre seulement 1 second au debut 
+    while (true)
+    {
+    mtx.try_lock();
+    if (option==1){
+    MYFIRSTSERVER.consoleWrite1(atemp); sleep(1.5); }//chaque 1.5s print sur le console
+    //Note j'ai augmente le temps du sleep dans le cas affichage sur console pour qu'on aura le temps a lire les donnes
+    else if(option==2){MYFIRSTSERVER.fileWrite2(atemp);sleep(1);}//chaque 1s print sur le fichier
+    else{ MYFIRSTSERVER.consoleWrite1(atemp);MYFIRSTSERVER.fileWrite2(atemp);sleep(1.5);}//ici c'est le cas du print sur console et stocker dans les fichiers en meme temps
+   
+    mtx.unlock();
+    };
+}
+void threadhumid(Server MYFIRSTSERVER,Humidity ahumid,int option)
+{
+    
+   sleep(2);//une pause seulement dans le démarrage
+   while (true)
    {
-        //type2="Temperature";
-        //ici j'ai créer 2 types de methode dans Scheduler
-
-        //premier methode:consolewrite(atemp,ahumid,alight,apress);
-        //deuxieme methode:consolewrite2(datatemp,datahumid,datalight,datapression)
-        //la premiere prend en parametre les capteurs (c'est mieux pour que je puisse'afficher les unité des capteurs avec un acces au leurs attribut privé en créant une relation d'amitié entre la classe server et les classes capteurs  )
-        //la deuxieme prend en parametre directement les data mais dans ce cas quand je veux afficher dans les console ou dans le file je devrais moi meme ecrire les types (Ce n'est pas recommandé)
-        //c'est pour cela que je vais utiliser la premiere 
-        //meme chose pour le filewrite
-        /*
-        les argument au cas j'ai utilisé la deuxieme methode:
-        float TemperatureData_Returned_From_TheCapteur=atemp.getData(atemp.type); 
-        float HumidityData_Returned_From_TheCapteur=ahumid.getData(ahumid.type);
-        float LightData_Returned_From_TheCapteur=alight.getData(alight.type);
-        float PressionData_Returned_From_TheCapteur=apress.getData(apress.type);
-        */
-
-
-        if (choix2==1)
-        {//qui permet l'affichage sur le console
-            MYFIRSTSERVER.consoleWrite1(m_temp,m_humid,m_light,m_press);
-          //  MYFIRSTSERVER.consoleWrite2(TemperatureData_Returned_From_TheCapteur,HumidityData_Returned_From_TheCapteur,LightData_Returned_From_TheCapteur,PressionData_Returned_From_TheCapteur);
-
-             sleep(1);//pause pour une second(pour que je puisse recupere les donnees chaque seconde)
+       if (option==1){
+        MYFIRSTSERVER.consoleWrite1(ahumid);sleep(3);//chaque 3 seconde
         }
-        else if(choix2==2)
-        {//write sur le log file
-            MYFIRSTSERVER.fileWriteatt(m_temp,m_humid,m_light,m_press);
-         //   MYFIRSTSERVER.fileWrite(TemperatureData_Returned_From_TheCapteur,HumidityData_Returned_From_TheCapteur,LightData_Returned_From_TheCapteur,PressionData_Returned_From_TheCapteur);
-            sleep(1);
+        else if(option==2)
+        {
+           MYFIRSTSERVER.fileWrite2(ahumid);sleep(2);
         }
+        else if(option==4){MYFIRSTSERVER.consoleWrite1(ahumid);MYFIRSTSERVER.fileWrite2(ahumid);sleep(3);}
+       
+        
+   };
+}
+void threadpress(Server MYFIRSTSERVER,Pression apress,int option)
+{   while (true)
+{   
+    if (option==1)
+     {MYFIRSTSERVER.consoleWrite1(apress);sleep(5);}
+     else if(option==2){MYFIRSTSERVER.fileWrite2(apress);sleep(3);}
+     else
+     {
+        MYFIRSTSERVER.consoleWrite1(apress);
+        MYFIRSTSERVER.fileWrite2(apress);
+        sleep(5);
+     }
+      
+};
+}
+void threadlight(Server MYFIRSTSERVER,Light alight,int option)
+{
+    sleep(3);
+    while (true)
+    {
+        if (option==1){
+        MYFIRSTSERVER.consoleWrite1(alight);sleep(6);}
+        else if(option==2)
+        {
+            MYFIRSTSERVER.fileWrite2(alight);sleep(4);
+        }
+        else { MYFIRSTSERVER.consoleWrite1(alight);MYFIRSTSERVER.fileWrite2(alight);sleep(6);}
+    
+
     }
-        if (choix2==3)
-        {//lire le fichier log
-            MYFIRSTSERVER.ReadFile();
-        }
+};
+void Scheduler::Scheduler_in_and_out(Server MYFIRSTSERVER,int &option,int choix_du_fichier_a_lire)//,char type2[])//,Sensor humidity)
+{
+   
+        if (option==1 || option==2|| option==4)
+        {  
+            //creation des threads !!!vive la multithreading!les donnees seront recuperees et transmises a des intervalles de temps differents. 
+            std::thread t1 {threadTemp,MYFIRSTSERVER,atemp,option};//chaque capteur a sa propre thread
+            std::thread t2 {threadhumid,MYFIRSTSERVER,ahumid,option};
+            std::thread t3{threadlight,MYFIRSTSERVER,alight,option};
+            std::thread t4 {threadpress,MYFIRSTSERVER,apress,option};
+            t1.join();//pour attendre le thread 
+            t2.join();
+            t3.join();
+            }
+
+
+            
+            else{ MYFIRSTSERVER.ReadFile(choix_du_fichier_a_lire);}//si l'option etait de lire les fichier seulements
         
 }
+
+    
+
        
           
 //encapsulation
 Temperature Scheduler::getTemp()
 {
-        return m_temp;
+        return atemp;
 }
 void Scheduler::setTemp(Temperature temp)
 {
- m_temp=temp;
+    atemp=temp;
 }
 Humidity Scheduler::getHumid()
 {
-        return m_humid;
+        return ahumid;
 }
 void Scheduler::setHumid(Humidity humid)
 {
-    m_humid=humid;
+    ahumid=humid;
 }
 Light Scheduler::getLight()
 {
-        return m_light;
+        return alight;
 }
 void Scheduler::setLight(Light light)
 {
-    m_light=light;
+    alight=light;
 }
 Pression Scheduler::getPress()
 {
-        return m_press;
+        return apress;
 }
 void Scheduler::setPress(Pression press)
 {
-    m_press=press;
+    apress=press;
 }
 
 

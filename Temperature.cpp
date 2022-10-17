@@ -3,37 +3,40 @@
 #include "Sensor.hpp"
 #include "Sensor.hpp"
 #include <string.h>
+#include <math.h>
 
 
 Temperature::Temperature()
 {
 
-    strcpy(m_unite,"Celsius");
+    strcpy(unite,"Celsius");
 };
 Temperature::Temperature(const char unite1[])
 {
-    strcpy(m_unite,unite1);
+    strcpy(unite,unite1);
    // cout<<unite;
 };
 Temperature::Temperature(const Temperature& autre)
 {
-    strcpy(m_unite,autre.m_unite);
-    strcpy(m_type,autre.m_type);
+    strcpy(unite,autre.unite);
+    strcpy(type,autre.type);
 }
 Temperature& Temperature::operator=(const Temperature& autre)
 {
     
-    strcpy(m_unite,autre.m_unite);
-    strcpy(m_type,autre.m_type);
+    strcpy(unite,autre.unite);
+    strcpy(type,autre.type);
     return *this;
 }
 
 char* Temperature::getUnite()
 {
-    return m_unite;
+    return unite;
 }
+char* Temperature::gettype(){return type;};
 void Temperature::setUnite(const char unite2[])
 {
-    strcpy(m_unite,unite2);
+    strcpy(unite,unite2);
 }
+
 

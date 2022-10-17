@@ -13,20 +13,22 @@ class Pression: public Sensor
 {
 	private:
 		//char unite[50];
-        char m_unite[100];
-		friend class Server;
-		friend class Scheduler;
+        char unite[100];
+
 
 	public:
 		
-        char m_type[12]="Pression";
+        char type[12]="Pression";
 		Pression();
 		Pression(const char unite1[]);
 		Pression(const Pression& autre);
 		Pression& operator=(const Pression& autre);
 		char* getUnite();
 		void setUnite(const char unite2[]);
-
+	//	float getData();
+	//	float aleaGenVal();
+		char* gettype();
+		
 
 };
 #endif

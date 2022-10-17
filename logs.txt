@@ -1,100 +1,154 @@
-Mon Oct 03 22:45:46 2022
+Wed Sep 28 23:12:54 2022
+-->Temperature:25.63 Celsuis
+-->Humidity :79.34 % 
+-->Light :0.47 dB 
+Mon Oct 03 15:55:51 2022
+-->Temperature:25.63 Celsius
+-->Humidity:79.34 %
+-->Light:0.47 DB
+-->Pression:1019.33 Pa
+Mon Oct 03 21:30:44 2022
 -->Temperature:20.01 Celsius
 -->Humidity:55.29 %
--->Light:0.19 Candela
+-->Light:0.19 DB
 -->Pression:993.11 hPa
-Mon Oct 03 22:45:47 2022
+Mon Oct 03 21:30:45 2022
 -->Temperature:25.85 Celsius
 -->Humidity:47.07 %
--->Light:0.35 Candela
+-->Light:0.35 DB
 -->Pression:1019.33 hPa
-Mon Oct 03 22:45:48 2022
+Mon Oct 03 21:30:46 2022
 -->Temperature:28.23 Celsius
 -->Humidity:73.24 %
--->Light:0.17 Candela
+-->Light:0.17 DB
 -->Pression:1008.21 hPa
-Mon Oct 03 22:45:49 2022
--->Temperature:27.1 Celsius
--->Humidity:50.38 %
--->Light:0.3 Candela
--->Pression:754.5 hPa
-Mon Oct 03 22:45:50 2022
--->Temperature:20.91 Celsius
--->Humidity:35.75 %
--->Light:0.14 Candela
--->Pression:799.87 hPa
-Mon Oct 03 22:45:51 2022
+Mon Oct 10 21:29:44 2022
 -->Temperature:29.88 Celsius
 -->Humidity:43.72 %
 -->Light:0.11 Candela
 -->Pression:751.4 hPa
-Mon Oct 03 22:45:52 2022
+Mon Oct 10 21:29:45 2022
 -->Temperature:20.08 Celsius
 -->Humidity:37.07 %
 -->Light:0.53 Candela
 -->Pression:921.7 hPa
-Mon Oct 03 22:45:53 2022
+Mon Oct 10 21:29:46 2022
 -->Temperature:26.01 Celsius
 -->Humidity:59.56 %
 -->Light:0.16 Candela
 -->Pression:949.32 hPa
-Mon Oct 03 22:45:54 2022
+Mon Oct 10 21:29:48 2022
 -->Temperature:24.5 Celsius
 -->Humidity:34.54 %
 -->Light:0.05 Candela
 -->Pression:932.67 hPa
-Mon Oct 03 22:45:55 2022
+Mon Oct 10 21:29:49 2022
 -->Temperature:27.83 Celsius
 -->Humidity:78.73 %
 -->Light:0.51 Candela
 -->Pression:840.77 hPa
-Mon Oct 03 22:45:56 2022
+Mon Oct 10 21:29:50 2022
 -->Temperature:28.76 Celsius
 -->Humidity:71.29 %
 -->Light:0.95 Candela
 -->Pression:1028.28 hPa
-Mon Oct 03 22:45:58 2022
+Mon Oct 10 21:29:51 2022
 -->Temperature:25.39 Celsius
 -->Humidity:13.96 %
 -->Light:0.46 Candela
 -->Pression:820.74 hPa
-Mon Oct 03 22:45:59 2022
+Mon Oct 10 21:29:52 2022
 -->Temperature:28.62 Celsius
 -->Humidity:20.56 %
 -->Light:0.77 Candela
 -->Pression:1003.61 hPa
-Mon Oct 03 22:46:00 2022
+Mon Oct 10 21:29:53 2022
 -->Temperature:29.97 Celsius
 -->Humidity:98.07 %
 -->Light:0.61 Candela
 -->Pression:867.97 hPa
-Mon Oct 03 22:46:01 2022
+Mon Oct 10 21:29:54 2022
 -->Temperature:22.66 Celsius
 -->Humidity:29.16 %
 -->Light:0.84 Candela
 -->Pression:757.13 hPa
-Mon Oct 03 22:46:02 2022
+Mon Oct 10 21:29:55 2022
 -->Temperature:23.75 Celsius
 -->Humidity:9.08 %
 -->Light:0.67 Candela
 -->Pression:766.89 hPa
-Mon Oct 03 22:46:03 2022
+Mon Oct 10 21:29:56 2022
 -->Temperature:20.08 Celsius
 -->Humidity:90.13 %
 -->Light:0.27 Candela
 -->Pression:832.03 hPa
-Mon Oct 03 22:46:04 2022
+Mon Oct 10 21:29:57 2022
 -->Temperature:25.88 Celsius
 -->Humidity:67.8 %
 -->Light:0.83 Candela
 -->Pression:968.39 hPa
-Mon Oct 03 22:46:05 2022
--->Temperature:24.85 Celsius
--->Humidity:20.14 %
--->Light:0.74 Candela
--->Pression:890.82 hPa
-Mon Oct 03 22:46:06 2022
+Tue Oct 11 12:07:51 2022
+-->Temperature:25.85 Celsius
+-->Humidity:47.07 %
+-->Light:0.35 Candela
+-->Pression:1019.33 hPa
+Tue Oct 11 12:07:52 2022
+-->Temperature:20.91 Celsius
+-->Humidity:35.75 %
+-->Light:0.14 Candela
+-->Pression:799.87 hPa
+Tue Oct 11 12:07:53 2022
+-->Temperature:26.01 Celsius
+-->Humidity:59.56 %
+-->Light:0.16 Candela
+-->Pression:949.32 hPa
+Tue Oct 11 12:08:19 2022
+-->Temperature:25.85 Celsius
+-->Humidity:47.07 %
+-->Light:0.35 Candela
+-->Pression:1019.33 hPa
+Tue Oct 11 12:08:21 2022
+-->Temperature:20.91 Celsius
+-->Humidity:35.75 %
+-->Light:0.14 Candela
+-->Pression:799.87 hPa
+Tue Oct 11 12:08:22 2022
+-->Temperature:26.01 Celsius
+-->Humidity:59.56 %
+-->Light:0.16 Candela
+-->Pression:949.32 hPa
+Tue Oct 11 12:08:23 2022
+-->Temperature:28.76 Celsius
+-->Humidity:71.29 %
+-->Light:0.95 Candela
+-->Pression:1028.28 hPa
+Tue Oct 11 12:08:24 2022
+-->Temperature:29.97 Celsius
+-->Humidity:98.07 %
+-->Light:0.61 Candela
+-->Pression:867.97 hPa
+Tue Oct 11 12:08:25 2022
+-->Temperature:20.08 Celsius
+-->Humidity:90.13 %
+-->Light:0.27 Candela
+-->Pression:832.03 hPa
+Tue Oct 11 12:08:26 2022
 -->Temperature:24.58 Celsius
 -->Humidity:93.11 %
 -->Light:0.74 Candela
 -->Pression:782.55 hPa
+Tue Oct 11 12:08:27 2022
+-->Temperature:24.25 Celsius
+-->Humidity:78.76 %
+-->Light:0.51 Candela
+-->Pression:1047.6 hPa
+Tue Oct 11 12:08:28 2022
+-->Temperature:21.47 Celsius
+-->Humidity:93.15 %
+-->Light:0.14 Candela
+-->Pression:1022.09 hPa
+Tue Oct 11 12:08:29 2022
+-->Temperature:28.21 Celsius
+-->Humidity:57.1 %
+-->Light:0.19 Candela
+-->Pression:803.47 hPa

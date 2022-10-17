@@ -14,10 +14,9 @@
 class Light: public Sensor
 {
 	private:
-      	char m_unite[100];
-        char m_type[12]="Light";
-		friend class Server; 
-		friend class Scheduler;
+      	char unite[100];
+        char type[12]="Light";
+
 		
 
 
@@ -29,6 +28,9 @@ class Light: public Sensor
 		Light& operator=(const Light& autre);
 		char* getUnite();
 		void setUnite(const char unite2[]);
+
+		char* gettype();
+
 
 
 };

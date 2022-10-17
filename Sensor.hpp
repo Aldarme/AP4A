@@ -8,18 +8,20 @@
 #define SENSOR_HPP
 #include <string>
 #include <iostream>
+
 using std::string;
 class Sensor
 {
 
 public: 
-   float m_version;
+   float version;
    //char typesensor[12]; 
    Sensor(/* args */);
    Sensor(const Sensor & autre);
    ~Sensor(){};
    Sensor&  operator=(const Sensor &p);
-   float getData(char type[]);
-   float aleaGenVal(char typeofsensor[] );
+   template<class T> T getData(char type[],char unite[]);
+   template<class T> T aleaGenVal(char typeofsensor[],char unite[] );
+
 };
 #endif
