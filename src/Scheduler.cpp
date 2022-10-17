@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// Basic constructor
 Scheduler::Scheduler()
 {
 	m_server = new Server();
@@ -16,6 +17,7 @@ Scheduler::Scheduler()
     m_sensor4 = new Temperature<float>();
 }
 
+// Copy constructor
 Scheduler::Scheduler(Scheduler& scheduler_p)
 {
     this->m_sensor1 = scheduler_p.m_sensor1;
@@ -27,6 +29,7 @@ Scheduler::Scheduler(Scheduler& scheduler_p)
 	m_frequency = scheduler_p.m_frequency;
 }
 
+// Assignment constructor
 Scheduler& Scheduler::operator=(Scheduler& scheduler_p)
 {
     this->m_sensor1 = scheduler_p.m_sensor1;
@@ -42,51 +45,53 @@ Scheduler& Scheduler::operator=(Scheduler& scheduler_p)
 
 void Scheduler::wait(float frequency_p)
 {
+    // Initialising delta and lastTime
     time_t lastTime = time(NULL); 
     time_t delta = 0;
+
+    // While delta value is inferior to the frequency passed in parameter, we continue the same processing
     while (delta < frequency_p)
     {
-        /*
-        if(kbhit())
-        {
-            detection = getch();
-            checkAnswer(detection);
-            if((detection == 'y' || detection == 'q') && !m_server->m_consoleActivation && !m_server->m_logActivation)
-            {
-                return;
-            }
-        }
-        */
         time_t now = time(NULL);
+        // the new value of delta is the difference between the current time and the last time when the method was called
         delta = (now - lastTime);
+        // Thus, the value of delta is modified in relation to time
     }
+    // when the loop is ended, we leave the method and the programm can continue to run
 }
 
 void Scheduler::ask()
 {
 	char answer;
 	do{
-		std::cout << "Activate console only : c" << std::endl;
-		std::cout << "Activate logs only : l" << std::endl;
-		std::cout << "Activate logs and console : y" << std::endl; 
-		std::cout << "\nTo desactivate/activate \n\t- logs\n\t- console\n\t- both\nduring the program, press the same keys as mentionned above during the program" << std::endl;			std::cout << "\n-- Press 'q' to simply quit the programm --\n" << std::endl;
 		std::cin >> answer;
-	}while(answer != 'c' && answer != 'l' && answer != 'y' && answer != 'q');
-	checkAnswer(answer);
+	}
+    while(answer != 'c' && answer != 'l' && answer != 'y' && answer != 'q');
+	
+    // We check the answer of the user thanks to this method
+    checkAnswer(answer);
 }
 
 void Scheduler::launchThreads(){
+    // Every thread has different frequency of getting datas
+    // Thus, every thread call the loop method parallely and can execute it independently of each other
+    
+    // Setting threads with lamda expressions
     std::thread thread1([this](){
+        // Frequency of datas every second
 		loop(*m_sensor1,1.F);
 	});
 	std::thread thread2([this](){
+        // Frequency of datas every 2 seconds
 		loop(*m_sensor2,2.F);
 	});
 	std::thread thread3([this](){
-		loop(*m_sensor3,3.F);
+        // Frequency of datas every 5 seconds
+		loop(*m_sensor3,5.F);
 	});	
     std::thread thread4([this](){
-	    loop(*m_sensor4,5.F);
+        // Frequency of datas every 10 seconds
+	    loop(*m_sensor4,10.F);
 	});
     std::thread thread5([this](){
         while(isRunning()) ask();
@@ -97,40 +102,40 @@ void Scheduler::launchThreads(){
 	thread3.join();
 	thread4.join();
 	thread5.join();
-
-	if(!isRunning()){
-		thread1.detach();
-		thread2.detach();
-		thread3.detach();
-		thread4.detach();
-        thread5.detach();
-	}
 }
 
 bool Scheduler::isRunning()
 {
+    // Returns true if the console is activated or logs are activated
+    // Otherwise, it means that the program should'nt run anymore
     return (m_server->m_consoleActivation || m_server->m_logActivation);
 }
 
 void Scheduler::checkAnswer(char answer_p)
 {
+    // We check the user's answer
     switch(answer_p){
+        // The user pressed q, it means that he wants to quit the program, we desactivate the console and logs
         case 'q' :
             m_server->m_consoleActivation = false;
             m_server->m_logActivation = false;
             cout << "Quitting program" << endl;
         break;
+        // The user pressed c, he wants either to activate or desactivate console
         case 'c' :
+            // The console is activated, we desactivate it
             if(m_server->m_consoleActivation){
                 m_server->m_consoleActivation = false;
-                cout << "Console log desactivated!" << endl;
+                cout << "Console desactivated!" << endl;
             }
+            // The console is desactivated, we activate it
             else
             {
                 m_server->m_consoleActivation = true;
-                cout << "Console log activated!" << endl;
+                cout << "Console activated!" << endl;
             }
         break;
+        // The user pressed l, he want either to activate or desactivate logs
         case 'l' :
             if (m_server->m_logActivation)
             {
@@ -143,6 +148,7 @@ void Scheduler::checkAnswer(char answer_p)
                 cout << "Logs activated!" << endl;
             }
         break;
+        // The user pressed y, he wants to activate or desactivate both logs and console
         case 'y' :
             if(m_server->m_consoleActivation && m_server->m_logActivation)
             {

@@ -2,7 +2,7 @@
  * @author raphael_perrin
  * @file Humidity.h
  * @date 05/10/2022
- * @brief Classe Humidity, classe dérivée de la superclasse Sensor. Sensor d'humidité présente dans l'avion
+ * @brief Humidity class, herited class from the Sensor superclass. Sensor that gets the humidity in the plane.
  */
 
 #ifndef HUMIDITY_H
@@ -20,8 +20,8 @@ public:
     }
 protected :
     /*
-    * @brief Methode permettant la génération d'un nombre aléatoire comprise entre 0 et 100%
-    * @return int
+    * @brief Method that generates a random number between 0 and 100%
+    * @return T
     * @param none
     */
 	T aleaGenVal(){

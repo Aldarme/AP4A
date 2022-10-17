@@ -2,7 +2,7 @@
  * @author raphael_perrin
  * @file Server.h
  * @date 05/10/2022
- * @brief Classe Server ayant pour objectif d'afficher l'état de chaque sensor dans la console ou dans un fichier logs
+ * @brief Server class that allows to display the datas of sensors on console or/and write them in logs
  */
 
 #ifndef SERVER_H
@@ -23,7 +23,7 @@ private :
     bool m_logActivation;
 
 public:
-    // Définition de la forme canonique
+    // Definition of canonical form
     Server();
     ~Server(){}
     Server(const Server& server_p);
@@ -31,38 +31,45 @@ public:
 
 private :
     /*
-    * @brief Méthode écrivant les données des sensors dans la console
+    * @brief Method that displays the datas of the sensors on the console
     * @return void
-    * @param Sensor& sensor
+    * @param Sensor<T>& sensor
     */
     template <typename T> void consoleWrite(Sensor<T>& sensor_p)
     {
-        std::cout << sensor_p.getSpec(0) << " : " << sensor_p.getData() << " " << sensor_p.getSpec(1) << std::endl;
+        std::cout << sensor_p.getName() << " : " << sensor_p.getData() << " " << sensor_p.getUnity() << std::endl;
     }
 
     /*
-    * @brief Méthode écrivant les données des sensors dans un fichier logs
+    * @brief Method that writes the datas of the sensors in a log file
     * @return void
-    * @param Sensor& sensor
+    * @param Sensor&<T> sensor
     */
     template <typename T> void fileWrite(Sensor<T>& sensor_p)
     {
+        // The path should be modified if the user is using this program on another device
         std::string path = "C:/Users/rapha/AP4A/src/";
-        path += sensor_p.getSpec(0);
+
+        // This allows to set the datas in independent files according to the name of the sensor
+        path += sensor_p.getName();
+        // Extension of the file
         path += ".txt";
         std::string filename(path);
         FILE *o_file = fopen(filename.c_str(), "a");
+        // If the file can be opened
         if (o_file)
         {
             std::string chaine;
-            chaine += sensor_p.getSpec(0);
+            chaine += sensor_p.getName();
             chaine += " ";    
             chaine += std::to_string(sensor_p.getData());
             chaine += " ";
-            chaine += sensor_p.getSpec(1);
+            chaine += sensor_p.getUnity();
             chaine += "\n";
+            // We write this new line on the file opened
             fwrite(chaine.c_str(), 1, chaine.size(), o_file);
         }
+        // We close the file
         fclose(o_file);
     }
 

@@ -2,7 +2,7 @@
  * @author raphael_perrin
  * @file Light.h
  * @date 05/10/2022
- * @brief Classe Light, classe dérivée de la superclasse Sensor. Sensor de la lumière présente dans l'avion
+ * @brief Light class, herited class from the Sensor superclass. Sensor that gets the light in the plane.
  */
 
 #ifndef LIGHT_H
@@ -20,8 +20,8 @@ public :
     }
 protected :
 	/*
-    * @brief Methode permettant la génération d'un nombre aléatoire comprise entre 0 et 1 (ON ou OFF)
-    * @return int
+    * @brief Method that generates a random number between 0 and 1 (ON or OFF)
+    * @return T
     * @param none
     */
 	T aleaGenVal(){

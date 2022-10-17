@@ -30,7 +30,7 @@ private :
 	Server* m_server;
 
 public:
-	// Définition de la forme canonique
+	// Definition of the canonical form
     Scheduler();
 	Scheduler(Scheduler& scheduler_p);
 	~Scheduler()
@@ -42,26 +42,20 @@ public:
 	}
 	Scheduler& operator=(Scheduler& scheduler_p);
 
+private :
 	/*
-    * @brief Methode permettant de demander à l'utilisateur quel type d'affichage d'informations il souhaite lors du lancement du programme
+    * @brief Method that allows to stop the datas retrieval during a certain time depending on the frequency passed on paramater
     * @return void
-    * @param none
-    * 
-    */
-
-public :
-	/*
-    * @brief Methode permettant au programme d'afficher ou enregistrer les informations des sensors à une fréquence donnée
-    * @return void
-    * @param float frequency
+    * @param float frequency_p
     * 
     */
     void wait(float frequency_p);
 
 	/*
-    * @brief Methode permettant au programme de récupérer les informations des sensors indéfiniment jusqu'à la fin du programme
+    * @brief Method allowing the program to get the datas on a specified sensor during all the program long
     * @return void
-    * @param none
+    * @param Sensor<T>& sensor_p
+    * @param float frequency_p
     */
 	
 	template <class T> void loop(Sensor<T>& sensor_p, float frequency_p)
@@ -76,20 +70,32 @@ public :
 	}
 
 	/*
-    * @brief Methode permettant de connaître si le scheduler est actuellement actif, c'est à dire s'il écrit soit dans les logs, soit dans la console
+    * @brief Method that allows to know if the program is currently working, i.e. that logs or console is activated
     * @return bool
     * @param none
     */
 	bool isRunning();
 
 	/*
-    * @brief Methode permettant d'activer ou de désactiver le mode console seulement, log seulement ou les deux par l'intermédiaire de la réponse envoyée en paramètres
+    * @brief Method that checks the answer of the user and activate console or/and logs according to what the user entered
     * @return void
     * @param char answer_p
     */
 	void checkAnswer(char answer_p);
 
+public :
+	/*
+    * @brief Method that gets the answer that the user has entered
+    * @return void
+    * @param char answer_p
+    */
 	void ask();
+
+	/*
+    * @brief Method that launches independent threads to get datas at different frequencies
+    * @return void
+    * @param char answer_p
+    */
 	void launchThreads();
 };
 

@@ -2,57 +2,48 @@
  * @author raphael_perrin
  * @file Sensor.h
  * @date 05/10/2022
- * @brief Superclasse des classes dérivées Humidity,Light,Pression & Temperature
+ * @brief Superclass of herited classes Humidity, Light, Pression & Temperature
  */
 
 #ifndef SENSOR_H
 #define SENSOR_H
 
 #define LENGTH 2
+
 template <class T>
 class Sensor
 {
 	
 private:
 	T m_data;
-	const char** m_specs;
+	const char* m_name;
+	const char* m_unity;
 
 public:
-// Définition de la forme canonique
+	// Definition of the canonical form
 	Sensor(){
 		this->m_data = 0;
-    	m_specs = new const char*[LENGTH];
+   		this->m_name = "";
+		this->m_unity = "";
+
 	}
-	virtual ~Sensor()
-	{
-		delete[] m_specs;
-	}
+	virtual ~Sensor() {}
 	Sensor(const Sensor& sensor_p){
 		this->m_data = sensor_p.m_data;
-   		m_specs = new const char*[LENGTH];
-    	if(m_specs)
-    	{
-        	for(int i = 0; i < LENGTH; i++)
-			{
-            	this->m_specs[i] = sensor_p.m_specs[i];
-        	}
-    	}
+   		this->m_name = sensor_p.m_name;
+		this->m_unity = sensor_p.m_unity;
 	}
 	Sensor& operator=(const Sensor& sensor_p){
 		this->m_data = sensor_p.m_data;
-    	if(m_specs)
-    	{
-        	for(int i = 0; i < LENGTH; i++)
-			{
-           		this->m_specs[i] = sensor_p.m_specs[i];
-        	}
-    	}
+   		this->m_name = sensor_p.m_name;
+		this->m_unity = sensor_p.m_unity;
+
     	return *this;
 	}
 
 	/*
-    * @brief Getter récupérant la valeur de la variable privée data
-    * @return int
+    * @brief Getter getting the value of the private attribute m_data
+    * @return T
     * @param none
     */
 	T getData(){
@@ -60,17 +51,25 @@ public:
 	}
 
 	/*
-    * @brief Getter récupérant le char (caractérisant le type du sensor et son unité) présent à la ieme position du tableau
+    * @brief Getter getting the name of the Sensor
     * @return const char*
-    * @param int i
+    * @param none
     */
-	const char* getSpec(int i_p)
-	{
-		return m_specs[i_p];
+	const char* getName(){
+		return m_name;
 	}
 
 	/*
-    * @brief Méthode permettant de refresh les informations des sensors en leur attribuant une nouvelle valeur
+    * @brief Getter getting the unity of the Sensor
+    * @return const char*
+    * @param none
+    */
+	const char* getUnity(){
+		return m_unity;
+	}
+
+	/*
+    * @brief Méthod that refreshes the data of the sensor
     * @return void
     * @param none
     */
@@ -81,18 +80,18 @@ public:
 
 protected :
 	/*
-    * @brief Setter permettant d'indiquer le nom du sensor et son unité
+    * @brief Setter that allows to set the name of the sensor and its unity
     * @return void
-    * @param const char* nom
-	* @param const char* unité
+    * @param const char* name
+	* @param const char* unity
     */
-	void setSpecifications(const char* spec1_p, const char* spec2_p = ""){
-		this->m_specs[0] = spec1_p;
-    	this->m_specs[1] = spec2_p;
+	void setSpecifications(const char* name_p, const char* unity_p = ""){
+		this->m_name = name_p;
+		this->m_unity = unity_p;
 	}
 
 	/*
-    * @brief Setter classique permettant de modifier la valeur de la variable data de la classe Sensor
+    * @brief Setter that allows the modify the data of the sensor
     * @return void
     * @param int data
     */
@@ -101,7 +100,7 @@ protected :
 	}
 
 	/*
-    * @brief Méthode abstraite implémentée par chaque fonction fille pour générer des nombres aléatoires caractéristiques de chaque sensor
+    * @brief Abstract method that is implemented by every child class since they all have specific characteristics
     * @return int
     * @param none
     */

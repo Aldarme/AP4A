@@ -2,7 +2,7 @@
  * @author raphael_perrin
  * @file Temperature.h
  * @date 05/10/2022
- * @brief Classe Temperature, classe dérivée de la superclasse Sensor. Sensor de la température présente dans l'avion
+ * @brief Temperature class, herited class from the Sensor superclass. Sensor that gets the temperature in the plane.
  */
 
 #ifndef TEMPERATURE_H
@@ -20,6 +20,11 @@ public :
 	}
 	
 protected :
+	/*
+    * @brief Method that generates a random number between 23 and 25 (ON or OFF)
+    * @return T
+    * @param none
+    */
 	T aleaGenVal(){
 		return static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2)) + 23.;
 	}
