@@ -5,9 +5,9 @@
 using namespace std;
 
 int main(){
-    srand ((unsigned int)(time(nullptr)));
+    srand (time(NULL));
     Scheduler scheduler;
-    scheduler.start();
+    scheduler.start(); //lance le scheduler
 
     return 0;
 };

@@ -1,4 +1,6 @@
-#pragma once 
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
+
 #include <iostream>
 #include <cstdio>
 #include "Sensor.hpp"
@@ -9,25 +11,29 @@
 #include "Server.hpp"
 
 
+typedef struct CaptorValues //struct qui comporte les valeurs des capteurs 
+{
+    float value_humidity;
+    float value_temperature;
+    int value_pression;
+    bool value_light;
+}CaptorValues;
+
 class Scheduler 
 {
     private :
-     
-        Sensor* humidity;
-        Sensor* temperature;
-        Sensor* pression;
-        Sensor* light;
+        Sensor<float>* humidity;
+        Sensor<float>* temperature;
+        Sensor<int>* pression;
+        Sensor<bool>* light;
         Server* server;
-        int value_humidity;
-        int value_temperature;
-        int value_pression;
-        int value_light;
         int seconds;
+        CaptorValues captor_values;
         void mySleep(int sleepMs);
-        
 
     public :
         Scheduler();
         void start();
 };
 
+#endif

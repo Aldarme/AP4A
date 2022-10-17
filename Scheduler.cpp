@@ -1,10 +1,9 @@
 
 #include <iostream>
 #include <cstdio>
-#include <Windows.h>
 #include "Scheduler.hpp"
 
-#ifdef LINUX
+#ifdef LINUX 
 #include <unistd.h>
 #endif
 #ifdef WIN32
@@ -15,29 +14,48 @@ using namespace std;
 
 Scheduler::Scheduler()
 {
-
+    seconds = 0;
 }
 
 void Scheduler::start()
 {
+
     humidity = new Humidity();
     pression = new Pression();
     temperature = new Temperature();
     light = new Light();
     server = new Server();
-    (*server).start();
+    (*server).start(); // on crée les sensors et le server qu'on lance alors
+    
 
     while(true)
     {
-        
-        value_humidity = (*humidity).getData();//prend chaque valeur et les stocks
-        value_pression = (*pression).getData();
-        value_temperature = (*temperature).getData();
-        value_light = (*light).getData();
-        (*server).consoleWrite(value_humidity, value_temperature, value_pression, value_light);
-        (*server).fileWrite(value_humidity, value_temperature, value_pression, value_light);
+        seconds++;
+        captor_values.value_humidity = (*humidity).getData();//prend chaque valeur et les stocks dans une struct
+        captor_values.value_pression = (*pression).getData();
+        captor_values.value_temperature = (*temperature).getData();
+        captor_values.value_light = (*light).getData();
+
         mySleep(1000); //recommence chaque seconde
         
+        if (seconds%1==0){ //toute les secondes
+            (*server).console=="yes"?(*server).consoleWrite("Humidity", captor_values):NULL;
+            (*server).file=="yes"?(*server).fileWrite("Humidity", captor_values):NULL;
+        }
+        if (seconds%2==0){//toute les 2 secondes
+            (*server).console=="yes"?(*server).consoleWrite("Temperature", captor_values):NULL;
+            (*server).file=="yes"?(*server).fileWrite("Temperature", captor_values):NULL;
+        }
+        if (seconds%3==0){//toute les 3 secondes
+            (*server).console=="yes"?(*server).consoleWrite("Pression", captor_values):NULL;
+            (*server).file=="yes"?(*server).fileWrite("Pression", captor_values):NULL;
+        }
+        if (seconds%4==0){//toute les 4 secondes
+            (*server).console=="yes"?(*server).consoleWrite("Light", captor_values):NULL;
+            (*server).file=="yes"?(*server).fileWrite("Light", captor_values):nullptr;
+        }
+        
+
         
     }
 }

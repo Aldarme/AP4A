@@ -1,4 +1,5 @@
-#pragma once 
+#ifndef SERVER_H
+#define SERVER_H
 
 #include <iostream>
 #include <cstdio>
@@ -11,16 +12,18 @@ class Server
 {
 
     private :
-        friend class Scheduler;
-        int sec;
+
 
     public:
         Server(); //forme coplien 
         Server (const Server&) = default;
         Server &operator=(const Server&) = default;
         ~Server() = default;
+        std::string console; //bools pour savoir si oui ou non on va utiliser les cosole/les logs
+        std::string file;
         void start(); //start le serveur
-        void fileWrite(int Humidity, int Temperature, int Pression, int Light);
-        void consoleWrite(int Humidity, int Temperature, int Pression, int Light);
+        void fileWrite(std::string Capteur, struct CaptorValues captor_values);
+        void consoleWrite(std::string Capteur, struct CaptorValues captor_values);
 };
 
+#endif
