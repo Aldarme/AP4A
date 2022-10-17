@@ -42,5 +42,7 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "git.ignoreLimitWarning": true,
+    "cmake.configureOnOpen": false
 }

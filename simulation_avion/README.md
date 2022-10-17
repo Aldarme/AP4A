@@ -1,11 +1,18 @@
 Projet AP4A
 ================ 
-Gilles Maurer - 12/10/2022
+Gilles Maurer - 17/10/2022
 
-Simulation du système interne d'un avion en c++.
+Simulation of an intern system for a plane in C++. 
 
-Le scheduler récupère les informations de 4 sensors (Humidity, Pression, Light et Température) et les envoies au server. 
-Le server écrit les données dans la console et dans les fichiers de log correspondant à chaque capteur. 
+The scheduler takes the informations of the 4 sensors (Humidity, Pression, Light, Temprature) and send it to the server. 
 
-L'utilisateur peut choisir d'activer ou non la console et les logs. 
-L'utilisateur peut choisir le délai de temps entre chaque relevé d'information pour chaque capteur indépendamment. 
+The server write the data in the consol and in the log file corresponding to each sensor. 
+
+The user can chose if he wants to activate the consol and if he wants to activate the logs. 
+The user can chose the time delay between two measures for each sensor  independently.   
+
+Humidity : between 10 and 25 % (float)
+Pression : between 50 and 850 hPa (int)
+Light : 0 or 1 (bool) 
+Temperature : between 20 and 30 °C (float) 
+

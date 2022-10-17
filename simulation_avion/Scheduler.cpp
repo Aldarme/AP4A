@@ -11,9 +11,10 @@ using namespace std;
 using namespace std::chrono;
 
 
-//Definition of the canonical form
+//Definition of the canonical forms
 Scheduler::Scheduler()
 {
+    //allocate the memory for each pointer to sensor
     m_pHu = new Humidity();
     m_pTe = new Temperature(); 
     m_pPr = new Pression(); 
@@ -46,6 +47,7 @@ Scheduler& Scheduler::operator=(const Scheduler& param_sc)
 
 Scheduler::~Scheduler()
 {
+    //free the pointer to each sensor 
     delete m_pHu; 
     delete m_pTe; 
     delete m_pPr; 
@@ -58,24 +60,32 @@ void Scheduler::scheduler()
     //create the server
     Server server; 
 
-    //reset logs + ask the user if he want to activate the console and the logs 
+    //reset logs  
     server.resetLogs(m_pHu->getType());
     server.resetLogs(m_pTe->getType());
     server.resetLogs(m_pPr->getType());
     server.resetLogs(m_pLi->getType());
 
+    //ask the user if he want to activate the console and the logs
     initializeServerParameters(server);
 
+    //ask the user the wainting time for each sensor 
     initializeWaitTime(*m_pHu);
     initializeWaitTime(*m_pTe);
     initializeWaitTime(*m_pPr);
     initializeWaitTime(*m_pLi);
 
+    //compute the total time for a complete loop 
     int totalLoopTime = m_pHu->getWaitTime() * m_pTe->getWaitTime() * m_pPr->getWaitTime() * m_pLi->getWaitTime();
-
-    srand(time(NULL));
+    //initialize the loop counter 
     int counter = 0;
 
+
+    //initialize the rand function
+    srand(time(NULL));
+
+
+    //initialize the values corresponding to the sensors
     float valueHu, valueTe;
     int valuePr;
     bool valueLi; 
@@ -83,7 +93,6 @@ void Scheduler::scheduler()
     //endless loop
     while (true)
     {
-        
         clock(1); 
         counter++; 
 
@@ -93,6 +102,7 @@ void Scheduler::scheduler()
             counter = 0; 
         }
 
+        //get the data for humidity and write it 
         if (counter % m_pHu->getWaitTime() == 0)
         {
             valueHu = m_pHu->getData();
@@ -100,13 +110,15 @@ void Scheduler::scheduler()
             server.fileWrite(valueHu, m_pHu->getType(), m_pHu->getUnity());
         }
          
+        //get the data for temperature and write it 
         if (counter % m_pTe->getWaitTime() == 0)
         {
             valueTe = m_pTe->getData();
             server.consoleWrite(valueTe, m_pTe->getType(), m_pTe->getUnity());
             server.fileWrite(valueTe, m_pTe->getType(), m_pTe->getUnity());
         }
-      
+
+        //get the data for pression and write it       
         if (counter % m_pPr->getWaitTime() == 0)
         {
             valuePr = m_pPr->getData();
@@ -114,6 +126,7 @@ void Scheduler::scheduler()
             server.fileWrite(valuePr, m_pPr->getType(), m_pPr->getUnity());
         }
 
+        //get the data for light and write it 
         if (counter % m_pLi->getWaitTime() == 0)
         {
             valueLi = m_pLi->getData();

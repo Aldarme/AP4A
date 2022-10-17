@@ -1,7 +1,7 @@
 /**
  * @author  gilles_maurer
  * @file    Light.hpp
- * @date    03/10/2022
+ * @date    17/10/2022
  * @brief   Child class of Sensor, light sensor
  */
 

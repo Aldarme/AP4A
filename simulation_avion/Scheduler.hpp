@@ -1,8 +1,9 @@
 /**
  * @author  gilles_maurer
  * @file    Scheduler.hpp
- * @date    03/10/2022
- * @brief   Scheduler class, manage the sensors and the server, use the clock to regulate
+ * @date    17/10/2022
+ * @brief   Scheduler class, initialize the simulation parameters,
+ *          manage the sensors and the server, use the clock to regulate it 
  */
 
 #ifndef SCHEDULER_H
@@ -44,7 +45,7 @@ void clock(int param_time);
 //ask the user if he want to activate the console and the logs
 void initializeServerParameters(Server& param_server);
 
-//ask the user the waiting time for the sensor
+//ask the user the waiting time for the sensor in parameter 
 template <typename T>
 void initializeWaitTime(Sensor<T>& param_sensor) {
     int waitTime;

@@ -1,7 +1,7 @@
 /**
  * @author  gilles_maurer
  * @file    Sensor.hpp
- * @date    03/10/2022
+ * @date    17/10/2022
  * @brief   Parent class of all sensors, virtual class
  */
 
