@@ -21,7 +21,7 @@ public:
   // Forme canonique
   Light();
   Light(const Light& l_p);
-  ~Light();
+  virtual ~Light();
   Light& operator=(const Light& l_p);
 
   /**

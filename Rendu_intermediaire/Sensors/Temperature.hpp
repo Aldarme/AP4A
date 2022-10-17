@@ -20,7 +20,7 @@ class Temperature : public Sensor<TYPE>
 public:
   Temperature();
   Temperature(const Temperature& temp_p);
-  ~Temperature();
+  virtual ~Temperature();
   Temperature& operator=(const Temperature& temp_p);
 };
 

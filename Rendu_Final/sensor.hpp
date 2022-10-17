@@ -30,7 +30,7 @@ public:
   // Forme canonique
   Sensor<T>();
   Sensor<T>(const Sensor<T>& Sensor_p);
-  ~Sensor<T>();
+  virtual ~Sensor<T>();
   Sensor<T>& operator=(const Sensor<T>& Sensor_p);
 
   /**

@@ -23,7 +23,7 @@ public:
   // Forme canonique
   Humidite();
   Humidite(const Humidite& h_p);
-  ~Humidite();
+  virtual ~Humidite();
   Humidite& operator=(const Humidite& h_p);
 };
 

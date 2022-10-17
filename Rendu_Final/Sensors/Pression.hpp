@@ -23,7 +23,7 @@ public:
   // Forme Canonique
   Pression();
   Pression(const Pression& p_p);
-  ~Pression();
+  virtual ~Pression();
   Pression& operator=(const Pression& p_p);
 };
 
