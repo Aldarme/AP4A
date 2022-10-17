@@ -1,14 +1,14 @@
+--------------Relevé n°1--------------
+Temperature : 23.525734 °C
 --------------Relevé n°2--------------
-Temperature : 8.719844 °C
+Temperature : 22.522612 °C
+--------------Relevé n°3--------------
+Temperature : 23.528513 °C
 --------------Relevé n°4--------------
-Temperature : 33.769428 °C
+Temperature : 23.749895 °C
+--------------Relevé n°5--------------
+Temperature : 23.174681 °C
 --------------Relevé n°6--------------
-Temperature : 18.752205 °C
---------------Relevé n°8--------------
-Temperature : 11.273830 °C
---------------Relevé n°10--------------
-Temperature : 28.240459 °C
---------------Relevé n°12--------------
-Temperature : 7.744177 °C
---------------Relevé n°14--------------
-Temperature : 12.188568 °C
+Temperature : 22.582285 °C
+--------------Relevé n°7--------------
+Temperature : 23.070822 °C

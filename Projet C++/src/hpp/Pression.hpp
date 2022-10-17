@@ -19,11 +19,7 @@ class Pression : public Sensor<int>
 
 public:
     Pression(); //Constructeur par défaut
-    int aleaGenVal(){
-    // int random
-        int randomNumber = rand() % 10 + 1;
-        return randomNumber;
-    };
+    int aleaGenVal(); //réécriture de la fonction de Sensor pour retourner un int aléatoire
 };
 
 #endif 

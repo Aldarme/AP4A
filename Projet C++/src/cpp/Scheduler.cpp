@@ -8,14 +8,6 @@
 #include<cstdio>
 #include<iostream>
 #include<ctime>
-#include <thread>
-#include<sstream>
-
-#include <iostream>
-#include <future>
-#include <mutex>
-#include <thread>
-#include <chrono>
 
 #include "../hpp/Scheduler.hpp"
 #include "../hpp/Temperature.hpp"
@@ -24,250 +16,162 @@
 #include "../hpp/Light.hpp"
 #include "../hpp/Server.hpp"
 
-#define NUM_THREADS 4
+// Création des 4 objet Sensors
+Temperature temperature;
+Light light;
+Humidity humidity;
+Pression pression;
 
+// Creation d'un objet server
 Server server;
 
+//Initialisation de 4 variables pour l'affiche relatifs des relevé de chaques sensor dans leurs fichiers respectifs.
+int j = 1;
+int k = 1;
+int l = 1;
+int m = 1;
 
-Scheduler::Scheduler()
+// Initialisations des variables permettant les gestion des choix du client
+int choix, a,b,c,d;
+bool afficheNumReleveTerminal = false;
+
+
+Scheduler::Scheduler(){}
+
+Scheduler::~Scheduler(){}
+
+Scheduler::Scheduler(const Scheduler&) = default;
+
+Scheduler& Scheduler::operator=(const Scheduler&) = default;
+
+
+void Scheduler::affichageDonneesClient(){ // Fonction donnant a l'utilisateur le choix d'affichage ou non des differents relevé de capteur dans les fichiers et/ou le terminal
+    std::cout << "\nBonjour! Ici votre commandant de bord, nous avons réalisé plusieurs relevés sur notre avion\n";
+    std::cout << "Il s'agit de la temperature, la pression, la luminosité et l'humidité\n";
+    std::cout << "Pour chacun des relevés nous allons vous demandez si vous souhaitez remplir un fichier avec les données, les afficher sur le terminal, faire les 2 ou rien du tout\n";
+
+    std::cout << "\nConcernant la température, que souhaitez vous faire ?\n";
+    affichageChoixClient();
+    a = choix;
+    std::cout << "\nConcernant l'humidité, que souhaitez vous faire ?\n";
+    affichageChoixClient();
+    b = choix;
+    std::cout << "\nConcernant la luminosité, que souhaitez vous faire ?\n";
+    affichageChoixClient();
+    c = choix;
+    std::cout << "\nConcernant la pression, que souhaitez vous faire ?\n";
+    affichageChoixClient();
+    d = choix;
+
+    std::cout << "\nMerci pour vos réponses, notre programme va pouvoir maintenant s'executer selon vos choix !\n";
+    
+}
+
+
+void Scheduler::affichageChoixClient(){ // Fonction regroupant les choix offers au client concernant les données avec traitement d'erreur
+    std::cout << "0 : je souhaite afficher les données dans le terminal uniquement\n";
+    std::cout << "1 : je souhaite écrire les données dans le fichier correspondant uniquement\n";
+    std::cout << "2 : je souhaite réaliser les 2 proposition ci-dessus\n";
+    std::cout << "3 : je ne souhaire rien faire de ces données\n";
+
+    std::cin >> choix;
+
+    if ( choix < 0 || choix > 3){
+        std::cout << "La proposition que vous avez choisis n'existe pas, veuillez recommencer votre saisie\n";
+        affichageChoixClient();
+    }
+}
+
+
+
+void Scheduler::sendTemperatureDataToServer(int i_p, int choixClient_p){ // Fonction permettant l'envoie des données de temperature au serveur avec une mise à jour de la valeur relevée.
+    temperature.m_data = temperature.aleaGenVal();
+    server.fileAndConsoleWrite<float>(temperature.getName() , temperature.getData(), temperature.getUnit(), i_p+1,j, choixClient_p);
+    j+=1;
+}
+
+void Scheduler::sendLightDataToServer(int i_p, int choixClient_p){ // Fonction permettant l'envoie des données de light au serveur avec une mise à jour de la valeur relevée.
+    light.m_data = light.aleaGenVal();
+    server.fileAndConsoleWrite<bool>(light.getName() , light.getData(), light.getUnit(), i_p+1,k, choixClient_p);
+    k+=1;
+}
+
+void Scheduler::sendHumidityDataToServer(int i_p, int choixClient_p){ // Fonction permettant l'envoie des données de humidity au serveur avec une mise à jour de la valeur relevée.
+    humidity.m_data = humidity.aleaGenVal();
+    server.fileAndConsoleWrite<float>(humidity.getName() , humidity.getData(), humidity.getUnit() , i_p+1,l, choixClient_p);
+    l+=1;
+
+}
+
+void Scheduler::sendPressionDataToServer(int i_p, int choixClient_p){ // Fonction permettant l'envoie des données de pression au serveur avec une mise à jour de la valeur relevée.
+
+    pression.m_data = pression.aleaGenVal();
+    server.fileAndConsoleWrite<int>(pression.getName() , pression.getData(), pression.getUnit(), i_p+1,m, choixClient_p);
+    m+=1;
+}
+
+void Scheduler::emptyFiles(){ // fonction permettant de vider tout les fichiers des sensor afin de commencer un nouveau relevé
+    server.emptyFile(temperature.getName());
+    server.emptyFile(light.getName());
+    server.emptyFile(pression.getName());
+    server.emptyFile(humidity.getName());
+}
+
+
+int Scheduler::getSensorData()  // Fonction de récuperation des données des Sensors en envoie vers le serveur à interval irregulier (en secondes) en fonction du sensor en question apres avoir vider les fichiers, pour les remplir des nouvelles données et afficher ces dernieres dans le terminal
 {
-}
+    affichageDonneesClient();
 
-Scheduler::~Scheduler(){
-}
+    emptyFiles(); // permet de vider tout les fichiers
 
-
-void Scheduler::task1(int i){
-    Temperature *temperature;
-    temperature = new Temperature;
-
-    server.fileAndConsoleWrite("Temperature" , std::to_string(temperature->getData()), "°C", i+1);
-
-}
-
-void Scheduler::task2(int i){
-    Light *light;
-    light = new Light;
-
-    server.fileAndConsoleWrite("Light" , std::to_string(light->getData()), "", i+1);
-
-}
-
-void Scheduler::task3(int i){
-
-    Humidity *humidity;
-    humidity = new Humidity;
-
-    server.fileAndConsoleWrite("Humidity" , std::to_string(humidity->getData()), "%", i+1);
-
-
-}
-
-void Scheduler::task4(int i){
-
-    Pression *pression;
-    pression = new Pression;
-
-    server.fileAndConsoleWrite("Pression" , std::to_string(pression->getData()), "Pa", i+1);
-
-}
-
-
-int Scheduler::getSensorData()
-{
-
-
-    for(int i =0;i<15; i++){ // création d'une boucle de 5 instances pour recuperer 5 fois les valeurs des sensor
+    for(int i =0;i<15; i++){ // création d'une boucle de 15 instances pour recuperer 15 fois les valeurs des sensors
 
         int delay = 1;
         delay *= CLOCKS_PER_SEC;
 
         clock_t now = clock();
         
-        while(clock() - now <delay);
-            // Appels des differentes fonctions de la classe Server pour afficher dans la console et ecrire dans le fichier log (rendu intermediaire) les données récuperées des differents Sensors toutes les 2 secondes
-            server.newStatement(i+1);
+        while(clock() - now <delay); // boucle permettant de faire l'action ci dessous toute les secondes jusqu'a la fin des 15 itérations
+            // Appels des differentes fonctions de la classe Server pour afficher dans la console et ecrire dans les fichiers logs correspondants aux sensors, les données récuperées.
+            
 
-            if ((i+1)%2 == 0){
-                task1(i);
+            // gestion de l'affichage des numeros de relevés selon les choix du client
+            if(a == 0 || a== 2){
+                afficheNumReleveTerminal = true;
             }
 
-            if ((i+1)%6 == 0){
-                task2(i);
+            if(b == 0 || b== 2){
+                afficheNumReleveTerminal = true;
             }
 
-            if ((i+1)%5 == 0){
-                task3(i);
+            if(c == 0 || c== 2){
+                afficheNumReleveTerminal = true;
             }
 
-            if ((i+1)%1 == 0){
-                task4(i);
+            if(d == 0 || d== 2){
+                afficheNumReleveTerminal = true;
             }
 
-            
+            if(afficheNumReleveTerminal == true){
+                server.newStatement(i+1);
+            }
 
-            // std::thread t1(&task1,i);
+            //les differents if permettent de réaliser les appels en meme temps si ces derniers sont verifiés
+            if ((i+1)%2 == 0){ // la temperature est relevée toute les 2 secondes
+                sendTemperatureDataToServer(i,a);
+            }
 
+            if ((i+1)%6 == 0){ // la light est relevée toute les 6 secondes
+                sendLightDataToServer(i,c);
+            }
 
+            if ((i+1)%5 == 0){ // l' humidity est relevée toute les 5 secondes
+                sendHumidityDataToServer(i,b);
+            }
 
-
-
-
-
-    
-        // instanciation du delais de 2 secondes entre chaques relevé de valeurs
-        // int delay = 2;
-        // int delay1 = 5;
-        // int delay2 = 6;
-        // int delay3 = 1;        
-
-        // delay *= CLOCKS_PER_SEC;
-        // delay1 *= CLOCKS_PER_SEC;
-        // delay2 *= CLOCKS_PER_SEC;
-        // delay3 *= CLOCKS_PER_SEC;
-
-
-        
-
-        
-        // int arr[]={1*CLOCKS_PER_SEC,2*CLOCKS_PER_SEC,3*CLOCKS_PER_SEC,4*CLOCKS_PER_SEC,5*CLOCKS_PER_SEC};   //array initialization
-        // clock_t now = clock();
-        //     for(int sec : arr)
-        //     {
-        //         while(clock() - now <sec);
-        //         std::cout<<sec<<" ";
-        //     }
-
-        
-   
-
-
-        
-        
-        // while(clock() - now <delay);
-        //     server.newStatement(i+1);
-        //     server.fileAndConsoleWrite("Temperature" , std::to_string(temperature->getData()), "°C", i+1);
-        
-
-        // while(clock() - now <delay1);
-        //     server.newStatement(i+1);
-        //     server.fileAndConsoleWrite("Humidity" , std::to_string(humidity->getData()), "%", i+1);
-
-
-        // while(clock() - now <delay2);
-        //     server.newStatement(i+1);
-        //     server.fileAndConsoleWrite("Light" , std::to_string(light->getData()), "", i+1);
-
-
-        // while(clock() - now <delay3);
-        //     server.newStatement(i+1);
-        //     server.fileAndConsoleWrite("Pression" , std::to_string(pression->getData()), "Pa", i+1);
-        
-
-        
-        // Appels des differentes fonctions de la classe Server pour afficher dans la console et ecrire dans le fichier log (rendu intermediaire) les données récuperées des differents Sensors toutes les 2 secondes
-        // server.newStatement(i+1);
-        
-
-        // server.fileAndConsoleWrite("Temperature" , std::to_string(temperature->getData()), "°C", i+1);
-
-        // server.fileAndConsoleWrite("Humidity" , std::to_string(humidity->getData()), "%", i+1);
-
-        // server.fileAndConsoleWrite("Light" , std::to_string(light->getData()), "", i+1);
-
-        // server.fileAndConsoleWrite("Pression" , std::to_string(pression->getData()), "Pa", i+1);
-
-
-        //auto fa = std::async( std::launch::async, server->fileAndConsoleWrite("Temperature", std::to_string(temperature->getData()), "°C", i+1));
-        // auto fb = std::async( std::launch::async, counter, 0, 80, 50, 'b' ) ;
-
-
-
-
-
-        // std::thread t1([]() {
-        //     Server server;
-        //     Light *light;
-        //     light = new Light;
-
-        //     int delay = 2;
-        //     delay *= CLOCKS_PER_SEC;
-        //     clock_t now = clock();
-            
-        //     while(clock() - now <delay);
-        //         server.fileAndConsoleWrite("Light" , std::to_string(light->getData()), "", 2);
-
-        // });
-        // std::thread t2([]() {
-        //     Server server;
-        //     Humidity *humidity;
-        //     humidity = new Humidity;
-
-        //     int delay = 5;
-        //     delay *= CLOCKS_PER_SEC;
-        //     clock_t now = clock();
-            
-        //     while(clock() - now <delay);
-        //         server.fileAndConsoleWrite("Humidity" , std::to_string(humidity->getData()), "%", 2);
-            
-        // });
-        // std::thread t3([]() {
-        //     Server server;
-        //     Temperature *temperature;
-        //     temperature = new Temperature;
-
-        //     int delay = 1;
-        //     delay *= CLOCKS_PER_SEC;
-        //     clock_t now = clock();
-            
-        //     while(clock() - now <delay);
-        //         server.fileAndConsoleWrite("Temperature" , temperature->getData(), "°C", 3);
-        // });
-        // std::thread t4([]() {
-        //     Server server;
-        //     Sound *sound;
-        //     sound = new Sound;
-
-        //     int delay = 10;
-        //     delay *= CLOCKS_PER_SEC;
-        //     clock_t now = clock();
-            
-        //     while(clock() - now <delay);
-        //         server.fileAndConsoleWrite("Sound" , sound->getData(), "dB", 4);
-        // });
-
-        // t1.join();
-        // t2.join();
-        // t3.join();
-        // t4.join();
-
-        // std::thread threads[4];
-
-	    // threads[0] = std::thread(&Server::fileAndConsoleWrite<float>,"Temperature", &Temperature::getData,2);
-	    // std::this_thread::sleep_for(std::chrono::milliseconds(100));	// Adding delay between threads, otherwise the console prints intertwine
-
-	    // threads[1] = std::thread(&Server::fileAndConsoleWrite<int>,"Pression", &Pression::getData,5);
-	    // std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-	    // threads[2] = std::thread(&Server::fileAndConsoleWrite<float>,"Humidity", &Humidity::getData, 3);
-	    // std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
-	    // threads[3] = std::thread(&Server::fileAndConsoleWrite<bool>,"Light", &Light::getData,4);
-
-        // for (int i = 0; i < 4; ++i) {
-        //     threads[i].join();
-        // }
-
-
-    
+            if ((i+1)%1 == 0){ // la pression est relevée toute les 2 secondes
+                sendPressionDataToServer(i,d);
+            }
     }
-
-      // main thread waits for the thread t to finish
-    
-
-    
-
-
-return 0;
-
+    return 0;
 }

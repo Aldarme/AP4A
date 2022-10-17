@@ -15,19 +15,11 @@
 class Scheduler
 {
 private:
-    void task1(int i);
-    void task2(int i);
-    void task3(int i);
-    void task4(int i);
-    void thread_function()
-{
-    std::cout << "thread function\n";
-}
-
-void thread_function2()
-{
-    std::cout << "thread function2\n";
-}
+    void sendTemperatureDataToServer(int i_p, int choixClient_p); // Fonction permettant l'envoie des données de temperature au serveur avec une mise à jour de la valeur relevée.
+    void sendLightDataToServer(int i_p, int choixClient_p); // Fonction permettant l'envoie des données de light au serveur avec une mise à jour de la valeur relevée.
+    void sendHumidityDataToServer(int i_p, int choixClient_p); // Fonction permettant l'envoie des données de humidity au serveur avec une mise à jour de la valeur relevée.
+    void sendPressionDataToServer(int i_p, int choixClient_p); // Fonction permettant l'envoie des données de pression au serveur avec une mise à jour de la valeur relevée.
+    void emptyFiles();
 
 public:
     Scheduler(); // Constructeur par défaut
@@ -35,6 +27,8 @@ public:
     Scheduler (const Scheduler&); // Constructeur de recopie
     Scheduler &operator=(const Scheduler&); // Opérateur d'affectation
     int getSensorData(); // Fonction de récuperation des données des Sensors
+    void affichageDonneesClient(); // Fonction donnant a l'utilisateur le choix d'affichage ou non des differents relevé de capteur dans les fichiers et/ou le terminal
+    void affichageChoixClient(); // Fonction regroupant les choix offers au client concernant les données avec traitement d'erreur
 };
 
 

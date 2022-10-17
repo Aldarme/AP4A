@@ -1,30 +1,30 @@
 --------------Relevé n°1--------------
-Pression : 4 Pa
+Pression : 57 kPa
 --------------Relevé n°2--------------
-Pression : 7 Pa
+Pression : 79 kPa
 --------------Relevé n°3--------------
-Pression : 8 Pa
+Pression : 71 kPa
 --------------Relevé n°4--------------
-Pression : 6 Pa
+Pression : 57 kPa
 --------------Relevé n°5--------------
-Pression : 4 Pa
+Pression : 54 kPa
 --------------Relevé n°6--------------
-Pression : 7 Pa
+Pression : 72 kPa
 --------------Relevé n°7--------------
-Pression : 3 Pa
+Pression : 82 kPa
 --------------Relevé n°8--------------
-Pression : 10 Pa
+Pression : 71 kPa
 --------------Relevé n°9--------------
-Pression : 2 Pa
+Pression : 72 kPa
 --------------Relevé n°10--------------
-Pression : 3 Pa
+Pression : 67 kPa
 --------------Relevé n°11--------------
-Pression : 8 Pa
+Pression : 56 kPa
 --------------Relevé n°12--------------
-Pression : 10 Pa
+Pression : 77 kPa
 --------------Relevé n°13--------------
-Pression : 4 Pa
+Pression : 55 kPa
 --------------Relevé n°14--------------
-Pression : 7 Pa
+Pression : 79 kPa
 --------------Relevé n°15--------------
-Pression : 1 Pa
+Pression : 69 kPa

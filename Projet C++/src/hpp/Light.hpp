@@ -17,8 +17,8 @@ class Light : public Sensor<bool>
 {
 public:
     Light(); //Constructeur par défaut
-    // bool aleaGenVal() override{
-    // }
+    bool aleaGenVal(); //réécriture de la fonction de Sensor pour retourner un bool aléatoire
+    
 };
 
 #endif 
