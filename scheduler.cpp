@@ -1,3 +1,10 @@
+/*
+∗ El Haddad Noor
+∗ scheduler.cpp
+∗ 18 / 10 / 2022
+∗ Implémentation de la classe scheduler
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -5,11 +12,11 @@
 
 using namespace std;
 
-scheduler::scheduler()
+Scheduler::Scheduler()
 {
 	
 }
-scheduler::scheduler(serveur a, temperature b, light c, pression d, humidite e)
+Scheduler::Scheduler(Serveur a, Temperature b, Light c, Pression d, Humidite e)
 {
 	serv = a;
 	temp = b;
@@ -18,36 +25,33 @@ scheduler::scheduler(serveur a, temperature b, light c, pression d, humidite e)
 	hum = e;
 }
 
-float scheduler::recuptemp()
+float Scheduler::recuptemp()
 {
-	float a;
-	a = temp.getData();
+	float a = temp.ReturnF();
 	return a;
 }
-float scheduler::recupli()
+bool Scheduler::recupli()
 {
-	float a;
-	a = li.getData();
+	
+	bool a = li.ReturnL();
 	return a;
 }
-float scheduler::recuphum()
+float Scheduler::recuphum()
 {
-	float a;
-	a = hum.getData();
+	float a = hum.ReturnF();
 	return a;
 }
-float scheduler::recuppress()
+int Scheduler::recuppress()
 {
-	float a;
-	a = press.getData();
+	int a = press.ReturnP();
 	return a;
 }
 
-void scheduler::send()
+void Scheduler::send()
 {
 	string b;
 	serv.SetDonnees(recuptemp(),recuphum(),recupli(),recuppress());
-	cout << "Voulez vous afficher les valeurs ou les stocker ? (r�ponses possibles : afficher ou stocker) " << endl;
+	cout << "Voulez vous afficher les valeurs ou les stocker ? (réponses possibles : afficher ou stocker) " << endl;
 	cin >> b;
 	if ( b == "afficher")
 	{
@@ -59,12 +63,12 @@ void scheduler::send()
 	}
 	else
 	{
-		cout << "R�ponse non support�e" << endl;
+		cout << "Réponse non supportée" << endl;
 	}
 
 
 
-}void scheduler::timer (int x)
+}void Scheduler::timer (int x)
 {
 	while (x != 0)
 	{
