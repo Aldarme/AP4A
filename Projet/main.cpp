@@ -13,7 +13,7 @@ using  namespace std;
 
 int main() 
 {
-    
+    //create a Scheduler, Scheduler contains everything we need
     Scheduler jarvis;
     
     
