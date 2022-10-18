@@ -27,6 +27,7 @@ public :
     ~Light();
     /**
     *@brief the constructeur which allows to initialize the name of the sensor
+    *@param name => the sensor's name
     */
     Light(std::string name);
 protected :

@@ -37,7 +37,7 @@ public:
     Sensor(std::string name);
     /**
     *@brief this method allows to get the Sensor's data
-    *@return the pointer on the Sensor 
+    *@return the data of the reliated Sensor type
     */
     T getData();
 

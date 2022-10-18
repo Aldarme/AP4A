@@ -27,6 +27,7 @@ public :
     ~Humidity();
     /**
     *@brief the constructeur which allows to initialize the name of the sensor
+    *@param name => the sensor's name
     */
     Humidity(std::string name);
 protected :

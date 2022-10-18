@@ -27,6 +27,7 @@ public :
     ~Pressure();
     /**
     *@brief the constructeur which allows to initialize the name of the sensor
+    *@param name => the sensor's name
     */
     Pressure(std::string name);
 protected :

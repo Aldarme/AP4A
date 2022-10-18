@@ -28,6 +28,7 @@ public :
     ~Temperature();
     /**
     *@brief the constructeur which allows to initialize the name of the sensor
+    *@param name => the sensor's name
     */
     Temperature(std::string name);
 protected :

@@ -38,7 +38,10 @@ public:
     ~Scheduler();
     /**
     *@brief this constructor initialize the frequency of the scheduler
-    *@param freq => the frequency of the scheduler
+    *@param freq_t => the frequency of the scheduler reliated to the Temperature's sensor
+    *@param freq_t => the frequency of the scheduler reliated to the Humidity's sensor
+    *@param freq_t => the frequency of the scheduler reliated to the Humidity's sensor
+    *@param freq_t => the frequency of the scheduler reliated to the Pressure's sensor
     */
     Scheduler(int freq_t, int freq_h, int freq_l, int freq_p);
     /**

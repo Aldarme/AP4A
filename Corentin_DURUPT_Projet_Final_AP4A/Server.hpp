@@ -59,25 +59,29 @@ public:
     /**
     *@brief this method allows to transform datas of a Sensor (Sensor's name + data) into a string in order to fill it in a respective file 
     *@return a string which matches a ligne of a file 
-    *@param s => a Sensor
+    *@param sensor => the reliated sensor
     */
    template <typename T>
     std::string data_sensor_contents(const Sensor<T>& sensor);
     /**
      *@brief this method allows to fill Sensor's datas in a respective file
      *@param ser => the Server
+     *@param sen => the reliated sensor
     */
     template<typename T>
     void fileWrite(const Server& ser, const Sensor<T>& sen);
     /**
      *@brief this method allows to display the Sensors' datas in the console 
      *@param ser => the Server
+     *@param sen => the reliated sensor
     */
     template <typename T>
     void consolWrite(const Server& ser, Sensor<T>& sen);
     /**
      *@brief this methods allows to the server to realise the willing action of the user
-     *@param action_name => the name of the action. It could be "display", "stock" or "display and stock"
+     *@param action_name => the name of the action that the server will effectuate. It could be "display", "stock" or "display and stock"
+     *@param server => the server
+     *@param sensor => the reliated sensor
     */
     template <typename T>
     void action(std::string action_name, Server& server, Sensor<T>& sensor);
