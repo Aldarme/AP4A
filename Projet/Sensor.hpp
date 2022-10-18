@@ -24,27 +24,27 @@
 template <class Type> class  Sensor
 {
     protected:
-    std::string name;
-    Type value; 
+        std::string m_name;
+        Type m_value; 
     
     private:
         
     public:
-    int type;
+        int m_type;
 
     Sensor() : 
-    name(""),
-    value(),
-    type(0)
+    m_name(""),
+    m_value(),
+    m_type(0)
     {
         std::cout<<"Sensor class created with success ::"<<std::endl;
         
     }
 
-    Sensor(const Sensor& copy) :
-    name(""),
-    value(),
-    type(0)
+    Sensor(const Sensor& p_copy) :
+    m_name(""),
+    m_value(),
+    m_type(0)
     {
 
     }
@@ -71,7 +71,7 @@ Type aleaGenVal()
 
     srand(time(NULL));
 
-    switch (this->type)
+    switch (this->m_type)
     {
     case 0:
     {
@@ -108,7 +108,7 @@ Type aleaGenVal()
 Type getData()
 {
     
-    return this->value;
+    return this->m_value;
 
 }
          
