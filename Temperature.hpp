@@ -8,7 +8,8 @@
 #include "Sensor.hpp"
 #include <string>
 
-class Temperature:public Sensor{
+
+class Temperature:public Sensor<float>{
     //Forme Canonique de Coplien (constructeurs,destructeur et operateur d'affectation)
     public:
     Temperature();//constructeur par défaut

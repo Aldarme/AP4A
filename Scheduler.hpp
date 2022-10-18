@@ -1,9 +1,8 @@
 /*      author:TRABOULSI Rawan
         *SCHEDULER
-        *Créé le 19/09/2020 */
+        *Créé le 09/10/2020 */
 #ifndef SCHEDULER_HPP
 #define SCHEDULER_HPP
-#include "Server.hpp"
 #include "Server.hpp"
 #include "Temperature.hpp"
 #include "Pressure.hpp"
@@ -20,24 +19,18 @@ class Scheduler{
         Brightness m_Brightness;
         Pressure m_Pressure;
 
-        Sensor m_Stemperature;
+        /*Sensor m_Stemperature;
         Sensor m_Shumidity;
         Sensor m_Slight;
-        Sensor m_Spressure;
+        Sensor m_Spressure;*/
 
         //La forme canonique
         Scheduler();//constructeur par defaut
         Scheduler(const Scheduler &autre);//constructeur de recopie
         Scheduler &operator=(const Scheduler &);//operateur d'affectation
         virtual~Scheduler();//destructeur
-
-        //Les Méthodes
-        int transmetTemperature();
-        int transmetPressure();
-        int transmetHumidity();
-        int transmetBrightness();
-
-        void transmetData1(Server server_p,int frequency_p,int temps_p);
+        //transmetDATA fct finale pour le transmet des valeurs captées par chaque capteur à des intervalles de temps différentes  
+        void transmetDATA(Server serverfinal_p,int temps_p,int temps_temperature_p,int temps_pressure_p,int temps_humidity_p,int temps_brightness_p);
 };
 
 #endif //SCHEDULER_H

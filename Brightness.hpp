@@ -8,23 +8,26 @@
 #include "Sensor.hpp"
 #include <string>
 
-class Brightness: public Sensor{
-    //FORME CANONIQUE
+class Brightness: public Sensor<bool>{//Luminosité de type bool
+    //Les Attributs
+    private:
+    int m_Brightnessmax;
+    int m_Brightnessmin;
+    
+
+    
+    
     public:
+
     Brightness();
     Brightness(const Brightness & autre);
     Brightness &operator=(const Brightness &);
     virtual~Brightness();
     //Les Méthodes
-    int getBrightness();
     int getBrightnessmax();
     int getBrightnessmin();
 
-    //Les Attributs
-    private:
-    int m_Brightnessmax;
-    int m_Brightnessmin;
-    int m_Brightnessvalue;
+    
 
 
 };

@@ -3,7 +3,7 @@
         *Créé le 24/09/2020          */
 #include "Pressure.hpp"
 
-Pressure::Pressure():m_Pmax(30),m_Pmin(1),m_Pvalue(5){
+Pressure::Pressure():m_Pmax(305000),m_Pmin(116358),m_Pvalue(20000){
 
 }
 Pressure::Pressure(const Pressure & autre){

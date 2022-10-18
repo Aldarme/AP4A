@@ -6,24 +6,26 @@
 #include "Sensor.hpp"
 #include <string>
 
-class Pressure:public Sensor{
-//FORME CANONIQUE
+class Pressure:public Sensor<int>{
+       //les attributs de type int
+private: 
+       int m_Pmax;
+       int m_Pmin;
+       int m_Pvalue;
+       
+
 public:
 Pressure();//constructeur par defaut
 Pressure(const Pressure & autre);//constructeur de recopie
 Pressure &operator=(const Pressure &);//operateur d'affectation
 virtual~Pressure();//destructeur
 
-
-//Les Méthodes
+//Les Méthodes de type int
 int getPressuremax();
 int getPressuremin();
 int getPvalue();
 
 
-private: 
-int m_Pmax;
-int m_Pmin;
-int m_Pvalue;
+
 };
 #endif //PRESSURE_H

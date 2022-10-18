@@ -21,15 +21,15 @@ return *this;
 }
 
 //Les Fonctions 
-int Humidity::getHumidity(){
+float Humidity::getHumidity(){
     return m_humidityvalue;
 }
 
-int Humidity::getHumiditymax(){
+float Humidity::getHumiditymax(){
     return m_humiditymax;
 }
 
-int Humidity::getHumiditymin(){
+float Humidity::getHumiditymin(){
     return m_humiditymin;
 }
 
