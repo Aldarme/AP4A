@@ -9,12 +9,12 @@ using namespace std;
 int main()
 {	
 	
-	serveur serv;
-	temperature temp;
-	humidite hum;
-	light li;
-	pression press;
-	scheduler test(serv,temp,li,press,hum);
+	Serveur serv;
+	Temperature temp;
+	Humidite hum;
+	Light li;
+	Pression press;
+	Scheduler test(serv,temp,li,press,hum);
 	test.send();
 	
 	
