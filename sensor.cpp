@@ -1,3 +1,10 @@
+/*
+∗ El Haddad Noor
+∗ sensor.cpp
+∗ 18 / 10 / 2022
+∗ Implémentation de la classe sensor
+*/
+
 #include <iostream>
 #include <string>
 #include <random>
@@ -5,23 +12,22 @@
 
 using namespace std;
 
-sensor::sensor()
+Sensor::Sensor()
 {
 	donnees = 0;
 }
 
-sensor::~sensor()
+Sensor::~Sensor()
 {
-	cout << "Le capteur est d�truit" << endl;
+	cout << "Le capteur est détruit" << endl;
 }
 
-float sensor::getData()
+void Sensor::getData()
 {
-	donnees = aleaGenVal();
-	return donnees;
+	cout << donnees << endl;
 }
 
-float sensor::aleaGenVal()
+void Sensor::aleaGenVal()
 {
 	float MIN = 1;
 	float MAX = 100;
@@ -29,9 +35,11 @@ float sensor::aleaGenVal()
 	std::default_random_engine eng(rd());
 	std::uniform_int_distribution<int> distr(MIN, MAX);
 	donnees = distr(eng);
-	return donnees;
-}
-void sensor::setdata()
-{
 	
+}
+float Sensor::ReturnF()
+
+{
+	aleaGenVal();
+	return donnees;
 }
