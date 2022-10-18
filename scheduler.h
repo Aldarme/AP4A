@@ -1,3 +1,10 @@
+/*
+∗ El Haddad Noor
+∗ scheduler.h
+∗ 18 / 10 / 2022
+∗ Définition de la classe Scheduler
+*/
+
 #include <iostream>
 #include <string>
 #include "sensor.h"
@@ -7,22 +14,22 @@
 #include"pression.h"
 #include"temperature.h"
 
-using namespace std;
 
-class scheduler
+
+class Scheduler
 {
 private:
-	serveur serv;
-	temperature temp;
-	light li;
-	pression press;
-	humidite hum;
+	Serveur serv;
+	Temperature temp;
+	Light li;
+	Pression press;
+	Humidite hum;
 public:
-	scheduler();
-	scheduler(serveur a, temperature b,light c,pression d, humidite hum);
+	Scheduler();
+	Scheduler(Serveur a, Temperature b,Light c,Pression d, Humidite hum);
 	float recuptemp();
-	float recupli();
-	float recuppress();
+	bool recupli();
+	int recuppress();
 	float recuphum();
 	void recup();
 	void send();
