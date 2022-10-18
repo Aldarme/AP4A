@@ -18,8 +18,8 @@ using namespace std;
 void Scheduler::startClock()
 {
 
-
-    while (true)
+    //use a while and incrementing a value instead of putting thread to sleep to follow keyboard events better
+    while (this->m_going)
     {
         m_step++;
 
@@ -55,6 +55,13 @@ void Scheduler::startClock()
             break;
         }
         }
+
+        /** For each kind of sensor :
+         * 1 : get data
+         * 2 : generate next data
+         * 3 : send data in appropriate structure to server
+         * 4 : send data in appropriate structure to server
+         **/
 
         //Pression
         if(m_step % 35000 == 0)

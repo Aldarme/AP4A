@@ -14,8 +14,6 @@
 #include "Sensor.hpp"
 
 
-
-/// @brief 
 class Humidity : public Sensor<float>
 {
 

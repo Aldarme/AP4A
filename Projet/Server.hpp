@@ -61,13 +61,8 @@ class Server {
     }
 
 
-//other function
 
-    //void fileWrite(type Type);
-
-    //void writeConsol(type Type);
-
-   
+   //initiate log files
     void initiateFile();
 
     
