@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(fg VERSION 0.1.0)
+project(Projet VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
 
-add_executable(fg main.cpp  Humidity.hpp Humidity.cpp Light.hpp Light.cpp Pression.hpp Pression.cpp Scheduler.hpp Scheduler.cpp Sensor.hpp Sensor.cpp Server.hpp Server.cpp Temperature.hpp Temperature.cpp)
+add_executable(Projet main.cpp  Humidity.hpp Humidity.cpp Light.hpp Light.cpp Pression.hpp Pression.cpp Scheduler.hpp Scheduler.cpp Sensor.hpp Sensor.cpp Server.hpp Server.cpp Temperature.hpp Temperature.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
