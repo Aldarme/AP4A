@@ -1,11 +1,19 @@
+/*
+∗ El Haddad Noor
+∗ serv.cpp
+∗ 18 / 10 / 2022
+∗ Implémentation de la classe serveur
+*/
+
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <Windows.h>
 #include "serv.h"
 
 using namespace std;
 
-serveur::serveur()
+Serveur::Serveur()
 {
 	d_temp = 0;
 	d_hum = 0;
@@ -14,20 +22,28 @@ serveur::serveur()
 
 }
 
-serveur::~serveur()
+Serveur::~Serveur()
 {
-	cout << "Le serveur est d�truit" << endl;
+	cout << "Le serveur est détruit" << endl;
 }
 
-void serveur::consolWrite()
+void Serveur::consolWrite()
 {
-	cout << "La temperature est :" << d_temp << endl;
-	cout << "L'humidite est :" << d_hum << endl;
-	cout << "La lumiere est de :" << d_li << endl;
-	cout << "La pression est de :" << d_press << endl;
+	cout << "La temperature est :" << d_temp << "°C" << endl;
+	Sleep(1000);
+	cout << "L'humidite est :" << d_hum << "g/m³" << endl;
+	Sleep(1500);
+	if (d_li == true) {
+		cout << "La lumiere est : True" << endl;
+	}
+	else if (d_li == false) {
+		cout << "La lumiere est : False" << endl;
+	}
+	Sleep(2000);
+	cout << "La pression est de :" << d_press << "hPa" << endl;
 }
 
-void serveur::SetDonnees(float a,float b,float c,float d)
+void Serveur::SetDonnees(float a,float b,bool c,int d)
 {
 	d_temp = a;
 	d_hum = b;
@@ -35,20 +51,64 @@ void serveur::SetDonnees(float a,float b,float c,float d)
 	d_press = d;
 }
 
-void serveur::fileWrite()
+void Serveur::fileWrite()
 {	
-	float donnees[4];
-	string const Logs("C:/Users/SANA/Desktop/Projet C++/Logs.txt");
+	
+	string const Logs("C:/Users/SANA/Desktop/Projet C++/Log_Temp.txt");
 	ofstream Flux(Logs.c_str());
 	if (Flux)
 	{
-		Flux << "La temperature est :" << d_temp << endl;
-		Flux << "L'humidite est :" << d_hum << endl;
-		Flux << "La lumiere est de :" << d_li << endl;
-		Flux << "La pression est de :" << d_press << endl;
+		Flux << "La temperature est de :" << d_temp << "°C" << endl;
+		
 	}
 	else
 	{
 		cout << "Impossible d'ouvrir le fichier" << endl;
 	}
+	string const Log("C:/Users/SANA/Desktop/Projet C++/Log_Hum.txt");
+	ofstream Flu(Log.c_str());
+	if (Flu)
+	{
+		Flu << "L'humidite est :" << d_hum << "g/m³" << endl;
+
+	}
+	else
+	{
+		cout << "Impossible d'ouvrir le fichier" << endl;
+	}
+	string const Lo("C:/Users/SANA/Desktop/Projet C++/Log_Li.txt");
+	ofstream Fl(Lo.c_str());
+	if (Fl)
+	{
+		if (d_li == true) {
+			Fl << "La lumiere est : True" << endl;
+		}
+		else if (d_li == false) {
+			Fl << "La lumiere est : False" << endl;
+		}
+
+	}
+	else
+	{
+		cout << "Impossible d'ouvrir le fichier" << endl;
+	}
+	string const L("C:/Users/SANA/Desktop/Projet C++/Log_Press.txt");
+	ofstream F(L.c_str());
+	if (F)
+	{
+		F << "La pression est de :" << d_press << "hPa" << endl;
+
+	}
+	else
+	{
+		cout << "Impossible d'ouvrir le fichier" << endl;
+	}
+
+
+
+		
+	
+	
+
+	
 }
