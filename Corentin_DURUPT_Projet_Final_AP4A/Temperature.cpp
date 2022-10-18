@@ -1,6 +1,6 @@
 /**
  * @author DURUPT Corentin
- * @file Temperature.hpp
+ * @file Temperature.cpp
  * @date 14/10/2022
  * @brief this is the implementation of the sensors' Temperature
 */

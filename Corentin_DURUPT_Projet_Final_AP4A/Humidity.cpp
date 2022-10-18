@@ -1,6 +1,6 @@
 /**
  * @author DURUPT Corentin
- * @file Humidity.hpp
+ * @file Humidity.cpp
  * @date 14/10/2022
  * @brief this is the implementation of the sensors' Humidity
 */
