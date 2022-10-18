@@ -1,3 +1,0 @@
-D:\cmake\bin\cmake.exe -E rm -f CMakeFiles\fg.dir/objects.a
-C:\PROGRA~1\MINGW-~1\bin\ar.exe qc CMakeFiles\fg.dir/objects.a @CMakeFiles\fg.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\bin\C__~1.EXE -Wl,--whole-archive CMakeFiles\fg.dir/objects.a -Wl,--no-whole-archive -o fg.exe -Wl,--out-implib,libfg.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fg.dir\linklibs.rsp
