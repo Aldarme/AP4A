@@ -4,20 +4,23 @@
  * @date 25/09/2022
  * @brief pressure sensor
  */
-#include <iostream>
+#ifndef PRESSION_H_
+#define PRESSION_H_
 #include "Sensor.hpp"
-#ifndef PRESSION_H
-#define PRESSION_H
 
-class Pression : public Sensor{
-
+class Pression : public Sensor<int> {
 public:
- 	public : Pression():Sensor(){};
+	Pression();
+	virtual ~Pression();
+	Pression(const Pression &other);
+	Pression& operator=(Pression &&other);
 
-    public : Pression(const Pression& P);
+	//Redefinition de la premiere methode
+	int getData();
 
-~Pression();
-
+protected:
+	//Redefinition de la deuxieme methode
+	int aleaGenVal();
 };
 
 #endif  //PRESSION_H

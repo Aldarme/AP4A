@@ -5,19 +5,24 @@
  * @brief Humidity sensor
  */
 
-#include <iostream>
+#ifndef HUMIDITY_H_
+#define HUMIDITY_H_
+
 #include "Sensor.hpp"
-#ifndef HUMIDITY_H
-#define HUMIDITY_H
 
-class Humidity : public Sensor{
+class Humidity : public Sensor<float> {
+public:
+	Humidity();
+	virtual ~Humidity();
+	Humidity(const Humidity &other);
+	Humidity& operator=(Humidity &&other);
 
-   public : Humidity():Sensor(){};   
-    
-    public : Humidity(const Humidity& H);
+	//Redefinition de la premiere methode
+	float getData();
 
-~Humidity();
-
+protected:
+	//Redefinition de la deuxieme methode
+	float aleaGenVal();
 };
 
-#endif // HUMIDITY_H
+#endif /* HUMIDITY_H_ */

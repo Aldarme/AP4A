@@ -5,32 +5,31 @@
  * @brief Scheduler
  */
 
-#include <iostream>
-#include <fstream>
-#include <string>
+
+#ifndef SCHEDULER_H_
+#define SCHEDULER_H_
+
 #include "Server.hpp"
 #include "Sensor.hpp"
 #include "Temperature.hpp"
-#include"Light.hpp"
-#include"Pression.hpp"
-#include"Humidity.hpp"
+#include "Light.hpp"
+#include "Pression.hpp"
+#include "Humidity.hpp"
 
-#ifndef SCHEDULER_H
-#define SCHEDULER_H
-class Scheduler{
-  
-    private : Server m_S;
-     Temperature m_T;
-    Humidity m_H;
-    Pression m_P;
-     Light m_L;
+class Scheduler {
 
-   
-    public : Scheduler(){};  //constructeur
+private:
+	//Implementation d'aggregation et initialisation des differentes classes
+	Server m_sev;
+	Temperature temp;
+	Light lit;
+	Pression pres;
+	Humidity humi;
 
-    
-    public : void dataServer();
-
-
+public:
+	Scheduler();
+	virtual ~Scheduler();
+	void Store_data();
 };
-#endif    //SCHEDULER_H
+
+#endif /* SCHEDULER_H_ */

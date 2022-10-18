@@ -5,28 +5,49 @@
  * @brief Server
  */
 
-#include <iostream>
-#include <fstream>
+#ifndef SERVER_H_
+#define SERVER_H_
+#include "Temperature.hpp"
 #include <string>
-#include "Sensor.hpp"
-#ifndef SERVER_H
-#define SERVER_H
-class Server{
+#include <fstream>
 
- private : bool m_consolActivation,m_logActivation;
-    private : std::fstream inoutstream;
+class Server {
+friend class Scheduler;
+private:
+	bool m_consolActivation, m_logActivation;
+public:
+	Server();
+	Server(const Server &s);
+	Server(bool cons, bool lo);
+	virtual ~Server();
+	Server& operator=(Server &&s);
 
-    public :  Server();
-
-    public : Server(const Server& s);
-
-   Server& operator= (const Server& s);
-
-   public : void fileWrite(Sensor& sensor1, Sensor& sensor2, Sensor& sensor3, Sensor& sensor4);
-            void consoleWrite(Sensor& sensor1, Sensor& sensor2, Sensor& sensor3, Sensor& sensor4);
-
-~Server();
-
+	//Redefinition des methodes herites
+	/*
+	 * Pour pouvoir utiliser la methode fileWrite pour les
+	 *  differents capteurs, il sera defini en template.
+	 */
+	template <class T>
+	void fileWrite(T t, std::string tr);//Elle prend deux parametre: la premiere qui est la donn�e du capteur
+										//et le deuxieme qui est le fichier dans lequel la donn�e sera stock�
+	void consolWrite(std::string tr);//Prend en parametre le fichier o� les donn�es ont et�es stock�es
 
 };
-#endif // SERVER_H   
+
+/*
+ * Definition de la methode fileWrite. Elle permet de stocker les donnees dans les fichiers logs.
+ * Pour se faire, nous allons inclure la bibliotecque fstream dans l'entete pour manipuler
+ * ces fichiers
+ */
+
+template <class T>
+void Server::fileWrite(T t, std::string tr)
+{
+	std::ofstream monFlux(tr.c_str(), std::ios::app);//Ouverture du fichier en ecriture et enregistrement en fin de ligne.
+	if(monFlux){
+		monFlux<<t<<" | ";
+	}
+
+}
+
+#endif /* SERVER_H_ */

@@ -5,28 +5,22 @@
  * @brief sensor
  */
 
-#include <iostream>
 #include "Sensor.hpp"
 
-Sensor::Sensor(){
-    val=0;
-}
+template <class T>
+//Constructeur par defaut
+Sensor<T>::Sensor() {}
 
-Sensor::Sensor(const Sensor& S)
-{this->val = S.val;}
+//Destructeur
+template <class T>
+Sensor<T>::~Sensor() {}
 
-void Sensor::aleaGenVal(){
-    val = (rand() %30);
-}
+template <class T>
+//Constructeur de recopie
+Sensor<T>::Sensor(const Sensor &other) {}
 
-Sensor& Sensor::operator=(const Sensor& S){
-        this->val = S.val;
-        return *this;
-}
-
-int Sensor::getData(){
-    aleaGenVal();
-    return val;
-}
-
- Sensor::~Sensor(){}
+//Pour eviter des erreurs de compilation, nous allons declarer
+//les differents type du template de la classe Sensor
+template class Sensor<float>; //Pour la class temperature et humidity
+template class Sensor<int>; //Pour la class Pression
+template class Sensor<bool>; //Pour la clalsse Light

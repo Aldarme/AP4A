@@ -4,35 +4,57 @@
  * @date 25/09/2022
  * @brief Server
  */
-#include<sstream>
-#include<string.h>
-#include <iostream>
 #include "Server.hpp"
-#include "Sensor.hpp"
+#include <iostream>
 #include <fstream>
+#include <windows.h>
+#include <string.h>
 
-Server::Server(){}    // constructeur par défaut
+using namespace std;
 
-Server::Server(const Server& s){
-    this->m_consolActivation = s.m_consolActivation;    // constructeur de récopie
-    this->m_logActivation = s.m_logActivation;
- }
 
- Server& Server::operator=(const Server& s){
-     this->m_consolActivation = s.m_consolActivation;
-        this->m_logActivation = s.m_logActivation;
-        return *this;
+
+//Constructeur par defaut
+
+Server::Server(): m_consolActivation(false),m_logActivation(true) {}
+
+//Constructeur de recopie
+Server::Server(const Server &s) {
+	this->m_consolActivation=s.m_consolActivation;
+	this->m_logActivation=s.m_logActivation;
 }
-void Server::consoleWrite(Sensor& sensor1, Sensor& sensor2, Sensor& sensor3, Sensor& sensor4){
-    std::cout << "\n" << sensor1.getData() << "\t" << sensor2.getData() << "\t"<< sensor3.getData() << "\t" << sensor4.getData(); 
-   };
 
-void Server::fileWrite(Sensor& sensor1, Sensor& sensor2, Sensor& sensor3, Sensor& sensor4){
-    inoutstream.open(".\\data.txt",std::fstream::app);
-    inoutstream << "\n" + std::to_string(sensor1.getData()) + "\t" + std::to_string(sensor2.getData()) + "\t" + std::to_string(sensor3.getData()) + "\t" + std::to_string(sensor4.getData());
-    inoutstream.close();
-        };
+//Un autre Constructeur
+Server::Server(bool cons, bool lo): m_consolActivation(cons),m_logActivation(lo){}
 
+//Destructeur
+Server::~Server() {
+}
 
-   
+//Declaration d'un flux permettant d'ecrire dans le fichier temp
+
+//Operateur d'affectation
+Server& Server::operator=(Server &&s) {
+      m_consolActivation=s.m_consolActivation;
+      m_logActivation=s.m_logActivation;
+	  return *this;
+}
+/*
+ * Definition de la methode qui permet de visualiser les donnees stock�es
+ * dans des fichiers log differents
+ */
+void Server::consolWrite(std::string tr){
+	ifstream monFlux(tr); //Ouverture du fichier en lecture
+	if(monFlux){
+		string ligne;
+		while(getline(monFlux, ligne)){
+			cout<<tr<<" : "<<ligne<<endl;
+		}
+	}
+
+}
+/* Dans les deux fonctions (fileWrite et consolWrite) , il n'est pas neccessaire de refermer les fichiers
+ *  car elle est fermé automatiquement lorsqu'on sort du bloc ou le flux est declaré.
+ *  Toutefois, on peut le fermer en utilisant le code monFlux.close();
+*/
 
