@@ -1,2 +1,122 @@
-﻿  Projet C++.cpp
-  Projet C++.vcxproj -> C:\Users\费毓晖\AP4A\Projet C++\x64\Debug\Projet C++.exe
+﻿  HUMIDITY.cpp
+  LIGHT.cpp
+  main.cpp
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(22,1): error C2653: “Scheduler”: 不是类或命名空间名称
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(23,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(24,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(25,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(26,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(27,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(28,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(29,1): warning C4508: “Scheduler”: 函数应返回一个值；假定“void”返回类型
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(39,6): error C2653: “Scheduler”: 不是类或命名空间名称
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(46,9): error C2065: “m_temperature”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(47,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(47,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(48,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(48,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(52,9): error C2065: “m_humidity”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(53,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(53,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(54,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(54,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(58,9): error C2065: “m_pression”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(59,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(59,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(60,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(60,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(64,9): error C2065: “m_light”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(65,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(65,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(66,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(66,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\main.cpp(16,15): error C2146: 语法错误: 缺少“;”(在标识符“m_Scheduler”的前面)
+C:\Users\费毓晖\AP4A\Projet C++\main.cpp(16,5): warning C4551: 缺少参数列表的函数调用
+C:\Users\费毓晖\AP4A\Projet C++\main.cpp(16,15): error C3861: “m_Scheduler”: 找不到标识符
+C:\Users\费毓晖\AP4A\Projet C++\main.cpp(17,15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\Users\费毓晖\AP4A\Projet C++\main.cpp(20,9): error C2065: “m_Scheduler”: 未声明的标识符
+  PRESSION.cpp
+  SCHEDULER.cpp
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(22,1): error C2653: “Scheduler”: 不是类或命名空间名称
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(23,1): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(24,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(25,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(26,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(27,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(28,5): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(29,1): warning C4508: “Scheduler”: 函数应返回一个值；假定“void”返回类型
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(39,6): error C2653: “Scheduler”: 不是类或命名空间名称
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(46,9): error C2065: “m_temperature”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(47,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(47,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(48,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(48,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(52,9): error C2065: “m_humidity”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(53,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(53,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(54,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(54,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(58,9): error C2065: “m_pression”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(59,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(59,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(60,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(60,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(64,9): error C2065: “m_light”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(65,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(65,31): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(66,9): error C2065: “m_server”: 未声明的标识符
+C:\Users\费毓晖\AP4A\Projet C++\SCHEDULER.h(66,28): error C2355: “this”: 只能在非静态成员函数或非静态数据成员初始值设定项的内部引用
+  SENSOR.cpp
+  SERVER.cpp
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(27,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(41,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(55,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “A”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “P”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(69,25): warning C4129: “d”: 不可识别的字符转义序列
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.cpp(9,1): error C2011: “Server”:“class”类型重定义
+C:\Users\费毓晖\AP4A\Projet C++\SERVER.h(14): message : 参见“Server”的声明
+  TEMPERATURE.cpp
+  正在生成代码...
