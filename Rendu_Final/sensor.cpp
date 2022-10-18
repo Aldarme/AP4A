@@ -2,7 +2,7 @@
  * @author Jules Ferlin
  * @file sensor.cpp
  * @date 03/10/2022
- * @brief Fichier source ne contenant rien car toute les implémentations sont faites dans le header a cause des templates
+ * @brief Fichier source ne contenant rien car toutes les implémentations sont faites dans le header a cause des templates
  */
 
 #include "sensor.hpp"
