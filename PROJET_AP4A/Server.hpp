@@ -1,5 +1,5 @@
 /**
- * @author RENON Emilien
+ * @author RENON_Emilien
  * @file MaClasse.hpp
  * @date 20/09/2022
  * @brief La classe Server permettra de recevoir les données envoyées par le Scheduler et aussi d'écrire dans la console ou dans un fichier ces données.
@@ -9,8 +9,6 @@
 // Define guards
 #ifndef SERVER_H
 #define SERVER_H
-#include <iostream>
-#include <fstream>
 #include "Sensor.hpp"
 #include "Temperature.hpp"
 #include "Pression.hpp"
@@ -33,40 +31,40 @@ public:
     /**
      * @brief Ecrire les données reçues dans la console
      * @return void
-     * @param 4 sensors
+     * @param Un sensor
      */ 
     template <class T>
     void consoleWrite(const Sensor<T> &param_sensor);
 
 
     /**
-     * @brief Ecrire les données reçues dans un fichier
+     * @brief Ecrire les données reçues dans un fichier spécifique à température
      * @return void
-     * @param  Temperature 
+     * @param  Un Temperature 
      */
     template <class T>
     void fileWrite(const Temperature<T> &param_sensor);
 
     /**
-     * @brief Ecrire les données reçues dans un fichier
+     * @brief Ecrire les données reçues dans un fichier spécifique à humidité
      * @return void
-     * @param Humidity 
+     * @param Un Humidity 
      */
     template <class T>
     void fileWrite(const Humidity<T> &param_sensor);
 
     /**
-     * @brief Ecrire les données reçues dans un fichier
+     * @brief Ecrire les données reçues dans un fichier spécifique à pression
      * @return void
-     * @param Pression
+     * @param Un Pression
      */
     template <class T>
     void fileWrite(const Pression<T> &param_sensor);
 
     /**
-     * @brief Ecrire les données reçues dans un fichier
+     * @brief Ecrire les données reçues dans un fichier spécifique à lumière
      * @return void
-     * @param Light
+     * @param Un Light
      */
     template <class T>
     void fileWrite(const Light<T> &param_sensor);
@@ -77,8 +75,6 @@ public:
     template <class T> friend class Pression;
     template <class T> friend class Light;
 };
-
-
 
 
 #endif // SERVER_H

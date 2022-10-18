@@ -1,18 +1,14 @@
 /**
- * @author RENON Emilien
+ * @author RENON_Emilien
  * @file Humidity.hpp
  * @date 04/10/2022
- * @brief La classe Humidity permettra de caractèriser un capteur d'humidité.
+ * @brief La classe Humidity permettra de caractériser un capteur d'humidité.
  */
 
 //
 // Define guards
 #ifndef HUMIDITY_H
 #define HUMIDITY_H
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <fstream>
 #include "Sensor.hpp"
 
 /**
@@ -33,4 +29,6 @@ public:
     // ...
 
 };
+
+
 #endif // HUMIDITY_H

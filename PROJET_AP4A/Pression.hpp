@@ -1,18 +1,14 @@
 /**
- * @author RENON Emilien
+ * @author RENON_Emilien
  * @file Pression.hpp
  * @date 04/10/2022
- * @brief La classe Pression permettra de caractèriser un capteur de pression.
+ * @brief La classe Pression permettra de caractériser un capteur de pression.
  */
 
 //
 // Define guards
 #ifndef PRESSION_H
 #define PRESSION_H
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <fstream>
 #include "Sensor.hpp"
 
 /**
@@ -34,5 +30,6 @@ public:
     // ...
       
 };
+
 
 #endif // PRESSION_H

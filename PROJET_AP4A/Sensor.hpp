@@ -1,5 +1,5 @@
 /**
- * @author RENON Emilien
+ * @author RENON_Emilien
  * @file Sensor.hpp
  * @date 21/09/2022
  * @brief La classe Sensor permettra de créer les données des capteurs.
@@ -42,7 +42,7 @@ public:
 
     /**
      * @brief Générer les valeurs des capteurs
-     * @return int
+     * @return void
      * @param rien
      */ 
     void aleaValue();

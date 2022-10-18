@@ -1,18 +1,14 @@
 /**
- * @author RENON Emilien
+ * @author RENON_Emilien
  * @file Light.hpp
  * @date 04/10/2022
- * @brief La classe Light permettra de caractèriser un capteur de lumière.
+ * @brief La classe Light permettra de caractériser un capteur de lumière.
  */
 
 //
 // Define guards
 #ifndef LIGHT_H
 #define LIGHT_H
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <fstream>
 #include "Sensor.hpp"
 
 /**

@@ -1,18 +1,14 @@
 /**
- * @author RENON Emilien
- * @file Teperature.hpp
+ * @author RENON_Emilien
+ * @file Temperature.hpp
  * @date 04/10/2022
- * @brief La classe Temperature permettra de caractèriser un capteur de température.
+ * @brief La classe Temperature permettra de caractériser un capteur de température.
  */
 
 //
 // Define guards
 #ifndef TEMPERATURE_H
 #define TEMPERATURE_H
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <fstream>
 #include "Sensor.hpp"
 
 /**
@@ -33,4 +29,6 @@ public:
     // ...
        
 };
+
+
 #endif // TEMPERATURE_H

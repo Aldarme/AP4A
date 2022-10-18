@@ -1,17 +1,16 @@
-#include <iostream>
 #include "Scheduler.cpp"
 
 int main(){
-    Temperature<float> T;
-    Humidity<float> H;
-    Light<bool> L;
-    Pression<int> P;
-    Server Ser;
-    int m_time=0;
-    int m_time_temperature;
-    int m_time_pression;
-    int m_time_light;
-    int m_time_humidity;
+    Temperature<float> m_SensorT;
+    Humidity<float> m_SensorH;
+    Light<bool> m_SensorL;
+    Pression<int> m_SensorP;
+    Server m_Ser;
+    int m_time=0; //m_time est la variable de temps totale de notre programme
+    int m_time_temperature; //m_time_temperature est l'interval de temps spécifique au capteur de température
+    int m_time_pression; //m_time_pression est l'interval de temps spécifique au capteur de pression
+    int m_time_light; //m_time_light est l'interval de temps spécifique au capteur de lumière
+    int m_time_humidity; //m_time_humidity est l'interval de temps spécifique au capteur d'humidité
     
     //Choix de l'interval de temps de chaque mesure
     cout<<"Choisissez l'interval de temps entre les détections de données pour la température (Interval en millisecondes)"<<endl;
@@ -30,14 +29,14 @@ int main(){
     }
     cout<<endl;
 
-    //Initialisation du scheduler avec l'interval choisis
-    Scheduler Sch(Ser,T,H,L,P);
+    //Initialisation du scheduler 
+    Scheduler m_Sch(m_Ser,m_SensorT,m_SensorH,m_SensorL,m_SensorP);
 
     srand(time(NULL)); //Fonction permettant d'avoir des vraies valeurs différentes entre les programmes
     
-    //Boucle de temps symbolisant la période d'étude choisis par l'utilisateur
-    for(int i=1;i<=m_time*1000;i++){
-        Sch.sendServer(i,m_time_temperature,m_time_pression,m_time_light,m_time_humidity);
+    //Boucle de temps symbolisant la période d'étude choisie par l'utilisateur
+    for(int m_actual_time=1;m_actual_time<=m_time*1000;m_actual_time++){
+        m_Sch.sendServer(m_actual_time,m_time_temperature,m_time_pression,m_time_light,m_time_humidity);
     }
     return 0;
 }
