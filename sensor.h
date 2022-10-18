@@ -1,18 +1,25 @@
+/*
+∗ El Haddad Noor
+∗ sensor.h
+∗ 18 / 10 / 2022
+∗ Définition de la classe mère des capteurs, la classe Sensor
+*/
+
 #pragma once
 #include <iostream>
 #include <string>
-using namespace std;
 
-class sensor
+
+class Sensor 
 {
-private :
+private:
 	float donnees;
 public:
-	sensor();
-	~sensor();
-	float getData();
-	void setdata();
-protected :
-	float aleaGenVal();
-	   
+	Sensor();
+	~Sensor();
+	virtual void getData();
+	float ReturnF();
+protected:
+	virtual void aleaGenVal();
+
 };
