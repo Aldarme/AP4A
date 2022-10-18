@@ -10,7 +10,10 @@
 #include "temperature.hpp"
 
 
+
+
 int main() {
+	char rep='O';
 
 	light lum;
 	humidity hum;
@@ -18,12 +21,19 @@ int main() {
 	temperature temp;
 
 	scheduler sche(lum,soun,hum,temp);
-	sche.datarecove();
 
-	serveur serv(sche);
-	serv.consoleWrite();
-	serv.fileWrite();
+	//serveur serv(sche);          //Le main en utilisant la methode datarecovery
+	//sche.datarecovery(serv);
 
-
+	while (rep == 'O') {
+		cout << endl;
+		sche.datarecove();
+		serveur serv(sche);
+		serv.fileWrite();
+		cout << endl;
+		cout << " Voulez vous des nouvelles valeurs (Repondre O (oui) ou N (non))" << endl;
+		cin >> rep;
+	}
+	
    return 0;
 }
