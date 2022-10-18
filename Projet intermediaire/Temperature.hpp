@@ -4,24 +4,19 @@
  * @date 25/09/2022
  * @brief Temperature sensor
  */
-#ifndef TEMPERATURE_H_
-#define TEMPERATURE_H_
-
+#include <iostream>
 #include "Sensor.hpp"
+#ifndef TEMPERATURE_H
+#define TEMPERATURE_H
 
-class Temperature : public Sensor<float> {
-public:
-	Temperature();
-	virtual ~Temperature();
-	Temperature(const Temperature &other);
-	Temperature& operator=(Temperature &&other);
+class Temperature : public Sensor{
 
-	//Redefinition de la premiere methode
-	float getData();
+    public : Temperature():Sensor(){};
 
-protected:
-	//Redefinition de la deuxieme methode
-	float aleaGenVal();
+    public : Temperature(const Temperature& T);
+
+~Temperature();
+
 };
 
-#endif /* TEMPERATURE_H_ */
+#endif // TEMPERATURE_H

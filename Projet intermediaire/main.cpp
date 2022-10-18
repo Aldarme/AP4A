@@ -5,22 +5,25 @@
  * @brief main simulation file 
  */
 
-#include "Scheduler.hpp"
+#include "Scheduler.cpp"
+#include "Server.cpp"
+#include "Sensor.cpp"
+#include "Temperature.cpp"
+#include "Light.cpp"
+#include "Pression.cpp"
+#include "Humidity.cpp"
 #include <iostream>
-
+#include <fstream>
+#include <string>
+#include <ctime>
 
 using namespace std;
 
 int main(){
+    srand(time(0));
 
-	//Message d'acceuil et orientation
-	cout<< "Bienvenue sur votre serveur !!"<<endl;
-	cout<< "Veuillez consulter Les données de vos capteurs qui sont generés a des frequences distinctes "<<endl;
+    Scheduler Sched;
 
-
-	//Instanciation de la classe scheduler
-	Scheduler m_sc;
-	m_sc.Store_data();//Appel de la fonction Store_data
-
+    Sched.dataServer();
+    
 }
-

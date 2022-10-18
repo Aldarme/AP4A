@@ -5,25 +5,30 @@
  * @brief Sensor
  */
 
-#ifndef SENSOR_H_
-#define SENSOR_H_
+#ifndef SENSOR_H
+#define SENSOR_H
+class Sensor{
+    
+    protected :  int m_val;
 
-template <class T>
-class Sensor {
-public:
-	Sensor();
-	virtual ~Sensor();
-	Sensor(const Sensor &other);
 
-	// Declaration de la premiere methode virtuel pure
-	virtual T getData() = 0;
 
-protected:
-	T m_data; //Variable o� est stockk� les donn�es gener� du capteur
-	// Declaration de la deuxieme methode virtuel pure
-	//Elle est crée pour permettre l'acces au valeur du capteur
-	//� toutes les classes et fonctions
-	virtual T aleaGenVal() = 0;
+    public : Sensor();  //constructeur par defaut
+
+    Sensor(const Sensor& S); //constructeur de recopie
+ 
+    Sensor& operator=(const Sensor& S);
+
+
+    private : void aleaGenVal();
+
+    public : int getData();
+
+~Sensor();
+
+
+
+
 };
 
-#endif /* SENSOR_H_ */
+#endif   //SENSOR_H

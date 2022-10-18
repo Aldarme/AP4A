@@ -4,25 +4,17 @@
  * @date 25/09/2022
  * @brief Light sensor
  */
-
-#ifndef LIGHT_H_
-#define LIGHT_H_
-
+#include <iostream>
 #include "Sensor.hpp"
+#ifndef LIGHT_H
+#define LIGHT_H
+class Light : public Sensor{
+     public : Light():Sensor(){};
 
-class Light : public Sensor<bool> {
-public:
-	Light();
-	virtual ~Light();
-	Light(const Light &other);
-	Light& operator=(Light &&other);
+    public : Light(const Light& L);
 
-	//Redefinition de la premiere methode
-	bool getData();
-
-protected:
-	//Redefinition de la deuxieme methode
-	bool aleaGenVal();
+~Light();
 };
 
-#endif /* LIGHT_H_ */
+
+#endif //LIGHT_H
