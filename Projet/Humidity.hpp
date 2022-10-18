@@ -21,15 +21,15 @@ class Humidity : public Sensor<float>
 
     private:
     
-    const std::string name = "Humidity";
+    const std::string m_name = "Humidity";
 
     public:
 
     Humidity()
     {
-        std::cout<< "   -> " <<this->name<<std::endl;
-        this->type = 0;
-        this->value = aleaGenVal();
+        this->m_type = 0;
+        std::cout<< "   -> " <<this->m_name<<std::endl;
+        this->m_value = aleaGenVal();
     }
 
     virtual ~Humidity()

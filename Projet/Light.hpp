@@ -19,15 +19,15 @@ class Light : public Sensor<bool>
 {
     private:
     
-    const std::string name = "Light";
+    const std::string m_name = "Light";
 
     public:
 
     Light()
     {
-        std::cout<< "   -> " <<this->name<<std::endl;
-        this->type = 1;
-        this->value = aleaGenVal();
+        this->m_type = 1;
+        std::cout<< "   -> " <<this->m_name<<std::endl;
+        this->m_value = aleaGenVal();
     }
 
     virtual ~Light()

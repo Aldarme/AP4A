@@ -21,16 +21,15 @@ class Temperature : public Sensor<int>{
     
     private:
     
-    const std::string name = "Temperature";
+    const std::string m_name = "Temperature";
     
     public:
     
-    Temperature() 
+    Temperature()
     {
-        
-        std::cout<< "   -> " <<this->name<<std::endl;
-        this->type = 3;
-        this->value = aleaGenVal();
+        this->m_type = 3;
+        std::cout<< "   -> " <<this->m_name<<std::endl;
+        this->m_value = aleaGenVal();
     }
 
     virtual ~Temperature(){

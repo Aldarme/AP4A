@@ -7,7 +7,7 @@
 
 void Pression::next()
 {
-    this->value = aleaGenVal();
+    this->m_value = aleaGenVal();
 }
 
 #endif

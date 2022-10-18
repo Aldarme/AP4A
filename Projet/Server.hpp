@@ -18,15 +18,15 @@ class Server {
 
     private:
 
-        bool consolActivation;
-        bool logActivation;
+        bool m_consolActivation;
+        bool m_logActivation;
         
     
     public: 
 
     Server() :
-    consolActivation(true),
-    logActivation(true)
+    m_consolActivation(true),
+    m_logActivation(true)
     {
 
         
@@ -36,10 +36,12 @@ class Server {
 
     }
 
-    Server(const Server& copy){
+    Server(const Server& copy) :
+    m_consolActivation(copy.m_consolActivation),
+    m_logActivation(copy.m_logActivation)
+    {
 
-        this->consolActivation = copy.consolActivation;
-        this->logActivation = copy.logActivation;
+        
     }
     
     void activateConsole();
@@ -73,15 +75,15 @@ class Server {
 * @brief Open different file depending on parameter's type and then write value into said file
 * @param classparam one of the 4 child classes of Sensor
 **/
-template <class Type> void fileWrite(Type classparam)
+template <class Type> void fileWrite(Type p_classparam)
 {
-    if(this->logActivation){
+    if(this->m_logActivation){
 
 
         std::string display_data;
         std::ofstream myfile;
 
-        switch (classparam.type)
+        switch (p_classparam.type)
         {
         case 0:
             myfile.open ("HumidityLog.txt", std::ios::app);
@@ -102,7 +104,7 @@ template <class Type> void fileWrite(Type classparam)
 
         if (myfile.is_open())
         {
-            myfile << classparam.info << std::endl;
+            myfile << p_classparam.info << std::endl;
             myfile.close();
         }else
         {
@@ -118,25 +120,25 @@ template <class Type> void fileWrite(Type classparam)
 * @brief Displays information of parameter, display is unique for each child class of Sensor
 * @param classparam one of the four child class of class Sensor
 **/
-template <class Type> void consoleWrite(Type classparam)
+template <class Type> void consoleWrite(Type p_classparam)
 {
     
-    if(this->consolActivation){
+    if(this->m_consolActivation){
 
-        switch (classparam.type)
+        switch (p_classparam.type)
         {
         case 0:
        
-            std::cout << "Printing contents of sensor : Humidity : " << classparam.info <<std::endl;
+            std::cout << "Printing contents of sensor : Humidity : " << p_classparam.info <<std::endl;
             break;
         case 1:
-            std::cout << "Printing contents of sensor : Light : " << classparam.info <<std::endl;
+            std::cout << "Printing contents of sensor : Light : " << p_classparam.info <<std::endl;
             break;
         case 2:
-            std::cout << "Printing contents of sensor : Pression : " << classparam.info <<std::endl;
+            std::cout << "Printing contents of sensor : Pression : " << p_classparam.info <<std::endl;
             break;
         case 3:
-            std::cout << "Printing contents of sensor : Temperature : " << classparam.info <<std::endl;
+            std::cout << "Printing contents of sensor : Temperature : " << p_classparam.info <<std::endl;
             break;
         default:
             std::cout << "ERROR, NO DATA TO DISPLAY OR WRONG PARAMETER ENTERED!!" << std::endl;

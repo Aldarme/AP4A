@@ -21,7 +21,7 @@ void Scheduler::startClock()
 
     while (true)
     {
-        step++;
+        m_step++;
 
 
         //khbit will see if the keyboard has been active recently
@@ -32,23 +32,23 @@ void Scheduler::startClock()
         {
         case 'c':
 
-            if(this->server_object.statusConsole())
+            if(this->m_serverObject.statusConsole())
             {
-                this->server_object.deActivateConsole();
+                this->m_serverObject.deActivateConsole();
             }else
             {
-                this->server_object.activateConsole();
+                this->m_serverObject.activateConsole();
             }
 
             break;
         case 'l': 
 
-            if(this->server_object.statusLog())
+            if(this->m_serverObject.statusLog())
             {
-                this->server_object.deActivateLog();
+                this->m_serverObject.deActivateLog();
             }else
             {
-                this->server_object.activateLog();
+                this->m_serverObject.activateLog();
             }
 
         default:
@@ -57,47 +57,47 @@ void Scheduler::startClock()
         }
 
         //Pression
-        if(step % 35000 == 0)
+        if(m_step % 35000 == 0)
         {
-            this->pression_d.info = this->pression_object.getData();
-            this->pression_object.next();
-            this->server_object.consoleWrite<pression_data>(this->pression_d);
-            this->server_object.fileWrite<pression_data>(this->pression_d);
-            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            this->m_pression_d.info = this->m_pressionObject.getData();
+            this->m_pressionObject.next();
+            this->m_serverObject.consoleWrite<pression_data>(this->m_pression_d);
+            this->m_serverObject.fileWrite<pression_data>(this->m_pression_d);
+            if(this->m_serverObject.statusConsole()) cout << "--------------------------------------------------" <<endl;        
             
         }
 
         //Light
-        if(step % 75000 == 0)
+        if(m_step % 75000 == 0)
         {
-            this->light_d.info = this->light_object.getData();
-            this->light_object.next();
-            this->server_object.consoleWrite<light_data>(this->light_d);
-            this->server_object.fileWrite<light_data>(this->light_d);
+            this->m_light_d.info = this->m_lightObject.getData();
+            this->m_lightObject.next();
+            this->m_serverObject.consoleWrite<light_data>(this->m_light_d);
+            this->m_serverObject.fileWrite<light_data>(this->m_light_d);
             
-            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            if(this->m_serverObject.statusConsole()) cout << "--------------------------------------------------" <<endl;        
 
         }
 
         //Humidity
-        if(step % 115000 == 0)
+        if(m_step % 115000 == 0)
         {
-            this->humidity_d.info = this->humidty_object.getData();
-            this->humidty_object.next();
-            this->server_object.consoleWrite<humidity_data>(this->humidity_d);
-            this->server_object.fileWrite<humidity_data>(this->humidity_d);
-            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            this->m_humidity_d.info = this->m_humidtyObject.getData();
+            this->m_humidtyObject.next();
+            this->m_serverObject.consoleWrite<humidity_data>(this->m_humidity_d);
+            this->m_serverObject.fileWrite<humidity_data>(this->m_humidity_d);
+            if(this->m_serverObject.statusConsole()) cout << "--------------------------------------------------" <<endl;        
             
         }
 
         //Temperature
-        if(step % 135000 == 0)
+        if(m_step % 135000 == 0)
         {
-            this->temperature_d.info = this->temperature_object.getData();
-            this->temperature_object.next();
-            this->server_object.consoleWrite<temperature_data>(this->temperature_d);
-            this->server_object.fileWrite<temperature_data>(this->temperature_d);
-            if(this->server_object.statusConsole()) cout << "--------------------------------------------------" <<endl;        
+            this->m_temperature_d.info = this->m_temperatureObject.getData();
+            this->m_temperatureObject.next();
+            this->m_serverObject.consoleWrite<temperature_data>(this->m_temperature_d);
+            this->m_serverObject.fileWrite<temperature_data>(this->m_temperature_d);
+            if(this->m_serverObject.statusConsole()) cout << "--------------------------------------------------" <<endl;        
         }
 
         

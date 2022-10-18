@@ -26,9 +26,9 @@ class Pression : public Sensor<int>
 
     Pression()
     {
+        this->m_type = 2;
         std::cout<< "   -> " <<this->name<<std::endl;
-        this->type = 2;
-        this->value = aleaGenVal();
+        this->m_value = aleaGenVal();
     }
 
 

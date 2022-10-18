@@ -28,25 +28,25 @@ void Server::initiateFile()
 void Server::activateConsole()
 {
     std::cout << "Activating Console" << std::endl;
-    this->consolActivation = true;
+    this->m_consolActivation = true;
 }
 
 void Server::activateLog()
 {
     std::cout << "Activating Log" << std::endl;
-    this->logActivation = true;
+    this->m_logActivation = true;
 }
 
 void Server::deActivateConsole()
 {
     std::cout << "De-activating Console" << std::endl;
-    this->consolActivation = false;
+    this->m_consolActivation = false;
 }
 
 void Server::deActivateLog()
 {
     std::cout << "De-activating Log" << std::endl;
-    this->logActivation = false;
+    this->m_logActivation = false;
 }
 
 void Server::activateAll()
@@ -57,8 +57,8 @@ void Server::activateAll()
 
 void Server::deActivateAll()
 {
-    this->consolActivation = false;
-    this->logActivation = false;
+    this->m_consolActivation = false;
+    this->m_logActivation = false;
         
 }
 
@@ -68,13 +68,13 @@ void Server::deActivateAll()
 
 bool Server::statusConsole()
 {
-    return this->consolActivation;
+    return this->m_consolActivation;
 }
 
 bool Server::statusLog()
 {
     
-    return this->logActivation;
+    return this->m_logActivation;
 }
 
 #endif

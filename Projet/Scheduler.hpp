@@ -58,31 +58,31 @@ class Scheduler
 
         
 
-        int frequency;
-        int step;
-        bool going;
+        int m_frequency;
+        int m_step;
+        bool m_going;
         
 
        
-        Temperature temperature_object;
-        Light light_object;
-        Humidity humidty_object;
-        Pression pression_object;
-        Server server_object;
+        Temperature m_temperatureObject;
+        Light m_lightObject;
+        Humidity m_humidtyObject;
+        Pression m_pressionObject;
+        Server m_serverObject;
 
-        humidity_data humidity_d;
-        pression_data pression_d;
-        light_data light_d;
-        temperature_data temperature_d;
+        humidity_data m_humidity_d;
+        pression_data m_pression_d;
+        light_data m_light_d;
+        temperature_data m_temperature_d;
 
        
     public:
 
 
         Scheduler() :
-        frequency(10),
-        step(0),
-        going(true)
+        m_frequency(10),
+        m_step(0),
+        m_going(true)
         {
             
             std::cout << "Press 'c' to manage console activation, an 'l' for log activation" << std::endl;
@@ -90,9 +90,12 @@ class Scheduler
         }
 
 
-        Scheduler(const Scheduler& copy)
+        Scheduler(const Scheduler& p_copy) :
+        m_frequency(p_copy.m_frequency),
+        m_step(p_copy.m_step),
+        m_going(p_copy.m_going)
         {
-            this->frequency = copy.frequency;
+            
         }
 
         virtual ~Scheduler()
