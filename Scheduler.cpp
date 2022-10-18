@@ -16,49 +16,73 @@ void sleepcp(unsigned long milliseconds) // fonction sleep cross-plateform
     #endif // _WIN32
 }
 
-void Scheduler::run() //launch the captors
+void Scheduler::run() /*on définit ce que doit faire le scheduler*/
 {
+    pObjetServer->question(); //on lance la fonction question
     int elapsedHum = 0; 
     int elapsedLight = 0;
     int elapsedPressure = 0;
     int elapsedTemp = 0;
+/*on assigne a chaque capteur une valeur de temps pour les lancer en différé*/
 
     while(true)
     {
-        /*pour le rendu intermédiaire, les valeurs sont récupérées toutes au même moment; cependant la récupération des valeurs en différé est déjà presque fonctionnel de cette manière  */
-        if(elapsedHum >= 1000) 
+        if(elapsedHum >= 5000) /*le capteur d'humidité est appelé toutes les 5000ms*/
         {
-            type data = captorHumidity->getData(); // on recup la valeur une seule fois car appeler un capteur prends du temps
-            objetServer.consoleWrite("Humidity", data, captorHumidity->getType());
-            objetServer.fileWrite("Humidity", data, captorHumidity->getType());
-            elapsedHum = 0;
+            structDef.humidityValue = pCaptorHumidity->getData(); /* on recupère la valeur dans la structure qui est donnée par getData*/ 
+            if(pObjetServer->console == "yes")   /*si l'utilisateur veut les valeurs dans la console alors on les écrit*/
+            {
+            pObjetServer->consoleWrite("Humidity", structDef);
+            }
+            if(pObjetServer->log == "yes")   /*si l'utilisateur veut les logs des capteurs alors on les écrit*/
+            { 
+            pObjetServer->fileWrite("Humidity", structDef);
+            }
+            elapsedHum = 0; /*on remet le timer a 0 pour l'humidité*/
         }
 
-        if(elapsedLight >= 1000) 
+        if(elapsedLight >= 8000) /*de la meme façon on appelle le capteur de lumière toutes les 8 secondes*/
         {
-            type data = captorLight->getData();
-            objetServer.consoleWrite("Light",data,captorLight->getType());
-            objetServer.fileWrite("Light",data,captorLight->getType());
+            structDef.lightValue = pCaptorLight->getData();
+            if(pObjetServer->console == "yes")
+            {
+            pObjetServer->consoleWrite("Light", structDef);
+            }
+            if(pObjetServer->log == "yes")
+            {
+            pObjetServer->fileWrite("Light", structDef);
+            }
             elapsedLight = 0;
         }
 
-        if(elapsedPressure >= 1000)
+        if(elapsedPressure >= 3500) /*de la meme façon on appelle le capteur de pression toutes les 3,5s*/
         {
-            type data = captorPressure->getData();
-            objetServer.consoleWrite("Pressure",data,captorPressure->getType());
-            objetServer.fileWrite("Pressure",data,captorPressure->getType());
+            structDef.pressureValue = pCaptorPressure->getData();
+            if(pObjetServer->console == "yes")
+            {
+            pObjetServer->consoleWrite("Pressure", structDef);
+            }
+            if(pObjetServer ->log == "yes")
+            {
+            pObjetServer->fileWrite("Pressure", structDef);
+            }
             elapsedPressure = 0;
         }
 
-        if(elapsedTemp >= 1000)
+        if(elapsedTemp >= 2000) /*de la meme façon on appelle le capteur de température toutes les 2s*/
         {
-            type data = captorTemp->getData();
-            objetServer.consoleWrite("Temperature",data,captorTemp->getType());
-            objetServer.fileWrite("Temperature",data,captorTemp->getType());
+            structDef.tempValue = pCaptorTemp->getData(); 
+            if(pObjetServer->console == "yes")
+            {
+            pObjetServer->consoleWrite("Temperature", structDef);
+            }
+            if(pObjetServer->log == "yes")
+            {
+            pObjetServer->fileWrite("Temperature", structDef);
+            }
             elapsedTemp = 0;
         }
-
-        sleepcp(500);   //pause de 500ms
+        sleepcp(500);  //pause de 500ms
         elapsedHum+=500; /*chaque valeur correspond a la durée depuis le dernier appel du capteur, on les incrémente de 500 toutes les 500ms  */
         elapsedLight+=500;
         elapsedPressure+=500;

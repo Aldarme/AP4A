@@ -1,45 +1,74 @@
 #include "Server.hpp"
 #include <iostream>
 
-Server::Server() 
-{
-}
+Server::Server(){} 
 
-void Server::consoleWrite(std::string typeCapteur, type value, std::string typeVal)
+void Server::question()
+/*Tant que l'utilisateur écrit autre chose de "yes" ou "no" la question est reposée*/
 {
-    time_t now = time(nullptr);
-    std::cout << ctime(&now) << " Capteur " << typeCapteur << " = ";
-    if(typeVal == "int")
+    while (!(log =="yes" || log == "no")) //tant que log n'est pas yes ou log n'est pas no
     {
-        std::cout << value.valInt << std::endl;
-    } else if(typeVal == "bool")
+        std::cout << "Logs? (yes/no)" << std::endl;
+        std::cin >>log;
+    }
+    while (!(console == "yes" || console == "no"))
     {
-        std::cout << value.valBool << std::endl;
-    } else if(typeVal == "float")
-    {
-        std::cout << value.valFloat << std::endl;
+        std::cout <<"console? (yes/no)" << std::endl;
+        std::cin >>console;
     }
 }
 
-void Server::fileWrite(std::string typeCapteur, type value, std::string typeVal)
+void Server::consoleWrite(std::string typeCapteur_p, captor_data value_p) //fonction qui permet d'écrire les données des capteurs dans la console
 {
-/*les valeurs dans les fichiers txt ne seront pas effacées, les nouvelles valeurs seront à la suite des anciennes pour garder un historique de ces dernières*/
+    if (typeCapteur_p == "Humidity") //si on est sur le capteur d'humidité alors on va chercher la valeur du capteur et on l'écrit dans la console
+    {
+        time_t now = time(nullptr);//permet de donner l'heure exacte
+        std::cout << ctime(&now) << " Humidity = "<< value_p.humidityValue <<std::endl;
+    }
+    if (typeCapteur_p == "Light")//id pour les autres capteurs
+    {
+        time_t now = time(nullptr);
+        std::cout << ctime(&now) << " Light = "<< value_p.lightValue <<std::endl;
+    }
+    if (typeCapteur_p == "Pressure")
+    {
+        time_t now = time(nullptr);
+        std::cout << ctime(&now) << " Pressure = "<< value_p.pressureValue <<std::endl;
+    }
+    if (typeCapteur_p == "Temperature")
+    {
+        time_t now = time(nullptr);
+        std::cout << ctime(&now) << " Temperature = "<< value_p.tempValue <<std::endl;
+    }
+}
+
+
+void Server::fileWrite(std::string typeCapteur_p, captor_data value_p)
+ /*fonction qui permet de créer/d'ouvrir les logs et d'écrire les valeurs des capteurs à l'intérieur
+ on aura décidé que les valeurs se mettent a la suite dans les logs a chaque appel du programme pour garder un historique des valeurs*/
+{
     time_t now = time(nullptr);
     std::ofstream file;
 
-    file.open("log_"+typeCapteur+".txt", std::ios::app); // append
-    file << ctime(&now) << " DATA " << typeCapteur << " = ";
+    file.open("log_"+typeCapteur_p+".txt", std::ios::app);
+    file << ctime(&now) << " Captor " << typeCapteur_p << " : ";
 
-/*pour le rendu intermédiaire, les "bool" et les "float" ne sont pas utilisés*/
-    if(typeVal == "int")
+
+    if(typeCapteur_p == "Humidity") //pour chaque capteur on écrit sa valeur dans son fichier log associé
     {
-        file << value.valInt << "\r\n";
-    } else if(typeVal == "bool")
+        file <<"percentage humidity: " << value_p.humidityValue << "%" << "\r\n";
+    }
+    if(typeCapteur_p== "Light")
     {
-        file << value.valBool << "\r\n";
-    } else if(typeVal == "float")
+        file <<"Light: " << value_p.lightValue << "\r\n";
+    } 
+    if(typeCapteur_p == "Pressure")
     {
-        file << value.valFloat << "\r\n";
+        file << "Pressure value: " << value_p.pressureValue << "Hpa" << "\r\n";
+    } 
+    if(typeCapteur_p == "Temperature")
+    {
+        file << "valeur Temperature: " << value_p.tempValue << "°C"<< "\r\n";
     }
     file.close();
 }

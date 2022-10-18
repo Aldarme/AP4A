@@ -2,7 +2,7 @@
 * @author laduguie
 * @file Scheduler.hpp
 * @date 28/09/2022
-* @brief The scheduler takes the data to send it to the server every second
+* @brief Définition de la classe Scheduler
 */
 
 #ifndef SCHEDULER_H
@@ -15,27 +15,36 @@
 #include "Server.hpp"
 #include "Sensor.hpp"
 
+class Server; /*on initialise la classe server au début pour avoir accès a tous ses éléments*/
+
 class Scheduler
 {
     private:
-        Sensor* captorHumidity;
-        Sensor* captorLight;
-        Sensor* captorPressure;
-        Sensor* captorTemp;
-        Server objetServer;
+        Server* pObjetServer;
+        captor_data structDef;
+
+        Sensor<float>* pCaptorHumidity;
+        Sensor<bool>* pCaptorLight;
+        Sensor<int>* pCaptorPressure;
+        Sensor<float>* pCaptorTemp;
+
+        /*on créé l'objet server et la structure qui va contenir les données des capteurs*/
+      
+
     public:
-        Scheduler() //constructeur par defaut
+        Scheduler() //constructeur par defaut, on créé les objets
         {
-            captorHumidity = new Humidity();
-            captorLight = new Light();
-            captorPressure = new Pressure();
-            captorTemp = new Temperature();
+            pCaptorHumidity = new Humidity();
+            pCaptorLight = new Light();
+            pCaptorPressure = new Pressure();
+            pCaptorTemp = new Temperature();
+            pObjetServer = new Server();
         }
         Scheduler(const Scheduler&); //constructeur par recopie
         Scheduler &operator=(const Scheduler&); //operateur d'afffectation
         ~Scheduler(){} //Destructeur
         
-        void run();
+        void run(); //on déclare la fonction run
 
 };
 
