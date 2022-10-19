@@ -41,38 +41,45 @@ Scheduler::Scheduler()
  */
 void Scheduler::sendData(Server p_server)
 {
-    time_t start, end;
+    time_t start;
+    int new_time_elapsed, old_time_elapsed = 0;
     
     time(&start);
 
     while (true)
-    {
-        if (difftime(time(&end), start) > 3)
+    {   
+        new_time_elapsed = time(0) - start;
+
+        //evoids running multiple time in same seconds
+        if (old_time_elapsed != new_time_elapsed)
         {
-            Package<float> pac_h(m_humid.getData(), "humidity", "%");
-            Package<float> pac_t(m_temp.getData(), "temperature", "c°");
-            Package<bool> pac_l(m_light.getData(), "light", "");
-            Package<int> pac_p(m_pres.getData(), "pressure", "psc");
+            // seperate every sequence
+            cout << "----------------" << endl;
 
-            if (p_server.m_consol)
-            {
-                p_server.consolWrite(pac_h);
-                p_server.consolWrite(pac_p);
-                p_server.consolWrite(pac_t);
-                p_server.consolWrite(pac_l);
+            // modulo the number of seconds before sending data
+            if (new_time_elapsed % 1 == 0){
+                Package<int> pac_p(m_pres.getData(), "pressure", "psc");
+                p_server.receiveData(pac_p);
             }
-            if (p_server.m_file)
+            if (new_time_elapsed % 2 == 0)
             {
-                p_server.fileWrite(pac_h);
-                p_server.fileWrite(pac_p);
-                p_server.fileWrite(pac_t);
-                p_server.fileWrite(pac_l);
+                Package<float> pac_t(m_temp.getData(), "temperature", "c°");
+                p_server.receiveData(pac_t);
             }
-            
+            if (new_time_elapsed % 3 == 0)
+            {
+                Package<float> pac_h(m_humid.getData(), "humidity", "%");
+                p_server.receiveData(pac_h);
+            }
+            if (new_time_elapsed % 4 == 0)
+            {
+                Package<bool> pac_l(m_light.getData(), "light", "");
+                p_server.receiveData(pac_l);
+            }
 
-            time(&start);
+            // reset
+            old_time_elapsed = new_time_elapsed;
         }
-        
     }
 
 }

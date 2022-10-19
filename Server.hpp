@@ -13,12 +13,9 @@ class: Server
 
 class Server
 {
-public:
+private:
     bool m_consol;
     bool m_file;
-
-public:
-    Server(bool p_consol, bool m_file);
     
     template <typename T>
     void consolWrite(Package<T> p_package)
@@ -33,6 +30,24 @@ public:
         file << p_package;
 
         file.close();
+    }
+
+public:
+    Server(bool p_consol, bool m_file);
+
+    template <typename T>
+    void receiveData(Package<T> p_package)
+    {
+        if (m_consol)
+        {
+            consolWrite(p_package);
+        }
+        if (m_file)
+        {
+            fileWrite(p_package);
+        }
+        
+        
     }
 };
 
