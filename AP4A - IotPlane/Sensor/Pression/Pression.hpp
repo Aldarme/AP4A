@@ -16,7 +16,8 @@
 class Pression : public Sensor<int>
 {
 private:
-  std::string unity;
+  std::string unit;
+  int delay;
   
 protected:
   int aleaGenVal();
@@ -25,11 +26,12 @@ public:
   //FORME CANONIQUE
   Pression();
   Pression(const Pression& autre);
+  Pression(std::string unit, int delay);
   virtual ~Pression();
   Pression& operator=(const Pression& autre);
 
   //AUTRES METHODES
-
+  int getDelay();
 };
 
 #endif // PRESSION_HPP

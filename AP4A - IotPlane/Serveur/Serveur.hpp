@@ -39,6 +39,7 @@ public:
 
   //Recois les données du scheduler et les affichent conformement au dataDisplayParameters
   void dataRcv(float temp, float humidity, bool light, int pression);
+
 };
 
 #endif //SERVEUR_HPP

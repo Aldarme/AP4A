@@ -15,6 +15,10 @@
 
 class Humidity : public Sensor<float>
 {
+private:
+  std::string unit;
+  int delay;
+
 protected:
   float aleaGenVal();
   
@@ -22,7 +26,13 @@ public:
   //FORME CANONIQUE
   Humidity();
   Humidity(const Humidity& autre);
+  Humidity(std::string unit, int delay);
+  virtual ~Humidity();
   Humidity& operator=(const Humidity& autre);
+
+  //AUTRES METHODES
+  int getDelay();
+  
 };
 
 #endif // HUMIDITY_HPP

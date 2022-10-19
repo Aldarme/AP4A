@@ -1,7 +1,7 @@
 /**
  * @author NANMEGNI_NGASSAM
  * @file Sensor.hpp
- * @date 18/10/2022
+ * @date 19/10/2022
  * @licence libre
  */
 
@@ -17,7 +17,8 @@
 template <class T> class Sensor // classe abstraite
 {
 private:
-  std::string unity;
+  std::string unit;
+  int delay;
 
 protected:
   //methode virtuelle pure, generation des valeurs aléatoires
@@ -27,29 +28,51 @@ public:
   // FORME CANONIQUE
   Sensor<T>();
   Sensor<T>(const Sensor<T>& capteur);
+  Sensor<T>(std::string unit, int delay);
   virtual ~Sensor<T>();
   Sensor<T>& operator=( const Sensor<T>& capteur);
 
   // AUTRES METHODES
-  T getData()// Recuperation des données générées (aleaGenVal())
-  {
-    T fetchedData; 
-    fetchedData = aleaGenVal();
-    return fetchedData;
-  }
-  // Inserer une fonction qui retourne l'unité si besoin
-
+  T getData();// Recuperation des données générées (aleaGenVal())
+  virtual std::string getUnit();//Recuperation de l'unité du capteur
+  virtual int getDelay() = 0;//Recuperation de la frequence de timing
 };
 
+
+
 /**
- * Template class implementation have to be declared in the hpp file
+ * L'implementation des classes templates doivent être rédigés dans le fichier .hpp
  */
 
-template<class T> Sensor<T>::Sensor() : unity()
+template<class T> Sensor<T>::Sensor() : unit(), delay(4)
+{
+};
+template<class T> Sensor<T>::Sensor(const Sensor<T>& capteur) : unit(capteur.unit), delay(capteur.delay)
+{
+};
+template<class T> Sensor<T>::Sensor(std::string unit, int delay) : unit(unit), delay(delay)
 {
 }
-template<class T> Sensor<T>::Sensor(const Sensor<T>& capteur) = default;
-template<class T> Sensor<T>::~Sensor<T>() = default;
-template<class T> Sensor<T>& Sensor<T>::operator=(const Sensor<T>& capteur) = default;
+template<class T> Sensor<T>::~Sensor<T>()
+{
+};
+template<class T> Sensor<T>& Sensor<T>::operator=(const Sensor<T>& capteur)
+{
+  this->unit = capteur.unit;
+  this->delay = capteur.delay;
+};
 
+
+// IMPLEMENTATION DES AUTRES METHODES
+template<class T> T Sensor<T>::getData()
+{
+  T fetchedData; 
+  fetchedData = aleaGenVal();
+  return fetchedData;
+}
+
+template<class T> std::string Sensor<T>::getUnit()
+{
+  return (this->unit);
+}
 #endif // SENSOR_HPP

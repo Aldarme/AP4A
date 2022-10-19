@@ -9,13 +9,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
-//Inclusion des fichiers propre à mon projet
-#include "Sensor/Sensor.hpp"
-#include "Sensor/Humidity/Humidity.hpp"
-#include "Sensor/Temperature/Temperature.hpp"
-#include "Sensor/Light/Light.hpp"
-#include "Sensor/Pression/Pression.hpp"
-#include "Serveur/Serveur.hpp"
+//Inclusion des fichiers propre à mon projet (Scheduler.hpp) car il cadence tout le processus
 #include "Scheduler/Scheduler.hpp"
 
 
@@ -23,12 +17,19 @@ using namespace std;
 
 int main()
 {
+  //Declaration et parametrage du serveur
   Serveur db;
   db.dataDisplayParameters(true, true);
+
+  //Declaration des differents capteurs avec en paramètres l'unité et le delay, sinon paramètres par défaut
   Humidity humidity;
-  Temperature temp;
+  Temperature temp("C", 4);
   Light light;
   Pression pression;
+  int valeur = pression.getDelay();
+
+
+  //Declaration et lancement du scheduler
   Scheduler timer;
   timer.scheduler(db,humidity,temp,light,pression);
   return 0;

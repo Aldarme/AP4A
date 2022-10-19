@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion"
+CMAKE_SOURCE_DIR = "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion"
+CMAKE_BINARY_DIR = "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/IotPlane.dir/depend.make
@@ -71,100 +71,100 @@ include CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/IotPlane.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/IotPlane.cpp.obj: IotPlane.cpp
 CMakeFiles/IotPlane.dir/IotPlane.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IotPlane.dir/IotPlane.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/IotPlane.cpp.obj -MF CMakeFiles\IotPlane.dir\IotPlane.cpp.obj.d -o CMakeFiles\IotPlane.dir\IotPlane.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\IotPlane.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IotPlane.dir/IotPlane.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/IotPlane.cpp.obj -MF CMakeFiles\IotPlane.dir\IotPlane.cpp.obj.d -o CMakeFiles\IotPlane.dir\IotPlane.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\IotPlane.cpp"
 
 CMakeFiles/IotPlane.dir/IotPlane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/IotPlane.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\IotPlane.cpp" > CMakeFiles\IotPlane.dir\IotPlane.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\IotPlane.cpp" > CMakeFiles\IotPlane.dir\IotPlane.cpp.i
 
 CMakeFiles/IotPlane.dir/IotPlane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/IotPlane.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\IotPlane.cpp" -o CMakeFiles\IotPlane.dir\IotPlane.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\IotPlane.cpp" -o CMakeFiles\IotPlane.dir\IotPlane.cpp.s
 
 CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj: Sensor/Humidity/Humidity.cpp
 CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Humidity\Humidity.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Humidity\Humidity.cpp"
 
 CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Humidity\Humidity.cpp" > CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Humidity\Humidity.cpp" > CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.i
 
 CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Sensor/Humidity/Humidity.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Humidity\Humidity.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Humidity\Humidity.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Humidity\Humidity.cpp.s
 
 CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj: Sensor/Light/Light.cpp
 CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Light\Light.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Light\Light.cpp"
 
 CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Light\Light.cpp" > CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Light\Light.cpp" > CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.i
 
 CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Sensor/Light/Light.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Light\Light.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Light\Light.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Light\Light.cpp.s
 
 CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj: Sensor/Pression/Pression.cpp
 CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Pression\Pression.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Pression\Pression.cpp"
 
 CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Pression\Pression.cpp" > CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Pression\Pression.cpp" > CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.i
 
 CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Sensor/Pression/Pression.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Pression\Pression.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Pression\Pression.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Pression\Pression.cpp.s
 
 CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj: Sensor/Temperature/Temperature.cpp
 CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Temperature\Temperature.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.obj -MF CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.obj.d -o CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Temperature\Temperature.cpp"
 
 CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Temperature\Temperature.cpp" > CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Temperature\Temperature.cpp" > CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.i
 
 CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Sensor/Temperature/Temperature.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Sensor\Temperature\Temperature.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Sensor\Temperature\Temperature.cpp" -o CMakeFiles\IotPlane.dir\Sensor\Temperature\Temperature.cpp.s
 
 CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj: Serveur/Serveur.cpp
 CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj -MF CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.obj.d -o CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Serveur\Serveur.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.obj -MF CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.obj.d -o CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Serveur\Serveur.cpp"
 
 CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Serveur\Serveur.cpp" > CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Serveur\Serveur.cpp" > CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.i
 
 CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Serveur/Serveur.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Serveur\Serveur.cpp" -o CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Serveur\Serveur.cpp" -o CMakeFiles\IotPlane.dir\Serveur\Serveur.cpp.s
 
 CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj: CMakeFiles/IotPlane.dir/flags.make
 CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj: Scheduler/Scheduler.cpp
 CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj: CMakeFiles/IotPlane.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj -MF CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.obj.d -o CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Scheduler\Scheduler.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.obj -MF CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.obj.d -o CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.obj -c "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Scheduler\Scheduler.cpp"
 
 CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Scheduler\Scheduler.cpp" > CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Scheduler\Scheduler.cpp" > CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.i
 
 CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IotPlane.dir/Scheduler/Scheduler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\Scheduler\Scheduler.cpp" -o CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\Scheduler\Scheduler.cpp" -o CMakeFiles\IotPlane.dir\Scheduler\Scheduler.cpp.s
 
 # Object files for target IotPlane
 IotPlane_OBJECTS = \
@@ -190,7 +190,7 @@ IotPlane.exe: CMakeFiles/IotPlane.dir/build.make
 IotPlane.exe: CMakeFiles/IotPlane.dir/linklibs.rsp
 IotPlane.exe: CMakeFiles/IotPlane.dir/objects1.rsp
 IotPlane.exe: CMakeFiles/IotPlane.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable IotPlane.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable IotPlane.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\IotPlane.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -202,6 +202,6 @@ CMakeFiles/IotPlane.dir/clean:
 .PHONY : CMakeFiles/IotPlane.dir/clean
 
 CMakeFiles/IotPlane.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\simulateurAvion\CMakeFiles\IotPlane.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane" "C:\Users\Pavel\OneDrive\Desktop\En cours de traitement\FISE INFO\AUTOMNE 2022\AP4A - Programmation Orientee Objet\Projet\AP4A-NANMEGNI_NGASSAM\AP4A - IotPlane\CMakeFiles\IotPlane.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/IotPlane.dir/depend
 

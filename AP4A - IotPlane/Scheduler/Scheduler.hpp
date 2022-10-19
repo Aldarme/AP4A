@@ -1,17 +1,18 @@
 /**
  * @author NANMEGNI_NGASSAM
  * @file Scheduler.hpp
- * @date 18/10/2022
+ * @date 19/10/2022
  * @licence libre
  */
 #ifndef SCHEDULER_HPP
 #define SCHEDULER_HPP
 
-#include "../Serveur/Serveur.hpp" // Inclusion du serveur
-#include "../Sensor/Humidity/Humidity.hpp" // Inclusion du capteur d'humidité
-#include "../Sensor/Light/Light.hpp" // Inclusion du capteur de lumière
-#include "../Sensor/Pression/Pression.hpp" // Inclusion du capteur d'humidité
-#include "../Sensor/Temperature/Temperature.hpp" // Inclusion du capteur d'humidité
+//Inclusion des assets(capteurs et serveur)
+#include "../Serveur/Serveur.hpp"
+#include "../Sensor/Humidity/Humidity.hpp" 
+#include "../Sensor/Light/Light.hpp" 
+#include "../Sensor/Pression/Pression.hpp" 
+#include "../Sensor/Temperature/Temperature.hpp" 
 
 
 /**
@@ -28,6 +29,7 @@ public:
   Scheduler& operator=(const Scheduler& autre);
 
   //AUTRES METHODES
+  //Synchronisation de la recuperation des donnees au niveau des capteurs, l'affichage et les logs
   void scheduler( Serveur& DB, Humidity& humidity, Temperature& temp, Light& ligth, Pression& pression);
 };
 

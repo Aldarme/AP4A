@@ -1,7 +1,7 @@
 /**
  * @author NANMEGNI_NGASSAM
  * @file Temperature.hpp
- * @date 24/09/2022
+ * @date 19/10/2022
  * @licence libre
  */
 
@@ -16,7 +16,8 @@
 class Temperature : public Sensor<float>
 {
 private:
-  std::string unity;
+  std::string unit;
+  int delay;
 
 protected:
   float aleaGenVal();
@@ -25,10 +26,12 @@ public:
   //FORME CANONIQUE
   Temperature();
   Temperature(const Temperature& temp);
+  Temperature(std::string unit, int delay);
   virtual ~Temperature();
   Temperature& operator=(const Temperature& temp);
 
   //AUTRES METHODES
+  int getDelay();
 };
 
 #endif //TEMPERATURE_HPP
