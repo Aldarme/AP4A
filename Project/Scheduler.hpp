@@ -11,14 +11,12 @@
 class Scheduler
 {
     public:
-        Scheduler();
-        virtual ~Scheduler(){}
-        void takedata() ;
-     ;
+    Scheduler();
+    virtual ~Scheduler(){}
+    void takedata() ;
 
-    protected:
-
-    private: bool m_activeC, m_activeF ;
+    private: 
+    bool m_activeC, m_activeF ;
 };
 
 #endif // SCHEDULER_HPP
