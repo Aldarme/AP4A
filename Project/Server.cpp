@@ -11,19 +11,18 @@ using namespace std ;
 
 
 // This is used to show all the datas collected from sensor on the console.
-void Server::ConsoleWrite (std::string type_p,int val_p,std::string unit_p,bool activ_p)
+void Server::ConsoleWrite (std::string type_p,std::string val_p,std::string unit_p,bool activ_p)
 {
 
    if(activ_p==true)
    {
-    cout<<type_p<<" : "<<val_p<<unit_p<<"         " ;
-    if (type_p=="Pression") cout<<endl ;
+    cout<<type_p<<" : "<<val_p<<unit_p<<endl ; 
    }
 
 }
 
 //This is used to store all the datas collected in the sensor's respective file Log
-void Server::fileWrite (std::string type_p,int val_p,std::string unit_p,bool activ_p)
+void Server::fileWrite (std::string type_p,std::string val_p,std::string unit_p,bool activ_p)
 {
     ofstream LogSensor("Log"+type_p+".txt",std::ios::app) ;
     if (activ_p==true)
