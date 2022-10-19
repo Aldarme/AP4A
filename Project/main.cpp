@@ -8,16 +8,22 @@
 #include "Scheduler.h"
 #include <iostream>
 #include <string>
-#include <unistd.h>
 #include <cstdlib>
 #include <fstream>
-
+#include <chrono>
+#include <thread>
 using namespace std;
 
-int main() {
-    Scheduler scheduler(5); // transmit/write data each 5 seconds
 
-    for(int i = 0; i<10; ++i) { // run the program for 10 times. Can change in while loop to run the program infinitely
-        scheduler.transmitData();
-    }
+int main() {
+
+    Scheduler scheduler;
+    scheduler.setInterval();
+    scheduler.showOnConsole();
+    scheduler.dataQuantity();
+    scheduler.transmitData();
+    
+    return 0;
+
+    
 }

@@ -9,21 +9,22 @@
 #include <iostream>
 #include <string>
 
-class Server {   
+class Server {  
+
     public:
         // constructor
-        Server(){}
+        Server() {}
 
         // destructor
-        ~Server() {}
+        virtual ~Server() {}
 
-        // methods
+        // consoleWrite(string, string) : show data on terminal
+        void consoleWrite(std::string, std::string);
 
-        // consoleWrite(char) : show on terminal the data
-        void consoleWrite(int, std::string);
+        // fileWrite(float, std::string) : write a log.txt for the datas
+        void fileWrite(std::string, std::string);
 
-        // fileWrite(char) : write a log.txt with the data as values
-        void fileWrite(int, std::string);
+        void resetFile(std::string);
 
 };
 

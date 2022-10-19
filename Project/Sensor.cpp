@@ -7,22 +7,23 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <cmath>
 
 using namespace std;
 
-// getData() : return a random value based on the sensor type
-int Sensor::getData() {
-    return this->aleaGenVal();
-}
 
 // aleaGenVal() : generate random integer between 20 and 30 degree Celcius
-int Temperature::aleaGenVal() {
-    return rand() % 10 + 20;
+float Temperature::aleaGenVal() {
+    int min = 20;
+    int max = 30;
+    return (max - min) * ((float)rand()/RAND_MAX) + min;
 }
 
 // aleaGenVal() : generate random integer between 1 and 15% humidity
-int Humidity::aleaGenVal() {
-    return rand() % 20 + 1;
+float Humidity::aleaGenVal() {
+    int min = 1;
+    int max = 15;
+    return (max - min) * ((float)rand()/RAND_MAX) + min;
 }
 
 // aleaGenVal() : generate random integer between 10 and 15 PSI
@@ -31,6 +32,10 @@ int Pressure::aleaGenVal() {
 }
 
 // aleaGenVal() : generate random integer between 1 and 0
-int Light:: aleaGenVal() {
-    return rand() % 2 + 0;
+bool Light::aleaGenVal() {
+    int i = rand() % 2 + 0;
+    if (i == 0) {
+        return false;
+    }
+    return true;   
 }
