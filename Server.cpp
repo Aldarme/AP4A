@@ -25,20 +25,22 @@ Server::Server(bool p_consol, bool p_file){
  * 
  * @param p_package 
  */
-void Server::consolWrite(Package p_package)
-{
-    std::cout << p_package << std::endl;
-}
+// template <class T>
+// void Server::consolWrite(Package<T> p_package)
+// {
+//     std::cout << p_package << std::endl;
+// }
 
 /**
  * @brief write the package values to the file
  * 
  * @param p_package 
  */
-void Server::fileWrite(Package p_package)
-{
-    std::ofstream file(p_package.getName().append(".txt"), std::ios::app);
-    file << p_package;
+// template <class T>
+// void Server::fileWrite(Package<T> p_package)
+// {
+//     std::ofstream file(p_package.getName().append(".txt"), std::ios::app);
+//     file << p_package;
 
-    file.close();
-}
+//     file.close();
+// }

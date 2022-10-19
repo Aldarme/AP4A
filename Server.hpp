@@ -8,6 +8,7 @@ licence: free
 class: Server
 */
 
+#include <iostream>
 #include "Package.hpp"
 
 class Server
@@ -18,8 +19,21 @@ public:
 
 public:
     Server(bool p_consol, bool m_file);
-    void consolWrite(Package p_package);
-    void fileWrite(Package p_package);
+    
+    template <typename T>
+    void consolWrite(Package<T> p_package)
+    {
+        std::cout << p_package << std::endl;
+    }
+    
+    template <typename T>
+    void fileWrite(Package<T> p_package)
+    {
+        std::ofstream file(p_package.getName().append(".txt"), std::ios::app);
+        file << p_package;
+
+        file.close();
+    }
 };
 
 #endif // SERVER_H
