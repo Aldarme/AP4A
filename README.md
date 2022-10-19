@@ -1,7 +1,7 @@
 # AP4A
 UTBM_UV_C++
 
-Rendu Final
+Rendu Final ( dans le commit "rendu final, final", si jamais je n'ai toujours pas enlevé l'ancien rendu final lorsque vous lisez ceci)
 
 (J'ai utilisé des threads dans mon projet, or MinGW compile mal les threads, j'ai donc utiliser le compilateur de visual studio
 pour compiler mais l'entièrtée du code fut coder sous Visual Studio Code) -> Fichier exe du projet dans Debug/SimulationAvion
