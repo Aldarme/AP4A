@@ -27,8 +27,6 @@ class Sensor
         };
 
         Sensor(){} //constructeur par défaut
-        Sensor(const Sensor&); //constructeur par recopie
-        Sensor &operator=(const Sensor&); //operateur d'afffectation
         virtual ~Sensor(){} //Destructeur
 
 };

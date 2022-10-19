@@ -40,9 +40,10 @@ class Scheduler
             pCaptorTemp = new Temperature();
             pObjetServer = new Server();
         }
-        Scheduler(const Scheduler&); //constructeur par recopie
-        Scheduler &operator=(const Scheduler&); //operateur d'afffectation
-        ~Scheduler(){} //Destructeur
+        ~Scheduler()
+        {
+            delete(pCaptorHumidity, pCaptorLight, pCaptorPressure, pCaptorTemp, pObjetServer);
+        }; //Destructeur
         
         void run(); //on déclare la fonction run
 

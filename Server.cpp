@@ -6,15 +6,24 @@ Server::Server(){}
 void Server::question()
 /*Tant que l'utilisateur écrit autre chose de "yes" ou "no" la question est reposée*/
 {
-    while (!(log =="yes" || log == "no")) //tant que log n'est pas yes ou log n'est pas no
+    std::string console;
+    std::string log;
+    while (!(log == "yes" || log == "no")) //tant que log n'est pas yes ou log n'est pas no
+
+    /*puisque bool a un type de base on ne peut pas faire la condition avec un bool car il n'entre pas dans la boucle.
+    En utilisant do...while il entre dans la boucle mais ne se répète pas car par défaut log=false donc on utilise un string*/
     {
         std::cout << "Logs? (yes/no)" << std::endl;
-        std::cin >>log;
+        std::cin >> log;
+        if(log=="yes") m_log = true;
+        if(log=="no") m_log = false;
     }
     while (!(console == "yes" || console == "no"))
     {
         std::cout <<"console? (yes/no)" << std::endl;
         std::cin >>console;
+        if(console=="yes") m_console = true;
+        if(console=="no") m_console = false;
     }
 }
 

@@ -30,11 +30,11 @@ void Scheduler::run() /*on définit ce que doit faire le scheduler*/
         if(elapsedHum >= 5000) /*le capteur d'humidité est appelé toutes les 5000ms*/
         {
             structDef.humidityValue = pCaptorHumidity->getData(); /* on recupère la valeur dans la structure qui est donnée par getData*/ 
-            if(pObjetServer->console == "yes")   /*si l'utilisateur veut les valeurs dans la console alors on les écrit*/
+            if(pObjetServer->m_console == 1)   /*si l'utilisateur veut les valeurs dans la console alors on les écrit*/
             {
             pObjetServer->consoleWrite("Humidity", structDef);
             }
-            if(pObjetServer->log == "yes")   /*si l'utilisateur veut les logs des capteurs alors on les écrit*/
+            if(pObjetServer->m_log == 1)   /*si l'utilisateur veut les logs des capteurs alors on les écrit*/
             { 
             pObjetServer->fileWrite("Humidity", structDef);
             }
@@ -44,11 +44,11 @@ void Scheduler::run() /*on définit ce que doit faire le scheduler*/
         if(elapsedLight >= 8000) /*de la meme façon on appelle le capteur de lumière toutes les 8 secondes*/
         {
             structDef.lightValue = pCaptorLight->getData();
-            if(pObjetServer->console == "yes")
+            if(pObjetServer->m_console == 1)
             {
             pObjetServer->consoleWrite("Light", structDef);
             }
-            if(pObjetServer->log == "yes")
+            if(pObjetServer->m_log == 1)
             {
             pObjetServer->fileWrite("Light", structDef);
             }
@@ -58,11 +58,11 @@ void Scheduler::run() /*on définit ce que doit faire le scheduler*/
         if(elapsedPressure >= 3500) /*de la meme façon on appelle le capteur de pression toutes les 3,5s*/
         {
             structDef.pressureValue = pCaptorPressure->getData();
-            if(pObjetServer->console == "yes")
+            if(pObjetServer->m_console == 1)
             {
             pObjetServer->consoleWrite("Pressure", structDef);
             }
-            if(pObjetServer ->log == "yes")
+            if(pObjetServer ->m_log == 1)
             {
             pObjetServer->fileWrite("Pressure", structDef);
             }
@@ -72,11 +72,11 @@ void Scheduler::run() /*on définit ce que doit faire le scheduler*/
         if(elapsedTemp >= 2000) /*de la meme façon on appelle le capteur de température toutes les 2s*/
         {
             structDef.tempValue = pCaptorTemp->getData(); 
-            if(pObjetServer->console == "yes")
+            if(pObjetServer->m_console == 1)
             {
             pObjetServer->consoleWrite("Temperature", structDef);
             }
-            if(pObjetServer->log == "yes")
+            if(pObjetServer->m_log == 1)
             {
             pObjetServer->fileWrite("Temperature", structDef);
             }
