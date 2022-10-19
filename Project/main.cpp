@@ -2,14 +2,14 @@
 #include "Scheduler.hpp"
 #include "Sensor.hpp"
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 
 int main()
 {
-Scheduler sched ;
-Server s ;
-while (true)
-sched.takedata();
+    srand(time(0)) ;
+    Scheduler sched ;
+    sched.takedata();
 
 }
