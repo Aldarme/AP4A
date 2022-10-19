@@ -8,34 +8,34 @@
 #include <iostream>
 #include <math.h>
 
-// GetData() is used to collects data from each sensor 
-int Sensor::getdata( )
-{
-   return this->aleagenval() ;
-
-}
-
 
 //This is a function of class Light which generates random value, either 0 or 1 
-int Light::aleagenval()
+bool Light::aleagenval()
 {
     int data= (rand()%2) ;
-    return data;
+    if (data==0) return false ; 
+    else return true ; 
 }
 
-//This is a function of class Humidity which generates random value, from 30% to 50%
-int Humidity::aleagenval()
+//This is a function of class Humidity which generates random value, from 1% to 20%
+float Humidity::aleagenval()
 {
-    int data= 30+ (rand() % 21) ;
-    return data;
+    float data ;
+    int max = 20 ;
+    int min = 1 ;
+    data= ((max - min) * ((float)rand() / RAND_MAX)) + min;
+    return data ; 
 
 }
 
 //This is a function of class Temperature which generates random value, from 22°C to 26°C 
-int Temperature::aleagenval()
+float Temperature::aleagenval()
 {
-    int data= 22+ (rand() % 4)  ;
-    return data;
+    float data ;
+    int max = 26 ;
+    int min = 22 ;
+    data= ((max - min) * ((float)rand() / RAND_MAX)) + min;
+    return data; 
 }
 
 
