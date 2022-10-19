@@ -4,7 +4,7 @@ UTBM_UV_C++
 Rendu Final
 
 (J'ai utilisé des threads dans mon projet, or MinGW compile mal les threads, j'ai donc utiliser le compilateur de visual studio
-pour compiler mais l'entièrtée du code fut coder sous Visual Studio Code)
+pour compiler mais l'entièrtée du code fut coder sous Visual Studio Code) -> Fichier exe du projet dans Debug/SimulationAvion
 
 Mon rendu final est quelque peut différent de rendu intèrmédiaire, j'expliquerai cela dans se fichier. Voici la
 structure de mon projet.
@@ -28,7 +28,7 @@ Sensor:
 
   Contrairement au rendu intermédiaire, on modifie les valeurs en ajoutant symplement un nombre aléatoire entre -n et n, n étant différent pour chaqun des sensors
   en focntion de se qui semble cohérent.
-  La classe mère sensor ne possède pas de variable "value" mais chaque classe fille en posède une avec un type différent. Les fonctions getData son donc aussi définies dans ses classes filles. La classe simulation est surchargé dans les classes filles.
+  La classe mère sensor est codée uniquement dans la fichier .hpp car elle posède des templates
   
   Deux fonction sont ajoutées dans Sensor : intRand() et floatRand() qui créent des valeurs aléatoires. La raison de cet ajout est que la fonction Rand() sort des valeurs identique entre les threads, j'ai donc recréer des fonctions random avec : uniform_int_distribution<int> pour créer un nombre entier aléatoire et uniform_real_distribution<float> pour créer un nombre flotant aléatoire.
 
