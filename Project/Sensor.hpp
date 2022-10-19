@@ -9,54 +9,58 @@
 
 
 //The base class which contains all the sensors
+template <typename T>
 class Sensor
 {
     public:
         Sensor(){}
         virtual ~Sensor(){}
-        int getdata() ;
-
+        T getdata() 
+        {
+            return this->aleagenval() ;
+        }
+        
     protected:
-       virtual int aleagenval()=0 ;
+    virtual T aleagenval()=0 ;
 
 };
 
 
 // Child class of Sensor : Light which represents the light sensor 
-class Light : public Sensor
+class Light : public Sensor <bool>
 {
     public:
         Light(){}
         virtual ~Light(){}
-        int aleagenval () override;
+        bool aleagenval () override;
 
 };
 
 
 // Child class of Sensor : Humidity which represents the humidity sensor 
-class Humidity : public Sensor
+class Humidity : public Sensor <float>
 {
     public:
         Humidity(){}
         virtual ~Humidity(){}
-        int aleagenval() override;
+        float aleagenval() override;
 
 };
 
 
 // Child class of Sensor : Temperature which represents the temperature sensor 
-class Temperature : public Sensor
+class Temperature : public Sensor <float>
 {
     public:
         Temperature(){}
         virtual ~Temperature(){} 
-        int aleagenval() override;
+        float aleagenval() override;
 
 };
 
 
 // Child class of Sensor : Pression which represents the pressure sensor 
-class Pression : public Sensor
+class Pression : public Sensor <int>
 {
     public:
         Pression(){}
