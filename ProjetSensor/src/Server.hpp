@@ -3,36 +3,61 @@
  * @file Server.hpp
  * @date 28/09/2022
  * @brief Définition de la class Server
- * @brief Reçoit et stock les données des capteurs
+ * @brief Reçoit et envoie les données des capteurs
  */
 
 // Define guards
 #ifndef SERVER_H
 #define SERVER_H
 
+#include "Sensor.hpp"
+
 #include <iostream>
 #include <fstream>
 
 class Server
 {
+private:
+    //Booléens permettant de savoir où envoyer les informations
+    bool m_sendConsole = true, m_sendLog = true;
+
+    //Chemin du dossier où stocker les logs (sans "/" à la fin)
+    std::string m_logsDirectory = "../logs";
+
+    /**
+     * @brief Ecrit les données reçues dans la console
+     * @param data Structure SensorData, contenant les informations d'un capteur
+     */
+    void consoleWrite(SensorData data);
+    
+    /**
+     * @brief Ecrit les données de chaque Sensor dans un fichier (dans le dossier logs)
+     * @param data Structure SensorData, contenant les informations d'un capteur
+     */
+    void fileWrite(SensorData data);
+
+    /**
+     * @brief Crée le dossier des logs s'il n'existe pas, et supprime son contenu
+    */
+    void initLogs();
+
 public:
     //Forme canonique
     Server();
-    ~Server();
+    virtual ~Server();
     Server(const Server& s);
     Server& operator=(const Server& s);
 
     /**
-     * @brief Ecrit les données reçues dans la console
-     * @param valeurs Liste des données à écrire dans la console (0: humidity, 1: light, 2: pressure, 4: temperature)
-     */
-    void consoleWrite(int valeurs[]);
-    
+     * @brief Reçoit les données d'un capteur, et les affiche dans la console et/ou dans les logs
+     * @param data Structure SensorData, contenant les informations à afficher d'un capteur
+    */
+    void rcvData(SensorData data);
+
     /**
-     * @brief Ecrit les données de chaque Sensor dans un fichier (dans le dossier logs)
-     * @param valeurs Liste des données à écrire dans la console (0: humidity, 1: light, 2: pressure, 4: temperature)
-     */
-    void fileWrite(int valeurs[]);
+     * @brief Demande à l'utilisateur où envoyer les données des capteurs (console et/ou logs)
+    */
+    void askOutputs();
 };
 
 #endif // SERVER_H

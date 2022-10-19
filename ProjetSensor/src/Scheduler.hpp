@@ -14,7 +14,10 @@
 #include <thread>
 
 #include "Server.hpp"
-#include "Sensor.hpp"
+#include "HumiditySensor.hpp"
+#include "LightSensor.hpp"
+#include "PressureSensor.hpp"
+#include "TemperatureSensor.hpp"
 
 class Scheduler
 {
@@ -28,7 +31,7 @@ private:
 public:
     //Forme canonique
     Scheduler();
-    ~Scheduler();
+    virtual ~Scheduler();
     Scheduler(const Scheduler& s);
     Scheduler& operator=(const Scheduler& s);
 

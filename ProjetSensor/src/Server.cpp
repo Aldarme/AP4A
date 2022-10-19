@@ -3,7 +3,7 @@
  * @file Server.cpp
  * @date 28/09/2022
  * @brief Implémentation de la class Server
- * @brief Reçoit et stock les données des capteurs
+ * @brief Reçoit et envoie les données des capteurs
  */
 
 #include "Server.hpp"
@@ -13,35 +13,64 @@ Server::~Server() = default;
 Server::Server(const Server& s) = default;
 Server& Server::operator=(const Server& s) = default;
 
-
-void Server::consoleWrite(int valeurs[])
+void Server::consoleWrite(SensorData data)
 {
-    std::cout << "=== Donnees Sensors ===" << std::endl;
-    std::cout << "Humidity\t: " << valeurs[0] << " %" << std::endl;
-    std::cout << "Light\t\t: " << (valeurs[1] ? "on" : "off") << std::endl;
-    std::cout << "Pressure\t: " << valeurs[2] << " hPa" << std::endl;
-    std::cout << "Temperature\t: " << valeurs[3] << " K" << std::endl;
+    std::cout << data.sensorName << " \t: " << data.sensorValue << " " << data.sensorUnit << std::endl;
 }
 
-void Server::fileWrite(int valeurs[])
+void Server::fileWrite(SensorData data)
 {
-    std::ofstream logHumidity;
-    logHumidity.open("../logs/humidity.txt", std::ofstream::app);
-    logHumidity << valeurs[0] << " %" << std::endl;
-    logHumidity.close();
+    std::ofstream log;
+    log.open(m_logsDirectory + "/" + data.sensorName + ".txt", std::ofstream::app);
+    log << data.sensorValue << " " << data.sensorUnit << std::endl;
+    log.close();
+}
 
-    std::ofstream logLight;
-    logLight.open("../logs/light.txt", std::ofstream::app);
-    logLight << (valeurs[1] ? "on" : "off") << std::endl;
-    logLight.close();
+void Server::rcvData(SensorData data)
+{
+    if(m_sendConsole)
+    {
+        consoleWrite(data);
+    }
+    if(m_sendLog)
+    {
+        fileWrite(data);
+    }
+}
 
-    std::ofstream logPressure;
-    logPressure.open("../logs/pressure.txt", std::ofstream::app);
-    logPressure << valeurs[2] << " hPa" << std::endl;
-    logPressure.close();
+void Server::askOutputs()
+{
+    std::string repConsole, repLog;
 
-    std::ofstream logTemperature;
-    logTemperature.open("../logs/temperature.txt", std::ofstream::app);
-    logTemperature << valeurs[3] << " K" << std::endl;
-    logTemperature.close();
+    std::cout << "Would you like to send the data to the console ? (y/n)" << std::endl << "> ";
+    std::cin >> repConsole;
+    while(repConsole != "y" && repConsole != "n")
+    {
+        std::cin.clear();
+        std::cout << "Invalid input" << std::endl;
+        std::cout << "Would you like to send the data to the console ? (y/n)" << std::endl << "> ";
+        std::cin >> repConsole;
+    }
+    std::cout << std::endl;
+    m_sendConsole = repConsole == "y";
+
+    std::cout << "Would you like to send the data to the logs ? (y/n)" << std::endl << "> ";
+    std::cin >> repLog;
+    while(repLog != "y" && repLog != "n")
+    {
+        std::cin.clear();
+        std::cout << "Invalid input" << std::endl;
+        std::cout << "Would you like to send the data to the logs ? (y/n)" << std::endl << "> ";
+        std::cin >> repLog;
+    }
+    std::cout << std::endl;
+    m_sendLog = repLog == "y";
+    
+    initLogs();
+}
+
+void Server::initLogs()
+{  
+    std::string cmd = "mkdir -p " + m_logsDirectory + "; rm " + m_logsDirectory + "/*.txt";
+    system(cmd.c_str());
 }
