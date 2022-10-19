@@ -30,6 +30,7 @@ template <class Type> class  Sensor
     private:
         
     public:
+    //value used to differenciate different sensor types
         int m_type;
 
     Sensor() : 
@@ -37,8 +38,9 @@ template <class Type> class  Sensor
     m_value(),
     m_type(0)
     {
+
         std::cout<<"Sensor class created with success ::"<<std::endl;
-        
+
     }
 
     Sensor(const Sensor& p_copy) :
@@ -70,6 +72,13 @@ Type aleaGenVal()
     bool temp_bool;
 
     srand(time(NULL));
+
+/**
+ * 0: humidity
+ * 1: light
+ * 2: pression
+ * 3: temperature
+*/
 
     switch (this->m_type)
     {

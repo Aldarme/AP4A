@@ -63,13 +63,14 @@ class Scheduler
         bool m_going;
         
 
-       
+       //objects we used to generate values
         Temperature m_temperatureObject;
         Light m_lightObject;
         Humidity m_humidtyObject;
         Pression m_pressionObject;
         Server m_serverObject;
 
+        //structures we use to send data to server
         humidity_data m_humidity_d;
         pression_data m_pression_d;
         light_data m_light_d;
