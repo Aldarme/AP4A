@@ -15,12 +15,12 @@ class Server
         Server(){} //constructeur par defaut
         virtual ~Server(){} //destructeur
         Server(const Server& other){} //constructeur de recopie
-        Server& operator =(const Server& s) {} //operateur d'affectation
+        Server& operator =(const Server& s) {return *this;} //operateur d'affectation
 
 
         // fonctions
-        void ConsoleWrite (std::string sensor_p,int val_p,std::string unit_p,bool activ_p);
-        void fileWrite (std::string sensor_p,int val_p,std::string unit_p,bool activ_p);
+        void ConsoleWrite (std::string sensor_p,std::string val_p,std::string unit_p,bool activ_p);
+        void fileWrite (std::string sensor_p,std::string val_p,std::string unit_p,bool activ_p);
         bool ActivConsole();
         bool ActivFile();
 
