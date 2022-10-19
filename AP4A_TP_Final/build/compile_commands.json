@@ -1,0 +1,37 @@
+[
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\main.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\main.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/main.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Scheduler.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Scheduler.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Scheduler.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Server.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Server.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Server.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Temperature.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Temperature.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Temperature.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Pression.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Pression.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Pression.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Light.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Light.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Light.cpp"
+},
+{
+  "directory": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\ProjetSensor.dir\\Humidity.cpp.obj -c C:\\Users\\Christophe\\Documents\\ap4a\\AP4A_TP_Intermediaire\\Humidity.cpp",
+  "file": "C:/Users/Christophe/Documents/ap4a/AP4A_TP_Intermediaire/Humidity.cpp"
+}
+]
