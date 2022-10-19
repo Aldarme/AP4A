@@ -12,3 +12,7 @@ class: Prssure
  * 
  */
 Pressure::Pressure() : Sensor(0, 20){}
+int Pressure::getData()
+{
+    return (rand() % (m_MAX_VAL - m_MIN_VAL)) + m_MIN_VAL;
+}

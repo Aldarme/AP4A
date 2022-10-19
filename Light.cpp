@@ -7,8 +7,9 @@ class: Light
 
 
 #include "Light.hpp"
-/**
- * @brief Construct a new Light:: Light object calling Sensor constructing with interval as param
- * 
- */
-Light::Light() : Sensor(0, 1){}
+
+Light::Light() : Sensor(0, 1){};
+bool Light::getData()
+{   
+    return rand() % 2;
+}

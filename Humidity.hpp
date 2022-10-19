@@ -10,7 +10,7 @@ class: Humidity
 
 #include "Sensor.hpp"
 
-class Humidity: public Sensor
+class Humidity: public Sensor<float>
 {
     public:
     Humidity();

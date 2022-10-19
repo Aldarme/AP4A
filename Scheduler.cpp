@@ -50,9 +50,9 @@ void Scheduler::sendData(Server p_server)
         if (difftime(time(&end), start) > 3)
         {
             Package<float> pac_h(m_humid.getData(), "humidity", "%");
-            Package<float> pac_l(m_light.getData(), "light", "");
             Package<float> pac_t(m_temp.getData(), "temperature", "c°");
-            Package<float> pac_p(m_pres.getData(), "pressure", "psc");
+            Package<bool> pac_l(m_light.getData(), "light", "");
+            Package<int> pac_p(m_pres.getData(), "pressure", "psc");
 
             if (p_server.m_consol)
             {

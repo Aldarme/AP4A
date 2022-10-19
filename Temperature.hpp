@@ -11,7 +11,7 @@ class: Server
 #include "Sensor.hpp"
 #include <iostream>
 
-class Temperature: public Sensor
+class Temperature: public Sensor<float>
 {
     public:
     Temperature();
