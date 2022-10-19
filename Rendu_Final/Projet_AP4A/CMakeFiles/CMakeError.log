@@ -1,0 +1,135 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_dd49b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_dd49b.dir\build.make CMakeFiles/cmTC_dd49b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd49b.dir/src.c.obj
+C:\MinGW\bin\gcc.exe -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles\cmTC_dd49b.dir\src.c.obj -c "C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\src.c"
+C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\src.c:15:3: warning: implicit declaration of function 'pthread_atfork' [-Wimplicit-function-declaration]
+   pthread_atfork(NULL, NULL, NULL);
+   ^~~~~~~~~~~~~~
+Linking C executable cmTC_dd49b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dd49b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_dd49b.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_dd49b.dir/objects.a @CMakeFiles\cmTC_dd49b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_dd49b.dir/objects.a -Wl,--no-whole-archive -o cmTC_dd49b.exe -Wl,--out-implib,libcmTC_dd49b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_dd49b.dir\linklibs.rsp
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0x36): undefined reference to `pthread_create'
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0x4a): undefined reference to `pthread_detach'
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0x7a): undefined reference to `pthread_join'
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0x96): undefined reference to `pthread_atfork'
+CMakeFiles\cmTC_dd49b.dir/objects.a(src.c.obj):src.c:(.text+0xa2): undefined reference to `pthread_exit'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_dd49b.dir\build.make:99: recipe for target 'cmTC_dd49b.exe' failed
+mingw32-make.exe[1]: *** [cmTC_dd49b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dd49b/fast' failed
+mingw32-make.exe: *** [cmTC_dd49b/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_11534/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_11534.dir\build.make CMakeFiles/cmTC_11534.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_11534.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles\cmTC_11534.dir\CheckFunctionExists.c.obj -c "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_11534.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_11534.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_11534.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\cmTC_11534.dir/objects.a @CMakeFiles\cmTC_11534.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create -Wl,--whole-archive CMakeFiles\cmTC_11534.dir/objects.a -Wl,--no-whole-archive -o cmTC_11534.exe -Wl,--out-implib,libcmTC_11534.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_11534.dir\linklibs.rsp
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot find -lpthreads
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_11534.dir\build.make:99: recipe for target 'cmTC_11534.exe' failed
+mingw32-make.exe[1]: *** [cmTC_11534.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_11534/fast' failed
+mingw32-make.exe: *** [cmTC_11534/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_a3c4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.32.31328 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  src.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a3c4b.dir\Debug\\" /Fd"cmTC_a3c4b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\src.c"
+C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\src.c(1,10): fatal error C1083: Impossible d'ouvrir le fichier include : 'pthread.h' : No such file or directory [C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\cmTC_a3c4b.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_7c095.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.32.31328 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c095.dir\Debug\\" /Fd"cmTC_7c095.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthreads.lib' [C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\cmTC_7c095.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/Augustin Athane/AP4A/Projet_AP4A/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0b4c8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ version 19.32.31328 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits réservés.
+  CheckFunctionExists.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0b4c8.dir\Debug\\" /Fd"cmTC_0b4c8.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CheckFunctionExists.c"
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'pthread.lib' [C:\Users\Augustin Athane\AP4A\Projet_AP4A\CMakeFiles\CMakeTmp\cmTC_0b4c8.vcxproj]
+
+
+

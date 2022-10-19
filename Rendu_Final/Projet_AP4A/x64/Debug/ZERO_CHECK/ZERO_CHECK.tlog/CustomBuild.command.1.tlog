@@ -1,0 +1,10 @@
+^C:\USERS\AUGUSTIN ATHANE\AP4A\PROJET_AP4A\CMAKEFILES\039975C69F4D42A96B986A82A0E7CF43\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Augustin Athane/AP4A/Projet_AP4A" "-BC:/Users/Augustin Athane/AP4A/Projet_AP4A" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Augustin Athane/AP4A/Projet_AP4A/SimulationAvion.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
