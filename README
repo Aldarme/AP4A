@@ -1,1 +1,9 @@
 Projet AP4A Metral Greg
+
+Pour lancer le programme : 
+cd directory
+cmake .
+cmake --build .
+aller dans le dossier debug et lancer le fichier executable
+
+les .txt contenant les logs se créeront au meme endroit que l'executable
