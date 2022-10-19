@@ -1,3 +1,11 @@
+/*
+* @author Metral Greg
+* @file Scheduler.hpp
+* @date 17/10/2022
+* @brief toute les secondes, va prender une ou plusieurs donnée et appeler le server pour les print
+*/
+
+
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
@@ -22,18 +30,28 @@ typedef struct CaptorValues //struct qui comporte les valeurs des capteurs
 class Scheduler 
 {
     private :
-        Sensor<float>* humidity;
-        Sensor<float>* temperature;
-        Sensor<int>* pression;
-        Sensor<bool>* light;
-        Server* server;
-        int seconds;
-        CaptorValues captor_values;
-        void mySleep(int sleepMs);
+        Sensor<float>* pHumidity;
+        Sensor<float>* pTemperature;
+        Sensor<int>* pPression;
+        Sensor<bool>* pLight;
+        Server* pServer;
+        int m_seconds;
+        CaptorValues s_captor_values;
+        void mySleep(int sleepMs_p);
 
     public :
+        friend class Server;
         Scheduler();
+        ~Scheduler()
+        {
+            delete(pHumidity);
+            delete(pTemperature);
+            delete(pPression);
+            delete(pLight);
+            delete(pServer);
+        };
         void start();
+
 };
 
 #endif
