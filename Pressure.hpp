@@ -11,10 +11,11 @@ class: Package
 #include "Sensor.hpp"
 #include <iostream>
 
-class Pressure: public Sensor
+class Pressure: public Sensor<int>
 {
     public:
     Pressure();
+    int getData();
 };
 
 #endif // LIGHT_H
