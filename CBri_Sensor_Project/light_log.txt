@@ -1,0 +1,4 @@
+Data from the light sensor: 1
+
+Data from the light sensor: 1
+

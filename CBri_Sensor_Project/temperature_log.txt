@@ -1,0 +1,8 @@
+Data from the temperature sensor: 23.2°C
+
+Data from the temperature sensor: 23.9°C
+
+Data from the temperature sensor: 23°C
+
+Data from the temperature sensor: 24.7°C
+

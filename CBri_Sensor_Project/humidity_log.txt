@@ -1,0 +1,2 @@
+Data from the humidity sensor: 9.5%
+
