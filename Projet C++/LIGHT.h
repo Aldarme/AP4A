@@ -9,29 +9,11 @@
 #include "SENSOR.h"
 #pragma once
 
-using namespace std;
 
-class Light : public Sensor<bool>
+void Light::sense()
 {
-private:
-	const string name = "Light";//G¨¦n¨¦ration de diff¨¦rents types de donn¨¦es en nommant les capteurs
-	bool m_light;//Le capteur de lumi¨¨re transmet une valeur de type bool¨¦en
-public:
-	Light()
-	{
-		cout << this->name << ":";
-		this->type = "light";
-		this->m_value = Sensor<bool>::aleaGenVal();
-	}
-	~Light()
-	{
-
-	}
-	Light& operator=(const Light& param_l)
-	{
-		this->m_light = param_l.m_light;
-		return *this;
-	}
-	void sense();
-};
+	this->m_value = Sensor<bool>::aleaGenVal();
+}
 #endif//LIGHT.H
+
+

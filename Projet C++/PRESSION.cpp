@@ -10,13 +10,31 @@
 
 #include "PRESSION.h"
 #include <iostream>
-
 using namespace std;
 
-
-void Pression::sense()
+class Pression : public Sensor<int>
 {
-	this->m_value = Sensor<int>::aleaGenVal();
-}
+private:
+    const string name = "Pression";//G¨¦n¨¦ration de diff¨¦rents types de donn¨¦es en nommant les capteurs
+    int m_press;//Le capteur de pression transmet une valeur de type int
+public:
+    Pression()
+    {
+        cout << this->name << ":";
+        this->type = "pression";
+        this->m_value = Sensor<int>::aleaGenVal();
+    }
+
+    ~Pression()
+    {
+
+    }
+    Pression& operator=(const Pression& param_s)
+    {
+        this->m_press = param_s.m_press;
+        return *this;
+    }
+    void sense();
+};
 
 #endif

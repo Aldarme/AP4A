@@ -8,32 +8,11 @@
 #define HUMIDITY_H
 #include "SENSOR.h"
 #pragma once
+using namespace std;
 
-
-class Humidity : public Sensor<float>
+//Obtenir des donn¨¦es al¨¦atoires
+void Humidity::sense()
 {
-	private:
-		const string name = "Humidity";//G¨¦n¨¦ration de diff¨¦rents types de donn¨¦es en nommant les capteurs
-		float m_humidity;// Le capteur d'humidit¨¦ transmet une valeur de type float.
-		
-	public:
-		Humidity()
-		{
-			cout << this->name << ":";
-			this->type = "humidity";
-			this->m_value = Sensor<float>::aleaGenVal();//Obtention de donn¨¦es al¨¦atoires
-		}
-		~Humidity()
-		{
-
-		}
-		//Surcharge des fonctions
-		Humidity& operator=(const Humidity& param_h)
-		{
-			this->m_humidity = param_h.m_humidity;
-			return *this;
-		}
-		void sense();
-};
+	this->m_value = Sensor<float>::aleaGenVal();
+}
 #endif//HUMIDITY.H
-
