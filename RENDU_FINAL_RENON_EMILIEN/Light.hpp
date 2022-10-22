@@ -1,0 +1,34 @@
+/**
+ * @author RENON_Emilien
+ * @file Light.hpp
+ * @date 04/10/2022
+ * @brief La classe Light permettra de caractériser un capteur de lumière.
+ */
+
+//
+// Define guards
+#ifndef LIGHT_H
+#define LIGHT_H
+#include "Sensor.hpp"
+
+/**
+ * @class Light
+ * @brief La classe Light simule le fonctionnement du capteur de lumière
+ */
+template <class T>
+class Light : public Sensor<bool>
+{
+public:
+    // Definition de la forme canonique
+    Light(){
+        this->m_name="Light (lm)";
+        this->m_sensor=e_light;
+    }
+    Light(const Light &param_light);
+    ~Light(){};
+    // ...
+      
+};
+
+
+#endif // LUMIERE_H
