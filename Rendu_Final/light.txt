@@ -1,0 +1,4 @@
+The data below represent the present of light.
+ 1 when there is light in the cabin and zero if there is no light.
+
+1;0;0;1;1;0;0;0;1;1;0;

@@ -1,0 +1,3 @@
+The data for temperature below are in Celcius (C) 
+
+20.8962;24.8221;20.5904;
