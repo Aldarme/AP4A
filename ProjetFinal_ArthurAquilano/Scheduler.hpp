@@ -5,9 +5,7 @@
  * @brief Déclaration de la classe Scheduler
  */
 
-
 //DEFINE_GUARDS
-
 #ifndef SCHEDULER_H
 #define SCHEDULER_H
 
@@ -17,7 +15,6 @@
 #include <unistd.h>
 #endif
 
-#include "Data.hpp"
 #include "DataPacket.hpp"
 #include "Server.hpp"
 
@@ -40,25 +37,19 @@ public:
     ~Scheduler(){};
 
     /** 
-    * @brief Récupère les valeurs générées par les sensors et les placent dans l'objet DataPacket
+    * @brief Récupère les valeurs générées par les sensors et les placent dans l'objet DataPacket à différent intervales 
     * @return this
-    * @param Aucun
+    * @param Entier temps 
     */
-    Scheduler getData();
+    Scheduler getData(int time);
 
     /** 
     * @brief Transfère les données à la classe Server en copiant les données de Scheduler.dataValue vers Server.data
     * @return Rien
-    * @param Référence à la classe Server
+    * @param Référence à la classe Server et un entier temps
     */
-    void sendDataToServer(Server& server);
+    void sendDataToServer(int time, Server& server);
 
-    /** 
-    * @brief Met en pause le programme pendant un certains temps (configuré par l'entier time)
-    * @return Rien
-    * @param Aucun
-    */
-    void wait();
 };
 
 #endif //SCHEDULER.H

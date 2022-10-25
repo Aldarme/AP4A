@@ -1,0 +1,5 @@
+2s | Humidité- 29.64 g/m^3
+4s | Humidité- 28.1 g/m^3
+6s | Humidité- 29.52 g/m^3
+8s | Humidité- 30.42 g/m^3
+10s | Humidité- 31.96 g/m^3

@@ -5,17 +5,42 @@
  * @brief Implémentation de la classe Pressure
  */
 
-#include "Data.hpp"
-#include "Sensor.hpp"
+#include "DataPressure.hpp"
+
+int DataPressure::aleaGenVal(int minValue, int maxValue)
+{
+    bool signe;
+    donnee = 100;
+
+        srand(time(0));
+    if (donnee <= minValue)
+    {
+        donnee = donnee + (rand()%3);
+    } else if (donnee >= maxValue)
+    {
+        donnee = donnee - (rand()%3);
+    } else 
+    {
+        signe = (bool)(rand()%(2));
+        if(signe)
+        {
+            donnee = donnee + (rand()%3);
+        } else 
+        {
+            donnee = donnee - (rand()%3);
+        }
+    }
+    
+    return donnee;
+}
+
 
 int DataPressure::getVal()
 {
-    int minValue = 950;
-    int maxValue = 1050;
+    int minValue = 95;
+    int maxValue = 105;
 
-    aleaGenVal(minValue, maxValue)
-    {
-        srand(time(0));
-        return rand() % (maxValue - minValue) + minValue;
-    }
+    donnee = aleaGenVal(minValue, maxValue);
+    return donnee;
+
 }

@@ -5,17 +5,24 @@
  * @brief Implémentation de la classe Light
  */
 
-#include "Data.hpp"
-#include "Sensor.hpp"
+#include "DataLight.hpp"
+
+bool DataLight::aleaGenVal(bool minValue, bool maxValue)
+{
+    donnee = true;
+
+    srand(time(0));
+    donnee = (bool)(rand()%(2));
+
+    return donnee;
+}
 
 bool DataLight::getVal()
 {
-    float minValue = 0;
-    float maxValue = 2;
+    bool minValue = 0;
+    bool maxValue = 1;
 
-    aleaGenVal(minValue, maxValue)
-    {
-        srand(time(0));
-        return rand() % (maxValue - minValue) + minValue;
-    }
+    donnee = aleaGenVal(minValue, maxValue);
+    return donnee;
+
 }

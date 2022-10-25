@@ -1,0 +1,3 @@
+3s | Température- 20.7 °C
+6s | Température- 19.6 °C
+9s | Température- 19.9 °C

@@ -21,15 +21,15 @@ template<typename T>
 class Sensor
 {
 public:    
-    T data;
+    T donnee;
 
     /** 
     * @brief Déclaration de la forme canonique de coplien
     * @return Rien
     * @param Ceux par défaut
     */
-    Sensor<T>(): data(){};
-    Sensor<T>(const Sensor<T>& s): data(s.data){};
+    Sensor<T>(): donnee(){};
+    Sensor<T>(const Sensor<T>& s): donnee(s.donnee){};
     ~Sensor<T>(){};
     
     /** 
@@ -37,8 +37,7 @@ public:
     * @return Int
     * @param Deux entiers minValue et maxValue
     */
-    virtual T aleaGenVal(T min, T max);
-
+    virtual T aleaGenVal(T minValue, T maxValue) = 0;
 };
 
 #endif //SENSOR.H

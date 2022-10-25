@@ -13,22 +13,19 @@
 #include "Scheduler.cpp"
 #include "DataPacket.cpp"
 #include "Server.cpp"
+#include "DataPressure.cpp"
 #include "DataHumidity.cpp"
 #include "DataTemperature.cpp"
 #include "DataLight.cpp"
-#include "DataPressure.cpp"
 #include "Sensor.cpp"
-
-#include "Data.hpp"
-#include "DataPacket.hpp"
-#include "Scheduler.hpp"
-#include "Sensor.hpp"
-#include "Server.hpp"
 
 void StartProgram();
 
 int main ()
 {
+
+    int time = 0;
+
     Scheduler scheduler;
     Server server;
 
@@ -37,21 +34,23 @@ int main ()
     StartProgram();
     server.resetFile();
     while (1){
-    scheduler.getData();
-    scheduler.sendDataToServer(server);
+    time++;
 
-    server.consolWrite();
-    server.fileWrite();
+    scheduler.getData(time);
+    scheduler.sendDataToServer(time, server);
 
-    scheduler.wait();
+    server.consolWrite(time);
+    server.fileWrite(time);
+
+    Sleep(1000);
+
     }
 
     return EXIT_SUCCESS;
 
 };
 
-
-/** @brief Demande à l'utilisateur si il veut démarrer le programe
+/** @brief Demande à l'utilisateur s'il veut démarrer le programme
  *  @return Rien
  *  @param Aucun
  */ 

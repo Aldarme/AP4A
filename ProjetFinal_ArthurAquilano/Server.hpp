@@ -6,9 +6,12 @@
  */
 
 //DEFINE_GUARDS
-#pragma once
 #ifndef SERVER_HPP
 #define SERVER_HPP
+
+#include <thread>
+#include <iostream>
+#include <fstream>
 
 #include "DataPacket.hpp"
 
@@ -19,30 +22,30 @@
 class Server
 {
 public:
-    DataPacket data;
+    DataPacket donnee;
 
     /** 
     * @brief Déclaration de la forme canonique de coplien
     * @return Rien
     * @param Ceux par défaut
     */
-    Server(): data(){};
-    Server(const Server& server): data(server.data){};
+    Server(): donnee(){};
+    Server(const Server& server): donnee(server.donnee){};
     ~Server(){};
 
     /** 
     * @brief Methode pour écrire les données des capteurs dans un fichier
     * @return Rien
-    * @param Aucun
+    * @param Entier temps
     */
-    void fileWrite();
+    void fileWrite(int time);
 
     /** 
     * @brief Methode pour écrire les données des capteurs dans la console
     * @return Rien
-    * @param Aucun
+    * @param Entier temps
     */
-    void consolWrite();
+    void consolWrite(int time);
 
     /** 
     * @brief Réinitialise le fichier où sont entrées les valeurs

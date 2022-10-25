@@ -1,0 +1,3 @@
+3s | Pression- 101 kPa
+6s | Pression- 100 kPa
+9s | Pression- 98 kPa

@@ -9,7 +9,10 @@
 #ifndef DATAPACKET_H
 #define DATAPACKET_H
 
-#include "Data.hpp"
+#include "DataLight.hpp"
+#include "DataHumidity.hpp"
+#include "DataTemperature.hpp"
+#include "DataPressure.hpp"
 
 /**
 * @class DataPacket
@@ -18,9 +21,9 @@
 class DataPacket
 {
 public:
-    int temperature;
-    int humidity;
-    int light;
+    float temperature;
+    float humidity;
+    bool light;
     int pressure;
 
     /** 

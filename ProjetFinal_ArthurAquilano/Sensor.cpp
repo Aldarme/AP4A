@@ -6,5 +6,3 @@
  */
 
 #include "Sensor.hpp"
-#include <cstdlib>
-#include <time.h>
