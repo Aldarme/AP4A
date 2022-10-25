@@ -73,5 +73,7 @@ Par choix, il a été décidé d'imposer l'envoi des capteurs à des intervalles
 Points d'améliorations : 
 
 - Ajouter plus de capteurs pour se rapprocher d'une simulation plus "réaliste" d'un avion
-- Générer des valeurs aléatoires pour les capteurs avec des écarts moins importants et donc plus réaliste d'un instant t à un instant t+1 (avoir 20°c à 1 seconde puis 17°c à 2 secondes puis 23°c à 3 secondes)
+- Générer des valeurs aléatoires pour les capteurs avec des écarts moins importants et donc plus réaliste d'un instant t à un instant t+1 
+(ne pas avoir 20°c à 1 seconde puis 17°c à 2 secondes puis 23°c à 3 secondes) mais plutôt (20.1°c à 1 seconde puis 20.5°c à 2 secondes puis 20.3°c à 3 secondes
 --> mise en place d'une autre fonction aléatoire qui ajoute +/- 3% de la première valeur générée d'un instant t à un instant t+1
+- régler une erreur de dernière minute sur la génération aléatoire des valeurs (valeur trop similaires d'un instant à l'autre)

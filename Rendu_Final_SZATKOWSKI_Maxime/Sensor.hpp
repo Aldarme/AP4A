@@ -12,6 +12,9 @@
 #include "Packet.hpp"
 #include <iostream>
 #include <random>
+#include <ctime>
+#include <iomanip>
+#include <limits>
 
 using namespace std;
 
@@ -41,7 +44,7 @@ public:
 	}
 
 	//Destructeur
-	~Sensor(){}
+	~Sensor() {}
 
 	//Constructeur par recopie
 	Sensor(const Sensor& s)
@@ -68,25 +71,31 @@ public:
 	{
 		return this->aleaGenVal();
 	}
-	//template <class T> getData();
 
 	/**
-	* @brief permet de générer des valeurs aléatoires de type int
-	* @return int
+	* @brief permet de générer des valeurs aléatoires de type 
+	* @return type T générique
 	* @param void
 	*/
 	T aleaGenVal()
 	{
-		int MIN = this->m_minValue;
-		int MAX = this->m_maxValue;
+		T MIN = this->m_minValue;
+		T MAX = this->m_maxValue;
 
-		std::random_device rd;
-		std::default_random_engine eng(rd());
-		std::uniform_int_distribution<T> distr(MIN, MAX);
-		T alea = distr(eng);
+		srand((unsigned)time(0));
+
+		std::cout << std::fixed;
+		std::cout << std::setprecision(2);
+		T alea = generateRandomNumber(MIN, MAX);
 
 		return alea;
 	}
-};
 
+
+	T generateRandomNumber(T startRange, T endRange)
+	{
+		T randNum = startRange + (T)rand() / ((T)RAND_MAX / (T)(endRange - startRange));
+		return(randNum);
+	}
+};
 #endif  // Sensor_H
