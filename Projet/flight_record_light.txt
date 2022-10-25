@@ -1,14 +1,70 @@
-Tue Oct 11 23:23:34 2022
-FLIGHT RECORD
+Tue Oct 25 20:22:22 2022
+
+20:23:40 Light : 0
+20:23:41 Light : 0
+20:23:42 Light : 0
+20:23:44 Light : 0
+20:23:45 Light : 0
+20:23:46 Light : 0
+20:23:47 Light : 0
+20:23:48 Light : 0
+20:23:49 Light : 0
+20:23:50 Light : 0
+20:23:51 Light : 0
+20:23:52 Light : 0
+20:23:53 Light : 0
+20:23:54 Light : 0
+20:23:55 Light : 0
+20:23:56 Light : 0
+20:23:57 Light : 0
+20:23:58 Light : 0
+20:23:59 Light : 0
+20:24:0 Light : 0
 
 
-23:23:35 Light : 1
-23:23:36 Light : 0
-23:23:37 Light : 1
-23:23:38 Light : 0
-23:23:39 Light : 0
-23:23:41 Light : 0
-23:23:42 Light : 1
-23:23:43 Light : 1
-23:23:44 Light : 0
-23:23:45 Light : 1
+Tue Oct 25 20:25:17 2022
+
+20:25:23 Light : 0
+20:25:24 Light : 0
+20:25:25 Light : 0
+20:25:26 Light : 0
+20:25:27 Light : 0
+20:25:28 Light : 0
+20:25:29 Light : 0
+20:25:30 Light : 0
+20:25:31 Light : 0
+20:25:32 Light : 0
+20:25:33 Light : 0
+20:25:34 Light : 0
+20:25:35 Light : 0
+20:25:36 Light : 0
+20:25:37 Light : 0
+20:25:38 Light : 0
+20:25:39 Light : 0
+20:25:40 Light : 0
+20:25:41 Light : 0
+20:25:42 Light : 0
+
+
+Tue Oct 25 20:45:53 2022
+
+20:45:58 Light : 0
+20:45:59 Light : 0
+20:46:0 Light : 0
+20:46:1 Light : 0
+20:46:2 Light : 0
+20:46:3 Light : 0
+20:46:4 Light : 0
+20:46:5 Light : 0
+20:46:6 Light : 0
+20:46:7 Light : 0
+20:46:8 Light : 0
+20:46:9 Light : 0
+20:46:10 Light : 0
+20:46:11 Light : 0
+20:46:12 Light : 0
+20:46:13 Light : 0
+20:46:14 Light : 0
+20:46:15 Light : 0
+20:46:16 Light : 0
+20:46:17 Light : 0

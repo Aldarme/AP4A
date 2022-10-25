@@ -12,17 +12,29 @@
 #ifndef PRESSURE_H
 #define PRESSURE_H
 
-#include <iostream>
 #include "Sensor.hpp"
 
 /**
  * @class pressure
  * @brief Classe fille de "sensor", détermine et génère des valeurs de pression
  */
-class pressure : public sensor
+
+class pressure : public sensor<int, pressure>
 {
 public:
-    pressure() { m_min = 75, m_max = 81; }
+    /**
+     * @brief Génère un int aléatoire compris entre 75 et 81 à partir de l'attribut m_data
+     * 
+     * @return pressure& 
+     */
+    pressure &aleaGenVal();
+
+    /**
+     * @brief Initialise m_data avec un int aléatoire compris entre 75 et 81
+     * 
+     * @return pressure& 
+     */
+    pressure &aleaInitVal();
 };
 
 #endif // PRESSURE_H

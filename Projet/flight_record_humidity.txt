@@ -1,14 +1,70 @@
-Tue Oct 11 23:23:34 2022
-FLIGHT RECORD
+Tue Oct 25 20:22:22 2022
+
+20:23:40 Humidity : 6.82 %
+20:23:41 Humidity : 6.82 %
+20:23:42 Humidity : 7.63 %
+20:23:44 Humidity : 7.63 %
+20:23:45 Humidity : 6.59 %
+20:23:46 Humidity : 6.59 %
+20:23:47 Humidity : 7.29 %
+20:23:48 Humidity : 7.29 %
+20:23:49 Humidity : 7.7 %
+20:23:50 Humidity : 7.7 %
+20:23:51 Humidity : 6.95 %
+20:23:52 Humidity : 6.95 %
+20:23:53 Humidity : 7.94 %
+20:23:54 Humidity : 7.94 %
+20:23:55 Humidity : 7.34 %
+20:23:56 Humidity : 7.34 %
+20:23:57 Humidity : 6.29 %
+20:23:58 Humidity : 6.29 %
+20:23:59 Humidity : 6.45 %
+20:24:0 Humidity : 6.45 %
 
 
-23:23:35 Humidity : 6%
-23:23:36 Humidity : 9%
-23:23:37 Humidity : 6%
-23:23:38 Humidity : 9%
-23:23:39 Humidity : 7%
-23:23:41 Humidity : 7%
-23:23:42 Humidity : 10%
-23:23:43 Humidity : 8%
-23:23:44 Humidity : 5%
-23:23:45 Humidity : 8%
+Tue Oct 25 20:25:17 2022
+
+20:25:23 Humidity : 6.36 %
+20:25:24 Humidity : 6.36 %
+20:25:25 Humidity : 7.04 %
+20:25:26 Humidity : 7.04 %
+20:25:27 Humidity : 7.88 %
+20:25:28 Humidity : 7.88 %
+20:25:29 Humidity : 6.72 %
+20:25:30 Humidity : 6.72 %
+20:25:31 Humidity : 7.69 %
+20:25:32 Humidity : 7.69 %
+20:25:33 Humidity : 7.53 %
+20:25:34 Humidity : 7.53 %
+20:25:35 Humidity : 6.06 %
+20:25:36 Humidity : 6.06 %
+20:25:37 Humidity : 6.66 %
+20:25:38 Humidity : 6.66 %
+20:25:39 Humidity : 7.17 %
+20:25:40 Humidity : 7.17 %
+20:25:41 Humidity : 7.58 %
+20:25:42 Humidity : 7.58 %
+
+
+Tue Oct 25 20:45:53 2022
+
+20:45:58 Humidity : 8.53 %
+20:45:59 Humidity : 8.53 %
+20:46:0 Humidity : 7.65 %
+20:46:1 Humidity : 7.65 %
+20:46:2 Humidity : 6.81 %
+20:46:3 Humidity : 6.81 %
+20:46:4 Humidity : 8.17 %
+20:46:5 Humidity : 8.17 %
+20:46:6 Humidity : 7 %
+20:46:7 Humidity : 7 %
+20:46:8 Humidity : 7.16 %
+20:46:9 Humidity : 7.16 %
+20:46:10 Humidity : 7.82 %
+20:46:11 Humidity : 7.82 %
+20:46:12 Humidity : 8.22 %
+20:46:13 Humidity : 8.22 %
+20:46:14 Humidity : 7.52 %
+20:46:15 Humidity : 7.52 %
+20:46:16 Humidity : 7.11 %
+20:46:17 Humidity : 7.11 %

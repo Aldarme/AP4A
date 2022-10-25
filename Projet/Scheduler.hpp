@@ -15,6 +15,7 @@
 
 #ifdef _WIN32
 #include <windows.h>
+#include <thread>
 #else
 #include <unistd.h>
 #endif
@@ -46,21 +47,42 @@ public:
      * @brief Contient toute la boucle de génération, de transmission et d'écriture des données
      * @param server - Objet server avec avec lequel l'écriture des données est faite
      */
-    void loop(server);
+    void loop(server &);
 
     /**
      * @brief Récupère les données générés par les capteurs et les met dans l'attribut m_packet
      *
      * @return scheduler&
      */
-    scheduler &getData();
+    scheduler &getData(temperature, pressure, light_, humidity);
 
     /**
-     * @brief Récupère l'attribut m_packet de l'objet scheduler
-     *
-     * @return packet
+     * @brief Récupère la donnée générée par temperature et la met dans l'attribut m_packet
+     * 
+     * @return scheduler& 
      */
-    packet transferData();
+    scheduler &getTemp(temperature);
+
+    /**
+     * @brief Récupère la donnée générée par pressure et la met dans l'attribut m_packet
+     * 
+     * @return scheduler& 
+     */
+    scheduler &getPress(pressure);
+
+    /**
+     * @brief Récupère la donnée générée par light_ et la met dans l'attribut m_packet
+     * 
+     * @return scheduler& 
+     */
+    scheduler &getLight(light_);
+
+    /**
+     * @brief Récupère la donnée générée par humidity et la met dans l'attribut m_packet
+     * 
+     * @return scheduler& 
+     */
+    scheduler &getHumid(humidity);
 };
 
 #endif // SCHEDULER_H

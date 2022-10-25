@@ -1,14 +1,70 @@
-Tue Oct 11 23:23:34 2022
-FLIGHT RECORD
+Tue Oct 25 20:22:22 2022
+
+20:23:40 Pressure : 76 atm
+20:23:41 Pressure : 76 atm
+20:23:42 Pressure : 77 atm
+20:23:44 Pressure : 75 atm
+20:23:45 Pressure : 76 atm
+20:23:46 Pressure : 76 atm
+20:23:47 Pressure : 77 atm
+20:23:48 Pressure : 75 atm
+20:23:49 Pressure : 76 atm
+20:23:50 Pressure : 76 atm
+20:23:51 Pressure : 76 atm
+20:23:52 Pressure : 77 atm
+20:23:53 Pressure : 77 atm
+20:23:54 Pressure : 76 atm
+20:23:55 Pressure : 76 atm
+20:23:56 Pressure : 76 atm
+20:23:57 Pressure : 75 atm
+20:23:58 Pressure : 77 atm
+20:23:59 Pressure : 76 atm
+20:24:0 Pressure : 76 atm
 
 
-23:23:35 Pressure : 80atm
-23:23:36 Pressure : 76atm
-23:23:37 Pressure : 79atm
-23:23:38 Pressure : 75atm
-23:23:39 Pressure : 79atm
-23:23:41 Pressure : 78atm
-23:23:42 Pressure : 81atm
-23:23:43 Pressure : 78atm
-23:23:44 Pressure : 81atm
-23:23:45 Pressure : 77atm
+Tue Oct 25 20:25:17 2022
+
+20:25:23 Pressure : 78 atm
+20:25:24 Pressure : 78 atm
+20:25:25 Pressure : 79 atm
+20:25:26 Pressure : 77 atm
+20:25:27 Pressure : 79 atm
+20:25:28 Pressure : 78 atm
+20:25:29 Pressure : 78 atm
+20:25:30 Pressure : 79 atm
+20:25:31 Pressure : 79 atm
+20:25:32 Pressure : 78 atm
+20:25:33 Pressure : 78 atm
+20:25:34 Pressure : 78 atm
+20:25:35 Pressure : 77 atm
+20:25:36 Pressure : 79 atm
+20:25:37 Pressure : 78 atm
+20:25:38 Pressure : 78 atm
+20:25:39 Pressure : 78 atm
+20:25:40 Pressure : 77 atm
+20:25:41 Pressure : 79 atm
+20:25:42 Pressure : 78 atm
+
+
+Tue Oct 25 20:45:53 2022
+
+20:45:58 Pressure : 80 atm
+20:45:59 Pressure : 80 atm
+20:46:0 Pressure : 79 atm
+20:46:1 Pressure : 81 atm
+20:46:2 Pressure : 79 atm
+20:46:3 Pressure : 80 atm
+20:46:4 Pressure : 80 atm
+20:46:5 Pressure : 79 atm
+20:46:6 Pressure : 79 atm
+20:46:7 Pressure : 81 atm
+20:46:8 Pressure : 80 atm
+20:46:9 Pressure : 80 atm
+20:46:10 Pressure : 81 atm
+20:46:11 Pressure : 79 atm
+20:46:12 Pressure : 81 atm
+20:46:13 Pressure : 80 atm
+20:46:14 Pressure : 80 atm
+20:46:15 Pressure : 81 atm
+20:46:16 Pressure : 79 atm
+20:46:17 Pressure : 81 atm

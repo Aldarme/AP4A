@@ -13,17 +13,28 @@
 #ifndef LIGHT_H
 #define LIGHT_H
 
-#include <iostream>
 #include "Sensor.hpp"
 
 /**
  * @class light_
  * @brief Classe fille de "sensor", détermine et génère des valeurs de lumière (allumé ou éteint)
  */
-class light_ : public sensor
+class light_ : public sensor<bool, light_>
 {
 public:
-    light_() { m_min = 0, m_max = 1; }
+    /**
+     * @brief Génère un boolean aléatoire à partir de l'attribut m_data
+     * 
+     * @return light_& 
+     */
+    light_ &aleaGenVal();
+
+    /**
+     * @brief Initialise m_data avec un boolean aléatoire
+     * 
+     * @return light_& 
+     */
+    light_ &aleaInitVal();
 };
 
 #endif // LIGHT_H

@@ -1,14 +1,70 @@
-Tue Oct 11 23:23:34 2022
-FLIGHT RECORD
+Tue Oct 25 20:22:22 2022
+
+20:23:40 Temperature : 21.82 °C
+20:23:41 Temperature : 21.82 °C
+20:23:42 Temperature : 22.63 °C
+20:23:44 Temperature : 22.63 °C
+20:23:45 Temperature : 21.59 °C
+20:23:46 Temperature : 21.59 °C
+20:23:47 Temperature : 22.29 °C
+20:23:48 Temperature : 22.29 °C
+20:23:49 Temperature : 22.7 °C
+20:23:50 Temperature : 22.7 °C
+20:23:51 Temperature : 21.95 °C
+20:23:52 Temperature : 21.95 °C
+20:23:53 Temperature : 22.94 °C
+20:23:54 Temperature : 22.94 °C
+20:23:55 Temperature : 22.34 °C
+20:23:56 Temperature : 22.34 °C
+20:23:57 Temperature : 21.29 °C
+20:23:58 Temperature : 21.29 °C
+20:23:59 Temperature : 21.45 °C
+20:24:0 Temperature : 21.45 °C
 
 
-23:23:35 Temperature : 21°C
-23:23:36 Temperature : 24°C
-23:23:37 Temperature : 21°C
-23:23:38 Temperature : 24°C
-23:23:39 Temperature : 22°C
-23:23:41 Temperature : 22°C
-23:23:42 Temperature : 25°C
-23:23:43 Temperature : 23°C
-23:23:44 Temperature : 20°C
-23:23:45 Temperature : 23°C
+Tue Oct 25 20:25:17 2022
+
+20:25:23 Temperature : 21.36 °C
+20:25:24 Temperature : 21.36 °C
+20:25:25 Temperature : 22.04 °C
+20:25:26 Temperature : 22.04 °C
+20:25:27 Temperature : 22.88 °C
+20:25:28 Temperature : 22.88 °C
+20:25:29 Temperature : 21.72 °C
+20:25:30 Temperature : 21.72 °C
+20:25:31 Temperature : 22.69 °C
+20:25:32 Temperature : 22.69 °C
+20:25:33 Temperature : 22.53 °C
+20:25:34 Temperature : 22.53 °C
+20:25:35 Temperature : 21.06 °C
+20:25:36 Temperature : 21.06 °C
+20:25:37 Temperature : 21.66 °C
+20:25:38 Temperature : 21.66 °C
+20:25:39 Temperature : 22.17 °C
+20:25:40 Temperature : 22.17 °C
+20:25:41 Temperature : 22.58 °C
+20:25:42 Temperature : 22.58 °C
+
+
+Tue Oct 25 20:45:53 2022
+
+20:45:58 Temperature : 23.53 °C
+20:45:59 Temperature : 23.53 °C
+20:46:0 Temperature : 22.65 °C
+20:46:1 Temperature : 22.65 °C
+20:46:2 Temperature : 21.81 °C
+20:46:3 Temperature : 21.81 °C
+20:46:4 Temperature : 23.17 °C
+20:46:5 Temperature : 23.17 °C
+20:46:6 Temperature : 22 °C
+20:46:7 Temperature : 22 °C
+20:46:8 Temperature : 22.16 °C
+20:46:9 Temperature : 22.16 °C
+20:46:10 Temperature : 22.82 °C
+20:46:11 Temperature : 22.82 °C
+20:46:12 Temperature : 23.22 °C
+20:46:13 Temperature : 23.22 °C
+20:46:14 Temperature : 22.52 °C
+20:46:15 Temperature : 22.52 °C
+20:46:16 Temperature : 22.11 °C
+20:46:17 Temperature : 22.11 °C

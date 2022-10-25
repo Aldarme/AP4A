@@ -23,10 +23,10 @@ class packet
     friend class server;
 
 private:
-    int m_temp;
+    float m_temp;
     int m_press;
-    int m_light;
-    int m_humid;
+    bool m_light;
+    float m_humid;
 
 public:
     packet() : m_temp(), m_press(), m_light(), m_humid() {}

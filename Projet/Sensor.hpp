@@ -20,22 +20,45 @@
  * @class sensor
  * @brief Classe mère de tous les capteurs, elle possède des méthodes génériques à tous les capteurs
  */
+template <class T1, class T2>
 class sensor
 {
+protected:
+    T1 m_data;
+
 public:
-    int m_min;
-    int m_max;
-    sensor() : m_min(), m_max() {}
-    sensor(const sensor &param_s) : m_min(param_s.m_min), m_max(param_s.m_max) {}
+    sensor() : m_data() {}
+    sensor(const sensor &s) : m_data(s.m_data) {}
     ~sensor() {}
-    sensor &operator=(const sensor &);
+    sensor &operator=(const sensor &s)
+    {
+        m_data = s.m_data;
+        return *this;
+    }
 
     /**
-     * @brief Génère une valeur aléatoire comprise entre les attributs m_min et m_max;
+     * @brief Génère une valeur aléatoire à partir de l'attribut m_data
      *
-     * @return int
+     * @return T2
      */
-    int aleaGenVal();
+    virtual T2 &aleaGenVal() = 0;
+
+    /**
+     * @brief Initialise m_data avec une valeur aléatoire
+     * 
+     * @return T2& 
+     */
+    virtual T2 &aleaInitVal() = 0;
+
+    /**
+     * @brief Get the Data object
+     * 
+     * @return T1 
+     */
+    T1 getData()
+    {
+        return m_data;
+    }
 };
 
 #endif // SENSOR_H

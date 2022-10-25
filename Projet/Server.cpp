@@ -25,10 +25,11 @@ void server::consolWrite(const packet param_p)
     {
         time_t current = time(0);
         tm *ltm = localtime(&current);
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << "C" << endl; // le caractère '°' n'est pas reconnu dans la console
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << "atm" << endl;
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Light : " << param_p.m_light << endl;
-        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << "%"
+        cout << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << endl;
+        cout << "Temperature : " << param_p.m_temp << " C" << endl; // le caractère '°' n'est pas reconnu dans la console
+        cout << "Pressure : " << param_p.m_press << " atm" << endl;
+        cout << "Light : " << param_p.m_light << endl;
+        cout << "Humidity : " << param_p.m_humid << " %"
              << "\n"
              << endl;
     }
@@ -47,7 +48,7 @@ void server::fileWrite(const packet param_p)
 
         if (file1)
         {
-            file1 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << "°C" << endl;
+            file1 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Temperature : " << param_p.m_temp << " °C" << endl;
             file1.close();
         }
         else
@@ -56,7 +57,7 @@ void server::fileWrite(const packet param_p)
         }
         if (file2)
         {
-            file2 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << "atm" << endl;
+            file2 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Pressure : " << param_p.m_press << " atm" << endl;
             file2.close();
         }
         else
@@ -74,7 +75,7 @@ void server::fileWrite(const packet param_p)
         }
         if (file1)
         {
-            file4 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << "%" << endl;
+            file4 << ltm->tm_hour << ':' << ltm->tm_min << ':' << ltm->tm_sec << " Humidity : " << param_p.m_humid << " %" << endl;
             file1.close();
         }
         else
@@ -104,8 +105,7 @@ void server::fileReset()
             ofstream file1("flight_record_temperature.txt", ios::out | ios::trunc);
             if (file1)
             {
-                file1 << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                file1 << dt << endl;
                 file1.close();
             }
             else
@@ -116,8 +116,7 @@ void server::fileReset()
             ofstream file2("flight_record_pressure.txt", ios::out | ios::trunc);
             if (file2)
             {
-                file2 << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                file2 << dt << endl;
                 file2.close();
             }
             else
@@ -127,8 +126,7 @@ void server::fileReset()
             ofstream file3("flight_record_light.txt", ios::out | ios::trunc);
             if (file3)
             {
-                file3 << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                file3 << dt << endl;
                 file3.close();
             }
             else
@@ -139,8 +137,7 @@ void server::fileReset()
             ofstream file4("flight_record_humidity.txt", ios::out | ios::trunc);
             if (file4)
             {
-                file4 << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                file4 << dt << endl;
                 file4.close();
             }
             else
@@ -154,8 +151,7 @@ void server::fileReset()
             if (file1)
             {
                 file1 << "\n\n"
-                      << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                      << dt << endl;
                 file1.close();
             }
             else
@@ -167,8 +163,7 @@ void server::fileReset()
             if (file2)
             {
                 file2 << "\n\n"
-                      << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                      << dt << endl;
                 file2.close();
             }
             else
@@ -180,8 +175,7 @@ void server::fileReset()
             if (file3)
             {
                 file3 << "\n\n"
-                      << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                      << dt << endl;
                 file3.close();
             }
             else
@@ -193,8 +187,7 @@ void server::fileReset()
             if (file4)
             {
                 file4 << "\n\n"
-                      << dt << "FLIGHT RECORD\n\n"
-                      << endl;
+                      << dt << endl;
                 file4.close();
             }
             else
