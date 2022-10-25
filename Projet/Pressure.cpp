@@ -42,7 +42,7 @@ pressure &pressure::aleaInitVal()
 {
     srand((unsigned)time(NULL));
     int sign = (int)(rand() % 100) % 2;
-    int random = (int)(rand() % 4);
+    int random = (int)(rand() % 100) % 4;
 
     if (sign == 1)
     {

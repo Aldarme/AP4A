@@ -1,124 +1,79 @@
-Tue Oct 25 20:22:22 2022
+Tue Oct 25 23:23:08 2022
 
-20:23:40 Light : 0
-20:23:41 Light : 0
-20:23:42 Light : 0
-20:23:44 Light : 0
-20:23:45 Light : 0
-20:23:46 Light : 0
-20:23:47 Light : 0
-20:23:48 Light : 0
-20:23:49 Light : 0
-20:23:50 Light : 0
-20:23:51 Light : 0
-20:23:52 Light : 0
-20:23:53 Light : 0
-20:23:54 Light : 0
-20:23:55 Light : 0
-20:23:56 Light : 0
-20:23:57 Light : 0
-20:23:58 Light : 0
-20:23:59 Light : 0
-20:24:0 Light : 0
-
-
-Tue Oct 25 20:25:17 2022
-
-20:25:23 Light : 0
-20:25:24 Light : 0
-20:25:25 Light : 0
-20:25:26 Light : 0
-20:25:27 Light : 0
-20:25:28 Light : 0
-20:25:29 Light : 0
-20:25:30 Light : 0
-20:25:31 Light : 0
-20:25:32 Light : 0
-20:25:33 Light : 0
-20:25:34 Light : 0
-20:25:35 Light : 0
-20:25:36 Light : 0
-20:25:37 Light : 0
-20:25:38 Light : 0
-20:25:39 Light : 0
-20:25:40 Light : 0
-20:25:41 Light : 0
-20:25:42 Light : 0
+23:23:17 Light : 1
+23:23:18 Light : 1
+23:23:19 Light : 1
+23:23:20 Light : 1
+23:23:21 Light : 1
+23:23:23 Light : 1
+23:23:24 Light : 1
+23:23:25 Light : 1
+23:23:26 Light : 1
+23:23:27 Light : 1
+23:23:28 Light : 1
+23:23:29 Light : 1
+23:23:30 Light : 1
+23:23:31 Light : 1
+23:23:32 Light : 1
+23:23:33 Light : 1
+23:23:34 Light : 1
+23:23:35 Light : 1
+23:23:36 Light : 1
+23:23:37 Light : 1
+23:23:38 Light : 1
+23:23:39 Light : 1
+23:23:40 Light : 1
+23:23:41 Light : 1
+23:23:42 Light : 1
+23:23:43 Light : 1
+23:23:44 Light : 1
+23:23:45 Light : 1
+23:23:46 Light : 1
+23:23:47 Light : 1
 
 
-Tue Oct 25 20:45:53 2022
+Tue Oct 25 23:25:00 2022
 
-20:45:58 Light : 0
-20:45:59 Light : 0
-20:46:0 Light : 0
-20:46:1 Light : 0
-20:46:2 Light : 0
-20:46:3 Light : 0
-20:46:4 Light : 0
-20:46:5 Light : 0
-20:46:6 Light : 0
-20:46:7 Light : 0
-20:46:8 Light : 0
-20:46:9 Light : 0
-20:46:10 Light : 0
-20:46:11 Light : 0
-20:46:12 Light : 0
-20:46:13 Light : 0
-20:46:14 Light : 0
-20:46:15 Light : 0
-20:46:16 Light : 0
-20:46:17 Light : 0
+23:25:1 Light : 1
+23:25:2 Light : 1
+23:25:3 Light : 1
+23:25:4 Light : 1
 
 
-Tue Oct 25 23:12:40 2022
+Tue Oct 25 23:26:03 2022
 
-23:12:56 Light : 1
-23:12:57 Light : 1
-23:12:58 Light : 1
-23:12:59 Light : 1
-23:13:0 Light : 1
-23:13:1 Light : 1
-23:13:2 Light : 1
-23:13:3 Light : 1
-23:13:4 Light : 1
-23:13:5 Light : 1
-23:13:6 Light : 1
-23:13:7 Light : 1
-23:13:8 Light : 1
-23:13:9 Light : 1
-23:13:10 Light : 1
-23:13:11 Light : 1
-23:13:12 Light : 1
-23:13:13 Light : 1
-23:13:14 Light : 1
-23:13:15 Light : 1
-23:13:16 Light : 1
-23:13:17 Light : 1
-23:13:18 Light : 1
-23:13:19 Light : 1
-23:13:20 Light : 1
-23:13:21 Light : 1
-23:13:23 Light : 1
-23:13:24 Light : 1
-23:13:25 Light : 1
-23:13:26 Light : 1
-23:13:27 Light : 1
-23:13:28 Light : 1
-23:13:29 Light : 1
-23:13:30 Light : 1
-23:13:31 Light : 1
-23:13:32 Light : 1
-23:13:33 Light : 1
-23:13:34 Light : 1
-23:13:35 Light : 1
-23:13:36 Light : 1
-23:13:37 Light : 1
-23:13:38 Light : 1
-23:13:39 Light : 1
-23:13:40 Light : 1
-23:13:41 Light : 1
-23:13:42 Light : 1
-23:13:43 Light : 1
-23:13:44 Light : 1
-23:13:45 Light : 1
-23:13:46 Light : 1
+23:26:4 Light : 1
+23:26:5 Light : 1
+23:26:6 Light : 1
+23:26:7 Light : 1
+23:26:8 Light : 1
+23:26:9 Light : 1
+23:26:10 Light : 1
+23:26:11 Light : 1
+23:26:12 Light : 1
+23:26:13 Light : 1
+23:26:14 Light : 1
+
+
+Tue Oct 25 23:26:39 2022
+
+23:26:40 Light : 1
+23:26:41 Light : 1
+23:26:42 Light : 1
+23:26:43 Light : 1
+23:26:44 Light : 1
+23:26:45 Light : 1
+23:26:46 Light : 1
+23:26:47 Light : 1
+23:26:48 Light : 1
+23:26:49 Light : 1
+23:26:50 Light : 1
+23:26:51 Light : 1
+23:26:52 Light : 1
+23:26:53 Light : 1
+23:26:54 Light : 1
+23:26:55 Light : 1
+23:26:56 Light : 1
+23:26:57 Light : 1
+23:26:58 Light : 1
+23:26:59 Light : 1
