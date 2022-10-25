@@ -25,7 +25,7 @@ int main() {
 
 	if (nb_iteration >= 0 && nb_iteration < 1000) {
 
-		cin>>nb_iteration;
+		cin >> nb_iteration;
 	}
 	serv.setLogActivation();	//Demande à l'utilisateur s'il souhaite que les valeurs soient écrites dans le fichier log
 	serv.setConsole();			//Demande à l'utilisateur s'il souhaite que les valeurs soient affichées dans la console
@@ -37,9 +37,7 @@ int main() {
 	}
 
 	//Boucle de temps symbolisant la durée choisit par l'utilisateur
-	for (int i = 0; i < nb_iteration; i++) {	
-
-		cout << endl;								//Affiche la date et l'heure d'enregistrement des valeurs
+	for (int i = 0; i < nb_iteration; i++) {
 
 		s.getData();								//récupèration les valeurs des capteurs grâce au scheduler
 
@@ -54,31 +52,41 @@ int main() {
 		}
 		Sleep(1000);	//en millisecondes
 	}
-} 
+}
+		//Sytème de multithreading non fonctionnel		
 
+		/**
+		pthread_t threads[NUM_THREADS];									//Création des threads
+		int rc;
+		int j;
+
+		cout << endl;								
+
+		for (j = 0; j < threads[j]; j++) {								//Choix du threads qui doit être appelé
+			rc = pthread_create(&threads[i], NULL, PrintValue, (void*)i);
+
+			if (rc) {
+				cout << "Error:unable to create thread," << rc << endl;
+				exit(-1);
+			}
+		}**
 /**
+* 
+void* PrintValue(void* threadid) {
+	
+	s.getData();		//récupération des valeurs
 
-void* PrintHello(void* threadid) {
-	long tid;
-	tid = (long)threadid;
-	cout << "Hello World! Thread ID, " << tid << endl;
-	//pthread_exit(NULL);
+	if (serv.getConsoleActiv()) {				
+
+			serv.consoleWrite(s.sendData());		//appeler fonctions spécifiques à type de capteurs concerné
+		}
+		if (serv.getLogActiv()) {					
+
+			serv.fileWrite(s.sendData());			//appeler fonctions spécifiques à type de capteurs concerné
+
+		}
+		Sleep(1000);		//choix de l'intervalle de temps //Temperature(1s), Humidity(2s), Pressure(4s), Light(10s)
+
 	return NULL;
 }
-
-int main() {
-	pthread_t threads[NUM_THREADS];
-	int rc;
-	int i;
-
-	for (i = 0; i < NUM_THREADS; i++) {
-		cout << "main() : creating thread, " << i << endl;
-		rc = pthread_create(&threads[i], NULL, PrintHello, (void*)i);
-
-		if (rc) {
-			cout << "Error:unable to create thread," << rc << endl;
-			exit(-1);
-		}
-	}
-	pthread_exit(NULL);
-}**/
+**/

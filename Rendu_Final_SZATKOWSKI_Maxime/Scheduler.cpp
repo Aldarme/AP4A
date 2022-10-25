@@ -34,7 +34,8 @@ Scheduler Scheduler::getData()
 	Humidity h;
 	Light l;
 
-	m_packet.m_temp = t.getData();
+	//Récupération des valeurs des capteurs par le scheduler pour les stocker dans Packet
+	m_packet.m_temp = t.getData();	
 	m_packet.m_press = p.getData();
 	m_packet.m_humid = h.getData();
 	m_packet.m_light = l.getData();

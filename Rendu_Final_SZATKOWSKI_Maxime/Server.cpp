@@ -40,7 +40,7 @@ void Server::consoleWrite(const Packet param_p)
 }
 
 
-void Server::fileWrite(const Packet param_p)
+void Server::fileWrite(const Packet param_p)                        //Méthode qui écrit dans les 4 différents fichiers log des captreurs
 {
     ofstream file("Temperature_record.txt", ios::out, ios::app);    //Creation d'un fichier log pour le capteur tmpererature à l'emplacement dans lequel le projet est sauvegardé
                     
@@ -58,7 +58,7 @@ void Server::fileWrite(const Packet param_p)
 
     if (file1)
     {
-        file1 << " Pressure    : " << param_p.m_press << " hPa" << endl;
+        file1 << " Pressure : " << param_p.m_press << " hPa" << endl;
         file1.close();                                           //fermeture du fichier
     }
     else
@@ -70,7 +70,7 @@ void Server::fileWrite(const Packet param_p)
 
     if (file2)
     {
-        file << " Luminosity  : " << param_p.m_light << endl;
+        file << " Luminosity : " << param_p.m_light << endl;
         file2.close();                                              //fermeture du fichier
     }
     else

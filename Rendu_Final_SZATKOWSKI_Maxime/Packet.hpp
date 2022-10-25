@@ -17,7 +17,7 @@ class Packet
 
 private:
 
-    //attributs de la classe
+    //attributs de la classe Packet
     int m_press;
     float m_temp;
     bool m_light;
