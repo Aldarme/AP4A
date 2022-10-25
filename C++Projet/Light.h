@@ -1,7 +1,7 @@
 
 //  ∗ @author Xiyu LUO
 //  ∗ @file Light . h
-//  ∗ @date 11/10/2022
+//  ∗ @date 25/10/2022
 
 // Define guards
 #ifndef LIGHT_H
@@ -12,11 +12,15 @@
 using namespace std;
 
 // ∗ @class Light
-// ∗ @Class Light is one of the 4 subclass of class Sensor. It is the sensor for collect the data of light in the aircraft.
+// ∗ @Class Light is one of the 4 subclass of class Sensor
+//    It is the sensor for collect the data of light in the aircraft
 
 template <class T>
-class Light : public Sensor{
+class Light : public Sensor<T>{
 public:
+    Light(){};
+    ~Light(){};
+protected:
     T aleaGenVal();
     // Difine of the virtual fonction aleaGenval in subclass
 };

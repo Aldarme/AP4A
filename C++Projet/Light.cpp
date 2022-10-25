@@ -1,12 +1,13 @@
 
 //  ∗ @author Xiyu LUO
 //  ∗ @file Light . cpp
-//  ∗ @date 11/10/2022
+//  ∗ @date 25/10/2022
 
 #include "Light.h"
 
 // ∗ @class Light
-// ∗ @Class Light is one of the 4 subclass of class Sensor. It is the sensor for collect the data of light in the aircraft.
+// ∗ @Class Light is one of the 4 subclass of class Sensor
+//    It is the sensor for collect the data of light in the aircraft
 
 template <class T>
 T Light<T> :: aleaGenVal(){

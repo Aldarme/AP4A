@@ -1,12 +1,13 @@
 
 //  ∗ @author Xiyu LUO
 //  ∗ @file Humidity . cpp
-//  ∗ @date 11/10/2022
+//  ∗ @date 25/10/2022
 
 #include "Humidity.h"
 
 // ∗ @class Humidity
-// ∗ @Class Humidity is one of the 4 subclass of class Sensor. It is the sensor for collect the data of humidity in the aircraft.
+// ∗ @Class Humidity is one of the 4 subclass of class Sensor
+//    It is the sensor for collect the data of humidity in the aircraft
 
 template <class T>
 T Humidity<T> :: aleaGenVal(){

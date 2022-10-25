@@ -1,7 +1,7 @@
 
 //  ∗ @author Xiyu LUO
 //  ∗ @file Temperature . h
-//  ∗ @date 11/10/2022
+//  ∗ @date 25/10/2022
 
 // Define guards
 #ifndef TEMPERATURE_H
@@ -12,11 +12,15 @@
 using namespace std;
 
 // ∗ @class Temperature
-// ∗ @Class Temperature is one of the 4 subclass of class Sensor. It is the sensor for collect the data of temperature in the aircraft.
+// ∗ @Class Temperature is one of the 4 subclass of class Sensor
+//    It is the sensor for collect the data of temperature in the aircraft
 
 template <class T>
-class Temperature : public Sensor{
+class Temperature : public Sensor<T>{
 public:
+    Temperature(){};
+    ~Temperature(){};
+protected:
     T aleaGenVal();
     // Difine of the virtual fonction aleaGenval in subclass
 };
