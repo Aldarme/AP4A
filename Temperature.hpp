@@ -11,11 +11,15 @@
 #include <iostream>
 #include "Sensor.hpp"
 
-class Temperature: public Sensor
+class Temperature
 {
-public :
-    Temperature() = default; //I don't know why, by it don't work without this
-    float getTemperature(); //Creating a function to get the temperature in °C
+private:
+    static float randomValue(float param_minor, float param_major);
+
+public:
+    static float getData();
+
+    friend std::ostream &operator<<(std::ostream &os, const Temperature &temperature);
 };
 
 #endif //TEMPERATURE_HPP

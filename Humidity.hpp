@@ -11,11 +11,15 @@
 #include <iostream>
 #include "Sensor.hpp"
 
-class Humidity: public Sensor
+class Humidity
 {
-public :
-    Humidity()=default; //I don't know why, by it don't work without this
-    float getHumidity(); //creating a function to get the humidity %age
+private:
+    static float randomValue(float param_minor, float param_major);
+    
+public:
+    static float getData();
+
+    friend std::ostream &operator<<(std::ostream &os, const Humidity &humidity);
 };
 
 #endif //HUMIDITY_HPP

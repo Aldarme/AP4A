@@ -11,11 +11,15 @@
 #include <iostream>
 #include "Sensor.hpp"
 
-class Light: public Sensor
+class Light
 {
+private:
+    static bool randomValue(int param_minor, int param_major); //0 and 1 for false and true
+    
 public :
-    Light()=default; //I don't know why, by it don't work without this
-    float getLight(); //creating a function to get the Light value
+    static bool getData();
+
+    friend std::ostream &operator<<(std::ostream &os, const Light &light);
 };
 
 #endif //LIGHT_HPP

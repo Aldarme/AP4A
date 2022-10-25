@@ -11,11 +11,15 @@
 #include <iostream>
 #include "Sensor.hpp"
 
-class Pression: public Sensor
+class Pression
 {
-public :
-    Pression()= default; //I don't know why, by it don't work without this
-    float getPression(); //Creating a function to get the Pression in hPA
+private:
+    static int randomValue(int param_minor, int param_major);
+
+public:
+    static int getData();
+
+    friend std::ostream &operator<<(std::ostream &os, const Pression &pression);
 };
 
 #endif //PRESSION_HPP

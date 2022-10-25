@@ -1,10 +1,18 @@
 #include <iostream>
 #include "Server.hpp"
 
-static void Server::displayValue(std::vector<float> param_array)
-{
-    std::cout<<"Temperature :"<<param_array.at(0)<<"\n"; //array.at(0) is the same as array[0] 
-    std::cout<<"Humidity :"<<param_array.at(1)<<"\n";
-    std::cout<<"Light :"<<param_array.at(2)<<"\n";
-    std::cout<<"Pression :"<<param_array.at(3)<<"\n";
-}; //Use the command std::cout to print the value into the console
+using namespace std;
+
+void Server::displayfloat(float a) {
+    cout << a << endl;
+}; //Displaying the float into the console
+
+void Server::displayint(int a) {
+    cout << a << endl;
+}; //Displaying the int into the console
+
+void Server::displaybool(bool a) {
+    cout << (a ? "True" : "False" )<< endl;
+}; //Displaying the bool into the console
+
+

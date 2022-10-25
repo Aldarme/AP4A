@@ -10,17 +10,23 @@
 
 #include <iostream>
 #include <Windows.h>
+#include <time.h>
 #include <vector>
 #include "Sensor.hpp"
 #include "Server.hpp"
-#include "Pression.hpp"
 
 class Scheduler
 {       
 public:
-    float timesleep=1000; //Used in the Sleep command in Scheduler.cpp
-    std::vector<float> values;    
-    static void theWork(); //Creating a function to make a loop of all the process
+    Humidity hum;
+    Light lig;
+    Temperature tem;
+    Pression pre;
+    Scheduler(); //Constructor
+    Scheduler(const Humidity &hum, const Light &lig, const Temperature &tem, const Pression &pre); //Constructor
+    friend std::ostream &operator<<(std::ostream &os, const Scheduler &scheduler); //Overloading the << operator
+    static int Clock(); //This function is used to get the time of the day
+    [[noreturn]] void theWork(); //Creating a function to make a loop of all the process
     
 };
 

@@ -9,12 +9,16 @@
 #define SERVER_HPP
 
 #include <iostream>
-#include <vector>
+#include <Windows.h>
+
 
 class Server 
 {
 public:
-    static void displayValue(std::vector<float> a); //Displaying the values into the console
+    static void displayfloat(float a); //Displaying the float value into the console
+    static void displayint(int a); //Displaying the int value into the console
+    static void displaybool(bool a); //Displaying the bool value into the console
+
 
 };
 

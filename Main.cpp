@@ -6,11 +6,14 @@
 ///
 
 #include <iostream>
+#include <time.h>
 #include "Scheduler.hpp"
 
-int main(void)
+int main()
 {
-    Scheduler s;
-    s.theWork(); //Calling the function call all the others
-    return 0
+    srand(time(NULL)); //This function is used to get a random number
+    Scheduler scheduler;
+    std::cout << scheduler << "\n";
+    scheduler.theWork(); //Calling the function theWork
+    return 0;
 }

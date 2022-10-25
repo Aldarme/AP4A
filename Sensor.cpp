@@ -1,18 +1,21 @@
 #include <iostream>
 #include "Sensor.hpp"
 
+/*
 
-float Sensor::randomValue(float param_minor, float param_major)
-{
-    static std::default_random_engine rng; //Generating the default random engine ?
-    std::uniform_real_distribution<float> dist(param_minor, param_major); //Generating the distribution for the random engine ?
-    return dist(rng);
-}; //Generating a random float between a and b using a uniform distribution ? (swtich to normal distribution for more realism ?)
+using namespace std;
 
-static std::vector<float> Sensor::getData() //Creating an non-limited array (vector)
+static tuple<float, int, float, bool> Sensor::packData() //Creating an "multi-type" array (tuple) of data
 {
-    return
-    {
-        Temperature::getTemperature(),Humidity::getHumidity(),Light::getLight(),Pression::getPression()
-    };
-}; //Collecting the 4 floats data from each sensor, and package them in an array
+    tuple<float, float, int, bool> data;
+    get<0>(data) = Temperature::getData();
+    get<1>(data) = Humidity::getData();
+    get<2>(data) = Pression::getData();
+    get<3>(data) = Light::getData();
+    return data;
+}; //Collecting the 4 datas from each sensor, and package them in an array (tuple)
+
+*/
+
+
+
