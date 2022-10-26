@@ -21,27 +21,9 @@ private:
     std::string m_sensor_unit;
 
 public:
-    /**
-     * @brief Construct a new Package:: Package object
-     * 
-     * @param p_data 
-     * @param p_sensor_name 
-     * @param p_sensor_unit 
-     */
-    Package(T p_data, std::string p_sensor_name, std::string p_sensor_unit){
-        m_data = p_data;
-        m_sensor_name = p_sensor_name;
-        m_sensor_unit = p_sensor_unit;
-    }
+    Package(T p_data, std::string p_sensor_name, std::string p_sensor_unit);
 
-    /**
-     * @brief Get the Name object
-     * 
-     * @return std::string 
-     */
-    std::string getName(){
-        return m_sensor_name;
-    }
+    std::string getName();
 
     template <typename U>
     friend std::ostream& operator<<(std::ostream& p_output, const Package<U>& p_package);
@@ -49,6 +31,32 @@ public:
     template <typename U>
     friend std::ofstream& operator<<(std::ofstream& p_output_f, Package<U>& p_package);
 };
+
+
+
+/**
+ * @brief Construct a new Package:: Package object
+ * 
+ * @param p_data 
+ * @param p_sensor_name 
+ * @param p_sensor_unit 
+ */
+template <typename T>
+Package<T>::Package(T p_data, std::string p_sensor_name, std::string p_sensor_unit){
+        m_data = p_data;
+        m_sensor_name = p_sensor_name;
+        m_sensor_unit = p_sensor_unit;
+    }
+
+/**
+ * @brief Get the Name object
+ * 
+ * @return std::string 
+ */
+template <typename T>
+std::string Package<T>::getName(){
+    return m_sensor_name;
+}
 
 /**
  * @brief overide << operator for cout use

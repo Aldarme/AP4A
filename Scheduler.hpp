@@ -24,7 +24,6 @@ private:
 
     void sendData(Server p_server);
 
-
 public:
     Scheduler();
 };

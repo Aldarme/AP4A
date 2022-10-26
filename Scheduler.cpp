@@ -50,7 +50,7 @@ void Scheduler::sendData(Server p_server)
     {   
         new_time_elapsed = time(0) - start;
 
-        //evoids running multiple time in same seconds
+        //evoids running multiple time in same second
         if (old_time_elapsed != new_time_elapsed)
         {
             // seperate every sequence

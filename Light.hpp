@@ -14,10 +14,6 @@ class: Light
 class Light: public Sensor<bool>
 {
     public:
-    /**
-     * @brief Construct a new Light:: Light object calling Sensor constructing with interval as param
-     * 
-     */
     Light();
     bool getData();
 };

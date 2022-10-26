@@ -12,6 +12,12 @@ class: Prssure
  * 
  */
 Pressure::Pressure() : Sensor(0, 20){}
+
+/**
+ * @brief overide of getData to return int instead of float
+ * 
+ * @return int
+ */
 int Pressure::getData()
 {
     return (rand() % (m_MAX_VAL - m_MIN_VAL)) + m_MIN_VAL;
