@@ -1,0 +1,12 @@
+LIGHT SENSOR DATA (1 seconds from start)
+
+Light: On 
+
+LIGHT SENSOR DATA (3 seconds from start)
+
+Light: On 
+
+LIGHT SENSOR DATA (5 seconds from start)
+
+Light: Off 
+

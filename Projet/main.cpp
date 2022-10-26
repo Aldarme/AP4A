@@ -7,25 +7,18 @@
 
 ///J'ai inclus les cpp car j'avais des erreurs.
 #include "Server.cpp"
-#include "Sensor.cpp"
 #include "Scheduler.cpp"
-
-#include "Server.hpp"
-#include "Sensor.hpp"
-#include "Scheduler.hpp"
-#include "Packet.hpp"
 
 #include <fstream>
 #include <iostream>
-
-using namespace std;
 
 int main()
 {
     Server A;
     Scheduler B;
-    int tps = 0;
+    
 
+    A.displayChoice();
     A.fileClear();
 
     while (1)
@@ -35,7 +28,6 @@ int main()
         A.fileWrite(tps);
         A.consoleWrite(tps);
         B.wait();
-        tps++;
     }
 
     return 0;

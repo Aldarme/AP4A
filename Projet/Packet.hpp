@@ -9,7 +9,10 @@
 #ifndef PACKET_H
 #define PACKET_H
 
-#include "Sensor.hpp"
+#include "Humidity.cpp"
+#include "Light.cpp"
+#include "Pressure.cpp"
+#include "Temperature.cpp"
 
 /** 
  * @class Packet
@@ -23,6 +26,7 @@ public:
         Packet ():H(),L(),P(),T(){}; // Constructeur par défaut
         Packet (const Packet& a):H(a.H),L(a.L),P(a.P),T(a.T){}; // Constructeur par recopie
         ~Packet (){}; // Destructeur
+        Packet& operator=(const Packet& packet);
 
         /// @brief Instanciation des différents capteurs
         Humidity H;

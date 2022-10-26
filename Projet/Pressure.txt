@@ -1,0 +1,12 @@
+PRESSURE SENSOR DATA (1 seconds from start)
+
+Pressure: 107 KPa
+
+PRESSURE SENSOR DATA (3 seconds from start)
+
+Pressure: 82 KPa
+
+PRESSURE SENSOR DATA (5 seconds from start)
+
+Pressure: 89 KPa
+

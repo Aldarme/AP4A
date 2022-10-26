@@ -1,0 +1,10 @@
+TEMPERATURE SENSOR DATA (1 seconds from start)
+
+Temperature: 25.8 °C 
+
+
+TEMPERATURE SENSOR DATA (4 seconds from start)
+
+Temperature: 25.6 °C 
+
+

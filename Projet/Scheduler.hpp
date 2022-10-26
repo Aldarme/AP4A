@@ -22,11 +22,12 @@ class Scheduler
 public:
         /// @brief Instanciation d'un objet packet
         Packet packet;
-
+        
         /// @brief Déclaration de la forme canonique de Coplien
         Scheduler ():packet(){}; // Constructeur par défaut
         Scheduler (const Scheduler& a):packet(a.packet){}; // Constructeur par recopie
         ~Scheduler (){}; // Destructeur
+        Scheduler& operator=(const Scheduler& scheduler);
 
         /**
          * @brief Récupère les valeurs aléatoires obtenues dans la classe Sensor et les met dans un packet

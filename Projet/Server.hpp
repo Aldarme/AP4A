@@ -13,6 +13,8 @@
 #include <fstream>
 #include <string>
 
+
+
 /** 
  * @class Server
  * @brief Implémentation classe Server
@@ -20,21 +22,34 @@
 
 class Server
 {
+private:
+        char answerConsole;
+        char answerLogs;
+
 public:
         /// @brief Déclaration de la forme canonique de Coplien
         Server (){} // Constructeur par défaut
         Server (const Server&){} // Constructeur par recopie
         ~Server (){} // Destructeur
+        Server& operator=(const Server& server);
         
+        /**
+         * @brief Demande à l'utilisatuer s'il veut écrire les valeurs dans le terminal et dans les logs
+         * @return Un objet de type Server avec les variables changées
+         */
+        Server displayChoice();
+
         /**
          * @brief Ecrit les differentes données dans le terminal
          * @return Rien
+         * @param tps : temps en seconde
          */
         void consoleWrite(int tps);
 
         /**
          * @brief Ecrit les différentes données dans le fichier data.txt
          * @return Rien
+         * @param tps : temps en seconde
          */
         void fileWrite(int tps);
 
@@ -44,10 +59,10 @@ public:
          */
         void fileClear();
 
-        int H;
-        int L;
+        float H;
+        bool L;
         int P;
-        int T;
+        float T;
 };
 
 #endif // SERVER_H
