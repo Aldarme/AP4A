@@ -2,7 +2,7 @@
  * @file Light.hpp
  * @author Loric Ravassard
  * @brief hérite de Sensor et génère des valeurs de lumière
- * @version 1
+ * @version 2
  * @date 2022-09-28
  */
 
@@ -16,13 +16,20 @@
  * @brief hérite de Sensor et génère des valeurs de lumière
  * 
  */
-class Light : public Sensor
+class Light : public Sensor<bool>
 {
   public:
     Light();
     Light(const Light& other_p);
     virtual ~Light(){};
     Light& operator=(const Light& other_p);
+
+    /**
+     * @brief héritée de la classe sensor, génère aléatoirement un bool
+     * 
+     * @return bool 
+     */
+    bool aleaGenVal() override;
 };
 
 #endif

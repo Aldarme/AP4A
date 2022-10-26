@@ -3,7 +3,7 @@
  * @author Loric Ravassard
  * @brief Gestion des données reçues : affichage dans la console et/ou dans les logs 
  * en fonction du choix de l'utilisateur
- * @version 1
+ * @version 2
  * @date 2022-09-27
  */
 
@@ -11,6 +11,9 @@
 #define SERVER_H
 
 #include "Package.hpp"
+#include <fstream>
+#include <iostream>
+#include <iomanip>
 
 /**
  * @class Server
@@ -33,21 +36,41 @@ class Server
      * 
      * @param data_p 
      */
-    void fileWrite(Package& data_p);
+    template <typename T> void fileWrite(Package<T>& data_p)
+    {
+      //Le fichier est créé s'il n'existe pas déjà
+      std::ofstream file("../logs/"+data_p.getName()+".csv", std::ios::app);  //on ouvre le fichier et on écrit à la suite de ce qui est déjà écrit
+      file << data_p.getDate() << "," << std::boolalpha << data_p.getValue() << "," << data_p.getUnit() << std::endl; //boolalpha permet d'écrire les booléen avec true/false
+      file.close();
+    };
 
     /**
      * @brief écrit les données dans la console
      * 
      * @param data_p 
      */
-    void consoleWrite(Package& data_p);
+    template <typename T> void consoleWrite(Package<T>& data_p) 
+    {
+      std::cout << "[" << data_p.getDate() << "] " << data_p.getName() << " -> " << std::boolalpha << data_p.getValue() << " " << data_p.getUnit() << std::endl;
+      //boolalpha permet d'écrire les booléen avec true/false
+    };
 
     /**
      * @brief reçoit les données du Scheduler pour pouvoir les afficher dans la console et/ou dans les logs
      * 
      * @param data_p 
      */
-    void dataRcv(Package& data_p);
+    template <typename T> void dataRcv(Package<T>& data_p)
+    {
+      if(m_consolActivation)
+      {
+        consoleWrite(data_p);
+      }
+      if(m_logActivation)
+      {
+        fileWrite(data_p);
+      }
+    };
 
     /**
      * @brief méthode pour que l'utilisateur puisse modifier consolActivation

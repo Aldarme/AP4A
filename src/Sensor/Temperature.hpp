@@ -2,7 +2,7 @@
  * @file Temperature.hpp
  * @author Loric Ravassard
  * @brief hérite de Sensor et génère des valeurs de température
- * @version 1
+ * @version 2
  * @date 2022-09-28
  */
 
@@ -15,7 +15,7 @@
  * @class Temperature
  * @brief hérite de Sensor et génère des valeurs de température
  */
-class Temperature : public Sensor
+class Temperature : public Sensor<float>
 {
   public:
     Temperature();
@@ -23,6 +23,12 @@ class Temperature : public Sensor
     virtual ~Temperature(){};
     Temperature& operator=(const Temperature& other_p);
 
+    /**
+     * @brief héritée de la classe sensor, génère aléatoirement un float
+     * 
+     * @return float 
+     */
+    float aleaGenVal() override;
 };
 
 #endif

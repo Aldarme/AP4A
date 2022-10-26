@@ -2,40 +2,40 @@
  * @file Scheduler.cpp
  * @author Loric Ravassard
  * @brief Récupère les données du sensor, envoie les données au serveur, gère les cycles
- * @version 1
+ * @version 2
  * @date 2022-09-28
  */
 
 #include "Scheduler.hpp"
+#include "Sensor/Sensor.hpp"
+#include "Sensor/Humidity.hpp"
 
 #include <chrono>
 #include <thread>
 #include <iostream>
 
-void Scheduler::getAllData()
+Scheduler& Scheduler::operator=(const Scheduler& other_p)
 {
-  std::time_t now;
-  char buffer [80];
-  std::time(&now);
-  std::strftime(buffer,sizeof(buffer),"%d/%m/%Y %H:%M:%S", std::localtime(&now)); //récupère la date a laquelle on a récupéré les données
-
-  //on rempli le package avec toutes les données
-  m_dataPkg.addMeasure(buffer, "humidity", m_humidity.getData(), m_humidity.getUnit());
-  m_dataPkg.addMeasure(buffer, "light", m_light.getData(), m_light.getUnit());
-  m_dataPkg.addMeasure(buffer, "pressure", m_pressure.getData(), m_pressure.getUnit());
-  m_dataPkg.addMeasure(buffer, "temperature", m_temperature.getData(), m_temperature.getUnit());
+  m_stopSimulation = other_p.m_stopSimulation;
+  return *this;
 }
 
-void Scheduler::sendData()
+void Scheduler::endSimulation()
 {
-  m_server.dataRcv(m_dataPkg);
-  m_dataPkg.clear();
+  char stop;
+  do
+  {
+    std::cin >> stop;
+  }while(stop != 'q' && stop != 'Q');
+  m_stopSimulation = true;
 }
 
-void Scheduler::run(int time_p, int wait_p)
+void Scheduler::run()
 {
-  int timeEnd = time_p*1000;  //conversion en ms
-  int timeSend = wait_p*1000; //conversion en ms
+  std::chrono::duration<int,std::milli> waitHumidity (m_humidity.getInterval()*1000); //conversion des intervalles des capteurs en duration
+  std::chrono::duration<int,std::milli> waitLight (m_light.getInterval()*1000);
+  std::chrono::duration<int,std::milli> waitPressure (m_pressure.getInterval()*1000);
+  std::chrono::duration<int,std::milli> waitTemperature (m_temperature.getInterval()*1000);
   char answer;
 
   std::cout << "Do you want to print in the console ? (y/n) ";
@@ -58,22 +58,43 @@ void Scheduler::run(int time_p, int wait_p)
   {
     m_server.logsActivate(false);
   }
+
+  std::chrono::system_clock::time_point endHumidity = std::chrono::system_clock::now() +  waitHumidity;       //definition de la date de la première récupération des données
+  std::chrono::system_clock::time_point endLight = std::chrono::system_clock::now() +  waitLight;             //definition de la date de la première récupération des données
+  std::chrono::system_clock::time_point endPressure = std::chrono::system_clock::now() +  waitPressure;       //definition de la date de la première récupération des données
+  std::chrono::system_clock::time_point endTemperature = std::chrono::system_clock::now() +  waitTemperature; //definition de la date de la première récupération des données
+
+  std::thread destroy(&Scheduler::endSimulation, this);  //création du thread qui attend que l'utilisateur arrête la simulation
   
-  std::chrono::duration<int,std::milli> runningTime (timeEnd);
-  std::chrono::system_clock::time_point end = std::chrono::system_clock::now() + runningTime; //definition de la date de fin de la simulation
-
-  std::chrono::duration<int,std::milli> waitingTime (timeSend);
-  std::chrono::system_clock::time_point endWait = std::chrono::system_clock::now() + waitingTime; //definition de la date de la première récupération des données
-
-  while(std::chrono::system_clock::now() < end) //Tourne pendant le temps qui a été défini par l'utilisateur
+  while(!m_stopSimulation)  //tourne tant que l'utilisateur n'a pas arrêté la simulation
   {
-    if(std::chrono::system_clock::now() >= endWait)
+    
+    if(std::chrono::system_clock::now() >= endHumidity)
     {
-      getAllData();
-      sendData(); 
-      endWait = std::chrono::system_clock::now() + waitingTime;
+      getSensorData(&m_humidity, &m_dataHum);
+      sendData(m_dataHum); 
+      endHumidity = std::chrono::system_clock::now() + waitHumidity;
+    }
+    if(std::chrono::system_clock::now() >= endLight)
+    {
+      getSensorData(&m_light, &m_dataLight);
+      sendData(m_dataLight); 
+      endLight = std::chrono::system_clock::now() + waitLight;
+    }
+    if(std::chrono::system_clock::now() >= endPressure)
+    {
+      getSensorData(&m_pressure, &m_dataPress);
+      sendData(m_dataPress); 
+      endPressure = std::chrono::system_clock::now() + waitPressure;
+    }
+    if(std::chrono::system_clock::now() >= endTemperature)
+    {
+      getSensorData(&m_temperature, &m_dataTemp);
+      sendData(m_dataTemp); 
+      endTemperature = std::chrono::system_clock::now() + waitTemperature;
     }
     std::this_thread::sleep_for(std::chrono::milliseconds(10));
   }
-  
+
+  destroy.join();
 }
