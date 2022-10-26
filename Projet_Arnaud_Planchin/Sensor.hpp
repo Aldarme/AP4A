@@ -2,86 +2,53 @@
  * @author Planchin Arnaud
  * @file Sensor.hpp
  * @date 03/10/2022
- * @brief Définition de la classe Sensor
+ * @brief Définition de la classe abstraite Sensor
  */
 
 #ifndef SENSOR_H
 #define SENSOR_H
 
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-using namespace std;
-
-
+template<typename T>
 class Sensor
 {
-public:
 
-    int data; // Donnée du capteur
+    friend class Light;
+    friend class Humidity;
+    friend class Temperature;
+    friend class Pression;
+    friend class Server;
+    friend class Scheduler;
+
+private:
+
+    // Attributs d'un capteur
+    T data;
+    T min;
+    T max;
+    
+public:
 
     /**
      * @brief Forme Canonique de Coplien de la classe Sensor
      */
-    Sensor():data(){};
-    Sensor(const Sensor& capteur):data(capteur.data){};
-    ~Sensor(){};
+    Sensor():data(),min(),max(){}
+    virtual ~Sensor(){}
+    Sensor(const Sensor& s):data(s.data),min(s.min),max(s.max){}
     
     /**
-     * @brief Récupère une valeur
-     * @return une data de type int
-     * @param - Aucun
+     * @brief Méthode virtuelle de récupération d'une valeur
+     * @return Une data de type T
      */
-    int GetData();
+    virtual T GetData() = 0;
 
     /**
-     * @brief Génère une valeur aléatoire entre deux valeurs précisées en fonction de la donnée 
-     * @return Un Sensor qui a comme attribut la data généré aleatoirement
-     * @param - Aucun
+     * @brief Méthode virtuelle de génération d'une valeur aléatoire entre deux valeurs: min, max 
+     * @return Une data de type T
+     * @param min - valeur minimum du capteur de type T
+     * @param max - valeur maximum du capteur de type T
      */
-    Sensor aleaGenVal(int min, int max);
+    virtual T aleaGenVal(T min, T max) = 0;
 
-};
-
-
-class Temperature: public Sensor{
-public:
-    /**
-     * @brief Appelle la méthode aleaGenVal avec deux valeurs précisées pour le capteur utilisé
-     * @return Un capteur de type Température
-     * @param - Aucun
-     */
-    Sensor genAlea();
-};
-
-class Humidity: public Sensor{
-public:
-    /**
-     * @brief Appelle la méthode aleaGenVal avec deux valeurs précisées pour le capteur utilisé
-     * @return Un capteur de type Humidity
-     * @param - Aucun
-     */
-    Sensor genAlea();
-};
-
-class Light: public Sensor{
-public:
-    /**
-     * @brief Appelle la méthode aleaGenVal avec deux valeurs précisées pour le capteur utilisé
-     * @return Un capteur de type Light
-     * @param - Aucun
-     */
-    Sensor genAlea();
-};
-
-class Pression: public Sensor{
-public:
-    /**
-     * @brief Appelle la méthode aleaGenVal avec deux valeurs précisées pour le capteur utilisé
-     * @return Un capteur de type Pression
-     * @param - Aucun
-     */
-    Sensor genAlea();
 };
 
 #endif // SERNSOR_H

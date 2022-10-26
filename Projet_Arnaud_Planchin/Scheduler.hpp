@@ -9,45 +9,45 @@
 #define SCHEDULER_H
 
 #include "Server.hpp"
-#include <iostream>
-#include <Windows.h>
-using namespace std;
+
 
 class Scheduler
 {
-public:
+private:
 
+    // Attributs d'un Scheduler
     Paquet scheduler_Pack;
+
+public:
 
     /**
      * @brief Forme Canonique de Coplien de la classe Scheduler
      */
     Scheduler():scheduler_Pack(){}
-    ~Scheduler(){}
+    virtual ~Scheduler(){}
     Scheduler(const Scheduler& sched):scheduler_Pack(sched.scheduler_Pack){}
     
 
     /**
-     * @brief Récupère toutes les valeurs de chaque Sensor et les regroupe en un pacquet de donnée
-     * @return un Scheduler qui a comme attribut le paquet créé
-     * @param - aucun
+     * @brief Récupère toutes les valeurs de chaque Sensor et les regroupe en un paquet de donnée
+     * @return Un Scheduler qui a comme attribut le paquet créé
      */
     Scheduler getAll(); 
 
     /**
-     * @brief Envoie le pacquet de Scheduler vers le Server
-     * @return Rien
+     * @brief Envoie le paquet de Scheduler vers le Server
      * @param serv - un objet de type Server
+     * @param temps - "temps du programme"
      */
-    void serverSendData(Server& serv);
+    void serverSendData(Server& serv,int temps);
 
     /**
      * @brief Fait une pause
-     * @return Rien
-     * @param - aucun
+     * @param pauses_secondes temps de pause en seconde
      */
-    void wait();
+    void wait(int pauses_secondes);
     
 };
+
 
 #endif // SCHEDULER_H
