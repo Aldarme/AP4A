@@ -1,0 +1,55 @@
+ 
+Wed Oct 26 10:59:02 2022
+ : 
+Capteur de luminosite 
+detection de la lumiere
+ 
+Wed Oct 26 10:59:04 2022
+ : 
+Capteur de luminosite 
+detection de la lumiere
+ 
+Wed Oct 26 10:59:06 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 10:59:07 2022
+ : 
+Capteur de luminosite 
+detection de la lumiere
+ 
+Wed Oct 26 10:59:09 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 10:59:11 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 10:59:12 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 10:59:15 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 11:00:07 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 11:00:09 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee
+ 
+Wed Oct 26 11:01:28 2022
+ : 
+Capteur de luminosite 
+pas de lumiere detectee

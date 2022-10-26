@@ -1,0 +1,96 @@
+ 
+Wed Oct 26 10:59:02 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 1003 hPa
+ 
+Wed Oct 26 10:59:03 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 409 hPa
+ 
+Wed Oct 26 10:59:04 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 653 hPa
+ 
+Wed Oct 26 10:59:05 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 823 hPa
+ 
+Wed Oct 26 10:59:07 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 619 hPa
+ 
+Wed Oct 26 10:59:08 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 415 hPa
+ 
+Wed Oct 26 10:59:09 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 128 hPa
+ 
+Wed Oct 26 10:59:10 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 533 hPa
+ 
+Wed Oct 26 10:59:12 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 1102 hPa
+ 
+Wed Oct 26 10:59:13 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 739 hPa
+ 
+Wed Oct 26 10:59:14 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 508 hPa
+ 
+Wed Oct 26 10:59:16 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 103 hPa
+ 
+Wed Oct 26 11:00:07 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 546 hPa
+ 
+Wed Oct 26 11:00:08 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 1104 hPa
+ 
+Wed Oct 26 11:00:09 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 360 hPa
+ 
+Wed Oct 26 11:01:28 2022
+ : 
+ID Val debbug : 2
+Capteur : CapteurPress1
+valeur : 1116 hPa

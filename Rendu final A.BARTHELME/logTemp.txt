@@ -1,0 +1,78 @@
+ 
+Wed Oct 26 10:59:03 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 9 Celsius
+ 
+Wed Oct 26 10:59:04 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 33 Celsius
+ 
+Wed Oct 26 10:59:05 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 23 Celsius
+ 
+Wed Oct 26 10:59:06 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 8 Celsius
+ 
+Wed Oct 26 10:59:08 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 35 Celsius
+ 
+Wed Oct 26 10:59:09 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 18 Celsius
+ 
+Wed Oct 26 10:59:10 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 33 Celsius
+ 
+Wed Oct 26 10:59:11 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : -8 Celsius
+ 
+Wed Oct 26 10:59:13 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 9 Celsius
+ 
+Wed Oct 26 10:59:14 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 18 Celsius
+ 
+Wed Oct 26 10:59:16 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 23 Celsius
+ 
+Wed Oct 26 11:00:08 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 4 Celsius
+ 
+Wed Oct 26 11:00:09 2022
+ : 
+ID Val debbug : 1
+Capteur : CapteurTemp
+valeur : 0 Celsius
