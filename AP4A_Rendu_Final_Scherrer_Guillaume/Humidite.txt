@@ -1,0 +1,22 @@
+Voici les différentes valeur mesurées pour l'humidité: 
+
+Humidité:  13.6343 % rel. 
+Humidité:  13.6343 % rel. 
+Humidité:  19.2644 % rel. 
+Humidité:  19.2644 % rel. 
+Humidité:  11.7611 % rel. 
+Humidité:  11.7611 % rel. 
+Humidité:  16.1998 % rel. 
+Humidité:  16.1998 % rel. 
+Humidité:  17.1775 % rel. 
+Humidité:  17.1775 % rel. 
+Humidité:  12.4346 % rel. 
+Humidité:  12.4346 % rel. 
+Humidité:  14.7998 % rel. 
+Humidité:  14.7998 % rel. 
+Humidité:  10.5108 % rel. 
+Humidité:  10.5108 % rel. 
+Humidité:  12.3187 % rel. 
+Humidité:  12.3187 % rel. 
+Humidité:  18.123 % rel. 
+Humidité:  18.123 % rel. 

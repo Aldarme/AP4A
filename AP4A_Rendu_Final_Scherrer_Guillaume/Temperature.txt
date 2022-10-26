@@ -1,0 +1,22 @@
+Voici les différentes valeur mesurées pour la température: 
+
+Température:  24.8716 °C 
+Température:  24.8715 °C 
+Température:  23.4002 °C 
+Température:  24.4921 °C 
+Température:  23.1592 °C 
+Température:  23.6322 °C 
+Température:  23.8479 °C 
+Température:  24.4166 °C 
+Température:  23.4841 °C 
+Température:  23.9649 °C 
+Température:  23.8725 °C 
+Température:  24.7035 °C 
+Température:  23.4329 °C 
+Température:  23.8626 °C 
+Température:  23.4114 °C 
+Température:  24.0071 °C 
+Température:  23.2643 °C 
+Température:  23.4772 °C 
+Température:  24.7289 °C 
+Température:  24.8879 °C 

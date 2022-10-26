@@ -1,0 +1,22 @@
+Voici les différentes valeur mesurées pour la pression : 
+
+Pression:  60978 Pa 
+Pression:  60978 Pa 
+Pression:  60978 Pa 
+Pression:  68041 Pa 
+Pression:  68041 Pa 
+Pression:  68041 Pa 
+Pression:  69938 Pa 
+Pression:  69938 Pa 
+Pression:  69938 Pa 
+Pression:  65841 Pa 
+Pression:  65841 Pa 
+Pression:  65841 Pa 
+Pression:  69883 Pa 
+Pression:  69883 Pa 
+Pression:  69883 Pa 
+Pression:  60389 Pa 
+Pression:  60389 Pa 
+Pression:  60389 Pa 
+Pression:  63802 Pa 
+Pression:  63802 Pa 
